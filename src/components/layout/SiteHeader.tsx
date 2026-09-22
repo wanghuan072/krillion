@@ -34,17 +34,17 @@ export function SiteHeader() {
 
   return <header className={styles.header} ref={headerRef}>
     <div className={`${styles.container} ${styles.headerInner}`}>
-      <Link href="/" className={styles.logoLink} aria-label={`${siteConfig.name} home`}>
-        <Image src={siteConfig.logo} width={siteConfig.logoWidth} height={siteConfig.logoHeight} alt={`${siteConfig.name} logo`} priority className={styles.logo} />
+      <Link href="/" prefetch={false} className={styles.logoLink} aria-label={`${siteConfig.name} home`}>
+        <Image src={siteConfig.logo} width={siteConfig.logoWidth} height={siteConfig.logoHeight} alt={`${siteConfig.name} logo`} loading="eager" fetchPriority="low" className={styles.logo} />
       </Link>
       <nav aria-label="Primary navigation" className={styles.desktopNav}>
-        {primaryNavigation.map((item) => <Link key={item.path} href={item.path} aria-current={pathname === item.path ? "page" : undefined}><span className={styles.navLabel}>{item.label}</span></Link>)}
+        {primaryNavigation.map((item) => <Link key={item.path} href={item.path} prefetch={false} aria-current={pathname === item.path ? "page" : undefined}><span className={styles.navLabel}>{item.label}</span></Link>)}
       </nav>
       <button ref={buttonRef} className={styles.menuButton} type="button" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen((value) => !value)}>
         <span aria-hidden="true" className={styles.menuIcon}><i /><i /><i /></span><span className={styles.srOnly}>Menu</span>
       </button>
       <nav id="mobile-navigation" aria-label="Mobile navigation" className={`${styles.mobileNav} ${open ? styles.mobileNavOpen : ""}`}>
-        {primaryNavigation.map((item) => <Link key={item.path} href={item.path} aria-current={pathname === item.path ? "page" : undefined} onClick={() => setOpen(false)}><span className={styles.navLabel}>{item.label}</span></Link>)}
+        {primaryNavigation.map((item) => <Link key={item.path} href={item.path} prefetch={false} aria-current={pathname === item.path ? "page" : undefined} onClick={() => setOpen(false)}><span className={styles.navLabel}>{item.label}</span></Link>)}
       </nav>
     </div>
   </header>;

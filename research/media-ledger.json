@@ -11,9 +11,9 @@
     "contentDescription": "Transparent KRILLION wordmark with a navy and ice-cyan K mark and hot-magenta tagline.",
     "versionScope": "site design v2",
     "localPath": "/images/logo.png",
-    "width": 2172,
-    "height": 724,
-    "fileBytes": 592507,
+    "width": 480,
+    "height": 160,
+    "fileBytes": 13103,
     "usedOn": [
       "shared Header"
     ],
@@ -358,7 +358,7 @@
     "localPath": "/images/games/slope/cover.png",
     "width": 512,
     "height": 512,
-    "fileBytes": 72197,
+    "fileBytes": 29929,
     "usedOn": [
       "/games/slope",
       "/games",
@@ -510,7 +510,7 @@
     "localPath": "/images/games/2048/cover.jpg",
     "width": 600,
     "height": 600,
-    "fileBytes": 20050,
+    "fileBytes": 8024,
     "usedOn": [
       "/games/2048",
       "/games",
@@ -662,7 +662,7 @@
     "localPath": "/images/games/curve-rush/cover.png",
     "width": 568,
     "height": 574,
-    "fileBytes": 211914,
+    "fileBytes": 54952,
     "usedOn": [
       "/games/curve-rush",
       "/games",
@@ -814,7 +814,7 @@
     "localPath": "/images/games/tap-road/cover.jpg",
     "width": 967,
     "height": 967,
-    "fileBytes": 281773,
+    "fileBytes": 44192,
     "usedOn": [
       "/games/tap-road",
       "/games",
@@ -966,7 +966,7 @@
     "localPath": "/images/games/head-basketball/cover.png",
     "width": 512,
     "height": 512,
-    "fileBytes": 256723,
+    "fileBytes": 80677,
     "usedOn": [
       "/games/head-basketball",
       "/games",
@@ -1118,7 +1118,7 @@
     "localPath": "/images/games/escape-road/cover.png",
     "width": 512,
     "height": 512,
-    "fileBytes": 192075,
+    "fileBytes": 54988,
     "usedOn": [
       "/games/escape-road",
       "/games",
@@ -1270,7 +1270,7 @@
     "localPath": "/images/games/trap-the-cat/cover.jpg",
     "width": 540,
     "height": 566,
-    "fileBytes": 44089,
+    "fileBytes": 15466,
     "usedOn": [
       "/games/trap-the-cat",
       "/games",
@@ -1422,7 +1422,7 @@
     "localPath": "/images/games/suika-game/cover.png",
     "width": 620,
     "height": 620,
-    "fileBytes": 700170,
+    "fileBytes": 143678,
     "usedOn": [
       "/games/suika-game",
       "/games",
@@ -1574,7 +1574,7 @@
     "localPath": "/images/games/slope/cover.png",
     "width": 512,
     "height": 512,
-    "fileBytes": 72197,
+    "fileBytes": 29929,
     "usedOn": [
       "/games/slope",
       "/games",
@@ -1726,7 +1726,7 @@
     "localPath": "/images/games/2048/cover.jpg",
     "width": 600,
     "height": 600,
-    "fileBytes": 20050,
+    "fileBytes": 8024,
     "usedOn": [
       "/games/2048",
       "/games",
@@ -1878,7 +1878,7 @@
     "localPath": "/images/games/curve-rush/cover.png",
     "width": 568,
     "height": 574,
-    "fileBytes": 211914,
+    "fileBytes": 54952,
     "usedOn": [
       "/games/curve-rush",
       "/games",
@@ -2030,7 +2030,7 @@
     "localPath": "/images/games/tap-road/cover.jpg",
     "width": 967,
     "height": 967,
-    "fileBytes": 281773,
+    "fileBytes": 44192,
     "usedOn": [
       "/games/tap-road",
       "/games",
@@ -2182,7 +2182,7 @@
     "localPath": "/images/games/head-basketball/cover.png",
     "width": 512,
     "height": 512,
-    "fileBytes": 256723,
+    "fileBytes": 80677,
     "usedOn": [
       "/games/head-basketball",
       "/games",
@@ -2334,7 +2334,7 @@
     "localPath": "/images/games/escape-road/cover.png",
     "width": 512,
     "height": 512,
-    "fileBytes": 192075,
+    "fileBytes": 54988,
     "usedOn": [
       "/games/escape-road",
       "/games",
@@ -2486,7 +2486,7 @@
     "localPath": "/images/games/trap-the-cat/cover.jpg",
     "width": 540,
     "height": 566,
-    "fileBytes": 44089,
+    "fileBytes": 15466,
     "usedOn": [
       "/games/trap-the-cat",
       "/games",
@@ -2638,7 +2638,7 @@
     "localPath": "/images/games/suika-game/cover.png",
     "width": 620,
     "height": 620,
-    "fileBytes": 700170,
+    "fileBytes": 143678,
     "usedOn": [
       "/games/suika-game",
       "/games",
