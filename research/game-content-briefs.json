@@ -1,0 +1,298 @@
+{
+  "generatedAt": "2026-09-21",
+  "language": "en",
+  "market": "global English-speaking browser players",
+  "briefs": [
+    {
+      "gameId": "krillion",
+      "playerTask": "Give one valid, comparatively uncommon answer to each of seven timed daily prompts.",
+      "input": "Keyboard or mobile text field, one confirmed answer per prompt.",
+      "progression": "Seven-prompt sequence followed by a score and depth/descent result.",
+      "failureRisks": [
+        "misreading the requested category",
+        "choosing obscurity over validity",
+        "spelling or autocorrect errors",
+        "letting the timer expire"
+      ],
+      "verifiedScope": "Visible live daily flow; iframe delivery remains provisional under the user-supplied URL.",
+      "articleFocus": [
+        "daily format",
+        "shortlist strategy",
+        "validity and rarity",
+        "depth interpretation",
+        "input and loading recovery"
+      ],
+      "screenshot_tasks": [
+        "media-game-krillion-screen-1",
+        "media-game-krillion-screen-2",
+        "media-game-krillion-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-krillion"
+        ],
+        "adoptedIds": [
+          "media-video-krillion"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "slope",
+      "playerTask": "Distance and survival are the whole objective. The course is assembled as the run continues, speed rises steadily, and one collision or fall ends the attempt, so a modest controlled line is more valuable than a dramatic last-second correction.",
+      "input": "Use the Left and Right Arrow keys or A and D to steer. There is no jump or brake button: speed, gravity, and the angle of each platform determine whether the ball stays centered, clips an obstacle, or sails into a gap.",
+      "progression": "Distance and survival are the whole objective. The course is assembled as the run continues, speed rises steadily, and one collision or fall ends the attempt, so a modest controlled line is more valuable than a dramatic last-second correction.",
+      "failureRisks": [
+        "The common mistake is oversteering after landing. Momentum remains active while the camera swings, so holding the previous direction can throw the ball off the opposite side. Red blocks are solid hazards; their glow is not decoration. Restart only after the result appears so the next run begins with clean input."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-slope-screen-1",
+        "media-game-slope-screen-2",
+        "media-game-slope-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-slope"
+        ],
+        "adoptedIds": [
+          "media-video-slope"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "2048",
+      "playerTask": "The named milestone is the 2048 tile, but the board can continue if the build allows it and legal moves remain. The run ends when all sixteen cells are occupied and no horizontal or vertical pair can merge. Score grows through combinations, while empty space is the practical resource that keeps future combinations possible.",
+      "input": "Press an Arrow key on desktop or swipe horizontally or vertically on touch screens. A move affects the entire grid, not one selected square. Each tile can normally merge only once during that move, which explains why a row of four equal numbers becomes two pairs rather than one instant high tile.",
+      "progression": "The named milestone is the 2048 tile, but the board can continue if the build allows it and legal moves remain. The run ends when all sixteen cells are occupied and no horizontal or vertical pair can merge. Score grows through combinations, while empty space is the practical resource that keeps future combinations possible.",
+      "failureRisks": [
+        "Randomly rotating through all four directions breaks the ordered edge and traps large values behind small ones. Another frequent error is chasing one attractive merge while filling the opposite side. If the board becomes crowded, stop building the next large tile and first create two or three empty cells with dependable pairs."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-2048-screen-1",
+        "media-game-2048-screen-2",
+        "media-game-2048-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-2048"
+        ],
+        "adoptedIds": [
+          "media-video-2048"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "curve-rush",
+      "playerTask": "Travel as far as possible, pass the marked horizon, and collect coins placed along useful arcs. Height can add excitement and scoring opportunities, but a clean downslope landing protects the run. A harsh nose-first contact or badly timed return can end the attempt even after a long jump.",
+      "input": "Hold the mouse button, touch, or the shown action key while descending to accelerate along the curve. Release near the rising face to leave the ground. Press again as the ball meets a downhill surface so it follows the sand instead of bouncing awkwardly. The current build teaches this hold-and-release rhythm before normal play.",
+      "progression": "Travel as far as possible, pass the marked horizon, and collect coins placed along useful arcs. Height can add excitement and scoring opportunities, but a clean downslope landing protects the run. A harsh nose-first contact or badly timed return can end the attempt even after a long jump.",
+      "failureRisks": [
+        "Holding through an uphill face wastes the launch and can bury the ball into the next trough. Releasing too late creates a flat jump with little landing time; releasing too early sends the ball high but slow. Coins are useful only when their line agrees with a survivable landing, so do not bend a stable arc merely to grab one."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-curve-rush-screen-1",
+        "media-game-curve-rush-screen-2",
+        "media-game-curve-rush-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-curve-rush"
+        ],
+        "adoptedIds": [
+          "media-video-curve-rush"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "tap-road",
+      "playerTask": "Survive an increasingly quick sequence of numbered spikes and track hazards while raising the distance or score display. Pickups can be collected when their lane is safe, but there is no health buffer in the verified run: direct contact ends the attempt and presents the restart state.",
+      "input": "Click, tap, or press the indicated action key to switch lanes. One input means one crossing; holding does not create a controlled turn. Because the ball keeps moving during the animation, a late tap may begin correctly but still collide before the lane change finishes.",
+      "progression": "Survive an increasingly quick sequence of numbered spikes and track hazards while raising the distance or score display. Pickups can be collected when their lane is safe, but there is no health buffer in the verified run: direct contact ends the attempt and presents the restart state.",
+      "failureRisks": [
+        "Players often tap twice when the visual crossing feels slow, which cancels the intended escape. Another mistake is following a collectible into a lane with no exit. As speed grows, move the focus farther up the road and use the obstacle numbers as landmarks instead of looking directly under the ball."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-tap-road-screen-1",
+        "media-game-tap-road-screen-2",
+        "media-game-tap-road-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-tap-road"
+        ],
+        "adoptedIds": [
+          "media-video-tap-road"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "head-basketball",
+      "playerTask": "Put the ball through the opponent's hoop more often before the match clock expires. Tournament play strings opponents together, while quick or local modes make it easier to learn movement. A missed shot stays live, so rebounds, blocks, and loose-ball recovery immediately become the next possession.",
+      "input": "Choose a one-player or two-player option, then use the control panel shown by the current build. Player one moves with the displayed letter keys and uses the assigned shoot or action keys; the second local player uses the shown alternate set. Check the in-game help screen because browser keyboard layouts can vary.",
+      "progression": "Put the ball through the opponent's hoop more often before the match clock expires. Tournament play strings opponents together, while quick or local modes make it easier to learn movement. A missed shot stays live, so rebounds, blocks, and loose-ball recovery immediately become the next possession.",
+      "failureRisks": [
+        "Repeated shooting from directly underneath the rim often creates vertical rebounds that favor the defender. Jumping or activating an action too early leaves the character unable to contest the real release. In two-player mode, confirm both control sets before the clock starts so browser shortcuts do not interrupt the match."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-head-basketball-screen-1",
+        "media-game-head-basketball-screen-2",
+        "media-game-head-basketball-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-head-basketball"
+        ],
+        "adoptedIds": [
+          "media-video-head-basketball"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "escape-road",
+      "playerTask": "Keep the chase alive, collect available cash or rewards, and increase the run score while the police response grows. There is no safe finish line in the endless mode. The attempt ends when the car is boxed in, disabled by repeated collisions, or unable to escape the surrounding vehicles.",
+      "input": "Use A and D or the Left and Right Arrow keys to steer according to the visible prompt. The car keeps moving, so steering changes its path rather than setting a destination. Brief inputs make smooth bends; long holds create sharp turns that can send the car into buildings or dead ends.",
+      "progression": "Keep the chase alive, collect available cash or rewards, and increase the run score while the police response grows. There is no safe finish line in the endless mode. The attempt ends when the car is boxed in, disabled by repeated collisions, or unable to escape the surrounding vehicles.",
+      "failureRisks": [
+        "Driving straight for too long lets faster pursuers line up behind the car, but turning at every junction can lead into a sealed courtyard. Watch the space ahead and one side route at the same time. Cash is never worth entering a narrow lane when several police cars are already close."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-escape-road-screen-1",
+        "media-game-escape-road-screen-2",
+        "media-game-escape-road-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-escape-road"
+        ],
+        "adoptedIds": [
+          "media-video-escape-road"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "trap-the-cat",
+      "playerTask": "Win by removing every possible path from the cat to the outer edge. Lose when the cat reaches an edge cell and escapes. The puzzle is not about chasing the current position; it is about shrinking the connected region that still contains a route outward.",
+      "input": "Click or tap one green hex to turn it into a blocked cell. You cannot place several walls before the cat responds, and occupied or already blocked cells are unavailable. Diagonal-looking connections count because each hex can touch six neighbors, so inspect the full ring around the cat.",
+      "progression": "Win by removing every possible path from the cat to the outer edge. Lose when the cat reaches an edge cell and escapes. The puzzle is not about chasing the current position; it is about shrinking the connected region that still contains a route outward.",
+      "failureRisks": [
+        "A single-file wall is fragile when the cat can walk around either end. Blocking the most obvious next cell can also push it toward a shorter escape on the opposite side. After every move, trace at least two routes from the new position before choosing the next hex."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-trap-the-cat-screen-1",
+        "media-game-trap-the-cat-screen-2",
+        "media-game-trap-the-cat-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-trap-the-cat"
+        ],
+        "adoptedIds": [
+          "media-video-trap-the-cat"
+        ],
+        "rejectedIds": []
+      }
+    },
+    {
+      "gameId": "suika-game",
+      "playerTask": "Create increasingly large fruit, work toward the watermelon, and accumulate score without letting the pile remain above the danger line. The game ends when the container can no longer safely hold the active stack. A low stable floor is therefore as important as any single high-value merge.",
+      "input": "Move the drop position with the pointer or the shown horizontal controls, then click, tap, or press the action key to release. Once a fruit falls, gravity and collisions take over. Two matching fruits that touch merge into the next larger type, which may push neighboring pieces into new contacts.",
+      "progression": "Create increasingly large fruit, work toward the watermelon, and accumulate score without letting the pile remain above the danger line. The game ends when the container can no longer safely hold the active stack. A low stable floor is therefore as important as any single high-value merge.",
+      "failureRisks": [
+        "Dropping every piece in the center creates a tall unstable tower. Large fruit can roll unexpectedly after a merge, and a chain reaction may raise another piece even while the total count falls. Avoid sealing tiny fruit beneath incompatible larger ones where they cannot reach a match."
+      ],
+      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "articleFocus": [
+        "start",
+        "controls",
+        "mechanics",
+        "failure",
+        "device help"
+      ],
+      "screenshot_tasks": [
+        "media-game-suika-game-screen-1",
+        "media-game-suika-game-screen-2",
+        "media-game-suika-game-screen-3"
+      ],
+      "youtube_research": {
+        "decision": "adopted",
+        "candidateIds": [
+          "media-video-suika-game"
+        ],
+        "adoptedIds": [
+          "media-video-suika-game"
+        ],
+        "rejectedIds": []
+      }
+    }
+  ]
+}

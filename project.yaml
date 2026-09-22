@@ -1,0 +1,46 @@
+project:
+  keyword: "krillion"
+  language: "en"
+  language_basis: "The live game UI, recurring search queries, official prompts, and the strongest player discussions are in English."
+  target_market: "global English-speaking players"
+  target_market_basis: "The daily challenge is shared globally on a UTC schedule, while English-language results and player discussions dominate the observed query set."
+paths:
+  workflow_dir: "D:/wh/Agent/Game-Agent"
+  project_dir: "D:/wh/202609/Krillion/Krillion/krillion"
+  research_dir: "research"
+  planning_dir: "planning"
+  reports_dir: "reports"
+  handoff_dir: "handoff"
+runtime:
+  frontend_framework: "Next.js 16.3.5 App Router"
+  package_manager: "npm"
+  node_runtime: "Node.js 24.19.0"
+  rendering: "build-time static generation with client islands for the player, menu, video consent, fullscreen, and sticky rail"
+  production_build_command: "npm run build"
+  production_output_dir: "out"
+  has_existing_code: true
+  existing_state: "create-next-app starter"
+game:
+  config_path: "data/games/main-game.json"
+domain:
+  value: "testkrillion.com"
+  origin: "https://testkrillion.com"
+  status: "configured"
+deployment:
+  target: "portable static hosting"
+  production_output: "Next.js output: export in out/ with host-neutral HTML assets, CSP meta enforcement, and an emitted _headers policy for supporting hosts"
+execution:
+  network_research: true
+  code_changes: true
+  install_needed_dependencies: true
+  run_checks_and_build: true
+  deploy: false
+  git_commit: false
+boundaries:
+  forbidden_operations:
+    - "read-or-reuse-other-game-projects"
+    - "deploy-without-explicit-user-request"
+    - "git-commit-without-explicit-user-request"
+notes:
+  - "The supplied main-game iframe is preserved verbatim and remains provisional until browser validation."
+  - "Language, market, deployment target, and production output are decided in later flows."

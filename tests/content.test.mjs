@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const main = JSON.parse(fs.readFileSync("data/games/main-game.json","utf8"));
+const games = JSON.parse(fs.readFileSync("data/games/games.json","utf8"));
+test("the supplied main iframe is preserved",()=>assert.equal(main.player.iframeSrc,"https://www.krillion.org/play/daily/"));
+test("eight stable additional games exist",()=>assert.equal(games.length,8));
+test("home flags are 8 featured, 8 new, 6 recommended",()=>{assert.equal(games.filter((game)=>game.flags.isFeaturedHome).length,8);assert.equal(games.filter((game)=>game.flags.isNewHome).length,8);assert.equal(games.filter((game)=>game.flags.isRecommendedHome).length,6);});
+test("every additional game has six non-self relations",()=>games.forEach((game)=>{assert.equal(game.relatedGameIds.length,6);assert.ok(!game.relatedGameIds.includes(game.id));}));
+test("every game sandbox blocks popups and top navigation",()=>[main,...games].forEach((game)=>{assert.ok(game.player.sandbox.includes("allow-scripts"));for(const token of ["allow-popups","allow-popups-to-escape-sandbox","allow-top-navigation","allow-top-navigation-by-user-activation"])assert.ok(!game.player.sandbox.includes(token),`${game.id} must not include ${token}`);}));
+test("every addition uses its matching AZGames embed path",()=>games.forEach((game)=>assert.equal(game.player.iframeSrc,`https://azgames.io/${game.slug}.embed`)));

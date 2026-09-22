@@ -1,0 +1,62 @@
+{
+  "states": [
+    {
+      "step": 0,
+      "pageUrl": "http://127.0.0.1:4173/games/guess-their-answer",
+      "pages": 1,
+      "frameUrl": "https://games.cdn.famobi.com/html5games/g/guess-their-answer/v040/?fg_domain=play.famobi.com&fg_aid=A1000-111&fg_uid=e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8&fg_pid=e37ab3ce-88cd-4438-9b9c-a37df5d33736&fg_beat=150&original_ref=",
+      "liveFrameUrl": "https://play.famobi.com/html5game/e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8/A1000-11",
+      "frameTitle": "Guess Their Answer"
+    },
+    {
+      "step": 1,
+      "pageUrl": "http://127.0.0.1:4173/games/guess-their-answer",
+      "pages": 1,
+      "frameUrl": "https://games.cdn.famobi.com/html5games/g/guess-their-answer/v040/?fg_domain=play.famobi.com&fg_aid=A1000-111&fg_uid=e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8&fg_pid=e37ab3ce-88cd-4438-9b9c-a37df5d33736&fg_beat=150&original_ref=",
+      "liveFrameUrl": "https://play.famobi.com/html5game/e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8/A1000-11",
+      "frameTitle": "Guess Their Answer"
+    },
+    {
+      "step": 2,
+      "pageUrl": "http://127.0.0.1:4173/games/guess-their-answer",
+      "pages": 1,
+      "frameUrl": "https://games.cdn.famobi.com/html5games/g/guess-their-answer/v040/?fg_domain=play.famobi.com&fg_aid=A1000-111&fg_uid=e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8&fg_pid=e37ab3ce-88cd-4438-9b9c-a37df5d33736&fg_beat=150&original_ref=",
+      "liveFrameUrl": "https://play.famobi.com/html5game/e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8/A1000-11",
+      "frameTitle": "Guess Their Answer"
+    },
+    {
+      "step": 3,
+      "pageUrl": "http://127.0.0.1:4173/games/guess-their-answer",
+      "pages": 1,
+      "frameUrl": "https://games.cdn.famobi.com/html5games/g/guess-their-answer/v040/?fg_domain=play.famobi.com&fg_aid=A1000-111&fg_uid=e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8&fg_pid=e37ab3ce-88cd-4438-9b9c-a37df5d33736&fg_beat=150&original_ref=",
+      "liveFrameUrl": "https://play.famobi.com/html5game/e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8/A1000-11",
+      "frameTitle": "Guess Their Answer"
+    },
+    {
+      "step": 4,
+      "pageUrl": "http://127.0.0.1:4173/games/guess-their-answer",
+      "pages": 1,
+      "frameUrl": "https://games.cdn.famobi.com/html5games/g/guess-their-answer/v040/?fg_domain=play.famobi.com&fg_aid=A1000-111&fg_uid=e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8&fg_pid=e37ab3ce-88cd-4438-9b9c-a37df5d33736&fg_beat=150&original_ref=",
+      "liveFrameUrl": "https://play.famobi.com/html5game/e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8/A1000-11",
+      "frameTitle": "Guess Their Answer"
+    }
+  ],
+  "events": [
+    {
+      "type": "console:error",
+      "text": "Blocked opening 'https://play.famobi.com/guess-their-answer/A1000-11' in a new window because the request was made in a sandboxed frame whose 'allow-popups' permission is not set."
+    },
+    {
+      "type": "console:error",
+      "text": "Blocked opening 'https://play.famobi.com/guess-their-answer/A1000-11' in a new window because the request was made in a sandboxed frame whose 'allow-popups' permission is not set."
+    },
+    {
+      "type": "console:error",
+      "text": "Blocked opening 'https://play.famobi.com/guess-their-answer/A1000-11' in a new window because the request was made in a sandboxed frame whose 'allow-popups' permission is not set."
+    },
+    {
+      "type": "console:error",
+      "text": "Blocked opening 'https://play.famobi.com/guess-their-answer/A1000-11' in a new window because the request was made in a sandboxed frame whose 'allow-popups' permission is not set."
+    }
+  ]
+}

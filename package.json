@@ -1,0 +1,37 @@
+{
+  "name": "krillion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run content:release && next build && node scripts/emit-host-files.mjs",
+    "preview": "node scripts/serve-static.mjs out",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --test tests/content.test.mjs",
+    "test:e2e": "playwright test",
+    "content:dev": "node scripts/validate-content.mjs dev",
+    "content:media": "node scripts/validate-content.mjs media",
+    "content:prepublish": "node scripts/validate-content.mjs prepublish",
+    "content:release": "node scripts/validate-content.mjs release",
+    "content:update": "node scripts/update-content-state.mjs",
+    "audit:output": "node scripts/verify-static-output.mjs",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build && npm run audit:output && npm run test:e2e"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "guess-their-answer",
+    "directUrl": "https://play.famobi.com/guess-their-answer/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/g/guess-their-answer/v040/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=e4bc01d5-3b0b-439e-80d5-0b4ac3897ac8&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=315&original_ref=",
+    "title": "Guess Their Answer",
+    "canvasCount": 1,
+    "changedAfterInput": true,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "words-of-wonders",
+    "directUrl": "https://play.famobi.com/words-of-wonders/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/w/words-of-wonders/v050/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=909e737d-670d-4a40-be08-73165d13351d&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=316&original_ref=",
+    "title": "Words of Wonders",
+    "canvasCount": 0,
+    "changedAfterInput": false,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "word-detector",
+    "directUrl": "https://play.famobi.com/word-detector/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/w/word-detector/v390/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=fa994966-a4d2-4aa5-98b1-5b9f138b1edd&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=316&original_ref=",
+    "title": "Word Detector",
+    "canvasCount": 1,
+    "changedAfterInput": false,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "word-search-classic",
+    "directUrl": "https://play.famobi.com/word-search-classic/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/w/word-search-classic/v330/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=b47a1c8a-8f40-4d93-825f-e96652354ded&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=316&original_ref=",
+    "title": "Word Search Classic",
+    "canvasCount": 1,
+    "changedAfterInput": false,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "text-twist-2",
+    "directUrl": "https://play.famobi.com/text-twist-2/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/t/text-twist-2/v110/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=40935b5f-cfef-4ac2-9179-549869282f4b&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=313&original_ref=",
+    "title": "Text Twist 2",
+    "canvasCount": 0,
+    "changedAfterInput": false,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "animal-quiz",
+    "directUrl": "https://play.famobi.com/animal-quiz/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/a/animal-quiz/v680/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=a5db53c9-e8fe-47c5-aba3-8148d460a4f3&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=316&original_ref=",
+    "title": "Animal Quiz",
+    "canvasCount": 0,
+    "changedAfterInput": false,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "sweet-hangman",
+    "directUrl": "https://play.famobi.com/sweet-hangman/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/s/sweet-hangman/v070/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=aa85b89b-8a1a-4af2-9f1d-774821215eb4&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=316&original_ref=",
+    "title": "Sweet Hangman",
+    "canvasCount": 1,
+    "changedAfterInput": true,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  },
+  {
+    "id": "word-bird",
+    "directUrl": "https://play.famobi.com/word-bird/A-FAMOBI-COM",
+    "liveUrl": "https://games.cdn.famobi.com/html5games/w/word-bird/v230/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=624786cb-047e-424f-859e-e16590f5293c&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=317&original_ref=",
+    "title": "Word Bird",
+    "canvasCount": 1,
+    "changedAfterInput": false,
+    "pageCount": 1,
+    "blockedPopup": false,
+    "errors": []
+  }
+]

@@ -1,0 +1,278 @@
+{
+  "id": "krillion-loading-input-help",
+  "slug": "krillion-loading-and-input-help",
+  "status": "published",
+  "title": "Fix Krillion Loading, Keyboard, and Mobile Problems",
+  "author": "Checkpoint Nomad",
+  "summary": "Diagnose Krillion loading, blank-player, keyboard-focus, mobile-layout, fullscreen, answer-rejection, and connection problems in the safest order.",
+  "tags": ["krillion", "troubleshooting", "browser"],
+  "publishedAt": "2026-09-21",
+  "updatedAt": "2026-09-22",
+  "cover": {
+    "src": "/images/games/krillion/gameplay-3.webp",
+    "alt": "Krillion answer feedback shown while the prompt countdown continues",
+    "width": 1280,
+    "height": 720
+  },
+  "seo": {
+    "title": "Fix Krillion Loading, Keyboard and Mobile Issues",
+    "description": "Fix Krillion blank-player, loading, keyboard-focus, mobile, fullscreen, answer-input, cookie, and connection problems with a safe step-by-step checklist."
+  },
+  "sections": [
+    {
+      "id": "identify-the-problem",
+      "title": "First identify which part is failing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Krillion problems look similar when we are eager to start, but they need different fixes. The surrounding page can be working while the embedded game is still waiting to load. The game can be visible while the answer field lacks keyboard focus. An answer can be rejected even though input and connection are working perfectly. Before refreshing anything, we identify the last action that succeeded and the first thing that did not."
+        },
+        {
+          "type": "table",
+          "columns": ["What we can see", "Most likely problem area", "First action"],
+          "rows": [
+            ["Cover image and Play Now button", "The game has not been started yet", "Press Play Now once"],
+            ["Loading message after Play Now", "The external game is still connecting", "Wait for the visible result or timeout"],
+            ["Blank or unavailable player message", "Connection, filtering, or host availability", "Use Retry once after the state settles"],
+            ["Prompt visible but typing does nothing", "Answer field does not have focus", "Click or tap directly inside the field"],
+            ["Text appears but submit is hidden", "Mobile keyboard, zoom, or orientation layout", "Scroll within view or use webpage fullscreen"],
+            ["Not on the answer list message", "Gameplay validation, not a loading failure", "Enter a different valid answer while time remains"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "label": "Do not refresh first",
+          "body": "A refresh can discard the current screen without fixing the underlying cause. We try the smallest reversible action that matches the visible state."
+        }
+      ]
+    },
+    {
+      "id": "preflight-check",
+      "title": "Run this preflight check before the Daily Dive",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-1.webp",
+          "alt": "Krillion Daily Dive opening screen before the timed prompts begin",
+          "width": 1280,
+          "height": 720,
+          "caption": "The opening screen is the right place to fix display, keyboard, and connection problems. The timed prompts have not started yet."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {"title": "Confirm the player reaches the opening screen", "body": "We wait until Begin Descent and the seven-question description are visible."},
+            {"title": "Choose the keyboard language", "body": "Switching layouts during a 25-second prompt can change punctuation, autocorrect, and proper-name spelling."},
+            {"title": "Test the viewing mode", "body": "We choose normal view or Webpage Fullscreen before starting and ensure no browser bar covers important controls."},
+            {"title": "Check phone orientation", "body": "We settle on portrait or landscape while the game is idle. Rotating during a timer can resize the player and close the keyboard."},
+            {"title": "Close unnecessary overlays", "body": "Consent notices or browser panels should be handled before Begin Descent, not after the first prompt appears."}
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This one-minute check protects the daily attempt better than emergency troubleshooting under a countdown. We do not need to type an answer before starting, but we should know where the input field will appear and whether the on-screen keyboard leaves enough room for the prompt and submit control."
+        }
+      ]
+    },
+    {
+      "id": "blank-or-stalled-player",
+      "title": "Fix a blank, slow, or stalled player",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {"title": "Wait for the current state to finish", "body": "A slow connection may need the full loading window. Repeated clicks do not make the game host respond faster."},
+            {"title": "Use Retry once", "body": "A deliberate retry starts a clean loading attempt. We then wait again rather than stacking more actions."},
+            {"title": "Check whether the connection works elsewhere", "body": "If other pages are also failing, we restore the network before blaming the game."},
+            {"title": "Review site-specific blocking", "body": "Script blockers, strict tracking protection, DNS filters, school or office networks, and regional rules can stop an embedded game from responding."},
+            {"title": "Perform one normal page refresh", "body": "We use refresh only after the controlled retry fails. We do not open a chain of duplicate tabs."},
+            {"title": "Return later if the host remains unavailable", "body": "An external service outage cannot be repaired from the player page. The guides and other games remain usable."}
+          ]
+        },
+        {
+          "type": "table",
+          "columns": ["Symptom", "Useful check", "What not to do"],
+          "rows": [
+            ["Loading lasts unusually long", "Compare Wi-Fi and mobile data if available", "Press Play Now repeatedly"],
+            ["Works on one network only", "Check DNS, firewall, or managed-network filtering", "Disable protection for every site"],
+            ["Works in one browser only", "Compare script, cookie, and tracking settings for this host", "Install unfamiliar extensions promising a fix"],
+            ["Failed after previously working", "Try one refresh and return later", "Assume the saved daily state can be safely reset"],
+            ["Unexpected login or payment screen", "Stop and verify the address and context", "Enter personal or financial information"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "label": "Protect personal information",
+          "body": "A normal Krillion Daily Dive should not require payment details, an identity document, or an unfamiliar account login. We stop if an unexpected screen asks for them."
+        }
+      ]
+    },
+    {
+      "id": "keyboard-focus",
+      "title": "Fix a keyboard that will not type into the answer box",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-2.webp",
+          "alt": "Krillion prompt with the answer field, submit button, and countdown visible",
+          "width": 1280,
+          "height": 720,
+          "caption": "The prompt can be fully visible while keyboard focus remains elsewhere. We tap inside the answer field and look for the caret."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {"title": "Click or tap the centre of the field", "body": "We do not assume the game took focus merely because the prompt appeared."},
+            {"title": "Look for a caret or keyboard", "body": "A blinking caret on desktop or the software keyboard on mobile confirms that the field is active."},
+            {"title": "Enter one test character", "body": "If it appears in the box, we continue typing. If the page scrolls or a shortcut activates, focus is still outside the field."},
+            {"title": "Exit Browser Fullscreen if shortcuts interfere", "body": "We return to a simpler view, focus the field again, and use Webpage Fullscreen later if needed."},
+            {"title": "Wait for prompt transitions", "body": "Typing during the animation between questions can send a key to the old screen. We wait for the new timer and field."}
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If one specific key or language behaves incorrectly, the problem is usually the active keyboard layout rather than Krillion itself. We switch layouts with the device control, return to the field, and retype only the affected characters. We avoid browser-wide resets during a live prompt because they cost more time than using a shorter fallback answer."
+        }
+      ]
+    },
+    {
+      "id": "mobile-input",
+      "title": "Fix mobile keyboard, autocorrect, and covered controls",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Mobile play adds three common risks: the software keyboard can cover the submit control, autocorrect can replace an uncommon proper noun, and a rotation can resize the embedded player while the timer continues. We reduce all three before the first prompt. During the run, we keep the device orientation stable and read the final text in the field rather than trusting what we remember typing."
+        },
+        {
+          "type": "table",
+          "columns": ["Mobile symptom", "Fast recovery", "Prevention for the next run"],
+          "rows": [
+            ["Submit button hidden by keyboard", "Use the keyboard action key if it clearly submits, or scroll just enough to reveal the control", "Test portrait and landscape on the opening screen"],
+            ["Autocorrect changes a proper noun", "Tap the changed word and restore the conventional spelling", "Disable aggressive correction for the run or add the word only if appropriate"],
+            ["Keyboard closes after prompt change", "Tap the new answer field once", "Wait for the new prompt to settle before typing"],
+            ["Double letters or missed taps", "Use a shorter valid candidate when time is low", "Avoid rapid repeated taps while the keyboard animates"],
+            ["Controls are cropped", "Return zoom to a standard level or use Webpage Fullscreen", "Set zoom before Begin Descent"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "label": "Choose for the device as well as the category",
+          "body": "When two answers are equally strong, we use the one we can type accurately on the current keyboard. Rarity has no value if autocorrect or the timer destroys the entry."
+        }
+      ]
+    },
+    {
+      "id": "rejection-versus-bug",
+      "title": "Tell answer rejection apart from a technical bug",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-3.webp",
+          "alt": "Krillion showing an answer-list rejection while the countdown continues",
+          "width": 1280,
+          "height": 720,
+          "caption": "This is gameplay feedback, not a frozen player. The timer is still running and the message asks us to try another answer."
+        },
+        {
+          "type": "paragraph",
+          "text": "An answer-list rejection proves that the field, submit action, and game response are all working. The fix is another answer, not a page reload. We first check whether the entry was the wrong type, missed a qualifier, used a nonstandard name, or contained a decisive typo. If the category fit was doubtful, we switch candidates. If only the spelling was wrong and enough time remains, we enter the standard form once."
+        },
+        {
+          "type": "table",
+          "columns": ["Signal", "Gameplay issue or technical issue?", "Correct response"],
+          "rows": [
+            ["Not on this answer list; try another", "Gameplay validation", "Use a different valid candidate"],
+            ["Rarity tier appears", "Normal gameplay", "Read the result and prepare for the next prompt"],
+            ["Button reacts but nothing changes for several seconds", "Possible connection delay", "Wait briefly; do not multiply clicks"],
+            ["No caret and no typed text", "Focus issue", "Tap directly inside the answer field"],
+            ["Entire player disappears or reports unavailable", "Loading or host issue", "Use the controlled retry sequence"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful example is entering salamander for a prompt that specifically asks for a mammal or reptile. The answer is related to the habitat but belongs to a different animal class. Retrying the same word, changing capitalization, or refreshing the page cannot repair that mismatch. A mammal or reptile from the prepared shortlist is the correct recovery."
+        }
+      ]
+    },
+    {
+      "id": "fullscreen-and-display",
+      "title": "Use fullscreen, zoom, and orientation without losing the prompt",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Webpage Fullscreen and Browser Fullscreen solve different problems. Webpage Fullscreen enlarges the game within the Krillion page and is our normal choice when the prompt or answer box feels small. Browser Fullscreen asks the browser to use the complete display and removes more interface chrome. Neither mode adds time, changes answers, or improves the connection."
+        },
+        {
+          "type": "table",
+          "columns": ["Display choice", "Best use", "Possible drawback"],
+          "rows": [
+            ["Normal page view", "Reading the guide and checking player status", "The game area may be smaller"],
+            ["Webpage Fullscreen", "Focused play with familiar browser controls still available", "Mobile keyboard can still reduce visible height"],
+            ["Browser Fullscreen", "Maximum screen area on a stable desktop setup", "Exit shortcuts and focus changes can be distracting"],
+            ["Browser zoom", "Correcting unusually small or cropped interface text", "Extreme zoom can hide controls or change layout"],
+            ["Phone rotation", "Choosing the orientation that exposes prompt, field, and submit together", "Rotating during a countdown can close the keyboard"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "We make display changes on the opening screen or after the final result, not halfway through a question. If a control becomes cropped, we first return zoom to a normal value and try Webpage Fullscreen. On a phone, we lock the chosen orientation for the duration of the seven prompts when the device supports it."
+        }
+      ]
+    },
+    {
+      "id": "privacy-and-network",
+      "title": "Handle cookies, blockers, and restricted networks safely",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An embedded game may depend on JavaScript, site data, and a connection to its own host. Strict tracking protection, third-party content blocking, DNS filters, VPN routing, parental controls, and managed school or office networks can interrupt that connection. We change only the narrow setting connected to the game host and restore it afterward if needed. We do not disable browser protection globally just to test one page."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {"title": "Check for a visible browser or consent notice", "body": "We read the notice and decide within that screen rather than clicking random empty areas."},
+            {"title": "Test a normal, trusted network", "body": "A second connection can reveal whether a managed network or VPN route is the cause."},
+            {"title": "Review site-specific permissions", "body": "We allow only what the game needs, such as JavaScript or ordinary site data, and avoid unrelated camera, microphone, or location requests."},
+            {"title": "Keep blockers scoped", "body": "If a content blocker is responsible, we make a temporary exception for the exact host instead of turning it off everywhere."},
+            {"title": "Stop at unexpected identity or payment requests", "body": "Those are not normal requirements for playing the Daily Dive from this page."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting-faq",
+      "title": "Krillion troubleshooting checklist and FAQ",
+      "blocks": [
+        {
+          "type": "list",
+          "style": "unordered",
+          "items": [
+            "Press Play Now once and wait for a clear loading result.",
+            "Use Retry once before refreshing the complete page.",
+            "Fix keyboard language, orientation, zoom, and fullscreen before Begin Descent.",
+            "Tap the answer field and verify the caret before blaming the keyboard.",
+            "Treat answer-list feedback as gameplay, not a broken connection.",
+            "Change only site-specific privacy or blocking settings.",
+            "Return later when the external game host remains unavailable."
+          ]
+        },
+        {
+          "type": "faq",
+          "items": [
+            {"question": "Why is nothing shown before I press Play Now?", "answer": "That is expected. The game player is started on demand, while the cover and guide remain available immediately."},
+            {"question": "How long should I wait before using Retry?", "answer": "Wait until the current loading state reports a timeout or failure. Retrying while it is still connecting can make the situation harder to read."},
+            {"question": "Why can I see the prompt but not type?", "answer": "The surrounding page probably has focus. Tap directly inside the answer box and look for the caret or mobile keyboard."},
+            {"question": "Is not on the answer list a connection error?", "answer": "No. It is normal answer validation. Enter a different valid candidate while the countdown continues."},
+            {"question": "Which fullscreen option should I use?", "answer": "We start with Webpage Fullscreen because it enlarges the player without taking over the complete browser. Browser Fullscreen is useful when browser chrome is the main space problem."},
+            {"question": "Should I clear all browser data?", "answer": "Not as a first step. That is broad and can remove unrelated sessions. We begin with Retry, one refresh, connection checks, and narrow site-specific settings."},
+            {"question": "What if Krillion still will not load?", "answer": "The external host may be unavailable or blocked on the current network. Keep protections in place, return later, or play another game while the host recovers."}
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedGuideIds": ["krillion-how-to-play", "krillion-scoring-rare-answers"]
+}

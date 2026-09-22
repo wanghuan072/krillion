@@ -1,0 +1,61 @@
+[
+  {
+    "id": "word-detector",
+    "cookie": null,
+    "frameUrl": "https://games.cdn.famobi.com/html5games/w/word-detector/v390/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=fa994966-a4d2-4aa5-98b1-5b9f138b1edd&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=323&original_ref=",
+    "title": "Word Detector",
+    "pages": 1,
+    "shots": [
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-detector/00-loaded.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-detector/01-play.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-detector/02-consent.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-detector/03-after-consent.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-detector/04-input.png"
+    ],
+    "events": []
+  },
+  {
+    "id": "word-search-classic",
+    "cookie": null,
+    "frameUrl": "https://games.cdn.famobi.com/html5games/w/word-search-classic/v330/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=b47a1c8a-8f40-4d93-825f-e96652354ded&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=324&original_ref=",
+    "title": "Word Search Classic",
+    "pages": 1,
+    "shots": [
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-search-classic/00-loaded.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-search-classic/01-quick-game.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-search-classic/02-category.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-search-classic/03-level-one.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/word-search-classic/04-board.png"
+    ],
+    "events": []
+  },
+  {
+    "id": "animal-quiz",
+    "cookie": null,
+    "frameUrl": "https://games.cdn.famobi.com/html5games/a/animal-quiz/v680/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=a5db53c9-e8fe-47c5-aba3-8148d460a4f3&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=327&original_ref=#",
+    "title": "Animal Quiz",
+    "pages": 1,
+    "shots": [
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/animal-quiz/00-loaded.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/animal-quiz/01-start.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/animal-quiz/02-answer.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/animal-quiz/03-answer.png"
+    ],
+    "events": []
+  },
+  {
+    "id": "sweet-hangman",
+    "cookie": null,
+    "frameUrl": "https://games.cdn.famobi.com/html5games/s/sweet-hangman/v070/?fg_domain=play.famobi.com&fg_aid=A-FAMOBI-COM&fg_uid=aa85b89b-8a1a-4af2-9f1d-774821215eb4&fg_pid=96ab9c2f-6013-4b31-96dc-ccb5c7a89329&fg_beat=325&original_ref=",
+    "title": "Sweet Hangman",
+    "pages": 1,
+    "shots": [
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/sweet-hangman/00-loaded.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/sweet-hangman/01-start.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/sweet-hangman/02-food-ad-wait.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/sweet-hangman/04-close-ad.png",
+      "D:/wh/202609/Krillion/Krillion/krillion/reports/gameplay-investigation/sweet-hangman/05-letter.png"
+    ],
+    "events": []
+  }
+]

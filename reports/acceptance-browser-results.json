@@ -1,0 +1,1104 @@
+[
+  {
+    "width": 1464,
+    "route": "/",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "56px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 338,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1018,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1685,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7986,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/slope",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 6945,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/2048",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7265,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/curve-rush",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7183,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/tap-road",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7027,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/head-basketball",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7211,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/escape-road",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7158,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/trap-the-cat",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7102,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1464,
+    "route": "/games/suika-game",
+    "status": 200,
+    "mainWidth": 1400,
+    "h1Size": "43.92px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 32,
+      "right": 1020,
+      "top": 330,
+      "width": 988
+    },
+    "recommended": {
+      "left": 32,
+      "right": 1020,
+      "top": 1010,
+      "width": 988
+    },
+    "article": {
+      "left": 32,
+      "right": 1020,
+      "top": 1677,
+      "width": 988
+    },
+    "video": {
+      "left": 32,
+      "right": 1020,
+      "top": 7131,
+      "width": 988
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "52px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 324,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 803,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1727,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 8320,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/slope",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 6961,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/2048",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7228,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/curve-rush",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7201,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/tap-road",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7070,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/head-basketball",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7230,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/escape-road",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7122,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/trap-the-cat",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7121,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/games/suika-game",
+    "status": 200,
+    "mainWidth": 984,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 20,
+      "right": 652,
+      "top": 316,
+      "width": 632
+    },
+    "recommended": {
+      "left": 20,
+      "right": 652,
+      "top": 795,
+      "width": 632
+    },
+    "article": {
+      "left": 20,
+      "right": 652,
+      "top": 1719,
+      "width": 632
+    },
+    "video": {
+      "left": 20,
+      "right": 652,
+      "top": 7175,
+      "width": 632
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "40px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 293,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 821,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1757,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 8140,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/slope",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 6912,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/2048",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 7127,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/curve-rush",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 7127,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/tap-road",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 7048,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/head-basketball",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 7155,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/escape-road",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 7048,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/trap-the-cat",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 6992,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/games/suika-game",
+    "status": 200,
+    "mainWidth": 736,
+    "h1Size": "34px",
+    "playVisible": true,
+    "initialGameFrames": 0,
+    "initialVideoFrames": 1,
+    "player": {
+      "left": 16,
+      "right": 752,
+      "top": 292,
+      "width": 736
+    },
+    "recommended": {
+      "left": 16,
+      "right": 752,
+      "top": 819,
+      "width": 736
+    },
+    "article": {
+      "left": 16,
+      "right": 752,
+      "top": 1756,
+      "width": 736
+    },
+    "video": {
+      "left": 16,
+      "right": 752,
+      "top": 7021,
+      "width": 736
+    },
+    "featured": 6,
+    "newGames": 6,
+    "recommendedCount": 6,
+    "errors": []
+  },
+  {
+    "sitemapRoute": "/",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/guides",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/privacy",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/terms",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/copyright",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/about",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/contact",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/slope",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/2048",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/curve-rush",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/tap-road",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/head-basketball",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/escape-road",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/trap-the-cat",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/games/suika-game",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/guides/how-to-play-krillion",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/guides/krillion-scoring-and-rare-answers",
+    "status": 200
+  },
+  {
+    "sitemapRoute": "/guides/krillion-loading-and-input-help",
+    "status": 200
+  }
+]

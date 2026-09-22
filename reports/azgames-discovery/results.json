@@ -1,0 +1,281 @@
+[
+  {
+    "slug": "slope-2",
+    "pageUrl": "https://azgames.io/slope-2",
+    "embedUrl": "https://azgames.io/slope-2.embed",
+    "ogImage": "/upload/imgs/slope2.png",
+    "frames": [
+      "https://azgames.io/slope-2.embed",
+      "https://game.azgame.io/slope-2/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "heading": "Slope 2",
+    "embedTitle": "Play Slope 2 Game Online!"
+  },
+  {
+    "slug": "tap-road",
+    "pageUrl": "https://azgames.io/tap-road",
+    "embedUrl": "https://azgames.io/tap-road.embed",
+    "ogImage": "/upload/imgs/taproad.jpg",
+    "frames": [
+      "https://azgames.io/tap-road.embed",
+      "https://azgames.io/game/tap-road/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "NotSupportedError: screen.orientation.lock() is not available on this device.",
+      "The JavaScript function 'Pointer_stringify(ptrToSomeCString)' is obsoleted and will be removed in a future Unity version. Please call 'UTF8ToString(ptrToSomeCString)' instead.",
+      "Fullscreen is not supported on this browser.\n"
+    ],
+    "heading": "Tap Road",
+    "embedTitle": "Play Tap Road Game Online!"
+  },
+  {
+    "slug": "curve-rush",
+    "pageUrl": "https://azgames.io/curve-rush",
+    "embedUrl": "https://azgames.io/curve-rush.embed",
+    "ogImage": "/upload/imgs/curverush2.png",
+    "frames": [
+      "https://azgames.io/curve-rush.embed",
+      "https://game.azgame.io/curve-rush/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "heading": "Curve Rush",
+    "embedTitle": "Play Curve Rush Game Online!"
+  },
+  {
+    "slug": "snow-road",
+    "pageUrl": "https://azgames.io/snow-road",
+    "embedUrl": "https://azgames.io/snow-road.embed",
+    "ogImage": "/upload/imgs/snowroad4.png",
+    "frames": [
+      "https://azgames.io/snow-road.embed",
+      "https://game.azgame.io/snow-road/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "Recursive Serialization is not supported. You can't dereference a PPtr while loading. (Constructors of C# classes may not load objects either. See stacktrace.)\n",
+      "Access to fetch at 'https://api.azgame.io/data/image/promotion/escape-road-winter.png' from origin 'https://game.azgame.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load promotion image: Unknown Error\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakLower/Snow' with Mesh 'polySurface80' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakLower/OakLowerStump' with Mesh 'polySurface132' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch0' with Mesh 'polySurface104' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch1' with Mesh 'polySurface124' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch2' with Mesh 'polySurface131' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch3' with Mesh 'polySurface106' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch4' with Mesh 'polySurface2' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch5' with Mesh 'polySurface130' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch6' with Mesh 'polySurface98' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch7' with Mesh 'polySurface83' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch8' with Mesh 'polySurface10' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch10' with Mesh 'polySurface78' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch11' with Mesh 'polySurface85' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side1/Oak/OakUpper/OakBranch12' with Mesh 'polySurface101' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "Fullscreen is not supported on this browser.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakLower/Snow' with Mesh 'polySurface80' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakLower/OakLowerStump' with Mesh 'polySurface132' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch0' with Mesh 'polySurface104' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch1' with Mesh 'polySurface124' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch2' with Mesh 'polySurface131' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch3' with Mesh 'polySurface106' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch4' with Mesh 'polySurface2' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch5' with Mesh 'polySurface130' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch6' with Mesh 'polySurface98' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch7' with Mesh 'polySurface83' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch8' with Mesh 'polySurface10' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch10' with Mesh 'polySurface78' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch11' with Mesh 'polySurface85' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n",
+      "This Mesh Collider is attached to GameObject at path 'GenerationControl/Terrain/Structure_EasyObstacles_MixedTrees/Chunk_3_MixedTrees_Side3/Oak/OakUpper/OakBranch12' with Mesh 'polySurface101' in Scene 'GameWorld' but doesn't have Read/Write enabled. Only colliders that have default cooking options, are not scaled non-uniformly, and their meshes are not marked dirty can leave this disabled.\n"
+    ],
+    "heading": "Snow Road",
+    "embedTitle": "Play Snow Road Game Online!"
+  },
+  {
+    "slug": "head-basketball",
+    "pageUrl": "https://azgames.io/head-basketball",
+    "embedUrl": "https://azgames.io/head-basketball.embed",
+    "ogImage": "/upload/imgs/headbasketball.png",
+    "frames": [
+      "https://azgames.io/head-basketball.embed",
+      "https://azgames.io/game/head-basketball/"
+    ],
+    "changed": true,
+    "errors": [
+      "The JavaScript function 'Pointer_stringify(ptrToSomeCString)' is obsoleted and will be removed in a future Unity version. Please call 'UTF8ToString(ptrToSomeCString)' instead."
+    ],
+    "heading": "Head Basketball",
+    "embedTitle": "Play Head Basketball Game Online!"
+  },
+  {
+    "slug": "chill-guy-clicker",
+    "pageUrl": "https://azgames.io/chill-guy-clicker",
+    "embedUrl": "https://azgames.io/chill-guy-clicker.embed",
+    "ogImage": "/upload/imgs/chillguyclicker3.png",
+    "frames": [
+      "https://azgames.io/chill-guy-clicker.embed",
+      "https://game.azgame.io/chill-guy-clicker/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "Access to XMLHttpRequest at 'https://event.azgame.io/apiaz/event?event=awake-game&data=JnRpbWU9NDIxJmdpZD1jaGlsbC1ndXktY2xpY2tlcg==' from origin 'https://game.azgame.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Mixed Content: The page at 'https://azgames.io/' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://www.geoplugin.net/json.gp'. This request has been blocked; the content must be served over HTTPS."
+    ],
+    "heading": "Chill Guy Clicker",
+    "embedTitle": "Play Chill Guy Clicker Game Online!"
+  },
+  {
+    "slug": "escape-road",
+    "pageUrl": "https://azgames.io/escape-road",
+    "embedUrl": "https://azgames.io/escape-road.embed",
+    "ogImage": "/upload/imgs/escaperoad.png",
+    "frames": [
+      "https://azgames.io/escape-road.embed",
+      "https://azgames.io/game/escape-road/",
+      "https://googleads.g.doubleclick.net/pagead/html/r20260917/r20190131/zrt_lookup.html",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-123456789&output=html&adk=1812271804&adf=3279755397&abgtt=6&plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&channel=escape-road&format=0x0&url=https%3A%2F%2Fazgames.io%2Fescape-road.embed&pra=5&asro=0&aimartd=4&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974660963&bpp=2&bdt=2265&idt=398&shv=r20260917&mjsv=m202609160101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&nras=1&correlator=7680108675016&frm=23&ife=1&pv=2&nhd=1&u_tz=480&u_his=3&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=1280&bih=720&isw=1280&ish=720&ifk=355855464&scr_x=0&scr_y=0&eid=95395999%2C95403098%2C95390278%2C122881097&oid=2&pvsid=1187255721584608&tmod=1666468422&uas=0&nvt=1&fsapi=1&fc=1664&brdim=10%2C10%2C10%2C10%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32772&bc=31&plas=404x648_l%7C404x648_r&bz=1&ifi=1&uci=1.r4ylpnaa48zj&fsb=1&dtd=410",
+      "about:blank",
+      "about:blank",
+      "https://www.google.com/recaptcha/api2/aframe"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "Access to XMLHttpRequest at 'https://event.azgame.io/apiaz/event?event=start-game&data=JnRpbWU9MjU5NCZnaWQ9ZXNjYXBlLXJvYWQmd3RvcD1hemdhbWVzLmlvJmhuPWF6Z2FtZXMuaW8mcmVmZXJyZXI9aHR0cHM6Ly9hemdhbWVzLmlvL2VzY2FwZS1yb2FkLmVtYmVk' from origin 'https://azgames.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: the server responded with a status of 400 ()"
+    ],
+    "heading": "Escape Road",
+    "embedTitle": "Play Escape Road Game Online!"
+  },
+  {
+    "slug": "moto-x3m",
+    "pageUrl": "https://azgames.io/moto-x3m",
+    "embedUrl": "https://azgames.io/moto-x3m.embed",
+    "ogImage": "/upload/imgs/moto-x3m.png",
+    "frames": [
+      "https://azgames.io/moto-x3m.embed",
+      "https://html5.gamedistribution.com/5b0abd4c0faa4f5eb190a9a16d5a1b4c/",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/html/r20260917/r20190131/zrt_lookup.html",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&adk=1812271804&adf=3279755397&abgtt=13&plaf=1%3A2%2C2%3A2%2C7%3A2&plat=1%3A16777728%2C2%3A16777728%2C3%3A512%2C4%3A512%2C8%3A512%2C9%3A33288%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C26%3A512%2C27%3A512%2C30%3A1081856%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fazgames.io%2F&pra=5&aiof=11&asro=0&aimartd=4&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974681584&bpp=3&bdt=1564&idt=335&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&nras=1&correlator=7832224697699&frm=24&ife=1&pv=2&nhd=1&u_tz=480&u_his=3&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3605484899&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C95390278&oid=2&pvsid=7984124698058243&tmod=1422850103&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=1&uci=1.httdw3or6gk3&fsb=1&dtd=348",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&h=720&adk=4154423664&adf=2873238072&abgtt=13&w=1280&vpmute=0&to=gsc&format=1280x720&url=https%3A%2F%2Fazgames.io%2F&pra=3&fa=10&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974682239&bpp=1&bdt=2219&idt=1&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&prev_fmts=0x0&nras=2&correlator=7832224697699&frm=24&ife=1&pv=1&nhd=1&u_tz=480&u_his=3&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3605484899&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C95390278&oid=2&pvsid=7984124698058243&tmod=1422850103&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=2&uci=2.rz4cnc2ra2dk&fsb=1&dtd=3",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&h=720&adk=4154423664&adf=1300378861&abgtt=13&w=1280&vpmute=0&to=gsc&format=1280x720&url=https%3A%2F%2Fazgames.io%2F&pra=3&fa=11&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974682245&bpp=1&bdt=2225&idt=0&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&prev_fmts=0x0%2C1280x720&nras=3&correlator=7832224697699&frm=24&ife=1&pv=1&nhd=1&u_tz=480&u_his=3&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3605484899&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C95390278&oid=2&pvsid=7984124698058243&tmod=1422850103&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=3&uci=3.7sz47e51bvi5&fsb=1&dtd=2",
+      "https://www.google.com/recaptcha/api2/aframe",
+      "https://imasdk.googleapis.com/js/core/bridge3.789.0_en.html#deid=%22%22&eventfe_experiment_ids=%5B%5D&fid=%22goog_1363841642%22&genotype_experiment_data=%7B%22experimentStateProto%22%3A%22%5B%5B%5B45713128%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45796605%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B945081832%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45816264%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45761044%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45722344%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45801847%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45784857%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45668885%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45685340%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45734716%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45735891%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45663239%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B839547366%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45676441%2Cnull%2Cnull%2C%5B%5D%5D%2C%5Bnull%2C45645574%2Cnull%2C%5B%5D%5D%2C%5B45688859%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45685601%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5Bnull%2C45685602%2Cnull%2C%5Bnull%2C100%5D%5D%2C%5B45830425%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45820997%2Cnull%2Cnull%2C%5B%5D%5D%2C%5Bnull%2C45812678%2Cnull%2C%5B%5D%5D%2C%5B45756824%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45794243%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45747172%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B775241416%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107959%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107958%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B792614055%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107957%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45729602%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45753603%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45753604%2Cnull%2Cnull%2C%5B%5D%5D%5D%2C%5B%5B16%2C%5B%5B10%2C%5B%5B83323635%5D%2C%5B83323636%2C%5B%5Bnull%2C45812678%2Cnull%2C%5Bnull%2C100%5D%5D%5D%5D%5D%5D%2C%5B50%2C%5B%5B83323870%5D%2C%5B83323871%2C%5B%5B45830425%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B1000%2C%5B%5B95332046%5D%5D%5D%2C%5Bnull%2C%5B%5B95332047%5D%5D%5D%2C%5B10%2C%5B%5B95338769%2C%5B%5Bnull%2C45645574%2Cnull%2C%5Bnull%2C1%5D%5D%5D%5D%2C%5B95338770%2C%5B%5Bnull%2C45645574%2Cnull%2C%5Bnull%2C2%5D%5D%5D%5D%5D%5D%2C%5B50%2C%5B%5B95351425%5D%2C%5B95351426%2C%5B%5B45676441%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B1%2C%5B%5B95373378%2C%5B%5B792614055%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95373379%2C%5B%5B45747172%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B781107959%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B792614055%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B781107957%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95378629%5D%2C%5B95378630%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95381582%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45753603%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95381583%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45753604%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5Bnull%2C%5B%5B95391735%5D%5D%5D%2C%5B50%2C%5B%5B95394237%5D%2C%5B95394238%2C%5B%5B45801847%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95398837%5D%2C%5B95398838%2C%5B%5Bnull%2C960449109%2Cnull%2C%5Bnull%2C1%5D%5D%5D%5D%5D%5D%2C%5B1%2C%5B%5B95401453%5D%2C%5B95401454%2C%5B%5B45668885%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95402052%5D%2C%5B95402053%2C%5B%5B957164676%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%5D%5D%5D%2Cnull%2Cnull%2C%5Bnull%2C1000%2C1%2C1000%5D%5D%22%7D&imalib_experiments=%5B95322027%2C95331589%2C95332046%5D&is_eap_loader=false&managed_js_experiment_id=0&page_correlator=427845627644426&pvsid=7984124698058243&top_accessible_page_url=%22https%3A%2F%2Fazgames.io%2F%22",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9kY2xrLW1hdGNoLmRvdG9taS5jb20vbWF0Y2gvYm91bmNlL2N1cnJlbnQ_bmV0d29ya0lkPTE0MDAwJnZlcnNpb249MSZnb29nbGVfZ2lkPUNBRVNFTnFhNktxMm5HQm9la1BTVzlNcGkxZyZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pJRGZTOHBtMEE0ZnNoZnJjNzdZQ2JpQUNQWEVJYjlzUlJ4TmZWWGZIaFFsUXgzaUpqenFQRzVBWWhtdmt0am9yMWRSVVpiNWU2RE5kbVdDZUpTaGdhM3IyZGZFR1gwTjJ6V2RqU0ZkSU11THdocExNdTBkZEVWMG1DYnpnRWJqVUMyMGJ4V19PREhfUVJhU0FMSmU2RWdacw==,aHR0cHM6Ly9weC5hZHMubGlua2VkaW4uY29tL3NldHVpZD9wYXJ0bmVyPWdvb2dsZWFkeGRiJmdvb2dsZV9naWQ9Q0FFU0VLSGk3OEFfMHJBdFhqcXRlc2VUUVFVJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QWVvZnNzSXZjR21oOE9CaEVxWmxRcW5MMnNZUGlpYnZGZWQ5U0phTFBwMTYxYkNNSTZLbWsycktTcnp4Z3EyNXZ1bVNDSS1kbGJReVJjNWh2YV9ITVA4YUJZcHZQSFBLVTU5b0NESFBlQXJycG55eWNGQ3VSS1FJZFRLa29mcDkzeDlPVkppYklDRGVJQnZuMlRwTlRMWmFUV1d4aXJ3,aHR0cHM6Ly94LmJpZHN3aXRjaC5uZXQvc3luYz9zc3A9Z29vZ2xlJmdvb2dsZV9naWQ9Q0FFU0VKdkdHbkoxNlNHYWRDeDlPcnE0UnIwJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QWVvZnNzSm9hYU5RaURGNFBmM1FPY2hHSGlzVXllNERXMHZiSmM2N3ZVbTJzTFFjTUtvX3ViSU1WVDcwQWlxVFQ5cFpIbjM4RGlkbVVFLTlBWTNhLWFYRnJuN0g5Y09fdXlpTVhUSkRvbVk1aVFLaVZYQU1OclljTFZfeGpxMVlEb0IwRjNzODJNWWxvcEI1dllhQ0djNl9PTnNBdVlJ,aHR0cHM6Ly9jcmVhdGl2ZWNkbi5jb20vY20tbm90aWZ5P3BpPWFkeGFiJmdvb2dsZV9uaWQ9cnRiX2hvdXNlJmdvb2dsZV9naWQ9Q0FFU0VINnZHZXJaNlp0b0gxcUlUWV8taWx3Jmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QWVvZnNzSlItRkx5Q2ozVGgtY0xJdmZfdUl6ZHBuQlg0SmtxSmdTcjd0S2FCdjdkUWNFV2RyNE5jWlI2QW8tSWFVRTJOMkVMS2V5V3R3dG9XcDBCaXdZY2VNT3BqS2NpbHRIdlZfLWV2YUxaWFRPRW52d1dac1h4REhhY1BKcm9MUUZidENYdWt1SVBBOFV5ekx6LVVxd1pvMC1VNTFj,aHR0cHM6Ly9tYXRjaC5wcm9kLmJpZHIuaW8vY29va2llLXN5bmMvYWR4P2dvb2dsZV9naWQ9Q0FFU0VLWmc5V1RxNDQ5M3ljWnduNWxScG9FJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QWVvZnNzTDBVNnZTWTFvclpjbFFKQjQ5OGhQR05yc015cjhvWmdZV3JHWXl2bFl5TlljbTJMQzRfREtJdm50c290ZXcwUWotU3pZNDBsZ3FkNzhraW9MWGk3TEUxVFF2OVRFVXlabm5ENTFqNzJJVWxONTBENHJLWnp2TzQ1STRZaGoxVnYyM2Q1N3ZJTFFZRWpVSGdQbFd2enVhbHJB,aHR0cHM6Ly9hbmFseXRpY3MucGFuZ2xlLWFkcy5jb20vYXBpL2FkL3VuaW9uL2dnX2Nvb2tpZV9tYXRjaGluZz9nb29nbGVfZ2lkPUNBRVNFQTcxU0EyeGxDWlNZanNhWFF5Z1JnSSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pwS01BV1lzNTJTRzN2b2hUNGczWWtoOUg2U3owQUN0amNsd2VMZ1FHdzlQR0xmUkdqR2FTRFRfN1NvekNSeUczZFo1Ylp2QWNianpmcGlXaV9mejBLdFRnVVQ4cW9LOFdacktzSEZUWG1GWTZzZ3dVYXVSS1ZKbElGcXRPTUl6cGY5NmVweEhqMTFmWG8yTlluMFNyN2o2bw==,aHR0cHM6Ly90cmFja2luZy5wcmlzbXBhcnRuZXIuc210LmRvY29tby5uZS5qcC9zeW5jL2FkeD9nb29nbGVfZ2lkPUNBRVNFT2I2NnJrcHJXb3g0ZktpRDdsb3kwVSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0lHZ05jZEhqMGE1cGYwUUlCbzduemJyVXBJX1VqbVRhd0h4dmZJY1ROVUl4bzl0Wl9jNTF5MmhndGhwYVRWbG1IY28yd0FkTF9DTkpKeWFRVDI3WkVXUGRkbGdMLURXUkhva1lPNlB4bkFpMi1TajRYaU1zVmtfRWdnS01mRGd1YzhjejZ6VGdvM0VreTZLWVE3M2tzSmNkSTg=,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSldKSlRmYVNaeHBjdTJDYm5oRTB6c01QQTRPS3BWTGJUcXQ2M0M0VzFsTWpITDVUUWVSNXlkakFRM1pXc0h5V1psR0x2bWJ0MA==",
+      "https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9kY2xrLW1hdGNoLmRvdG9taS5jb20vbWF0Y2gvYm91bmNlL2N1cnJlbnQ_bmV0d29ya0lkPTE0MDAwJnZlcnNpb249MSZnb29nbGVfZ2lkPUNBRVNFR2NjQm1rN2FWaVNFSlp2TUFYS2t0TSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0t6bW9MaXhjSUxrdmFyU3RGanhNU2dIbU4ySjN5RnFzX01GcW1GTmFIMDllbVB6cWJDbzczR2xzRG03Qm43U3pmb25ZcVpKQTRaNHk5Y1JMTDdobUpjQUN1YTUweVY=,aHR0cHM6Ly9pcGFjLmN0bnNuZXQuY29tL2ludC9jbT9leGM9MSZhY2M9Y3JpbXRhbl9hdSZnb29nbGVfZ2lkPUNBRVNFT0xoSkJEcXhDd083aGhSTTk4cU5PZyZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0lGWjJQa0U3VUJtaGtQRDF3V2t1TS1Rblo2aHZoWWp1ZDFNVFhfZkR0RkFnNHFuck1MY3dSTlhYVmJMVXJCaXh0N2hKQ3ZkODVwdlpQcDdYNVV6aEhKeGVDTml3VmYyZw==,aHR0cHM6Ly9td2ViLmNrLmlubW9iaS5jb20vc3luYy8zP3JlZGlyZWN0PWh0dHBzJTNBJTJGJTJGY20uZy5kb3VibGVjbGljay5uZXQlMkZwaXhlbCUzRmdvb2dsZV9uaWQlM0Rpbm1vYmlfcHRlX2xpbWl0ZWQlMjZnb29nbGVfaG0lM0QlMjREU1BfQ0tJRCZnb29nbGVfZ2lkPUNBRVNFTUtBRGZKMC1nTW1ZVFdacm1IQzF5MCZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0tNLUNNOVF2N3BGRVRxUVp5cUxWUllFTzZldVVjbzVfVFNJRlJ6MlhSdHQ2d3czOXRCcDRoR1pYSkdQSW9UUmZQaFhJTi0xUUF0NlB5cVA3RlFLdmhlWkEtYWs3Y3ZuQQ==,aHR0cHM6Ly9hLmMuYXBwaWVyLm5ldC9nY20_Z29vZ2xlX2dpZD1DQUVTRUlTck14UkdldVJxY21YRHpMUklWVXcmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NKVmZiRl9WZDlSQWpldGRmaWdfRTR4UWxwbjZUdEFMN0F3M3hFczNTQkVyc1ZKUmx5NDMxMGdpZ0ZQOXlUX01ZaDJyaUhSQW9kcFRBYVN5Q0dJb2o1UVkzWnUxbmNy,aHR0cHM6Ly9iLmFwcGxvdmluLmNvbS92MS9nY20vcHVzaD9nb29nbGVfZ2lkPUNBRVNFQ05NLTljb2Y5b3JRTncyMjktcy1QOCZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0p0aWs3QTU1TnFnRnJfR1hHZ1YxRzRrRnRkUWlpRVpZalQ0dXpDTjZ6dzNOQnRIcHU5LUloV2dUby1XVFZBM3Z6RzFBWHM2RU12ZHQwYjdfak1DMmRDU2FZclR6bWtkQQ==,aHR0cHM6Ly94LmJpZHN3aXRjaC5uZXQvc3luYz9zc3A9Z29vZ2xlJmdvb2dsZV9naWQ9Q0FFU0VCMFA3Rk5jR2VRQmFDR05wY1FYZmRjJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QWVvZnNzS2VWcFRzamFYdk4tWHFCTGJHOFJBVjNPX0N4UFZCblZRcklxTzJGaXhhbEJCSWZYRkViQ3RPcWVQVjUyMVBNamxzOEtRZkxaMDFydGQzM1o4QnVqTU1PZ3BsNnhPTFhR,aHR0cHM6Ly9waXhlbGZudC11cy5kc3AtYXBpLm1vbG9jby5jb20vdjEvY20vYWR4cG0_Z29vZ2xlX2dpZD1DQUVTRUgtSGxzNUNYclpoTGVIaTZfYzI4X2smZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NKMWRwUjEyejhNQVRBX3RpdmhnYTRsOGlxUVVlV05QU3lFM1BvdUlUN2ItOEllLTJCbmhLelFnXzdTclBxYjdRSXFmdWVpLXg2LTRfUWQ2VDJmYWthYTktYWx6YXZUM2c=,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSmF1c19zOTRHRjVNb2VOSldPTnNtMkhrYVBkS19hN2pMdU9pdlFpZ3JYZ3J6X1UxU2JrSGJrOEN0cE54ZVJlMHhZRVhYTA=="
+    ],
+    "changed": true,
+    "errors": [],
+    "heading": "Moto X3M",
+    "embedTitle": "Play Moto X3M Game Online!"
+  },
+  {
+    "slug": "basket-random",
+    "pageUrl": "https://azgames.io/basket-random",
+    "embedUrl": "https://azgames.io/basket-random.embed",
+    "ogImage": "/upload/imgs/basketrandom.jpeg",
+    "frames": [
+      "https://azgames.io/basket-random.embed",
+      "https://html5.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8/",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/html/r20260917/r20190131/zrt_lookup.html",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&adk=1812271804&adf=3279755397&abgtt=13&plaf=1%3A2%2C2%3A2%2C7%3A2&plat=1%3A16777728%2C2%3A16777728%2C3%3A512%2C4%3A512%2C8%3A512%2C9%3A33288%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C26%3A512%2C27%3A512%2C30%3A1081856%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fazgames.io%2F&pra=5&aiof=11&asro=0&aimartd=4&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974702717&bpp=2&bdt=1579&idt=342&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&nras=1&correlator=3456186536503&frm=24&ife=1&pv=2&nhd=1&u_tz=480&u_his=3&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3301405393&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C95390278&oid=2&pvsid=2709126918756077&tmod=278665962&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=1&uci=1.gvka622jdmdv&fsb=1&dtd=355",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&h=720&adk=4154423664&adf=2873238072&abgtt=13&w=1280&vpmute=0&to=gsc&format=1280x720&url=https%3A%2F%2Fazgames.io%2F&pra=3&fa=10&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974703395&bpp=1&bdt=2256&idt=1&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&prev_fmts=0x0&nras=2&correlator=3456186536503&frm=24&ife=1&pv=1&nhd=1&u_tz=480&u_his=3&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3301405393&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C95390278&oid=2&pvsid=2709126918756077&tmod=278665962&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=2&uci=2.uiwf9aqlf4f1&fsb=1&dtd=3",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&h=720&adk=4154423664&adf=1300378861&abgtt=13&w=1280&vpmute=0&to=gsc&format=1280x720&url=https%3A%2F%2Fazgames.io%2F&pra=3&fa=11&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974703401&bpp=1&bdt=2262&idt=0&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&prev_fmts=0x0%2C1280x720&nras=3&correlator=3456186536503&frm=24&ife=1&pv=1&nhd=1&u_tz=480&u_his=3&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3301405393&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C95390278&oid=2&pvsid=2709126918756077&tmod=278665962&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=3&uci=3.xvbwfexc99dh&fsb=1&dtd=2",
+      "https://www.google.com/recaptcha/api2/aframe",
+      "https://imasdk.googleapis.com/js/core/bridge3.789.0_en.html#deid=%22%22&eventfe_experiment_ids=%5B%5D&fid=%22goog_734219958%22&genotype_experiment_data=%7B%22experimentStateProto%22%3A%22%5B%5B%5B45713128%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45796605%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B945081832%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45816264%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45761044%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45722344%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45801847%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45784857%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45668885%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45685340%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45734716%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45735891%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45663239%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B839547366%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45676441%2Cnull%2Cnull%2C%5B%5D%5D%2C%5Bnull%2C45645574%2Cnull%2C%5B%5D%5D%2C%5B45688859%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45685601%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5Bnull%2C45685602%2Cnull%2C%5Bnull%2C100%5D%5D%2C%5B45830425%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45820997%2Cnull%2Cnull%2C%5B%5D%5D%2C%5Bnull%2C45812678%2Cnull%2C%5B%5D%5D%2C%5B45756824%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45794243%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45747172%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B775241416%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107959%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107958%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B792614055%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107957%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45729602%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45753603%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45753604%2Cnull%2Cnull%2C%5B%5D%5D%5D%2C%5B%5B16%2C%5B%5B10%2C%5B%5B83323635%5D%2C%5B83323636%2C%5B%5Bnull%2C45812678%2Cnull%2C%5Bnull%2C100%5D%5D%5D%5D%5D%5D%2C%5B50%2C%5B%5B83323870%5D%2C%5B83323871%2C%5B%5B45830425%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B1000%2C%5B%5B95332046%5D%5D%5D%2C%5Bnull%2C%5B%5B95332047%5D%5D%5D%2C%5B10%2C%5B%5B95338769%2C%5B%5Bnull%2C45645574%2Cnull%2C%5Bnull%2C1%5D%5D%5D%5D%2C%5B95338770%2C%5B%5Bnull%2C45645574%2Cnull%2C%5Bnull%2C2%5D%5D%5D%5D%5D%5D%2C%5B50%2C%5B%5B95351425%5D%2C%5B95351426%2C%5B%5B45676441%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B1%2C%5B%5B95373378%2C%5B%5B792614055%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95373379%2C%5B%5B45747172%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B781107959%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B792614055%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B781107957%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95378629%5D%2C%5B95378630%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95381582%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45753603%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95381583%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45753604%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5Bnull%2C%5B%5B95391735%5D%5D%5D%2C%5B50%2C%5B%5B95394237%5D%2C%5B95394238%2C%5B%5B45801847%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95398837%5D%2C%5B95398838%2C%5B%5Bnull%2C960449109%2Cnull%2C%5Bnull%2C1%5D%5D%5D%5D%5D%5D%2C%5B1%2C%5B%5B95401453%5D%2C%5B95401454%2C%5B%5B45668885%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95402052%5D%2C%5B95402053%2C%5B%5B957164676%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%5D%5D%5D%2Cnull%2Cnull%2C%5Bnull%2C1000%2C1%2C1000%5D%5D%22%7D&imalib_experiments=%5B95322027%2C95331589%2C95332046%2C95394238%5D&is_eap_loader=false&managed_js_experiment_id=0&page_correlator=4307731496079294&pvsid=2709126918756077&top_accessible_page_url=%22https%3A%2F%2Fazgames.io%2F%22",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9tYXRjaC5hZHNydnIub3JnL3RyYWNrL2NtZi9nb29nbGU_Z29vZ2xlX2dpZD1DQUVTRUhzR0xJV1VKT2dQZXZFQVpXclBDOGsmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NMelpoYmpUdzlyYlE2ZnAtVWlNNndrWGdJY0NtNkwycHZSck5SOHJhSlpfYV9jcXVmaWhQdzRlTXRZdkdSNF9EZWEyal81aUlrRkNLaUhqRkxpbDBMdDRrb1BaWF8yNXpPN042XzVVWjNYNm41VjM5cUNzUmdZZVVFRE5BR0xKaWl1WVY4Z08tbl9FTlZ2U3pya3NJdHlFekE=,aHR0cHM6Ly9hZHMudHJhdmVsYXVkaWVuY2UuY29tL2dvb2dsZV9waXhlbD9nb29nbGVfZ2lkPUNBRVNFSlhFaElfZTNzZXBHU3ZERnhhY0RiSSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0p5WWJveHdMRmZOa2VEV21UV2hxSUVzc3JCUjlPSTZfZWg4a09CbnRXOGdMejQ0MmhTamdoMnJtdy01QnRLZ0VXSFFEZUI0SlNOQk12Q043MTY0bjlRZUpaOEViSkthUXFOQVJiS2pTWm1uR1k3eF8zaE5ub01wUzFUSUkxRy1QQm9yaUo0UmNrYTlmQUc5Q3g2STdXMnln,aHR0cHM6Ly9td2ViLmNrLmlubW9iaS5jb20vc3luYy8zP3JlZGlyZWN0PWh0dHBzJTNBJTJGJTJGY20uZy5kb3VibGVjbGljay5uZXQlMkZwaXhlbCUzRmdvb2dsZV9uaWQlM0Rpbm1vYmlfcHRlX2xpbWl0ZWQlMjZnb29nbGVfaG0lM0QlMjREU1BfQ0tJRCZnb29nbGVfZ2lkPUNBRVNFSnh5N3RXVVZ0WEdaRi1Ha2VVa251MCZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0xvOW40cXZRSTBMLUd2cmpOZW1BZDltcmR0Z2dNMkNhTjMxVk1IUC1uZ2JPR25sS1BjeVdKX3ZGd1N5anIwSFg5N3dPUHNYV1IwUFA1engwRzl2N2lyelhFNlpEQ3R2Sjh6WGpQTnlFRE40VlZVZkR5X2dnVzFacng5a25wQXhwYThDS1JUMTVlRWpRQ0hHZno3d2xlVlYwVQ==,aHR0cHM6Ly9hLmMuYXBwaWVyLm5ldC9nY20_Z29vZ2xlX2dpZD1DQUVTRU1KZ3pubGt5THF5cF9pdElTV0RUb2smZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NLRHloNmtqSTNjSE9iSUs4ZURHZGlVR3B3XzBQQWRxcFExUzA0bkMtOXJndGlnTmRkVDhkZWVVY2RMNldCUFJZNElwdUJPRnFLa1dTdVd4aDN4ZmVWZXg0UGxoc19BRWI1NXdUSHFOcWd1RDNnYy03ZkdRY0Rrc0VfQU9IbV92NHpVS2lHMEI3S1Nra2Y5cDlpZWszTFZKZEE=,aHR0cHM6Ly9waXhlbGZudC11cy5kc3AtYXBpLm1vbG9jby5jb20vdjEvY20vYWR4cG0_Z29vZ2xlX2dpZD1DQUVTRUJXOE8yWWtqbnYxM3pCZDVyRmJOZlUmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NKakVlNlh3Umc4elNyZjNEbkNoREcxNjdPLVk5ZU1lYlpJMU81R3FVTGpuUUdzWGhuZmR1TDhROHBfbTZ2YVE3SzQ5Q2VPLThLdjVlbmdEYTJvN21RZl9YTWkwNmo5dzh0MTdpV09mRmhEWmRZZ0h0cm1ZOXNFMWFJZmxwYmJEeVg4QlVqSkZ0M0FxZTBmY2xVQmRrSE5oY3c=,aHR0cHM6Ly9kc3AuMzYweWllbGQuY29tL2RzcF9tYXRjaC8yNzU_c3NwPTc1NSZnb29nbGVfZ2lkPUNBRVNFSVZvZWZiVUpmQjZsU0tQaUdFV2tIQSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0p5NnNoWV9lQ1FXQXNGZEZtU2c5WWQ2MTlZdkJKSjN1M2ZDVUZKeXZsbHpWLTlJd0FHNTJCT19tZFd6RFR1eWJiVTUwMEhlblJjaDBWSkF6V3NudEFCVDlPZkZ5eUNEWlNUZ2NBWnh4MHlVYTlQSk0wUXljaGg3Y0h0WGF1WFF2OGM0T18yZ1VnTE9lWjA1bURJZGNvTGlGbw==,aHR0cHM6Ly9hbmFseXRpY3MucGFuZ2xlLWFkcy5jb20vYXBpL2FkL3VuaW9uL2dnX2Nvb2tpZV9tYXRjaGluZz9nb29nbGVfZ2lkPUNBRVNFUFFRNk5FNXY4TzFmWGVHejdNTjJVQSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0wyY0NaWmZtSUdURUN2ellWRWE0VmtzUklOaGZnalU2UHc5U2tmLXRIbklCU0U4YWZ0ZGZybFBFcTRqRnhiY253MDBDWTdiZk8wYkZhZzZoNElzUWNjZ1FHS1NGZVJmN0h0SUFVY1JjVFN4ZS0ydjZyb01sel9YTVRnWUhTYjZhdXZKcFdEbE8xRThQQXhieUlGOVNrZlJCejA=,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzS1p4d2VrVmE1ZkI4UlF4b2ZHTVpUcGVISHB2ckJaeWJmblJCQjBXekg5N0xyeHZBYWdDLU5QVFV1MnRVMnNkOEh2SlJYVmhB",
+      "https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9zeW5jLmZvdXQuanAvc3luYz94aWQ9Z29vZ2xlYWRleCZnX3BpeGVsPSZnb29nbGVfZ2lkPUNBRVNFQXgzeW5vV1c0TG81NGRSaGVkb0luVSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0toVkJDZDd3TUNXNU95c2IxQS1IQTc0bXM3QnJSZl9Db3Y2M3U2bTQxWHU3R1I1NUszVVdpODgyM0x1bExheWFKNlF5dGF0WjdsVHhvVEZWMGtJRnk2Rm4wR0Y4bFk4S0U=,aHR0cHM6Ly9hZHMudHJhdmVsYXVkaWVuY2UuY29tL2dvb2dsZV9waXhlbD9nb29nbGVfZ2lkPUNBRVNFQmdjdEdzNko5NlZ1ckgtZkdhdTliWSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0lzakkxNllqQ1laX0xvUExRSUxVa2ZNTDBySUFmcTRCRDNXa0tsUnRWci1GVm5hQUd3eUZpcFFoR2gxSGRQWkI0NzZYWWNZbTVPcjZVSnl3d3RsRTRGd1lTYlNRSl9WQUtG,aHR0cHM6Ly94LmJpZHN3aXRjaC5uZXQvc3luYz9zc3A9Z29vZ2xlJmdvb2dsZV9naWQ9Q0FFU0VLdzlvUHoxeWxmZF9seTFXOF96Z2NzJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QWVvZnNzS1RFdVp0dW1kMWNoQWlOZDJhTHhxRDNfWlI5R3ZDOFhvNUtHLVQ2UURrOTd2S1hSSUY1VnJCOEpTT2VNb2lIaEprdlUzNTRXNkJFLWwycVAzYmUtXzFVOWhOQzEzbDNNMA==,aHR0cHM6Ly9ydC5nc3NwYXQuanAvbGNzP2dvb2dsZV9wdXNoPUFlb2Zzc0xRN2VoYjZzaFQ1TURoNzFUNEw3Q29OVGNJNjh1YVVmb3JyZUFmX0lPdXRpdmI4SzdMUFV2U2J1eFpYeHo0NlBzRk1pRjE0cjd4dHNuWDlVN3RfeXpGeVN5LWVua0NFNTNjJmdvb2dsZV9naWQ9Q0FFU0VEM1kxVURsdHpXUWxNdGRETEt4SGNVJmdvb2dsZV9jdmVyPTE=,aHR0cHM6Ly9iMXN5bmMub3V0YnJhaW4uY29tL3VzZXJzeW5jL2dvb2dsZWFkeC8_Z29vZ2xlX2dpZD1DQUVTRU12Q1N1dmdTWGxYMUN2dHVSUXFtY1kmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NJVEVIWVVTSFNRVVVsdnl1XzlXWEhycmNObGJmcmg0cXlJMV9BLVlMQk9DMkNOd0RtVTVOU0hMczl1Ty1USGcxM1FidjBXSFRZaEFHaDlTdmtHVHgwMGphdk04ai1GSERoeg==,aHR0cHM6Ly9vbmV0YWctc3lzLmNvbS9tYXRjaC8_aW50X2lkPTE5JnJlZGlyPTEmZ29vZ2xlX2dpZD1DQUVTRUM1cmlCWFBXcV9zbERKaUpVa2lTNk0mZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NMTTNkRTl5bkpjYjNUbVFTYm9uQ0tmYVFuQVFuOHVINUtnZDJIUWNCN3E0UzNzV0h2QjlXdFF0MEZnckZUSWhlRzhVaWt3WFZhZGNPQ0tUMnBCSWxuQmNsT2VTNUpZUkNBRA==,aHR0cHM6Ly9zeW5jLnRlYWRzLnR2L3VtP3NzYl9wcm92aWRlcl9pZD0zJnVpZD0mZ29vZ2xlX25pZD10ZWFkc3R2X2FiJmZiPWh0dHBzJTNBJTJGJTJGY20uZy5kb3VibGVjbGljay5uZXQlMkZwaXhlbCUzRmdvb2dsZV9uaWQlM0R0ZWFkc3R2X2FiJTI2Z29vZ2xlX2htJTNEJTVCVklEX0I2NCU1RCZnb29nbGVfZ2lkPUNBRVNFSjBNSXRXNnVndUZkT3Q1SWVSVGVOayZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pQM0VNNFpUbVZNem42NW05YWY1TUxYbWVIQkx0TFFoTFhBZlBsel84d00wbHpiTk9HcG9TMnZ2VXQyb1RfQVhobG5pWUpTNU5CbnpJci1DSFM5bUlyOTFMdVBIYjNBOFhKVHc=,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzS3FkUl9IQm93TG9hUUlfRWIxQ2RBZXZ6Y3Z1dWtfNDhQeWZ5aDhDMVFQX0tvTFc3Vlk3dXRteGFtQzQ5a0ZPWnZ6N1hIdnFn",
+      "about:blank"
+    ],
+    "changed": true,
+    "errors": [],
+    "heading": "Basket Random",
+    "embedTitle": "Play Basket Random Game Online!"
+  },
+  {
+    "slug": "sugar-sugar",
+    "pageUrl": "https://azgames.io/sugar-sugar",
+    "embedUrl": "https://azgames.io/sugar-sugar.embed",
+    "ogImage": "/upload/imgs/sugarsugar1.png",
+    "frames": [
+      "https://azgames.io/sugar-sugar.embed",
+      "https://azgames.io/game/0-sugar-sugar/",
+      "about:blank",
+      "https://cdn.intergient.com/pageos/X-20260903-1-PRECONTENT-SIGNALS/iframe/iframe.html",
+      "about:blank",
+      "https://cm.g.doubleclick.net/partnerpixels?url=https%3A%2F%2Fazgames.io%2Fgame%2F0-sugar-sugar%2F",
+      "https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=azgames.io#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22azgames.io%22,%22topUrl%22:%22azgames.io%22,%22version%22:109327,%22origin%22:%22publishertagids%22,%22requestId%22:%220.7319811687557377%22}"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Access to XMLHttpRequest at 'https://id5-sync.com/api/esp/increment?counter=no-config' from origin 'https://azgames.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'https://id5-sync.com/bounce' from origin 'https://azgames.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Access to fetch at 'https://lb.eu-1-id5-sync.com/lb/v1' from origin 'https://azgames.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Access to XMLHttpRequest at 'https://id5-sync.com/gm/v3' from origin 'https://azgames.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    ],
+    "heading": "Sugar Sugar",
+    "embedTitle": "Play Sugar Sugar Game Online!"
+  },
+  {
+    "slug": "suika-game",
+    "pageUrl": "https://azgames.io/suika-game",
+    "embedUrl": "https://azgames.io/suika-game.embed",
+    "ogImage": "/upload/imgs/suikagame.png",
+    "frames": [
+      "https://azgames.io/suika-game.embed",
+      "https://suikagame.io/game/suika-game/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "heading": "Suika Game",
+    "embedTitle": "Play Suika Game Game Online!"
+  },
+  {
+    "slug": "trap-the-cat",
+    "pageUrl": "https://azgames.io/trap-the-cat",
+    "embedUrl": "https://azgames.io/trap-the-cat.embed",
+    "ogImage": "/upload/imgs/trap-the-cat.jpg",
+    "frames": [
+      "https://azgames.io/trap-the-cat.embed",
+      "https://azgames.io/game/trapthecat/"
+    ],
+    "changed": true,
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "heading": "Trap the cat",
+    "embedTitle": "Play Trap the cat Game Online!"
+  }
+]

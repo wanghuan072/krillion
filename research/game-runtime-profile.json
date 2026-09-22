@@ -1,0 +1,49 @@
+{
+  "gameName": "Krillion",
+  "primaryKeyword": "krillion",
+  "observedAt": "2026-09-21",
+  "gameUrlStatus": "configured",
+  "embed": {
+    "conclusion": "unknown",
+    "finalUrlStatus": "stable",
+    "httpsCompatible": "yes",
+    "xFrameOptions": "not_present",
+    "frameAncestors": "not_present",
+    "iframeVisualTest": "passed",
+    "testedFromSiteOrigin": "yes",
+    "cleanBrowserContext": "yes",
+    "effectiveReferrerPolicy": null,
+    "finalFrameUrlStatus": "expected",
+    "criticalNetworkErrors": [],
+    "interactiveInputTest": "not_run",
+    "crossSiteStorage": "unknown",
+    "notes": [
+      "The exact supplied URL rendered the Krillion Loading Dive screen inside a local-origin iframe in clean headless Chrome.",
+      "The bounded iframe test did not reach a fresh prompt in time, so game playability remains provisional by rule.",
+      "Direct top-level observation displayed the seven-prompt daily interface, score, depth, sound toggle, and descend action."
+    ]
+  },
+  "orientation": "landscape",
+  "aspectRatio": "16 / 9",
+  "inputs": {
+    "mouse": "supported",
+    "keyboard": "supported",
+    "touch": "unknown",
+    "gamepad": "unsupported"
+  },
+  "audio": "optional",
+  "storage": "optional",
+  "fullscreen": "unknown",
+  "iframeCapabilities": [],
+  "mobilePlayability": "partial",
+  "knownLimits": [
+    "A prompt timer can expire while loading or while the tab is backgrounded.",
+    "The supplied address has not yet completed an effective-input test inside the built site."
+  ],
+  "needsSecondaryCheck": [
+    "Complete one fresh answer inside the built player.",
+    "Verify touch keyboard behavior at 768px.",
+    "Observe storage behavior after retry and reload.",
+    "Confirm whether sound is optional when muted."
+  ]
+}

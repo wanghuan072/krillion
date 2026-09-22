@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "originSource": "project.yaml:domain.origin",
+  "trailingSlash": false,
+  "rendering": "static-export",
+  "routes": [
+    {"page_id":"home","path":"/","kind":"main-game","source":"data/games/main-game.json","publicWhen":"main game published","sitemapSource":"main-game"},
+    {"page_id":"games-index","path":"/games","kind":"static-list","source":"published additional games","publicWhen":"always after release validation","sitemapSource":"static-state"},
+    {"page_id":"game-detail","path":"/games/[slug]","kind":"dynamic-static","source":"getGameRouteParams","publicWhen":"game published","sitemapSource":"game"},
+    {"page_id":"guides-index","path":"/guides","kind":"static-list","source":"published Guides","publicWhen":"always after release validation","sitemapSource":"static-state"},
+    {"page_id":"guide-detail","path":"/guides/[slug]","kind":"dynamic-static","source":"getGuideRouteParams","publicWhen":"Guide published","sitemapSource":"guide"},
+    {"page_id":"privacy","path":"/privacy","kind":"static","source":"seo/tdk.js and PrivacyPage","publicWhen":"always","sitemapSource":"static-state"},
+    {"page_id":"terms","path":"/terms","kind":"static","source":"seo/tdk.js and TermsPage","publicWhen":"always","sitemapSource":"static-state"},
+    {"page_id":"copyright","path":"/copyright","kind":"static","source":"seo/tdk.js and CopyrightPage","publicWhen":"always","sitemapSource":"static-state"},
+    {"page_id":"about","path":"/about","kind":"static","source":"seo/tdk.js and AboutPage","publicWhen":"always","sitemapSource":"static-state"},
+    {"page_id":"contact","path":"/contact","kind":"static","source":"seo/tdk.js and ContactPage","publicWhen":"always","sitemapSource":"static-state"}
+  ],
+  "forbiddenPublicRoutes": ["/games/krillion","/legal","/legal/*","/preview","/draft/*"],
+  "redirects": [],
+  "notFoundPolicy": "dynamicParams false plus notFound for an unresolved or unpublished slug",
+  "canonicalPolicy": "one registry-derived HTTPS URL per route; homepage enters sitemap only as the main game"
+}

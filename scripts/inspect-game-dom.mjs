@@ -1,0 +1,10 @@
+import fs from "node:fs";
+import { chromium } from "@playwright/test";
+const games=JSON.parse(fs.readFileSync("data/games/games.json","utf8"));
+const argument=process.argv[2]??games[0].id;
+const game=games.find((item)=>item.id===argument)??{player:{iframeSrc:argument}};
+const browser=await chromium.launch({headless:true}); const page=await browser.newPage({viewport:{width:1280,height:720}}); await page.goto(game.player.iframeSrc,{waitUntil:"domcontentloaded"}); await page.waitForTimeout(7000);
+await page.getByText("Accept All Cookies",{exact:true}).click().catch(()=>{}); await page.waitForTimeout(2500);
+await page.mouse.click(640,390); await page.waitForTimeout(7000); await page.screenshot({path:"reports/inspect-after-launch.png"});
+const inspection=[];for(const frame of page.frames()){inspection.push({url:frame.url(),data:await frame.locator('body').evaluate((body)=>({body:body.innerText.slice(0,2000),els:[...body.querySelectorAll('canvas,button,a,img,iframe')].map(e=>({tag:e.tagName,text:e.textContent?.trim().slice(0,80),alt:e.getAttribute('alt'),src:e.getAttribute('src'),rect:(()=>{const r=e.getBoundingClientRect();return [r.x,r.y,r.width,r.height]})()})).filter(x=>x.rect[2]>0&&x.rect[3]>0)})).catch(()=>null)});}console.log(JSON.stringify(inspection,null,2));
+await browser.close();

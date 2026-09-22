@@ -1,0 +1,200 @@
+[
+  {
+    "id": "krillion",
+    "route": "/",
+    "status": "provisional",
+    "configuredSrc": "https://www.krillion.org/play/daily/",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://www.krillion.org/play/daily/",
+    "frameTitle": "Krillion — Play",
+    "canvasCount": 1,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/tap-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "slope",
+    "route": "/games/slope",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/slope.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/slope.embed",
+    "frameTitle": "Play Slope Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/tap-road net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "2048",
+    "route": "/games/2048",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/2048.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/2048.embed",
+    "frameTitle": "Play 2048 Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/tap-road net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "curve-rush",
+    "route": "/games/curve-rush",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/curve-rush.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/curve-rush.embed",
+    "frameTitle": "Play Curve Rush Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/tap-road net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "tap-road",
+    "route": "/games/tap-road",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/tap-road.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/tap-road.embed",
+    "frameTitle": "Play Tap Road Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "head-basketball",
+    "route": "/games/head-basketball",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/head-basketball.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/head-basketball.embed",
+    "frameTitle": "Play Head Basketball Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "escape-road",
+    "route": "/games/escape-road",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/escape-road.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/escape-road.embed",
+    "frameTitle": "Play Escape Road Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/head-basketball net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "trap-the-cat",
+    "route": "/games/trap-the-cat",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/trap-the-cat.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/trap-the-cat.embed",
+    "frameTitle": "Play Trap the cat Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  },
+  {
+    "id": "suika-game",
+    "route": "/games/suika-game",
+    "status": "verified-runtime",
+    "configuredSrc": "https://azgames.io/suika-game.embed",
+    "initialFrames": 0,
+    "finalFrames": 1,
+    "actualFrameUrl": "https://azgames.io/suika-game.embed",
+    "frameTitle": "Play Suika Game Game Online!",
+    "canvasCount": 0,
+    "inputChanged": true,
+    "criticalRequestFailures": [
+      "http://127.0.0.1:4173/ net::ERR_ABORTED",
+      "http://127.0.0.1:4173/guides net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/slope net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/2048 net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/curve-rush net::ERR_ABORTED",
+      "http://127.0.0.1:4173/games/escape-road net::ERR_ABORTED"
+    ],
+    "errors": []
+  }
+]

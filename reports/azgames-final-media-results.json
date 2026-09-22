@@ -1,0 +1,310 @@
+[
+  {
+    "id": "slope",
+    "title": "Slope",
+    "pageUrl": "https://azgames.io/slope",
+    "iframeSrc": "https://azgames.io/slope.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/slope.png",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/slope/cover.png",
+    "coverSize": {
+      "width": 512,
+      "height": 512
+    },
+    "frameUrls": [
+      "https://azgames.io/slope.embed",
+      "https://azgames.io/game/slope/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/slope/gameplay-1.webp",
+        "hash": "424e080d33dc4b74cf6f02d4ab3eea51cb3cd701c66384eb53a508db6a51ae87"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/slope/gameplay-2.webp",
+        "hash": "0b2e7e5a4a662e66095b58828c70729b7572251350161533a3bc906d2d5bb965"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/slope/gameplay-3.webp",
+        "hash": "79786a15d1b6bd489366e8a6a79de6334f586112f0e44d3ea44bb4934b88b258"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "id": "2048",
+    "title": "2048",
+    "pageUrl": "https://azgames.io/2048",
+    "iframeSrc": "https://azgames.io/2048.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/2048.jpg",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/2048/cover.jpg",
+    "coverSize": {
+      "width": 600,
+      "height": 600
+    },
+    "frameUrls": [
+      "https://azgames.io/2048.embed",
+      "https://azgames.io/game/2048/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/2048/gameplay-1.webp",
+        "hash": "d3cd4cf3cacee074d820339730814fa6a209db921f4bc0a9cd5c8d7f88d5ade6"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/2048/gameplay-2.webp",
+        "hash": "099d5ad58980c6831c80a93c8f24756afaa65ac5320a595b80a0659e97c4b63f"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/2048/gameplay-3.webp",
+        "hash": "1e2035ab5d7961247c58c666191d560043992b69770ffb1956592cf4baceb263"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/2048.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://www.googletagmanager.com/gtag/js?id=G-REJ3TKBMYE&cx=c&gtm=4e69g1 net::ERR_BLOCKED_BY_ORB"
+    ]
+  },
+  {
+    "id": "curve-rush",
+    "title": "Curve Rush",
+    "pageUrl": "https://azgames.io/curve-rush",
+    "iframeSrc": "https://azgames.io/curve-rush.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/curverush2.png",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/curve-rush/cover.png",
+    "coverSize": {
+      "width": 568,
+      "height": 574
+    },
+    "frameUrls": [
+      "https://azgames.io/curve-rush.embed",
+      "https://game.azgame.io/curve-rush/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/curve-rush/gameplay-1.webp",
+        "hash": "cfef342ecfd9ad767624be25952c6e421cc405d558d631673ab9896bdf9e02e5"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/curve-rush/gameplay-2.webp",
+        "hash": "a1c1cba5b91ead20893c264192dc1551a1b090398c389cb3a78c6d96e8e60b1b"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/curve-rush/gameplay-3.webp",
+        "hash": "39534b9417b5ef8936ffdc9b47a5d36d7be452821ceaae7c64a90dffb9ea8001"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/curve-rush.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ]
+  },
+  {
+    "id": "tap-road",
+    "title": "Tap Road",
+    "pageUrl": "https://azgames.io/tap-road",
+    "iframeSrc": "https://azgames.io/tap-road.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/taproad.jpg",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/tap-road/cover.jpg",
+    "coverSize": {
+      "width": 967,
+      "height": 967
+    },
+    "frameUrls": [
+      "https://azgames.io/tap-road.embed",
+      "https://azgames.io/game/tap-road/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/tap-road/gameplay-1.webp",
+        "hash": "0a31d2e5965166825415f15ff09b69a045beaa00897711081707de24508cf5d3"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/tap-road/gameplay-2.webp",
+        "hash": "56e339a9d0c4a1f3929933ff50f7b689cd436a8ff14b2649eedd1091bc6f011b"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/tap-road/gameplay-3.webp",
+        "hash": "8b9e2e90fdd873b8a158b0ba81cafae550e3fc974d10e56a19a9c83f98946165"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "NotSupportedError: screen.orientation.lock() is not available on this device.",
+      "The JavaScript function 'Pointer_stringify(ptrToSomeCString)' is obsoleted and will be removed in a future Unity version. Please call 'UTF8ToString(ptrToSomeCString)' instead.",
+      "Fullscreen is not supported on this browser.\n"
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/tap-road.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ]
+  },
+  {
+    "id": "head-basketball",
+    "title": "Head Basketball",
+    "pageUrl": "https://azgames.io/head-basketball",
+    "iframeSrc": "https://azgames.io/head-basketball.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/headbasketball.png",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/head-basketball/cover.png",
+    "coverSize": {
+      "width": 512,
+      "height": 512
+    },
+    "frameUrls": [
+      "https://azgames.io/head-basketball.embed",
+      "https://azgames.io/game/head-basketball/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/head-basketball/gameplay-1.webp",
+        "hash": "dda7cb445e5175c2650662d6e17460156df8b3b78050d3703a6fa0302beafe15"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/head-basketball/gameplay-2.webp",
+        "hash": "0866ea7601364eff58b499c345381c1676c33039d5d169776fbbef486f70c848"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/head-basketball/gameplay-3.webp",
+        "hash": "e97bd69c72b1781d27376396b4a4a53eb031bc0ee42e19f558644c21fda1975a"
+      }
+    ],
+    "errors": [
+      "The JavaScript function 'Pointer_stringify(ptrToSomeCString)' is obsoleted and will be removed in a future Unity version. Please call 'UTF8ToString(ptrToSomeCString)' instead."
+    ],
+    "failed": []
+  },
+  {
+    "id": "escape-road",
+    "title": "Escape Road",
+    "pageUrl": "https://azgames.io/escape-road",
+    "iframeSrc": "https://azgames.io/escape-road.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/escaperoad.png",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/escape-road/cover.png",
+    "coverSize": {
+      "width": 512,
+      "height": 512
+    },
+    "frameUrls": [
+      "https://azgames.io/escape-road.embed",
+      "https://azgames.io/game/escape-road/",
+      "about:blank",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/html/r20260917/r20190131/zrt_lookup.html",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-123456789&output=html&adk=1812271804&adf=3279755397&abgtt=6&plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&channel=escape-road&format=0x0&url=https%3A%2F%2Fazgames.io%2Fescape-road.embed&pra=5&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789975931536&bpp=2&bdt=1548&idt=295&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&nras=1&correlator=1781385164593&frm=23&ife=1&pv=2&nhd=1&u_tz=480&u_his=2&u_h=720&u_w=1280&u_ah=720&u_aw=1280&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=1280&bih=720&isw=1280&ish=720&ifk=355855464&scr_x=0&scr_y=0&eid=95403098%2C122881096&oid=2&pvsid=818970223313394&tmod=300852261&uas=0&nvt=1&fsapi=1&fc=1664&brdim=10%2C10%2C10%2C10%2C1280%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32772&bc=31&plas=404x648_l%7C404x648_r&bz=1&ifi=1&uci=1.rzxfjf8htkl6&fsb=1&dtd=312",
+      "https://www.google.com/recaptcha/api2/aframe"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/escape-road/gameplay-1.webp",
+        "hash": "df445c0537924cd2033690b15cf534dbda5d53ead8f9ecaa441b849e43c0761a"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/escape-road/gameplay-2.webp",
+        "hash": "a4f51fdbd897676a7ac3aa8085ae289d208473b6820b88008f786f9bf1d58e3a"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/escape-road/gameplay-3.webp",
+        "hash": "b2c153153013234fc2a04b00faefbdcde4193af8eb1c33d1f21a0424ae734593"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "Access to XMLHttpRequest at 'https://event.azgame.io/apiaz/event?event=start-game&data=JnRpbWU9MjY4NCZnaWQ9ZXNjYXBlLXJvYWQmd3RvcD1hemdhbWVzLmlvJmhuPWF6Z2FtZXMuaW8mcmVmZXJyZXI9aHR0cHM6Ly9hemdhbWVzLmlvL2VzY2FwZS1yb2FkLmVtYmVk' from origin 'https://azgames.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: the server responded with a status of 400 ()"
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/escape-road.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "xhr https://event.azgame.io/apiaz/event?event=start-game&data=JnRpbWU9MjY4NCZnaWQ9ZXNjYXBlLXJvYWQmd3RvcD1hemdhbWVzLmlvJmhuPWF6Z2FtZXMuaW8mcmVmZXJyZXI9aHR0cHM6Ly9hemdhbWVzLmlvL2VzY2FwZS1yb2FkLmVtYmVk net::ERR_FAILED"
+    ]
+  },
+  {
+    "id": "trap-the-cat",
+    "title": "Trap the Cat",
+    "pageUrl": "https://azgames.io/trap-the-cat",
+    "iframeSrc": "https://azgames.io/trap-the-cat.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/trap-the-cat.jpg",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/trap-the-cat/cover.jpg",
+    "coverSize": {
+      "width": 540,
+      "height": 566
+    },
+    "frameUrls": [
+      "https://azgames.io/trap-the-cat.embed",
+      "https://azgames.io/game/trapthecat/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/trap-the-cat/gameplay-1.webp",
+        "hash": "a7676fafb4669891cfe5235914f32033c82678dd5d867af2afb0e750670ea3ed"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/trap-the-cat/gameplay-2.webp",
+        "hash": "c27313257b6a49c9b3db97c8d9d3d58e014cee5d407bac1cf7e001b9541c78d6"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/trap-the-cat/gameplay-3.webp",
+        "hash": "86102a8ffbfcd824321189bbbc329e6d20255cbc2e7302a53a0b8123dcf8d004"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/trap-the-cat.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ]
+  },
+  {
+    "id": "suika-game",
+    "title": "Suika Game",
+    "pageUrl": "https://azgames.io/suika-game",
+    "iframeSrc": "https://azgames.io/suika-game.embed",
+    "coverUrl": "https://azgames.io/upload/imgs/suikagame.png",
+    "coverPath": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/suika-game/cover.png",
+    "coverSize": {
+      "width": 620,
+      "height": 620
+    },
+    "frameUrls": [
+      "https://azgames.io/suika-game.embed",
+      "https://suikagame.io/game/suika-game/"
+    ],
+    "uniqueCaptureCount": 3,
+    "captures": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/suika-game/gameplay-1.webp",
+        "hash": "dec30e0b1d519ed53e038db32bbe32cd44b7ab7003f77bc2f1c8d4f1af83dfb9"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/suika-game/gameplay-2.webp",
+        "hash": "1dcca48b24a38cb0712ffae450a7cac02b11ee1adf7d0f47b577a7253507b748"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/public/images/games/suika-game/gameplay-3.webp",
+        "hash": "d2b1e0308c189aea42884d4f96baba8bf4220053ed7197fa80878418e902d0e3"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "failed": [
+      "stylesheet https://static.cloudflareinsights.com/beacon.min.js/layer.css net::ERR_ABORTED"
+    ]
+  }
+]

@@ -1,0 +1,1628 @@
+[
+  {
+    "slot_id": "site-logo",
+    "page_id": "shared-shell",
+    "target_section": "Header",
+    "player_question": "Am I on the Krillion site?",
+    "fact_to_show": "A distinctive depth-line K mark and the locked Krillion name.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the site without implying official status.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Create a new local raster mark; never use text styled as a substitute.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-site-logo"
+    ]
+  },
+  {
+    "slot_id": "site-og",
+    "page_id": "shared-shell",
+    "target_section": "social metadata",
+    "player_question": "What will this site link open?",
+    "fact_to_show": "Krillion Daily Dive play and player guidance in the site's depth-line system.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Match the canonical site's social title without depicting a fake result.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Create a new local 1200×630 composition.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-site-og"
+    ]
+  },
+  {
+    "slot_id": "game-krillion-cover",
+    "page_id": "home",
+    "target_section": "player waiting state",
+    "player_question": "Where do I start Krillion?",
+    "fact_to_show": "The current Daily Dive start state and a clear play surface.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Support the short start-here sentence and Play Now action.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Capture a fresh current-version start state from the supplied URL.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-cover"
+    ]
+  },
+  {
+    "slot_id": "game-krillion-start",
+    "page_id": "home",
+    "target_section": "prepare before the dive",
+    "player_question": "What appears before the first timed prompt?",
+    "fact_to_show": "The exact launch/descend control and any visible readiness cue.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain what to check before starting.",
+    "candidate_evidence_ids": [
+      "evidence-001",
+      "evidence-002"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Recapture the live start state; do not substitute another game's launch screen.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-krillion-prompt",
+    "page_id": "home",
+    "target_section": "answer input",
+    "player_question": "Where are the prompt, timer, and answer field?",
+    "fact_to_show": "One current prompt with its input controls and time feedback.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain reading, typing, and submitting without quoting daily answers.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Capture a new prompt with any answer text redacted only when necessary.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-krillion-result",
+    "page_id": "home",
+    "target_section": "points and depth feedback",
+    "player_question": "How do I read the result after submitting?",
+    "fact_to_show": "Visible accepted-answer, score, and depth feedback from the current interface.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Distinguish validity feedback from rarity without inventing a formula.",
+    "candidate_evidence_ids": [
+      "evidence-001",
+      "evidence-003"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Capture a result from a fresh self-played run; omit unverified numeric claims.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-krillion-video",
+    "page_id": "home",
+    "target_section": "after complete article",
+    "player_question": "What does a complete current Krillion run look like?",
+    "fact_to_show": "A current-version Daily Dive with launch, typed answer, feedback, and progression visible.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Introduce what the clip clarifies without copying its title or narration.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Research a different exact, embeddable current-version YouTube upload; publication is blocked if none qualifies.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-krillion"
+    ]
+  },
+  {
+    "slot_id": "guide-howto-cover",
+    "page_id": "guide-howto",
+    "target_section": "Guide opening",
+    "player_question": "Will this Guide take me through a complete first dive?",
+    "fact_to_show": "A current Krillion start-to-prompt composition.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Set the start-to-finish scope.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Use a fresh self-captured start state.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-guide-krillion-how-to-play-cover"
+    ]
+  },
+  {
+    "slot_id": "guide-howto-start",
+    "page_id": "guide-howto",
+    "target_section": "before the timer",
+    "player_question": "What should I check before starting?",
+    "fact_to_show": "The current launch control and readiness state.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain focus, sound, and readiness.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Recapture the current start state.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-1"
+    ]
+  },
+  {
+    "slot_id": "guide-howto-prompt",
+    "page_id": "guide-howto",
+    "target_section": "type and submit",
+    "player_question": "Where do I type and submit?",
+    "fact_to_show": "One prompt and its input controls.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Walk through one submission.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Recapture a current prompt.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-2"
+    ]
+  },
+  {
+    "slot_id": "guide-howto-result",
+    "page_id": "guide-howto",
+    "target_section": "read feedback",
+    "player_question": "What happens after submission?",
+    "fact_to_show": "The current accepted/result view.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain the next action without duplicating the scoring Guide.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Recapture a current result.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-3"
+    ]
+  },
+  {
+    "slot_id": "guide-score-cover",
+    "page_id": "guide-scoring",
+    "target_section": "Guide opening",
+    "player_question": "Which feedback will this Guide explain?",
+    "fact_to_show": "A current result panel with score and depth areas visible.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Frame validity and rarity as separate questions.",
+    "candidate_evidence_ids": [
+      "evidence-001",
+      "evidence-003"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Use a fresh self-captured result without unverified annotation.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-guide-krillion-scoring-rare-answers-cover"
+    ]
+  },
+  {
+    "slot_id": "guide-score-common",
+    "page_id": "guide-scoring",
+    "target_section": "common answer",
+    "player_question": "How is a valid but common response presented?",
+    "fact_to_show": "Observed feedback for a defensible common answer.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain reliability before rarity.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Use a text-only hypothetical clearly labeled as an example, not a score claim.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-1"
+    ]
+  },
+  {
+    "slot_id": "guide-score-rare",
+    "page_id": "guide-scoring",
+    "target_section": "specific answer",
+    "player_question": "How can specificity change feedback?",
+    "fact_to_show": "Observed feedback for a more specific valid answer in the same interface.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain the validity risk of obscurity.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Use text-only decision steps; do not fabricate a comparison screenshot.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-2"
+    ]
+  },
+  {
+    "slot_id": "guide-score-depth",
+    "page_id": "guide-scoring",
+    "target_section": "result panel anatomy",
+    "player_question": "Where should I look for depth and points?",
+    "fact_to_show": "The exact current labels and placement.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Describe only visible labels and relationships.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Use current result screenshot without numerical formula claims.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-3"
+    ]
+  },
+  {
+    "slot_id": "guide-help-cover",
+    "page_id": "guide-help",
+    "target_section": "Guide opening",
+    "player_question": "Which game states can this Guide recover?",
+    "fact_to_show": "A current player loading or retry state in the site's shell.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Separate site player state from third-party game state.",
+    "candidate_evidence_ids": [
+      "evidence-001",
+      "evidence-017"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Capture the built player's own loading state.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-guide-krillion-loading-input-help-cover"
+    ]
+  },
+  {
+    "slot_id": "guide-help-loading",
+    "page_id": "guide-help",
+    "target_section": "loading versus expired prompt",
+    "player_question": "Is the frame still loading or has a prompt expired?",
+    "fact_to_show": "The built player's loading status and timeout transition.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Give observable checks rather than diagnostics.",
+    "candidate_evidence_ids": [
+      "evidence-017"
+    ],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Capture the deterministic local loading state.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-1"
+    ]
+  },
+  {
+    "slot_id": "guide-help-focus",
+    "page_id": "guide-help",
+    "target_section": "restore input focus",
+    "player_question": "Where should I click before typing?",
+    "fact_to_show": "The loaded frame and focus instruction in the status bar.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain click-inside-frame and keyboard checks.",
+    "candidate_evidence_ids": [
+      "evidence-001"
+    ],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Use an annotated site-shell capture that does not alter the game image.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-2"
+    ]
+  },
+  {
+    "slot_id": "guide-help-retry",
+    "page_id": "guide-help",
+    "target_section": "safe retry",
+    "player_question": "How do I retry without creating duplicate games?",
+    "fact_to_show": "The visible failure/timeout message and Retry button with no iframe retained.",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Explain the safe retry sequence.",
+    "candidate_evidence_ids": [
+      "evidence-017"
+    ],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Capture the deterministic local rejected-URL test state.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-krillion-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-slope-cover",
+    "page_id": "game-slope",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Slope game?",
+    "fact_to_show": "Matching AZGames artwork for Slope.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-cover"
+    ]
+  },
+  {
+    "slot_id": "game-slope-screen-1",
+    "page_id": "game-slope",
+    "target_section": "opening mechanics",
+    "player_question": "Read the next split before the ball reaches it.",
+    "fact_to_show": "Slope ball approaching a divided neon track",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Read the next split before the ball reaches it.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-slope-screen-2",
+    "page_id": "game-slope",
+    "target_section": "controls",
+    "player_question": "Short taps keep the ball centered on narrow sections.",
+    "fact_to_show": "Slope ball crossing a narrow elevated section",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Short taps keep the ball centered on narrow sections.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-slope-screen-3",
+    "page_id": "game-slope",
+    "target_section": "progression",
+    "player_question": "Red geometry is dangerous even when the wider route looks inviting.",
+    "fact_to_show": "Slope ball steering around red track hazards",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Red geometry is dangerous even when the wider route looks inviting.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-slope-video",
+    "page_id": "game-slope",
+    "target_section": "after complete article",
+    "player_question": "How does Slope move during real play?",
+    "fact_to_show": "Matching Slope gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-slope"
+    ]
+  },
+  {
+    "slot_id": "game-2048-cover",
+    "page_id": "game-2048",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct 2048 game?",
+    "fact_to_show": "Matching AZGames artwork for 2048.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-cover"
+    ]
+  },
+  {
+    "slot_id": "game-2048-screen-1",
+    "page_id": "game-2048",
+    "target_section": "opening mechanics",
+    "player_question": "Every valid move shifts the full board and adds a tile.",
+    "fact_to_show": "2048 board after several low tiles have merged",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Every valid move shifts the full board and adds a tile.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-2048-screen-2",
+    "page_id": "game-2048",
+    "target_section": "controls",
+    "player_question": "A stable corner gives high values a predictable home.",
+    "fact_to_show": "2048 board with a growing corner chain",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A stable corner gives high values a predictable home.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-2048-screen-3",
+    "page_id": "game-2048",
+    "target_section": "progression",
+    "player_question": "Preserve empty squares before pursuing the next large merge.",
+    "fact_to_show": "2048 board after another directional move",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Preserve empty squares before pursuing the next large merge.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-2048-video",
+    "page_id": "game-2048",
+    "target_section": "after complete article",
+    "player_question": "How does 2048 move during real play?",
+    "fact_to_show": "Matching 2048 gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-2048"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-cover",
+    "page_id": "game-curve-rush",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Curve Rush game?",
+    "fact_to_show": "Matching AZGames artwork for Curve Rush.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-cover"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-screen-1",
+    "page_id": "game-curve-rush",
+    "target_section": "opening mechanics",
+    "player_question": "The tutorial identifies the pressure-and-release rhythm.",
+    "fact_to_show": "Curve Rush tutorial showing hold and release timing",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "The tutorial identifies the pressure-and-release rhythm.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-screen-2",
+    "page_id": "game-curve-rush",
+    "target_section": "controls",
+    "player_question": "Speed is built on the descending side of a hill.",
+    "fact_to_show": "Curve Rush ball moving over a sandy hill",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Speed is built on the descending side of a hill.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-screen-3",
+    "page_id": "game-curve-rush",
+    "target_section": "progression",
+    "player_question": "A useful jump is judged by its landing, not height alone.",
+    "fact_to_show": "Curve Rush ball launching across a curved dune",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A useful jump is judged by its landing, not height alone.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-video",
+    "page_id": "game-curve-rush",
+    "target_section": "after complete article",
+    "player_question": "How does Curve Rush move during real play?",
+    "fact_to_show": "Matching Curve Rush gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-curve-rush"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-cover",
+    "page_id": "game-tap-road",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Tap Road game?",
+    "fact_to_show": "Matching AZGames artwork for Tap Road.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-cover"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-screen-1",
+    "page_id": "game-tap-road",
+    "target_section": "opening mechanics",
+    "player_question": "Plan around the next two hazards, not only the closest one.",
+    "fact_to_show": "Tap Road ball approaching hazards on two neon lanes",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Plan around the next two hazards, not only the closest one.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-screen-2",
+    "page_id": "game-tap-road",
+    "target_section": "controls",
+    "player_question": "A single deliberate tap moves the ball across the road.",
+    "fact_to_show": "Tap Road ball switching to the clear track",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A single deliberate tap moves the ball across the road.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-screen-3",
+    "page_id": "game-tap-road",
+    "target_section": "progression",
+    "player_question": "Obstacle numbers help measure how far the run has progressed.",
+    "fact_to_show": "Tap Road run at a later numbered obstacle",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Obstacle numbers help measure how far the run has progressed.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-video",
+    "page_id": "game-tap-road",
+    "target_section": "after complete article",
+    "player_question": "How does Tap Road move during real play?",
+    "fact_to_show": "Matching Tap Road gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-tap-road"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-cover",
+    "page_id": "game-head-basketball",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Head Basketball game?",
+    "fact_to_show": "Matching AZGames artwork for Head Basketball.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-cover"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-screen-1",
+    "page_id": "game-head-basketball",
+    "target_section": "opening mechanics",
+    "player_question": "Choose the match format before learning the active controls.",
+    "fact_to_show": "Head Basketball mode selection before a match",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Choose the match format before learning the active controls.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-screen-2",
+    "page_id": "game-head-basketball",
+    "target_section": "controls",
+    "player_question": "Center-court positioning prepares for the first rebound.",
+    "fact_to_show": "Head Basketball player positioned at center court",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Center-court positioning prepares for the first rebound.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-screen-3",
+    "page_id": "game-head-basketball",
+    "target_section": "progression",
+    "player_question": "The compact court keeps every miss in play.",
+    "fact_to_show": "Head Basketball match with both hoops visible",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "The compact court keeps every miss in play.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-video",
+    "page_id": "game-head-basketball",
+    "target_section": "after complete article",
+    "player_question": "How does Head Basketball move during real play?",
+    "fact_to_show": "Matching Head Basketball gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-head-basketball"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-cover",
+    "page_id": "game-escape-road",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Escape Road game?",
+    "fact_to_show": "Matching AZGames artwork for Escape Road.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-cover"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-screen-1",
+    "page_id": "game-escape-road",
+    "target_section": "opening mechanics",
+    "player_question": "Open junctions offer several escape lines.",
+    "fact_to_show": "Escape Road getaway car entering a city junction",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Open junctions offer several escape lines.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-screen-2",
+    "page_id": "game-escape-road",
+    "target_section": "controls",
+    "player_question": "Let pursuing vehicles commit before cutting behind them.",
+    "fact_to_show": "Escape Road police chase around buildings",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Let pursuing vehicles commit before cutting behind them.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-screen-3",
+    "page_id": "game-escape-road",
+    "target_section": "progression",
+    "player_question": "Crowded streets reward early steering rather than emergency turns.",
+    "fact_to_show": "Escape Road car steering through a crowded pursuit",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Crowded streets reward early steering rather than emergency turns.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-video",
+    "page_id": "game-escape-road",
+    "target_section": "after complete article",
+    "player_question": "How does Escape Road move during real play?",
+    "fact_to_show": "Matching Escape Road gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-escape-road"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-cover",
+    "page_id": "game-trap-the-cat",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Trap the Cat game?",
+    "fact_to_show": "Matching AZGames artwork for Trap the Cat.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-cover"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-screen-1",
+    "page_id": "game-trap-the-cat",
+    "target_section": "opening mechanics",
+    "player_question": "The first move should account for all six directions.",
+    "fact_to_show": "Trap the Cat hex board at the opening position",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "The first move should account for all six directions.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-screen-2",
+    "page_id": "game-trap-the-cat",
+    "target_section": "controls",
+    "player_question": "A useful wall reduces routes rather than merely following the cat.",
+    "fact_to_show": "Trap the Cat board after several cells are blocked",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A useful wall reduces routes rather than merely following the cat.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-screen-3",
+    "page_id": "game-trap-the-cat",
+    "target_section": "progression",
+    "player_question": "Recheck alternate corridors after every automatic cat move.",
+    "fact_to_show": "Trap the Cat moving through a narrowing route",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Recheck alternate corridors after every automatic cat move.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-video",
+    "page_id": "game-trap-the-cat",
+    "target_section": "after complete article",
+    "player_question": "How does Trap the Cat move during real play?",
+    "fact_to_show": "Matching Trap the Cat gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-trap-the-cat"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-cover",
+    "page_id": "game-suika-game",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Suika Game game?",
+    "fact_to_show": "Matching AZGames artwork for Suika Game.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-cover"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-screen-1",
+    "page_id": "game-suika-game",
+    "target_section": "opening mechanics",
+    "player_question": "Early placements create the floor for every later merge.",
+    "fact_to_show": "Suika Game container with early fruit pieces",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Early placements create the floor for every later merge.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-screen-2",
+    "page_id": "game-suika-game",
+    "target_section": "controls",
+    "player_question": "Matching fruit can trigger movement throughout the stack.",
+    "fact_to_show": "Suika Game fruit stack after several merges",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Matching fruit can trigger movement throughout the stack.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-screen-3",
+    "page_id": "game-suika-game",
+    "target_section": "progression",
+    "player_question": "Use the next-piece preview before choosing a drop lane.",
+    "fact_to_show": "Suika Game aiming the next fruit above the box",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Use the next-piece preview before choosing a drop lane.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-video",
+    "page_id": "game-suika-game",
+    "target_section": "after complete article",
+    "player_question": "How does Suika Game move during real play?",
+    "fact_to_show": "Matching Suika Game gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-suika-game"
+    ]
+  },
+  {
+    "slot_id": "game-slope-cover",
+    "page_id": "game-slope",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Slope game?",
+    "fact_to_show": "Matching AZGames artwork for Slope.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-cover"
+    ]
+  },
+  {
+    "slot_id": "game-slope-screen-1",
+    "page_id": "game-slope",
+    "target_section": "opening mechanics",
+    "player_question": "Read the next split before the ball reaches it.",
+    "fact_to_show": "Slope ball approaching a divided neon track",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Read the next split before the ball reaches it.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-slope-screen-2",
+    "page_id": "game-slope",
+    "target_section": "controls",
+    "player_question": "Short taps keep the ball centered on narrow sections.",
+    "fact_to_show": "Slope ball crossing a narrow elevated section",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Short taps keep the ball centered on narrow sections.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-slope-screen-3",
+    "page_id": "game-slope",
+    "target_section": "progression",
+    "player_question": "Red geometry is dangerous even when the wider route looks inviting.",
+    "fact_to_show": "Slope ball steering around red track hazards",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Red geometry is dangerous even when the wider route looks inviting.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-slope-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-slope-video",
+    "page_id": "game-slope",
+    "target_section": "after complete article",
+    "player_question": "How does Slope move during real play?",
+    "fact_to_show": "Matching Slope gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-slope"
+    ]
+  },
+  {
+    "slot_id": "game-2048-cover",
+    "page_id": "game-2048",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct 2048 game?",
+    "fact_to_show": "Matching AZGames artwork for 2048.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-cover"
+    ]
+  },
+  {
+    "slot_id": "game-2048-screen-1",
+    "page_id": "game-2048",
+    "target_section": "opening mechanics",
+    "player_question": "Every valid move shifts the full board and adds a tile.",
+    "fact_to_show": "2048 board after several low tiles have merged",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Every valid move shifts the full board and adds a tile.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-2048-screen-2",
+    "page_id": "game-2048",
+    "target_section": "controls",
+    "player_question": "A stable corner gives high values a predictable home.",
+    "fact_to_show": "2048 board with a growing corner chain",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A stable corner gives high values a predictable home.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-2048-screen-3",
+    "page_id": "game-2048",
+    "target_section": "progression",
+    "player_question": "Preserve empty squares before pursuing the next large merge.",
+    "fact_to_show": "2048 board after another directional move",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Preserve empty squares before pursuing the next large merge.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-2048-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-2048-video",
+    "page_id": "game-2048",
+    "target_section": "after complete article",
+    "player_question": "How does 2048 move during real play?",
+    "fact_to_show": "Matching 2048 gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-2048"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-cover",
+    "page_id": "game-curve-rush",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Curve Rush game?",
+    "fact_to_show": "Matching AZGames artwork for Curve Rush.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-cover"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-screen-1",
+    "page_id": "game-curve-rush",
+    "target_section": "opening mechanics",
+    "player_question": "The tutorial identifies the pressure-and-release rhythm.",
+    "fact_to_show": "Curve Rush tutorial showing hold and release timing",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "The tutorial identifies the pressure-and-release rhythm.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-screen-2",
+    "page_id": "game-curve-rush",
+    "target_section": "controls",
+    "player_question": "Speed is built on the descending side of a hill.",
+    "fact_to_show": "Curve Rush ball moving over a sandy hill",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Speed is built on the descending side of a hill.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-screen-3",
+    "page_id": "game-curve-rush",
+    "target_section": "progression",
+    "player_question": "A useful jump is judged by its landing, not height alone.",
+    "fact_to_show": "Curve Rush ball launching across a curved dune",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A useful jump is judged by its landing, not height alone.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-curve-rush-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-curve-rush-video",
+    "page_id": "game-curve-rush",
+    "target_section": "after complete article",
+    "player_question": "How does Curve Rush move during real play?",
+    "fact_to_show": "Matching Curve Rush gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-curve-rush"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-cover",
+    "page_id": "game-tap-road",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Tap Road game?",
+    "fact_to_show": "Matching AZGames artwork for Tap Road.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-cover"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-screen-1",
+    "page_id": "game-tap-road",
+    "target_section": "opening mechanics",
+    "player_question": "Plan around the next two hazards, not only the closest one.",
+    "fact_to_show": "Tap Road ball approaching hazards on two neon lanes",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Plan around the next two hazards, not only the closest one.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-screen-2",
+    "page_id": "game-tap-road",
+    "target_section": "controls",
+    "player_question": "A single deliberate tap moves the ball across the road.",
+    "fact_to_show": "Tap Road ball switching to the clear track",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A single deliberate tap moves the ball across the road.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-screen-3",
+    "page_id": "game-tap-road",
+    "target_section": "progression",
+    "player_question": "Obstacle numbers help measure how far the run has progressed.",
+    "fact_to_show": "Tap Road run at a later numbered obstacle",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Obstacle numbers help measure how far the run has progressed.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-tap-road-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-tap-road-video",
+    "page_id": "game-tap-road",
+    "target_section": "after complete article",
+    "player_question": "How does Tap Road move during real play?",
+    "fact_to_show": "Matching Tap Road gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-tap-road"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-cover",
+    "page_id": "game-head-basketball",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Head Basketball game?",
+    "fact_to_show": "Matching AZGames artwork for Head Basketball.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-cover"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-screen-1",
+    "page_id": "game-head-basketball",
+    "target_section": "opening mechanics",
+    "player_question": "Choose the match format before learning the active controls.",
+    "fact_to_show": "Head Basketball mode selection before a match",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Choose the match format before learning the active controls.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-screen-2",
+    "page_id": "game-head-basketball",
+    "target_section": "controls",
+    "player_question": "Center-court positioning prepares for the first rebound.",
+    "fact_to_show": "Head Basketball player positioned at center court",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Center-court positioning prepares for the first rebound.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-screen-3",
+    "page_id": "game-head-basketball",
+    "target_section": "progression",
+    "player_question": "The compact court keeps every miss in play.",
+    "fact_to_show": "Head Basketball match with both hoops visible",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "The compact court keeps every miss in play.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-head-basketball-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-head-basketball-video",
+    "page_id": "game-head-basketball",
+    "target_section": "after complete article",
+    "player_question": "How does Head Basketball move during real play?",
+    "fact_to_show": "Matching Head Basketball gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-head-basketball"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-cover",
+    "page_id": "game-escape-road",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Escape Road game?",
+    "fact_to_show": "Matching AZGames artwork for Escape Road.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-cover"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-screen-1",
+    "page_id": "game-escape-road",
+    "target_section": "opening mechanics",
+    "player_question": "Open junctions offer several escape lines.",
+    "fact_to_show": "Escape Road getaway car entering a city junction",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Open junctions offer several escape lines.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-screen-2",
+    "page_id": "game-escape-road",
+    "target_section": "controls",
+    "player_question": "Let pursuing vehicles commit before cutting behind them.",
+    "fact_to_show": "Escape Road police chase around buildings",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Let pursuing vehicles commit before cutting behind them.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-screen-3",
+    "page_id": "game-escape-road",
+    "target_section": "progression",
+    "player_question": "Crowded streets reward early steering rather than emergency turns.",
+    "fact_to_show": "Escape Road car steering through a crowded pursuit",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Crowded streets reward early steering rather than emergency turns.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-escape-road-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-escape-road-video",
+    "page_id": "game-escape-road",
+    "target_section": "after complete article",
+    "player_question": "How does Escape Road move during real play?",
+    "fact_to_show": "Matching Escape Road gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-escape-road"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-cover",
+    "page_id": "game-trap-the-cat",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Trap the Cat game?",
+    "fact_to_show": "Matching AZGames artwork for Trap the Cat.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-cover"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-screen-1",
+    "page_id": "game-trap-the-cat",
+    "target_section": "opening mechanics",
+    "player_question": "The first move should account for all six directions.",
+    "fact_to_show": "Trap the Cat hex board at the opening position",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "The first move should account for all six directions.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-screen-2",
+    "page_id": "game-trap-the-cat",
+    "target_section": "controls",
+    "player_question": "A useful wall reduces routes rather than merely following the cat.",
+    "fact_to_show": "Trap the Cat board after several cells are blocked",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "A useful wall reduces routes rather than merely following the cat.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-screen-3",
+    "page_id": "game-trap-the-cat",
+    "target_section": "progression",
+    "player_question": "Recheck alternate corridors after every automatic cat move.",
+    "fact_to_show": "Trap the Cat moving through a narrowing route",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Recheck alternate corridors after every automatic cat move.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-trap-the-cat-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-trap-the-cat-video",
+    "page_id": "game-trap-the-cat",
+    "target_section": "after complete article",
+    "player_question": "How does Trap the Cat move during real play?",
+    "fact_to_show": "Matching Trap the Cat gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-trap-the-cat"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-cover",
+    "page_id": "game-suika-game",
+    "target_section": "player waiting state and cards",
+    "player_question": "Is this the correct Suika Game game?",
+    "fact_to_show": "Matching AZGames artwork for Suika Game.",
+    "preferred_format": "approved-image",
+    "adjacent_copy_task": "Identify the exact game before launch.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-cover"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-screen-1",
+    "page_id": "game-suika-game",
+    "target_section": "opening mechanics",
+    "player_question": "Early placements create the floor for every later merge.",
+    "fact_to_show": "Suika Game container with early fruit pieces",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Early placements create the floor for every later merge.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-screen-1"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-screen-2",
+    "page_id": "game-suika-game",
+    "target_section": "controls",
+    "player_question": "Matching fruit can trigger movement throughout the stack.",
+    "fact_to_show": "Suika Game fruit stack after several merges",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Matching fruit can trigger movement throughout the stack.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-screen-2"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-screen-3",
+    "page_id": "game-suika-game",
+    "target_section": "progression",
+    "player_question": "Use the next-piece preview before choosing a drop lane.",
+    "fact_to_show": "Suika Game aiming the next fruit above the box",
+    "preferred_format": "game-screenshot",
+    "adjacent_copy_task": "Use the next-piece preview before choosing a drop lane.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": false,
+    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-game-suika-game-screen-3"
+    ]
+  },
+  {
+    "slot_id": "game-suika-game-video",
+    "page_id": "game-suika-game",
+    "target_section": "after complete article",
+    "player_question": "How does Suika Game move during real play?",
+    "fact_to_show": "Matching Suika Game gameplay and controls.",
+    "preferred_format": "youtube-video",
+    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "candidate_evidence_ids": [],
+    "rights_check_needed": true,
+    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "adoption_status": "adopted",
+    "media_ledger_ids": [
+      "media-video-suika-game"
+    ]
+  }
+]

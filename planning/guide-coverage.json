@@ -1,0 +1,62 @@
+[
+  {
+    "guide_id": "krillion-how-to-play",
+    "slug": "how-to-play-krillion",
+    "intent_cluster_id": "first-dive",
+    "primary_task": "Complete a first Krillion Daily Dive without losing a prompt to an avoidable interface or timing mistake.",
+    "queries": ["how to play krillion", "krillion rules", "how many prompts in krillion"],
+    "unique_scope": "Owns the start-to-finish play sequence, controls, prompt reading, submission, and results flow; scoring theory stays in the scoring Guide and technical recovery stays in troubleshooting.",
+    "required_sections": ["Before starting the timer", "The seven-prompt sequence", "Typing and submitting one answer", "Reading acceptance and depth feedback", "Finishing and returning for the next daily dive"],
+    "media_slots": ["guide-howto-cover", "guide-howto-start", "guide-howto-prompt", "guide-howto-result"],
+    "freshness_risk": "medium: timer labels and reset behavior can change",
+    "coverage_status": "planned"
+  },
+  {
+    "guide_id": "krillion-scoring-rare-answers",
+    "slug": "krillion-scoring-and-rare-answers",
+    "intent_cluster_id": "score-and-depth",
+    "primary_task": "Understand why a valid answer earns its observed score and choose lower-risk uncommon answers on later prompts.",
+    "queries": ["krillion scoring", "krillion rare answers", "krillion depth points", "krillion tips"],
+    "unique_scope": "Owns the relationship between validity, commonness, point feedback, and depth plus practical answer-selection tradeoffs; it does not repeat the full first-run tutorial or publish daily answers.",
+    "required_sections": ["Correctness before rarity", "How the result panel communicates value", "Common versus specific answers", "When an obscure answer becomes risky", "A repeatable think-check-submit routine"],
+    "media_slots": ["guide-score-cover", "guide-score-common", "guide-score-rare", "guide-score-depth"],
+    "freshness_risk": "high: named tiers and numerical mappings require live verification",
+    "coverage_status": "planned"
+  },
+  {
+    "guide_id": "krillion-loading-input-help",
+    "slug": "krillion-loading-and-input-help",
+    "intent_cluster_id": "runtime-help",
+    "primary_task": "Restore a stuck, unfocused, muted, or poorly sized Krillion session without exposing internal diagnostics.",
+    "queries": ["krillion not loading", "krillion keyboard not working", "krillion mobile", "krillion sound"],
+    "unique_scope": "Owns browser, focus, reload, timer, touch-keyboard, audio, and fullscreen recovery. It links back to the play Guide instead of teaching the normal round again.",
+    "required_sections": ["Identify loading versus an expired prompt", "Restore keyboard focus", "Retry safely without duplicate frames", "Mobile viewport and touch keyboard checks", "Sound, storage, and browser compatibility"],
+    "media_slots": ["guide-help-cover", "guide-help-loading", "guide-help-focus", "guide-help-retry"],
+    "freshness_risk": "medium: browser behavior and the game shell may change",
+    "coverage_status": "planned"
+  },
+  {
+    "guide_id": "krillion-strategy",
+    "slug": "krillion-strategy",
+    "intent_cluster_id": "strategy",
+    "primary_task": "Choose stronger uncommon answers.",
+    "queries": ["krillion strategy", "krillion tips"],
+    "unique_scope": "Overlaps heavily with scoring and rare-answer selection.",
+    "required_sections": [],
+    "media_slots": [],
+    "freshness_risk": "medium",
+    "coverage_status": "deferred"
+  },
+  {
+    "guide_id": "krillion-daily-answers",
+    "slug": "krillion-daily-answers",
+    "intent_cluster_id": "daily-answers",
+    "primary_task": "Reveal current answers.",
+    "queries": ["krillion answers today"],
+    "unique_scope": "Would depend on volatile answer data and undermine the timed knowledge task.",
+    "required_sections": [],
+    "media_slots": [],
+    "freshness_risk": "unacceptably high",
+    "coverage_status": "excluded"
+  }
+]

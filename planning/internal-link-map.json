@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "sharedNavigation": [
+    {"label":"Home","path":"/"},{"label":"Guides","path":"/guides"},{"label":"More Games","path":"/games"}
+  ],
+  "footerLegal": ["/privacy","/terms","/copyright","/about","/contact"],
+  "pageLinks": {
+    "home": ["/guides","/games","/guides/how-to-play-krillion","/guides/krillion-scoring-and-rare-answers","/guides/krillion-loading-and-input-help"],
+    "guides-index": ["/guides/how-to-play-krillion","/guides/krillion-scoring-and-rare-answers","/guides/krillion-loading-and-input-help","/"],
+    "games-index": ["/games/guess-their-answer","/games/words-of-wonders","/games/word-detector","/games/word-search-classic","/games/text-twist-2","/games/animal-quiz","/games/sweet-hangman","/games/word-bird"],
+    "guide-howto": ["/","/guides","/guides/krillion-scoring-and-rare-answers","/guides/krillion-loading-and-input-help"],
+    "guide-scoring": ["/","/guides","/guides/how-to-play-krillion","/guides/krillion-loading-and-input-help"],
+    "guide-help": ["/","/guides","/guides/how-to-play-krillion","/guides/krillion-scoring-and-rare-answers"]
+  },
+  "gameRelations": {
+    "guess-their-answer": [
+      {"game_id":"animal-quiz","reason":"Both require typed knowledge recall, but the animal clue narrows the answer space."},{"game_id":"sweet-hangman","reason":"Both reward deliberate recall and reveal partial feedback after each choice."},{"game_id":"word-detector","reason":"Both test whether the player's first typed idea is recognized as valid."},{"game_id":"words-of-wonders","reason":"Vocabulary breadth helps in both open-answer and constrained-letter play."},{"game_id":"text-twist-2","reason":"Both reward quick recall of multiple acceptable words under pace pressure."},{"game_id":"word-bird","reason":"Both suit short vocabulary sessions with many possible word discoveries."}
+    ],
+    "words-of-wonders": [
+      {"game_id":"word-detector","reason":"Both create words by dragging through a compact letter set."},{"game_id":"text-twist-2","reason":"Both ask for several words from one reusable letter pool."},{"game_id":"word-bird","reason":"Both combine path gestures with vocabulary discovery."},{"game_id":"word-search-classic","reason":"Both use a visible letter grid and careful touch movement."},{"game_id":"sweet-hangman","reason":"Both use partial word structure to narrow a missing answer."},{"game_id":"guess-their-answer","reason":"Both reward broad vocabulary, with open prompts in one and fixed letters in the other."}
+    ],
+    "word-detector": [
+      {"game_id":"words-of-wonders","reason":"Both rely on tracing letter sequences into valid words."},{"game_id":"text-twist-2","reason":"Both ask players to exhaust possible words from a limited letter set."},{"game_id":"word-bird","reason":"Both use drag paths and a target list."},{"game_id":"word-search-classic","reason":"Both demand accurate grid scanning and selection."},{"game_id":"sweet-hangman","reason":"Both reveal a constrained word shape and reward careful letter choices."},{"game_id":"animal-quiz","reason":"Both combine word completion with clue interpretation."}
+    ],
+    "word-search-classic": [
+      {"game_id":"word-bird","reason":"Both center on discovering words inside a letter grid."},{"game_id":"word-detector","reason":"Both turn precise drags into accepted word selections."},{"game_id":"words-of-wonders","reason":"Both use visible letter placement and crossing information."},{"game_id":"text-twist-2","reason":"Both reward systematic enumeration instead of a single lucky guess."},{"game_id":"animal-quiz","reason":"Both are untimed-looking, accessible visual word tasks suited to short sessions."},{"game_id":"sweet-hangman","reason":"Both narrow a known target list through visual inspection."}
+    ],
+    "text-twist-2": [
+      {"game_id":"word-detector","reason":"Both generate several words from a fixed letter supply."},{"game_id":"words-of-wonders","reason":"Both use anagram reasoning and reward the longest useful word."},{"game_id":"word-bird","reason":"Both require rapid recognition of possible word paths."},{"game_id":"word-search-classic","reason":"Both benefit from a systematic sweep rather than random input."},{"game_id":"sweet-hangman","reason":"Both use word length and known letters to reduce possibilities."},{"game_id":"guess-their-answer","reason":"Both put broad recall under visible pace pressure."}
+    ],
+    "animal-quiz": [
+      {"game_id":"sweet-hangman","reason":"Both start from a picture clue and resolve a hidden word."},{"game_id":"guess-their-answer","reason":"Both test knowledge recall through entered answers."},{"game_id":"word-detector","reason":"Both require exact spelling from a constrained set of letters."},{"game_id":"word-bird","reason":"Both are compact touch-friendly word challenges with visible targets."},{"game_id":"words-of-wonders","reason":"Both reveal letter positions as progress is made."},{"game_id":"word-search-classic","reason":"Both rely on careful visual recognition before selecting letters."}
+    ],
+    "sweet-hangman": [
+      {"game_id":"animal-quiz","reason":"Both use an image to cue a spelled answer."},{"game_id":"word-detector","reason":"Both expose a word-length constraint and reject invalid letter choices."},{"game_id":"text-twist-2","reason":"Both reward using word structure to prioritize letters."},{"game_id":"word-bird","reason":"Both are short-form vocabulary puzzles with incremental progress."},{"game_id":"word-search-classic","reason":"Both benefit from patient visual checking before input."},{"game_id":"guess-their-answer","reason":"Both ask for a likely answer while penalizing weak guesses indirectly."}
+    ],
+    "word-bird": [
+      {"game_id":"word-search-classic","reason":"Both find words by moving through a letter grid."},{"game_id":"word-detector","reason":"Both validate drag paths against a target word set."},{"game_id":"words-of-wonders","reason":"Both join adjacent letters and track completed words."},{"game_id":"text-twist-2","reason":"Both reward spotting many words from a small letter field."},{"game_id":"animal-quiz","reason":"Both present clear visual targets and compact mobile input."},{"game_id":"sweet-hangman","reason":"Both provide partial progress that narrows the remaining vocabulary."}
+    ]
+  },
+  "selectionRules": {
+    "recommendedCount": 6,
+    "excludeCurrentGame": true,
+    "groupUnique": true,
+    "crossGroupPreference": "minimize overlap when inventory permits",
+    "homeFlagsSource": "data/games/games.json",
+    "detailFallback": "relatedGameIds first, then other published eligible games; never the main game or another game's media"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "trailingSlash": false,
+  "redirects": [],
+  "retiredPaths": [],
+  "notes": [
+    "The starter project had no public game or Guide routes to migrate.",
+    "The main game is canonical only at / and must never receive /games/krillion."
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "id": "krillion",
+  "slug": "krillion",
+  "title": "Krillion",
+  "shortDescription": "Answer seven timed prompts, then see how far your most uncommon valid response takes the daily dive.",
+  "status": "published",
+  "publishedAt": "2026-09-21",
+  "updatedAt": "2026-09-22",
+  "tags": [
+    "daily",
+    "trivia",
+    "open-answer"
+  ],
+  "categories": [
+    "trivia",
+    "word"
+  ],
+  "flags": {
+    "isNewHome": false,
+    "isFeaturedHome": false,
+    "isRecommendedHome": false
+  },
+  "image": {
+    "src": "/images/games/krillion/cover.webp",
+    "alt": "Krillion Daily Dive start screen with the Begin Descent control",
+    "width": 1280,
+    "height": 720
+  },
+  "player": {
+    "iframeSrc": "https://www.krillion.org/play/daily/",
+    "aspectRatio": "16 / 9",
+    "orientation": "landscape",
+    "permissionsPolicy": [],
+    "referrerPolicy": null,
+    "sandbox": [
+      "allow-scripts",
+      "allow-same-origin",
+      "allow-forms",
+      "allow-pointer-lock",
+      "allow-orientation-lock",
+      "allow-modals"
+    ],
+    "loadTimeoutMs": 30000
+  },
+  "seo": {
+    "title": "Play Krillion Online Free – Daily Trivia Game Guide",
+    "description": "Play Krillion online free, complete all seven timed Daily Dive prompts, understand rare-answer scoring, and use tested strategies to reach greater depths.",
+    "keywords": [
+      "krillion",
+      "krillion game",
+      "play krillion online",
+      "krillion online game",
+      "free daily trivia game",
+      "krillion daily dive",
+      "krillion answers",
+      "rare answer game"
+    ]
+  },
+  "content": [
+    {
+      "id": "what-is-krillion",
+      "heading": "How a Krillion Daily Dive works",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Krillion gives every player the same seven open-ended prompts for the day, with 25 seconds to answer each one. The aim is not simply to be correct: a strong response must be valid and less likely to match the crowd. After seven prompts, the game converts the total score into a dive depth. That simple format creates the whole tension. The first answer that comes to mind is usually safe but crowded, while a wonderfully obscure answer is useless if it misses one word of the category or never reaches the box before time expires."
+        },
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-1.webp",
+          "alt": "Krillion Daily Dive opening screen with seven questions and the Begin Descent button",
+          "width": 1280,
+          "height": 720,
+          "caption": "A Daily Dive begins here. Press Begin Descent when you are ready to face all seven timed prompts in order."
+        },
+        {
+          "type": "paragraph",
+          "text": "In our test runs, the most reliable approach was to treat Krillion as a recall game first and a trivia game second. Success does not require a complete encyclopedia of facts. It comes from recognizing the exact boundary of the prompt, producing two or three legal candidates quickly, and choosing the least obvious option that is still easy to spell and defend. The daily set mixes geography, entertainment, sport, food, science, brands, words, and everyday knowledge, so steady breadth usually beats one highly specialized answer."
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "label": "Spoiler-friendly guide",
+          "body": "This guide uses real prompt and answer examples because they show the decision process clearly. Daily prompts change, but the same category checks and timer habits carry over."
+        }
+      ]
+    },
+    {
+      "id": "complete-dive-walkthrough",
+      "heading": "A complete Daily Dive, step by step",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "title": "1. Start the player",
+              "body": "Press Play Now on this page, wait for the Krillion opening screen, then choose Begin Descent. Daily mode uses one shared set of seven prompts, so start only when you can give the next few minutes your full attention."
+            },
+            {
+              "title": "2. Read the entire prompt before recalling answers",
+              "body": "First identify the noun being requested, then check every qualifier attached to it. A country containing two particular letters, an animal above a stated speed, a former or current team, and a character from a named franchise all have very different answer boundaries."
+            },
+            {
+              "title": "3. Build a three-answer shortlist",
+              "body": "Treat the first idea as the safety answer. Let the second and third ideas move one ring away from it without leaving the category. Give this recall phase about eight seconds instead of spending the full clock hunting for a mythical perfect answer."
+            },
+            {
+              "title": "4. Eliminate anything that needs an argument",
+              "body": "Avoid any answer that would need a long explanation to count. Keep the candidate whose type, era, spelling, and requested property are all clear. Category fit is worth more than cleverness."
+            },
+            {
+              "title": "5. Type the shortest canonical name",
+              "body": "Enter the ordinary name used by people and reference databases. Extra explanation, decorative punctuation, nicknames, and unnecessary model numbers introduce failure points without making an answer rarer."
+            },
+            {
+              "title": "6. Submit before the final seconds",
+              "body": "Use five seconds remaining as a practical deadline. That leaves enough time to catch a typo or replace a risky candidate. When the clock reaches that point, submit the safest valid answer already on the shortlist."
+            },
+            {
+              "title": "7. Read the tier, then reset",
+              "body": "The result card shows whether an accepted answer was common or rare. Take one quick mental note, then let the result go. Carrying frustration or celebration into the next prompt wastes part of the next 25-second window."
+            },
+            {
+              "title": "8. Finish all seven and review the descent",
+              "body": "After the seventh answer, the total score becomes a depth result. Review the whole card rather than only the best response, because a strong Daily Dive comes from seven completed decisions."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-2.webp",
+          "alt": "Krillion prompt asking for a US state beginning with A while an invalid answer is in the input field",
+          "width": 1280,
+          "height": 720,
+          "caption": "A live prompt shows the key information in one place: the exact category, answer box, submit control, and remaining time."
+        },
+        {
+          "type": "paragraph",
+          "text": "The screenshot above is a useful worst-case example. The prompt asks for a U.S. state whose English name starts with A, yet the box contains octopus. No amount of rarity can rescue a response of the wrong type. Alabama, Alaska, and Arizona form the legal pool, so the real choice is about likely popularity rather than inventing something outside those three. When a prompt has such a small closed set, stop searching early and secure the point."
+        }
+      ]
+    },
+    {
+      "id": "validation-before-rarity",
+      "heading": "Why validity always comes before rarity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Krillion checks membership in an answer list, so an answer can be factually related and still fail the requested category. In one recorded run, salamander was used for a prompt asking for a mammal or reptile that lives in rivers. Salamanders may live around rivers, but they are amphibians. The idea felt close; the taxonomy made it invalid. This example became our standing reminder to identify the category word before thinking about rarity."
+        },
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-3.webp",
+          "alt": "Krillion invalid answer feedback telling the player to try another answer while the timer continues",
+          "width": 1280,
+          "height": 720,
+          "caption": "A rejection does not always end the prompt. If time remains, the game allows another attempt, so a prepared backup matters."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the not-on-this-answer-list message appears, do not keep resubmitting the same phrase with cosmetic changes. Switch to the safety answer immediately. A rejected proper name might need its standard full form, but a type mismatch needs a different answer altogether. This is another reason to build three candidates before typing: the first can be adventurous, the second balanced, and the third ready to save the prompt."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Check",
+            "Question to ask before submitting",
+            "Typical failure"
+          ],
+          "rows": [
+            [
+              "Type",
+              "Is this exactly the kind of thing requested?",
+              "An amphibian for a mammal-or-reptile prompt"
+            ],
+            [
+              "Qualifier",
+              "Does it satisfy every letter, date, place, speed, or status condition?",
+              "A historical event from the wrong century"
+            ],
+            [
+              "Canonical name",
+              "Would most references list it under this wording?",
+              "A private nickname or an overlong description"
+            ],
+            [
+              "Spelling",
+              "Can I type the decisive letters confidently?",
+              "Autocorrect changing an uncommon proper noun"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "score-and-depth",
+      "heading": "Every score tier and what it means",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An accepted answer falls into one of six visible rarity tiers. The points are fixed by tier, and each point becomes ten metres of depth. Across seven prompts, the theoretical ceiling is 700 points or 7,000 metres. Treat each tier as feedback on that decision, not proof that a fact is obscure everywhere: the label reflects how the game groups the accepted answer in the current response environment."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Tier",
+            "Points",
+            "Depth",
+            "How to read it"
+          ],
+          "rows": [
+            [
+              "Plankton",
+              "10",
+              "100 m",
+              "Valid, but one of the most automatic answers"
+            ],
+            [
+              "Too Clever",
+              "15",
+              "150 m",
+              "A small move away from the crowd"
+            ],
+            [
+              "Schooler",
+              "30",
+              "300 m",
+              "A respectable middle answer"
+            ],
+            [
+              "Rare",
+              "60",
+              "600 m",
+              "A clearly uncommon valid choice"
+            ],
+            [
+              "Deep Cut",
+              "85",
+              "850 m",
+              "Specialist knowledge that still matches cleanly"
+            ],
+            [
+              "One in a Krillion",
+              "100",
+              "1,000 m",
+              "The maximum result for a single prompt"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The multiplication is easy: a 445-point run becomes 4,450 metres. More importantly, the table shows why a single Deep Cut cannot carry six blanks or weak guesses. Seven Schooler answers already make 210 points, while one 100-point answer plus several failures can finish below that. A better target is a complete run with a few deliberate upgrades, not seven reckless attempts at One in a Krillion."
+        }
+      ]
+    },
+    {
+      "id": "twenty-five-second-routine",
+      "heading": "A practical 25-second decision routine",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Clock",
+            "What to do",
+            "Decision rule"
+          ],
+          "rows": [
+            [
+              "25–20 seconds",
+              "Read the full prompt and identify its boundaries",
+              "Do not type while still discovering what is being asked"
+            ],
+            [
+              "20–13 seconds",
+              "Recall up to three legal answers",
+              "First is safe; second and third move one ring outward"
+            ],
+            [
+              "13–8 seconds",
+              "Check the rarest usable candidate",
+              "Drop anything with uncertain type, date, spelling, or status"
+            ],
+            [
+              "8–5 seconds",
+              "Type and proofread the answer",
+              "Prefer the standard name with no explanatory text"
+            ],
+            [
+              "5–0 seconds",
+              "Submit or use the prepared backup",
+              "A safe accepted answer beats a brilliant timeout"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This routine prevents the most common spiral: recalling something exotic, doubting its spelling, erasing it, and eventually timing out with an empty field. We tested a hard five-second commitment point because it still leaves room for the answer checker to reject a candidate and for a backup to be entered. On a phone, commit even earlier when the answer is a long proper noun."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "label": "The one-ring rule",
+          "body": "Move one ring away from the obvious answer, not five. A supporting character, discontinued team, less advertised product, or familiar regional example is often rare enough without becoming fragile."
+        }
+      ]
+    },
+    {
+      "id": "tested-answer-patterns",
+      "heading": "Real answer patterns that teach the most",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The most useful gameplay footage was not the run with the highest number; it was the footage that showed why an answer succeeded or failed. These spoiler examples reveal repeatable patterns. Scores can vary with the response pool and prompt wording, so each recorded tier is evidence from that run rather than a promise for every future Daily Dive."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Prompt or category",
+            "Played answer",
+            "What the example teaches"
+          ],
+          "rows": [
+            [
+              "Food served on a stick",
+              "Dango",
+              "A recognizable regional food can be a strong Deep Cut without stretching the category"
+            ],
+            [
+              "Fictional robot",
+              "Rosie from The Jetsons",
+              "A supporting character is often less crowded than the franchise mascot"
+            ],
+            [
+              "Ancient Greek philosopher",
+              "Seneca",
+              "Fame does not fix a category error; Seneca was Roman"
+            ],
+            [
+              "Mobile game above a download threshold",
+              "Pokémon Unite",
+              "A well-known title outside the first few obvious mobile hits earned a Deep Cut in the recorded run"
+            ],
+            [
+              "War fought in the twentieth century",
+              "Emu War",
+              "An unusual but conventionally named historical event can beat a major-war default"
+            ],
+            [
+              "Current or former MLB team",
+              "Montreal Expos",
+              "The word former opens a valuable part of the legal answer pool"
+            ],
+            [
+              "Country containing G and A",
+              "Ghana",
+              "Safe and fast, but Papua New Guinea or Guinea-Bissau may move farther from the first instinct when spelling time allows"
+            ],
+            [
+              "A grain",
+              "Buckwheat",
+              "Everyday specialist knowledge can outperform the first cereal-grain answer while remaining easy to recognize"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Notice that the stronger answers are not written strangely. Dango, Pokémon Unite, Montreal Expos, and buckwheat are normal names. Their value came from searching a quieter portion of a valid category. The failed philosopher answer shows the opposite lesson: a famous and correctly spelled person scores nothing useful when the nationality or era is wrong. Aim for that same balance on every screen."
+        }
+      ]
+    },
+    {
+      "id": "category-strategy",
+      "heading": "How to approach different prompt types",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Category",
+            "Route to a less obvious answer",
+            "Final check"
+          ],
+          "rows": [
+            [
+              "Geography",
+              "Move from major countries and capitals to smaller states, former names, islands, or second cities",
+              "Verify every required letter and whether the prompt asks for country, city, state, or territory"
+            ],
+            [
+              "Entertainment",
+              "Search supporting casts, older instalments, side characters, or less dominant franchises",
+              "Confirm the character or title belongs to the named universe and medium"
+            ],
+            [
+              "Sport",
+              "Use former teams, retired players, lesser-known positions, or international leagues when wording permits",
+              "Check current versus former status and the exact league"
+            ],
+            [
+              "Products and brands",
+              "Recall discontinued services, specialist tools, or secondary product lines",
+              "Make sure it is the requested product type, not merely the parent company"
+            ],
+            [
+              "Science and nature",
+              "Think one taxonomic level below the obvious group and choose a well-established common name",
+              "Check class, habitat, speed, element, or other scientific qualifier literally"
+            ],
+            [
+              "Words and literature",
+              "Use terms learned in school beyond the headline examples",
+              "Do not gamble on a term whose definition is difficult to state in one sentence"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Closed-set prompts change the calculation. If only three U.S. states begin with A, there is no point trying to manufacture a fourth. Open-set prompts reward exploration, but only inside the boundary. Account for personal knowledge gaps as well. If only one literary device comes to mind but twelve animals are easy to recall, play the safe literary answer quickly and spend the risk budget where that recall is genuinely deep."
+        }
+      ]
+    },
+    {
+      "id": "review-after-run",
+      "heading": "How to review a run without wasting tomorrow",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "title": "Record the category, not the whole puzzle",
+              "body": "Record which type caused trouble: taxonomy, dates, franchises, geography, products, or spelling. This creates a reusable weakness list rather than a pile of one-day answers."
+            },
+            {
+              "title": "Compare first instinct with final answer",
+              "body": "If both were common, identify what the next ring of answers could have been. If the final answer failed, find the qualifier that was overlooked."
+            },
+            {
+              "title": "Read the revealed alternatives",
+              "body": "Group the post-run examples by why they qualify. A list of obscure names is hard to remember, but a route such as former teams or regional foods can be reused."
+            },
+            {
+              "title": "Keep one new retrieval path",
+              "body": "Carry one lesson into the next day, such as checking former status or naming a supporting character. Trying to memorize every revealed answer is less useful than improving the way memory is searched."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "One complete recorded run illustrates this perfectly. Google Ads, falcon, Ghana, Aang, Six Flags, and irony were all serviceable ideas, while buckwheat reached farther. The post-run review then surfaced alternatives such as Google Ngram Viewer, the Brazilian free-tailed bat, Job's tears, Guinea-Bissau, Diggerland, and less familiar literary devices. The exact list is less useful than the routes behind it: obscure Google tools, fast species beyond the most famous animal, alternative grains, compound country names, regional theme parks, and a wider rhetoric vocabulary."
+        }
+      ]
+    },
+    {
+      "id": "mistakes-and-recovery",
+      "heading": "Mistakes that cost valuable depth",
+      "blocks": [
+        {
+          "type": "list",
+          "style": "unordered",
+          "items": [
+            "Do not confuse personal unfamiliarity with rarity. A word that feels new may still be the crowd's first answer.",
+            "Keep explanations out of the answer box. The standard name is easier for the checker to match.",
+            "Do not spend 20 seconds polishing one fragile idea while a safe answer is already available.",
+            "Never ignore small qualifiers such as former, English name, above, before, fictional, or from a named series.",
+            "Do not let one Plankton result rush the following prompt. Each new screen deserves a fresh reading.",
+            "Never assume one Deep Cut guarantees a great total. Consistency across seven prompts still decides the dive."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If a submission is rejected while time remains, recovery is simple: read the feedback once, enter the prepared safe candidate, and submit. After a timeout, nothing can repair that prompt, so reset your posture and read the next one from the first word. The worst recovery strategy is trying to compensate with a needlessly exotic answer on the next screen. That usually turns one lost prompt into two."
+        }
+      ]
+    },
+    {
+      "id": "devices-and-loading",
+      "heading": "Keyboard, mobile, and loading advice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A physical keyboard leaves more time for recall, but Krillion remains playable on a modern phone. On a touch screen, disable aggressive autocorrect if it keeps replacing proper nouns and choose the shorter canonical answer when two candidates are equally strong. Avoid rotating the device after a prompt appears because the layout change and keyboard animation consume part of the 25-second window."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the player does not appear after Play Now, use Retry once rather than clicking repeatedly. A privacy filter, regional restriction, temporary host problem, or blocked script can stop the external player from loading. Refresh the full page if Retry does not help. Webpage Fullscreen enlarges the embedded player while Browser Fullscreen uses the entire display; the first option is usually enough for a laptop."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "label": "One daily attempt",
+          "body": "Treat the live Daily Dive as the real run. Start when the keyboard, connection, and screen are ready; a reload should not be used as a plan for undoing an answer."
+        }
+      ]
+    },
+    {
+      "id": "krillion-faq",
+      "heading": "Krillion questions players ask",
+      "blocks": [
+        {
+          "type": "faq",
+          "items": [
+            {
+              "question": "How many prompts are in a Krillion Daily Dive?",
+              "answer": "There are seven prompts, with 25 seconds available for each one. The same daily set is presented to the player base."
+            },
+            {
+              "question": "How is depth calculated?",
+              "answer": "Each accepted answer receives 10, 15, 30, 60, 85, or 100 points according to its visible rarity tier. Multiply the seven-answer total by ten to get the displayed depth in metres."
+            },
+            {
+              "question": "What is the maximum possible score?",
+              "answer": "Seven One in a Krillion answers would total 700 points and 7,000 metres. It is a theoretical ceiling, not a sensible target for every run."
+            },
+            {
+              "question": "Should I always type the rarest answer I can imagine?",
+              "answer": "No. Choose the rarest candidate that is clearly valid, conventionally named, and quick enough to submit. A safe Schooler is better than an invalid technicality or a timeout."
+            },
+            {
+              "question": "Can I try again after an answer is rejected?",
+              "answer": "The game can leave the timer running and invite another answer. Keep a safe backup ready instead of using the entire clock on one candidate."
+            },
+            {
+              "question": "Why did a clever answer score only Plankton?",
+              "answer": "Other players may have found it just as quickly, or the answer may be common inside that particular category. Difficulty of recall for one player is not the same as rarity across the field."
+            },
+            {
+              "question": "What should I do if Play Now shows an error?",
+              "answer": "Use Retry once, then check the connection and browser privacy settings. If the external player remains unavailable, return later rather than entering information into an unexpected page."
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "videoId": "SsZZbOVMm1M",
+          "title": "Watch the first five minutes for high-level Krillion decisions",
+          "description": "This mixed daily-games video opens with a Krillion run. The useful section shows fast candidate selection, a strong Dango answer, a good supporting-character pick, and a costly Greek-versus-Roman category mistake.",
+          "poster": {
+            "src": "/images/games/krillion/cover.webp",
+            "alt": "Krillion Daily Dive start screen",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "videoId": "a899LxaHSsA",
+          "title": "Watch a complete Daily Dive and answer reveal",
+          "description": "This compact full run covers all seven prompts, the final result, and a post-game review of stronger alternatives. It clearly shows how one day's answers can become reusable category strategies.",
+          "poster": {
+            "src": "/images/games/krillion/cover.webp",
+            "alt": "Krillion Daily Dive start screen",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      ]
+    }
+  ],
+  "relatedGameIds": []
+}

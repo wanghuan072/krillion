@@ -1,0 +1,1 @@
+import{chromium}from"@playwright/test";const b=await chromium.launch({headless:true});const p=await b.newPage();const rows=[];p.on("response",r=>{if(r.status()>=400)rows.push({status:r.status(),url:r.url(),type:r.request().resourceType()})});await p.goto("http://127.0.0.1:4173/",{waitUntil:"networkidle"});console.log(JSON.stringify(rows,null,2));await b.close();

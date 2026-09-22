@@ -1,0 +1,77 @@
+:root {
+  --page: #050d17;
+  --surface: #0a1826;
+  --surface-raised: #102235;
+  --well: #040b14;
+  --accent: #53e8f2;
+  --accent-strong: #25cbd8;
+  --accent-warm: #ff4f87;
+  --warning: #f5c84b;
+  --danger: #ff5d8f;
+  --text: #f4f8fb;
+  --muted: #9badbd;
+  --border: #1b3a50;
+  --border-bright: #2c6075;
+  --footer: #040b14;
+  --focus: #84f5fb;
+  --header-height: 72px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--page); }
+
+body {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--page);
+  color: var(--text);
+  font-family: Inter, Aptos, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -2;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 11, 20, .62), rgba(4, 11, 20, .88) 64%, #050d17 100%),
+    url("/images/games/krillion/gameplay-2.webp") center top / cover no-repeat;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 48% at 20% 15%, rgba(83, 232, 242, .09), transparent 70%),
+    radial-gradient(ellipse 48% 42% at 90% 32%, rgba(255, 79, 135, .07), transparent 72%);
+}
+
+a { color: inherit; text-decoration-color: color-mix(in srgb, var(--accent) 70%, transparent); text-underline-offset: .2em; }
+button, input { font: inherit; }
+button { min-width: 44px; min-height: 44px; }
+img { max-width: 100%; }
+h1, h2, h3 { font-family: Bahnschrift, "Arial Narrow", "Franklin Gothic Medium", sans-serif; line-height: 1.04; letter-spacing: -.035em; text-wrap: balance; }
+h2 { scroll-margin-top: calc(var(--header-height) + 16px); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+
+.skip-link { position: fixed; z-index: 100; top: 8px; left: 8px; padding: 10px 14px; transform: translateY(-150%); background: var(--accent); color: #041018; font-weight: 850; border-radius: 4px; }
+.skip-link:focus { transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 768px) {
+  body::before { background-position: center top; }
+  body::after { background: linear-gradient(180deg, rgba(5,13,23,.08), rgba(5,13,23,.32)); }
+}

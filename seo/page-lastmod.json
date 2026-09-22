@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "staticPages": {
+    "/games": {
+      "pageId": "games-index",
+      "fingerprint": "3fd8cee8164e8e2a9135a3d2f4ccadba7a76b80ccb695706c88c5a1f982ccc8f",
+      "lastModified": "2026-09-21"
+    },
+    "/guides": {
+      "pageId": "guides-index",
+      "fingerprint": "89dc90090ef00d17c608cd66b5008520b81232ff0ce531fb0c8d63839cad6c6e",
+      "lastModified": "2026-09-21"
+    },
+    "/privacy": {
+      "pageId": "privacy",
+      "fingerprint": "66e1b3c3e0701167c4a8bcae9fac10060e779b84533a73b150357e1e12251403",
+      "lastModified": "2026-09-21"
+    },
+    "/terms": {
+      "pageId": "terms",
+      "fingerprint": "9891e6a868e44704fd9ae249412bad71c7681f181709886d94b58d99899330bc",
+      "lastModified": "2026-09-21"
+    },
+    "/copyright": {
+      "pageId": "copyright",
+      "fingerprint": "aec8099cde544367fe3857e4795b1272fe328f4eee0bc1c12c0085dee72770fc",
+      "lastModified": "2026-09-21"
+    },
+    "/about": {
+      "pageId": "about",
+      "fingerprint": "1a3ff1a49cd99b53c010b7fa08c45d881edda963e45176fea37619fb4b317d88",
+      "lastModified": "2026-09-21"
+    },
+    "/contact": {
+      "pageId": "contact",
+      "fingerprint": "d16e92490ec31df64212d283bac6cb020f0a9ba491d31e0e3fab12102a13c8c9",
+      "lastModified": "2026-09-21"
+    }
+  },
+  "games": {
+    "2048": {
+      "slug": "2048",
+      "fingerprint": "4ae6eb52d340a7c7faf324e48ab0aa762076508dc03db87c5c38521146ee6ff8",
+      "updatedAt": "2026-09-21"
+    },
+    "slope": {
+      "slug": "slope",
+      "fingerprint": "242294a370d7bf1d2d501a8750e4a0e8cd309eb7f4919a32d1631bb8ceb32bc7",
+      "updatedAt": "2026-09-21"
+    },
+    "curve-rush": {
+      "slug": "curve-rush",
+      "fingerprint": "916bf21cf82d2e6a9f72f4bfaa3cd3141ac1f39ac6ec9d681abdfc5918b261eb",
+      "updatedAt": "2026-09-21"
+    },
+    "tap-road": {
+      "slug": "tap-road",
+      "fingerprint": "44b8141cee97d52a76b0e8c17ebcbe080a8f07a4f4ed30bc47ecf67430f8e51e",
+      "updatedAt": "2026-09-21"
+    },
+    "head-basketball": {
+      "slug": "head-basketball",
+      "fingerprint": "ca4b7f024f6be883e6a7d2940b4d5b97254ed99b826576f2456a875bb9489e56",
+      "updatedAt": "2026-09-21"
+    },
+    "escape-road": {
+      "slug": "escape-road",
+      "fingerprint": "7deac30f16b00ecb97fa50f29089012f389cc159146ac32db4bc714622f8ae2b",
+      "updatedAt": "2026-09-21"
+    },
+    "trap-the-cat": {
+      "slug": "trap-the-cat",
+      "fingerprint": "6143af6e85bf5e7117e02c9597309fe0c4f974ba9648b90bad70b14df5e8bca2",
+      "updatedAt": "2026-09-21"
+    },
+    "suika-game": {
+      "slug": "suika-game",
+      "fingerprint": "910cac9445cd63f682f940f61740b012c16f107bcf4f07bba31b2b22620c6740",
+      "updatedAt": "2026-09-21"
+    }
+  },
+  "guides": {
+    "krillion-how-to-play": {
+      "slug": "how-to-play-krillion",
+      "fingerprint": "944c97f34be8e878506bb3738e86d7ac0e3ab22e2d8c8f94d5558f43b3aead17",
+      "updatedAt": "2026-09-21"
+    },
+    "krillion-loading-input-help": {
+      "slug": "krillion-loading-and-input-help",
+      "fingerprint": "645629d881208dccfac9abdf00dbf8f52b5212c7db38aba66e07f9953285d243",
+      "updatedAt": "2026-09-21"
+    },
+    "krillion-scoring-rare-answers": {
+      "slug": "krillion-scoring-and-rare-answers",
+      "fingerprint": "d743ef827798b6b872e31adc760bf8cf36ec152831f96b1a50ef41bace994834",
+      "updatedAt": "2026-09-21"
+    }
+  }
+}

@@ -1,0 +1,369 @@
+[
+  {
+    "slug": "slope",
+    "pageUrl": "https://azgames.io/slope.embed",
+    "title": "Play Slope Game Online!",
+    "frameUrls": [
+      "https://azgames.io/slope.embed",
+      "https://azgames.io/game/slope/"
+    ],
+    "changedStates": 2,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/slope/00-loaded.png",
+        "hash": "1e98f425afbe1dbdbce3470226af9762e292b2f56ac9a82682d33e038746539e"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/slope/01-launch.png",
+        "hash": "2ed5a15e9260587728b0e9848aaf1004359aaa2af3eee069436dcca4c73b6aee"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/slope/02-left.png",
+        "hash": "2ed5a15e9260587728b0e9848aaf1004359aaa2af3eee069436dcca4c73b6aee"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/slope/03-right.png",
+        "hash": "2ed5a15e9260587728b0e9848aaf1004359aaa2af3eee069436dcca4c73b6aee"
+      }
+    ],
+    "errors": [],
+    "failed": [
+      "media blob:https://azgames.io/de458723-533b-4fb8-a099-bdc6bdb5fef4 net::ERR_ABORTED",
+      "media blob:https://azgames.io/2db9930c-a2fc-4834-9455-3795f0e471c5 net::ERR_ABORTED",
+      "media blob:https://azgames.io/97062373-4793-499e-9375-c3f2821f8979 net::ERR_ABORTED"
+    ]
+  },
+  {
+    "slug": "cookie-clicker",
+    "pageUrl": "https://azgames.io/cookie-clicker.embed",
+    "title": "Play Cookie Clicker Game Online!",
+    "frameUrls": [
+      "https://azgames.io/cookie-clicker.embed",
+      "https://games-online.io/game/cake-maker/",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/html/r20260917/r20190131/zrt_lookup.html",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4658181883112071&output=html&adk=1812271804&adf=3279755397&abgtt=6&plat=1%3A512%2C2%3A512%2C3%3A512%2C4%3A512%2C8%3A512%2C9%3A33288%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C26%3A512%2C27%3A512%2C30%3A1081856%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fazgames.io%2F&pra=5&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974266421&bpp=4&bdt=483&idt=357&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&nras=1&correlator=8075716051227&frm=24&ife=1&pv=2&nhd=1&u_tz=480&u_his=2&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=3865852581&scr_x=-12245933&scr_y=-12245933&eid=95403098&oid=2&pvsid=1258667346642504&tmod=223846341&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=1&uci=1.q8lv7l3xc9b3&fsb=1&dtd=372",
+      "https://www.google.com/recaptcha/api2/aframe"
+    ],
+    "changedStates": 4,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/cookie-clicker/00-loaded.png",
+        "hash": "1cd24b399c553ad37429b75425efd50c2b3dc1791ae2f83b01db9a063d352099"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/cookie-clicker/01-launch.png",
+        "hash": "9210df83710e7236971ab68f77fa1a2758a16b024f98223029d68d7dca8c0d3d"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/cookie-clicker/02-cookie.png",
+        "hash": "329df0fb9bd9aada972d567610b1ae55fb27d24900bc09f3c41d653f486f2222"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/cookie-clicker/03-cookie.png",
+        "hash": "a7a3ce69540d01f16a431dc4d25c36a073f2a74fe33f9ef927b8c97a62dec0f9"
+      }
+    ],
+    "errors": [],
+    "failed": [
+      "fetch https://pagead2.googlesyndication.com/pagead/ping?e=1 net::ERR_ABORTED"
+    ]
+  },
+  {
+    "slug": "basketball-stars",
+    "pageUrl": "https://azgames.io/basketball-stars.embed",
+    "title": "Play Basketball Stars Game Online!",
+    "frameUrls": [
+      "https://azgames.io/basketball-stars.embed",
+      "https://html5.gamedistribution.com/69d78d071f704fa183d75b4114ae40ec/",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/html/r20260917/r20190131/zrt_lookup.html",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&adk=1812271804&adf=3279755397&abgtt=13&plaf=1%3A2%2C2%3A2%2C7%3A2&plat=1%3A16777728%2C2%3A16777728%2C3%3A512%2C4%3A512%2C8%3A512%2C9%3A33288%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C26%3A512%2C27%3A512%2C30%3A1081856%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fazgames.io%2F&pra=5&aiof=11&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974297216&bpp=3&bdt=2116&idt=352&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&nras=1&correlator=3384400299289&frm=24&ife=1&pv=2&nhd=1&u_tz=480&u_his=2&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=4046297614&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C122881096&oid=2&pvsid=909373683089279&tmod=1980334472&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=1&uci=1.1pj2o5bzol6q&fsb=1&dtd=366",
+      "about:blank",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&h=720&adk=4154423664&adf=2873238072&abgtt=13&w=1280&vpmute=0&to=gsc&format=1280x720&url=https%3A%2F%2Fazgames.io%2F&pra=3&aiof=11&asro=0&aimartd=4&aieuf=1&aicrs=1&fa=10&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974297893&bpp=1&bdt=2793&idt=0&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&prev_fmts=0x0&nras=2&correlator=3384400299289&frm=24&ife=1&pv=1&nhd=1&u_tz=480&u_his=2&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=4046297614&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C122881096&oid=2&pvsid=909373683089279&tmod=1980334472&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=2&uci=2.5he90ijscudx&fsb=1&dtd=2",
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2316275586951220&output=html&h=720&adk=4154423664&adf=1300378861&abgtt=13&w=1280&vpmute=0&to=gsc&format=1280x720&url=https%3A%2F%2Fazgames.io%2F&pra=3&aiof=11&asro=0&aimartd=4&aieuf=1&aicrs=1&fa=11&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTUzLjAuODAxMC41MiIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTUzLjAuODAxMC41MiJdLFsiTm90X0EgQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjE1My4wLjgwMTAuNTIiXV0sMF0.&dt=1789974297899&bpp=1&bdt=2799&idt=0&shv=r20260917&mjsv=m202609150101&ptt=9&saldr=aa&cookie_enabled=1&eoidce=1&prev_fmts=0x0%2C1280x720&nras=3&correlator=3384400299289&frm=24&ife=1&pv=1&nhd=1&u_tz=480&u_his=2&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=-12245933&bih=-12245933&isw=1280&ish=720&ifk=4046297614&scr_x=-12245933&scr_y=-12245933&eid=95403099%2C122881096&oid=2&pvsid=909373683089279&tmod=1980334472&uas=0&nvt=1&fsapi=1&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1280%2C720%2C1280%2C720&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=0&bc=31&bz=1&ifi=3&uci=3.4oyxdqzep566&fsb=1&dtd=2",
+      "https://imasdk.googleapis.com/js/core/bridge3.789.0_en.html#deid=%22%22&eventfe_experiment_ids=%5B%5D&fid=%22goog_131467031%22&genotype_experiment_data=%7B%22experimentStateProto%22%3A%22%5B%5B%5B45713128%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45796605%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B945081832%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45816264%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45761044%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45722344%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45801847%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45784857%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45668885%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45685340%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45734716%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45735891%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45663239%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B839547366%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45676441%2Cnull%2Cnull%2C%5B%5D%5D%2C%5Bnull%2C45645574%2Cnull%2C%5B%5D%5D%2C%5B45688859%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45685601%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5Bnull%2C45685602%2Cnull%2C%5Bnull%2C100%5D%5D%2C%5B45830425%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45820997%2Cnull%2Cnull%2C%5B%5D%5D%2C%5Bnull%2C45812678%2Cnull%2C%5B%5D%5D%2C%5B45756824%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45794243%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45747172%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B775241416%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107959%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107958%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B792614055%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B781107957%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45729602%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45753603%2Cnull%2Cnull%2C%5B%5D%5D%2C%5B45753604%2Cnull%2Cnull%2C%5B%5D%5D%5D%2C%5B%5B16%2C%5B%5B10%2C%5B%5B83323635%5D%2C%5B83323636%2C%5B%5Bnull%2C45812678%2Cnull%2C%5Bnull%2C100%5D%5D%5D%5D%5D%5D%2C%5B50%2C%5B%5B83323870%5D%2C%5B83323871%2C%5B%5B45830425%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B1000%2C%5B%5B95332046%5D%5D%5D%2C%5Bnull%2C%5B%5B95332047%5D%5D%5D%2C%5B10%2C%5B%5B95338769%2C%5B%5Bnull%2C45645574%2Cnull%2C%5Bnull%2C1%5D%5D%5D%5D%2C%5B95338770%2C%5B%5Bnull%2C45645574%2Cnull%2C%5Bnull%2C2%5D%5D%5D%5D%5D%5D%2C%5B50%2C%5B%5B95351425%5D%2C%5B95351426%2C%5B%5B45676441%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B1%2C%5B%5B95373378%2C%5B%5B792614055%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95373379%2C%5B%5B45747172%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B781107959%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B792614055%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B781107957%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95378629%5D%2C%5B95378630%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95381582%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45753603%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%2C%5B95381583%2C%5B%5B45729602%2Cnull%2Cnull%2C%5B1%5D%5D%2C%5B45753604%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5Bnull%2C%5B%5B95391735%5D%5D%5D%2C%5B50%2C%5B%5B95394237%5D%2C%5B95394238%2C%5B%5B45801847%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95398837%5D%2C%5B95398838%2C%5B%5Bnull%2C960449109%2Cnull%2C%5Bnull%2C1%5D%5D%5D%5D%5D%5D%2C%5B1%2C%5B%5B95401453%5D%2C%5B95401454%2C%5B%5B45668885%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%2C%5B10%2C%5B%5B95402052%5D%2C%5B95402053%2C%5B%5B957164676%2Cnull%2Cnull%2C%5B1%5D%5D%5D%5D%5D%5D%5D%5D%5D%2Cnull%2Cnull%2C%5Bnull%2C1000%2C1%2C1000%5D%5D%22%7D&imalib_experiments=%5B95322027%2C95331589%2C95332046%5D&is_eap_loader=false&managed_js_experiment_id=0&page_correlator=753971911676443&pvsid=909373683089279&top_accessible_page_url=%22https%3A%2F%2Fazgames.io%2F%22",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9kY2xrLW1hdGNoLmRvdG9taS5jb20vbWF0Y2gvYm91bmNlL2N1cnJlbnQ_bmV0d29ya0lkPTE0MDAwJnZlcnNpb249MSZnb29nbGVfZ2lkPUNBRVNFQTJQblpmMVc5S01wWnQtYW5BV1V4dyZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0xPdHpzNFRXVDlVZkRFVVZ2SzRRTHZKdVYzaGdVNEVXYnVOQlB3c3VvdWtnRnp0Yjh2dzZRc2lDRzhBNVZRZm1XT1l2Qkh1Nk9mcTFjbWI4RzFCVmhVRW9QWTBQVWFGZ3FYN2xLTVdYTnNjeFRaMTRGVlpwc0NJUnRJTXZoekQ0Vk8tYUNYYWVMVWw2NmlQcVRQdVYtQ1J3,aHR0cHM6Ly9pcGFjLmN0bnNuZXQuY29tL2ludC9jbT9leGM9MSZhY2M9Y3JpbXRhbl9hdSZnb29nbGVfZ2lkPUNBRVNFREZBNEhDa3ZmdmJDTXhocFRVSXpuWSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0t3OVBLczl6TFRZZFpmMHdaejltandZU1pmZl9MX2FuNl9LWU1DdExEYlVZLWFqZjNtdGhPOUFBV3F4b295cXY2dzlrMVdBdWo0clFNSktJMjdhS0ctdkZlY1c4V3JCaE84SWU5VlBsdmVKNDdkdzQ5TW1TRTZCNDc2RlFWcWdWcnRzZm5MLW4xeVhNV3AxSExlYUd4YUFBVQ==,aHR0cHM6Ly9hZHMudHJhdmVsYXVkaWVuY2UuY29tL2dvb2dsZV9waXhlbD9nb29nbGVfZ2lkPUNBRVNFSUYtLWhUbWF2a0tNMFdWZmFRX3NRRSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0paY3l5MDJUYUVpaEI2M1FEclJJd2drMFVMVTl3a19vR0FoUnRJMWROZl83bW96NkJOYjNzQ2gtSWxHMXJoV2tMS3Fvd0x2Z0h3czR4bmNCOE13NFJVT2ROeld4dGlld0VSSEU4R1hVWmphWWxuRWJRX3NTRHhxbW1yZkdnbDZOVUZ6aVBIeDFKMnk1UXR6OHV6bk9fbm1n,aHR0cHM6Ly9ydC5nc3NwYXQuanAvbGNzP2dvb2dsZV9wdXNoPUFlb2Zzc0o5b092WjZrTUhuMkVYZFgyblNvRi1PUWRXenVzOEE2eWgwNU9IN1ZqN183Um9wVTR1VHBHNW9UZUd3UVZ5MG5KUXVvOWlSX1JHanZNNXluckJkV00zSFpIMkRBdmtPaVNWREwycF9rOXpVd045N01PN2p1WTBuejl0V0pBb0ZiZXBUZDJPbV8tb0FfNU1IMDFya2RpQU5FcyZnb29nbGVfZ2lkPUNBRVNFSkx0MkoyR0NSS0hVQ1VZelJYMzM1TSZnb29nbGVfY3Zlcj0x,aHR0cHM6Ly9kc3AuMzYweWllbGQuY29tL2RzcF9tYXRjaC8yNzU_c3NwPTc1NSZnb29nbGVfZ2lkPUNBRVNFS3ZyaHNBMmZkcF95TUVPcm5mS2JVdyZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0xUdGVCUXJqby1ZbEZIS2RwMndKbl8yeV9FVVJaX3hsbmJ6eVliS3NZVE9UTXg4amNHbWlNVWxzRmdsa3ZXc1FDZnRYeDJCOGF1WTVpOUhDYkZlU3otMERwcXdySTNBd2F2Vk9JVnlFaXBTTHZ1V0dBX0xqc0ZpVkxZdDNTNE5nb0I0OFVOQmNrcUs5TENJcEZ6Q0s1cmpqcw==,aHR0cHM6Ly9kc3AuYWRrZXJuZWwuY29tL3N5bmM_ZXhjaGFuZ2U9MTEmZ29vZ2xlX2dpZD1DQUVTRUlhNFRqN3QzU2VQSl9XRXRKd0Z3QzQmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NJY3h0QW00a0pVRDY1VVlRYXRGV1JwcnA0elFrR2ZNWTlOMTNqdkEzb0RFb3FOLWJBTTNVUTVFT1VwSV9qaEFCYmhNNHRUN09BTGZ2a3Y0UkJ1Zl8zbGFiVkFrY1g3dzFmX2hDV1ktc1NGVlcycmItT2NJdXp5YWJZWHc4VG9OVHhYTTBfV3JtbjgxQnA5VG1McHVkeDVYOW8=,aHR0cHM6Ly90cmMudGFib29sYS5jb20vc2cvZ29vZ2xlLWF1dGhvcml6ZWQtYnV5ZXJzLzEvY20_Z29vZ2xlX3VpZD1DQUVTRUpkWV9NRjk5bkl1ZTA3bGwzMHRHNTAmZ29vZ2xlX3B1c2g9QWVvZnNzS0pmcDJBWWN1LUhlNFBGWDdHV19CcHBmcGZJYVFtVFdLV09UelcxQTl6QURGRHhRV3g3bnlLSFF2UUc3cjVZanUwdnBDS0hrWVhHWF9ydEQxWjdxczhPRmhWVFE4bFFfT3BkMGtQUzhtVjdneHU2SXVneGV4UDdtOVpkMmxRb2FYNkJ1WUVKOTVEUGtjY24tR0dLRDVvdWxiRiZyZWRpcmVjdD1odHRwcyUzQSUyRiUyRmNtLmcuZG91YmxlY2xpY2submV0JTJGcGl4ZWwlM0Znb29nbGVfbmlkJTNEcmVhbGl6ZSUyNmdvb2dsZV9wdXNoJTNEJTNDcGFyYW06Z29vZ2xlX3B1c2glM0UlMjZnb29nbGVfaG09JTNDVFVJREI2NCUzRSZnb29nbGVfY3Zlcj0x,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSVNvM0FraExyX0xHVy1lcFFOWFk3OXY5TFN3dHd1WUlDMThNSGNZVnEzWWJEVmg3b0hNX0d1ZE5fTm9NNG9FUHNISWlIcmpR",
+      "about:blank",
+      "about:blank",
+      "https://www.google.com/recaptcha/api2/aframe",
+      "https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9jbXMucXVhbnRzZXJ2ZS5jb20vZHBpeGVsP2E9cC1uNXZ2THZSZGpnMGVrJmVpZD0wJnFjX2dvb2dsZV9wdXNoPSZnb29nbGVfZ2lkPUNBRVNFTWxkZy1OOUJrdnB4Q2FYckVGekpvayZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pHcUROLTV1SXIwU0VMcU9fWEpXR2hNcW5vSnNjdWE3Yk5DVHhIT096QzBzRzNtc09INW12U2J2bXBLRFd1ODF1VmlhUGdSS0pZbzFMZ1o2WTRkNjBtTWY2RGFBcGgwU0hfM0VtbFFVOTBERXJvYXg1UEUtOWt4RUpTbmNNWEprQ0xaOXlzVjhYM3ZubWVOZVo2OVExVTFB,aHR0cHM6Ly9kY2xrLW1hdGNoLmRvdG9taS5jb20vbWF0Y2gvYm91bmNlL2N1cnJlbnQ_bmV0d29ya0lkPTE0MDAwJnZlcnNpb249MSZnb29nbGVfZ2lkPUNBRVNFSWsxTnJ6cHNBNDl4QTgxblNPdUIxSSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0tVT3FTLWNzU3drdXpiSU9zRWp5X0V0RDJxTzdocEhzMUFITkh6NzVpdjFka3RNejBCVXdJcjBKSVViam1yT3gwQ1F5V3RvcHB3THcyN0JJS3lVR0ttZ01ud1EybmFoRDV0dzIzWHJDZi05QTMxb0FsM1VlRWNvT2dfaW40ODVHaExwbDJrQzhnYWtSUkc1R2lKTmhSZg==,aHR0cHM6Ly9jci1wMS5sYWRzcC5jb20vY29va2llc2VuZGVyLzE_Z29vZ2xlX3B1c2g9QWVvZnNzTHRwTW9MNEgzcXF1aWF6d0ppYWx0aVZqeXNnVWRHNG16a3ZYSE1JVVJjWHd3MVF2UEVzUzRfTjVUUk1EdHNkQklyd3lmQ0o5ZTlzSk9sLWRMMVdXS2E2ZGVpMnB1N0JGOU1KTmF5bEhzN0lzWEVsbXExMTF2YklqQ0hNc1d6TW5XLVlsWE41cHhKTUNaZmlEVDVLMXhjJmdvb2dsZV9naWQ9Q0FFU0VDWFVqTV83U1dEemU1cGVTaGt2S2tnJmdvb2dsZV9jdmVyPTE=,aHR0cHM6Ly9waXhlbGZudC11cy5kc3AtYXBpLm1vbG9jby5jb20vdjEvY20vYWR4cG0_Z29vZ2xlX2dpZD1DQUVTRU14b3lZamtWNWNVdE1RTFVnOVU3bEEmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BZW9mc3NKalJhTVdPbmVpT3BaUnJ5bF85N2FTbm1hbVlSWnBOeVA5ZlpVNDBub2ZuLTZPNmJGTmttQ2VuRWFsOFhfZHFfTVhkTFRnWldpNmxMX1Atdl9USkg3c0xWMTBVMHdnTVUzQ3huWUxId0JGY0hZZVJ2aGhuLXB1TkVzVnNCZG1naW92a1pHcjVMRmc5NjBXYUtDOGg5Yy1CQQ==,aHR0cHM6Ly90cmFja2luZy5wcmlzbXBhcnRuZXIuc210LmRvY29tby5uZS5qcC9zeW5jL2FkeD9nb29nbGVfZ2lkPUNBRVNFTHo5T2FVaEFOeVlxamJ2SVRENVpXVSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pwekptUnhNNm00eGlGLVpBR2tCM0llemR2cGh1SUxETVRhLWF6QVhXR2tiYlZ1ZzdkYlVESDhpdFRWMGlQMVFsSUhoZk1WT2I0NlJIOXV2SVpzQ2J2ZkM0SzN3QVlyOWJzOFdmWkk4QldrZ25TWGxITG1yaFNpWThkZlpsTHRiSmZ5cnlTQWlKXzJ1ZGtvVzAzNHpISXVGTQ==,aHR0cHM6Ly93d3cudGVtdS5jb20vYXBpL2FkeC9jbS9waXhlbD9nb29nbGVfZ2lkPUNBRVNFUGhlUlR1Zk43TUlJZ1J3Mk5BR0NZYyZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pJa3BSRHBKdzJ0b0NqWmdOdVl6Qk1rSkpvc3gyVndrQ2NiaWdNT196Z1JnZXhkU2hjZzdzRDdMSUNBclBDXy1kNGk1Y2k5RE13aFBIenR2Q3l4UGNnN3JjM216bXI4cEdVRXUzMHg4X1dDVXZPZFJWQTBNX05RV0hsZmtEUlNGRzJIU0hhc29jTXpSYzZqV0k0eDhWZWFvRQ==,aHR0cHM6Ly9hZHJlcS5hZHN0ZXIudGVjaC92MS9jb29raWUvcGl4ZWxtYXRjaD9nb29nbGVfZ2lkPUNBRVNFQnlXQmU1SHBvWTd1RTlhQ1ptN3pzQSZnb29nbGVfY3Zlcj0xJmdvb2dsZV9wdXNoPUFlb2Zzc0pLNXhlR183MHY4RWYxOXFEb1B2MUVsb2pSTEowVFVFVlAzTi0tSDlkd1NZS2dsQmtlMXV1OUlRUmNHS05IbFRRaVZFeGxiWXBFN3padkUzd3M0QmRVUEFtVVo1MkVhTFRkSFZESi1WaXJJTTdiTndaeDVJYmtCRnE4RWxTU1Z5NWJJNEJBMGV4WTdDOFdVNzBKblphY3RjNA==,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSnJPNTlaX0RyNk1WcjliQXloSGRuT2RXamk3d0ZwRno0c3ppUmJmR0J2NmJadUEzXzNnUEdvdHVnU3hXcXpoWmZBbU05N1ltRXg=",
+      "about:blank"
+    ],
+    "changedStates": 5,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/basketball-stars/00-loaded.png",
+        "hash": "1af07b76a58ba9f1477bf8845f92e9cf0cf2347cb67e238e129961923752f78d"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/basketball-stars/01-launch.png",
+        "hash": "baf45fdb4f93d37eb4dec3e666201d3799a4c73b032d8e4e40d748ef32075cdb"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/basketball-stars/02-mode.png",
+        "hash": "5e7684093d38bff6a50f399d03be22602c5a96ab7928249923fa2a16ba037aa9"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/basketball-stars/03-match.png",
+        "hash": "a2c7f2be252f6837b3de882f957c7fbdbb4bfd4f7dcc734dabb47c237e58311b"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/basketball-stars/04-move.png",
+        "hash": "919d3397f379b5b829b550c449a94734db0c3bc7ab5d745f5cbdc553ad8912f4"
+      }
+    ],
+    "errors": [],
+    "failed": [
+      "fetch https://hlana.gamedistribution.com/event?page_url=azgames.io&game_id=69d78d071f704fa183d75b4114ae40ec&eventtype=2&ts=1789974296923 net::ERR_ABORTED",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-PLRTBHGSEL&gtm=45je69g1v9165161826za200zd9165161826xf1&_p=1789974297262&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=192849175&_eu=AAAAAEAC&cid=436271450.1789974297&ec_mode=a&frm=2&pscdl=noapi&rcb=7&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789974297&sct=1&seg=0&dl=https%3A%2F%2Fhtml5.gamedistribution.com%2F69d78d071f704fa183d75b4114ae40ec%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Basketball%20Stars&_tu=QA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.provider=gd-sdk&epn.page_depth=1&ep.partner_domain_from=fallback&ep.top_domain_from=origins&ep.top_domain=azgames.io&ep.parent_domain=azgames.io&ep.parent_url=https%3A%2F%2Fazgames.io%2F&ep.game_id=69d78d071f704fa183d75b4114ae40ec&ep.game_slug=basketball-stars&ep.game_title=Basketball%20Stars&ep.cmp=cmpNotFound&ep.gdpr=cmpNotFound&ep.google_ads=unknown&tfd=2389 net::ERR_ABORTED",
+      "fetch https://tag.atom.gamedistribution.com/v1/dmp?ar=eyJ0cCI6ImdkLmxvY2F0aW9uIiwiY3QiOjAsInZycyI6IjEuNDMuNTgiLCJ1cmwiOiJodHRwczovL2F6Z2FtZXMuaW8vIiwicmZyIjoiaHR0cHM6Ly9hemdhbWVzLmlvLyIsInRkbW4iOiJhemdhbWVzLmlvIiwiZHB0aCI6MCwiYXJncyI6eyJnaWQiOiJiYXNrZXRiYWxsLXN0YXJzIiwibWQ1IjoiNjlkNzhkMDcxZjcwNGZhMTgzZDc1YjQxMTRhZTQwZWMiLCJwaWQiOjAsInBubSI6IkdNIC0gR29vZCBNZWRpYSIsImN0cnkiOiJISyIsImxjbCI6ImVuIiwiaGxlIjoxLCJhZHMiOjEsImhyZWYiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzY5ZDc4ZDA3MWY3MDRmYTE4M2Q3NWI0MTE0YWU0MGVjLyIsImRlcHRoIjp7InZhbHVlIjoxfSwidG9wIjp7ImRvbWFpbiI6eyJmcm9tIjoib3JpZ2lucyIsInZhbHVlIjoiYXpnYW1lcy5pbyJ9fSwicGFydG5lciI6eyJkb21haW4iOnsidmFsdWUiOiJhemdhbWVzLmlvIiwiZnJvbSI6ImZhbGxiYWNrIn0sInVybCI6eyJ2YWx1ZSI6Imh0dHBzOi8vYXpnYW1lcy5pby8iLCJmcm9tIjoiZmFsbGJhY2sifX19LCJ1YSI6eyJicm5tIjoiQ2hyb21lIEhlYWRsZXNzIiwiYnJ2cyI6IjE1My4wLjAuMCIsIm9zbm0iOiJXaW5kb3dzIiwib3N2cyI6IjEwIiwidyI6MTI4MCwiaCI6NzA0fX0%3D net::ERR_ABORTED",
+      "fetch https://tag.atom.gamedistribution.com/v1/dmp?ar=eyJ0cCI6ImhsLmNvbmZpZyIsImN0IjowLCJ2cnMiOiIxLjQzLjU4IiwidXJsIjoiaHR0cHM6Ly9hemdhbWVzLmlvLyIsInJmciI6Imh0dHBzOi8vYXpnYW1lcy5pby8iLCJ0ZG1uIjoiYXpnYW1lcy5pbyIsImRwdGgiOjAsImFyZ3MiOnsiZ2lkIjoiYmFza2V0YmFsbC1zdGFycyIsIm1kNSI6IjY5ZDc4ZDA3MWY3MDRmYTE4M2Q3NWI0MTE0YWU0MGVjIiwicGlkIjowLCJwbm0iOiJHTSAtIEdvb2QgTWVkaWEiLCJjdHJ5IjoiSEsiLCJsY2wiOiJlbiIsImhsZSI6MSwiYWRzIjoxLCJhcmdzIjp7InBhZ2VfdXJsIjoiYXpnYW1lcy5pbyIsImdhbWVfaWQiOiI2OWQ3OGQwNzFmNzA0ZmExODNkNzViNDExNGFlNDBlYyIsImV2ZW50dHlwZSI6MiwidHMiOjE3ODk5NzQyOTY5MjN9LCJocmVmIjoiaHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbS82OWQ3OGQwNzFmNzA0ZmExODNkNzViNDExNGFlNDBlYy8iLCJkZXB0aCI6eyJ2YWx1ZSI6MX0sInRvcCI6eyJkb21haW4iOnsiZnJvbSI6Im9yaWdpbnMiLCJ2YWx1ZSI6ImF6Z2FtZXMuaW8ifX0sInBhcnRuZXIiOnsiZG9tYWluIjp7InZhbHVlIjoiYXpnYW1lcy5pbyIsImZyb20iOiJmYWxsYmFjayJ9LCJ1cmwiOnsidmFsdWUiOiJodHRwczovL2F6Z2FtZXMuaW8vIiwiZnJvbSI6ImZhbGxiYWNrIn19LCJwYWdlX3VybCI6ImF6Z2FtZXMuaW8iLCJnYW1lX2lkIjoiNjlkNzhkMDcxZjcwNGZhMTgzZDc1YjQxMTRhZTQwZWMiLCJldmVudHR5cGUiOjIsInRzIjoxNzg5OTc0Mjk2OTIzfSwidWEiOnsiYnJubSI6IkNocm9tZSBIZWFkbGVzcyIsImJydnMiOiIxNTMuMC4wLjAiLCJvc25tIjoiV2luZG93cyIsIm9zdnMiOiIxMCIsInciOjEyODAsImgiOjcwNH19 net::ERR_ABORTED",
+      "fetch https://tag.atom.gamedistribution.com/v1/dmp?ar=eyJ0cCI6ImhsLmdhbWVsb2FkIiwiY3QiOjAsInZycyI6IjEuNDMuNTgiLCJ1cmwiOiJodHRwczovL2F6Z2FtZXMuaW8vIiwicmZyIjoiaHR0cHM6Ly9hemdhbWVzLmlvLyIsInRkbW4iOiJodHRwczovL2F6Z2FtZXMuaW8vIiwiZHB0aCI6MCwiYXJncyI6eyJnaWQiOiJiYXNrZXRiYWxsLXN0YXJzIiwibWQ1IjoiNjlkNzhkMDcxZjcwNGZhMTgzZDc1YjQxMTRhZTQwZWMiLCJwaWQiOjAsInBubSI6IkdNIC0gR29vZCBNZWRpYSIsImN0cnkiOiJISyIsImxjbCI6ImVuIiwiaGxlIjoxLCJhZHMiOjEsImFyZ3MiOnsicGFnZV91cmwiOiJhemdhbWVzLmlvIiwiZ2FtZV9pZCI6IjY5ZDc4ZDA3MWY3MDRmYTE4M2Q3NWI0MTE0YWU0MGVjIiwiZXZlbnR0eXBlIjoyLCJ0cyI6MTc4OTk3NDI5NjkyM30sImhyZWYiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzY5ZDc4ZDA3MWY3MDRmYTE4M2Q3NWI0MTE0YWU0MGVjLyIsImRlcHRoIjp7InZhbHVlIjoxfSwidG9wIjp7ImRvbWFpbiI6eyJmcm9tIjoib3JpZ2lucyIsInZhbHVlIjoiYXpnYW1lcy5pbyJ9fSwicGFydG5lciI6eyJkb21haW4iOnsidmFsdWUiOiJhemdhbWVzLmlvIiwiZnJvbSI6ImZhbGxiYWNrIn0sInVybCI6eyJ2YWx1ZSI6Imh0dHBzOi8vYXpnYW1lcy5pby8iLCJmcm9tIjoiZmFsbGJhY2sifX0sInBhZ2VfdXJsIjoiYXpnYW1lcy5pbyIsImdhbWVfaWQiOiI2OWQ3OGQwNzFmNzA0ZmExODNkNzViNDExNGFlNDBlYyIsImV2ZW50dHlwZSI6MiwidHMiOjE3ODk5NzQyOTY5MjN9LCJ1YSI6eyJicm5tIjoiQ2hyb21lIEhlYWRsZXNzIiwiYnJ2cyI6IjE1My4wLjAuMCIsIm9zbm0iOiJXaW5kb3dzIiwib3N2cyI6IjEwIiwidyI6MTI4MCwiaCI6NzA0fX0%3D net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/ping?e=1 net::ERR_ABORTED",
+      "fetch https://tracker-v4.gamedock.io/v1/events-tracker/track/product/Game%20Distribution/user_id/457015ab-3175-4196-9e92-d66ef2fc000c net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-fallback2 net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2 net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4 net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D net::ERR_ABORTED"
+    ]
+  },
+  {
+    "slug": "paper-io",
+    "pageUrl": "https://azgames.io/paper-io.embed",
+    "title": "Play Paper IO Game Online!",
+    "frameUrls": [
+      "https://azgames.io/paper-io.embed",
+      "https://paperio.site/",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "https://i.liadm.com/sync-container?duid=9a0b8d10ec9e--01m31chgdmgxzf9jsqed31ed4t&ds=did-006r&euns=1&s=&version=v3.18.0&cd=.paperio.site&pv=aeebdf9a-472a-4708-b7e6-41e9331287c3",
+      "https://www.google.com/recaptcha/api2/aframe"
+    ],
+    "changedStates": 4,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/paper-io/00-loaded.png",
+        "hash": "36c7d6415053481d55106a8d1c2ea6e646faa0cd44488184460f858ac3e01ee9"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/paper-io/01-launch.png",
+        "hash": "558a82a911b0f0877d8c3fbafda835c2a12bdf12767b9e5eb73591c060f75eb0"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/paper-io/02-turn.png",
+        "hash": "0596246466cf0c3df76a8a787816b6802170e35b539a406a3e3ea5087551def7"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/paper-io/03-turn.png",
+        "hash": "9911af6cbbff3ea33967bf9da788e7f30e1f03eff8044652524da964d3d4614d"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: the server responded with a status of 403 ()",
+      "Access to fetch at 'https://lb.eu-1-id5-sync.com/lb/v1' from origin 'https://paperio.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'https://id5-sync.com/bounce' from origin 'https://paperio.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Access to XMLHttpRequest at 'https://id5-sync.com/gm/v3' from origin 'https://paperio.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+    ],
+    "failed": [
+      "fetch https://hb-vntsm-com.global.ssl.fastly.net/v4/srv/g.txt net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/ping?e=1 net::ERR_ABORTED",
+      "fetch https://lb.eu-1-id5-sync.com/lb/v1 net::ERR_FAILED",
+      "fetch https://id5-sync.com/bounce net::ERR_FAILED",
+      "xhr https://id5-sync.com/gm/v3 net::ERR_FAILED",
+      "xhr https://hdrc.yandex.net/ net::ERR_CERT_AUTHORITY_INVALID",
+      "xhr https://mdd.yandex.net/ net::ERR_CERT_AUTHORITY_INVALID"
+    ]
+  },
+  {
+    "slug": "2048",
+    "pageUrl": "https://azgames.io/2048.embed",
+    "title": "Play 2048 Game Online!",
+    "frameUrls": [
+      "https://azgames.io/2048.embed",
+      "https://azgames.io/game/2048/"
+    ],
+    "changedStates": 5,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/2048/00-loaded.png",
+        "hash": "4afa1f499e083eba545408017fdd99c1c4b818e7ea21c15175733c7ec48c85b0"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/2048/01-launch.png",
+        "hash": "5e0d64629a0c8117cbb796d52ae7f32a296ada5dfcde7077919674b760b331bc"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/2048/01-left.png",
+        "hash": "bada8f20fc91bf54288ff2709501d40f9f92a38a14c98416c7cb6172e3d63f96"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/2048/02-down.png",
+        "hash": "66dcbafddca1691c9b7457a60e9ec8e8dc116814376b11a02462c78bdacbe36a"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/2048/03-right.png",
+        "hash": "a0086fe4d2527108997944cde24c881902d41046761b2988ac18d0f74a882009"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/2048.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://www.googletagmanager.com/gtag/js?id=G-REJ3TKBMYE&cx=c&gtm=4e69g1 net::ERR_BLOCKED_BY_ORB"
+    ]
+  },
+  {
+    "slug": "temple-run-2",
+    "pageUrl": "https://azgames.io/temple-run-2.embed",
+    "title": "Play Temple Run 2 Game Online!",
+    "frameUrls": [
+      "https://azgames.io/temple-run-2.embed",
+      "https://azgames.io/game/temple-run-2/"
+    ],
+    "changedStates": 4,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/temple-run-2/00-loaded.png",
+        "hash": "3b1f2041a4b363659c36a575f146de81f744dc9e824a61ab117ff86f3c19924d"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/temple-run-2/01-launch.png",
+        "hash": "86f8654cd33d14ab594e88c986959b0a82de1689f5c64ec98019ead25cdee8ae"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/temple-run-2/02-jump.png",
+        "hash": "69f2996e58b65962960ee9546093ef6d9540b70070f9e8032d7ee005cd2de525"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/temple-run-2/03-left.png",
+        "hash": "dae065b27a63eb29d1981145ed89ee52f78f3c0d0ebb810fb81d4b684f0b3c1a"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "Mixed Content: The page at 'https://azgames.io/temple-run-2.embed' was loaded over HTTPS, but requested an insecure resource 'http://com.imangi.s3-website-us-east-1.amazonaws.com/android/promo/TR2GooglePlay_1.txt'. This request has been blocked; the content must be served over HTTPS."
+    ],
+    "failed": [
+      "script https://universal.wgplayer.com/ net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "script https://universal.wgplayer.com/tag/?lh=azgames.io&wp=/temple-run-2.embed&ws= net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "fetch http://com.imangi.s3-website-us-east-1.amazonaws.com/android/promo/TR2GooglePlay_1.txt mixed-content"
+    ]
+  },
+  {
+    "slug": "drift-boss",
+    "pageUrl": "https://azgames.io/drift-boss.embed",
+    "title": "Play Drift Boss Game Online!",
+    "frameUrls": [
+      "https://azgames.io/drift-boss.embed",
+      "https://gamecollections.me/game/owner/drift-boss-gm/"
+    ],
+    "changedStates": 4,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/drift-boss/00-loaded.png",
+        "hash": "0f6a460fbd9828c749dedc97d09e4942272db2437eef371b92fdcf36595cbaec"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/drift-boss/01-launch.png",
+        "hash": "18a9aefab778da79cd7a5ef115a7176efb35512b90052c271b099d7d987637dc"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/drift-boss/02-turn.png",
+        "hash": "e89cbce51ea0f8e983cbd77bc864b7a888861afa59d199271424b59aa3e0f5c5"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/drift-boss/03-turn.png",
+        "hash": "004538f5b48c7294debf221ce1e3f24eed1bf80a7b5c60ae462dcede670bcf9e"
+      }
+    ],
+    "errors": [
+      "Blocked: null.html?https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ],
+    "failed": [
+      "fetch https://ana.headerlift.com/event?page_url=azgames.io&game_id=0a8b51e5eaee42e7b4db83ca00afc92e&eventtype=1&ts=1789974422727 net::ERR_ABORTED"
+    ]
+  },
+  {
+    "slug": "smash-karts",
+    "pageUrl": "https://azgames.io/smash-karts.embed",
+    "title": "Play Smash Karts Game Online!",
+    "frameUrls": [
+      "https://azgames.io/smash-karts.embed",
+      "https://smashkarts.io/",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "https://i.liadm.com/sync-container?duid=6f18f2012c80--01m31cn1n1t1aqcw397b1tb0bj&ds=did-006r&euns=1&s=&version=v3.18.0&cd=.smashkarts.io&pv=2905c945-fb36-4d4e-a179-1a11ae7432d8",
+      "about:blank",
+      "https://s.amazon-adsystem.com/iu3?cm3ppd=1&d=dtb-pub&csif=t&dl=n-inmobi&dcc=t",
+      "https://s.amazon-adsystem.com/v3/pr?exlist=n-inmobi&fv=1.0&a=cm&cm3ppd=1&dmt=3&gdpr=0",
+      "https://sync.inmobi.com/sync?redirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dinmobi.com%26id%3D%7BID5UID%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=1&google_push=&retry=true",
+      "https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=azgames.io#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22smashkarts.io%22,%22topUrl%22:%22azgames.io%22,%22version%22:109327,%22origin%22:%22publishertagids%22,%22requestId%22:%220.7228320502719887%22}",
+      "https://google-bidout-d.openx.net/w/1.0/pd?plm=5",
+      "about:blank",
+      "about:blank",
+      "about:blank",
+      "https://www.google.com/recaptcha/api2/aframe"
+    ],
+    "changedStates": 4,
+    "shots": [
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/smash-karts/00-loaded.png",
+        "hash": "67a3cea27329963fc9c5c810de7890832ab91f0dd4b2695910f8200a2a4dc5a0"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/smash-karts/01-launch.png",
+        "hash": "847f889409bb74b1878607edb2e42ecb9e5ce67ca50c7339b56d94dc821005f5"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/smash-karts/02-drive.png",
+        "hash": "519b918f48114c5219094d1bc01da18eb4b1993ae0309b58b6c973a794ef8dc9"
+      },
+      {
+        "file": "D:/wh/202609/Krillion/Krillion/krillion/reports/azgames-gameplay/smash-karts/03-steer.png",
+        "hash": "db65c10b155f0c793740f570fa9348fd4fd49c7f59ea4a2e19209d9bb8c4ba3b"
+      }
+    ],
+    "errors": [
+      "Failed to load resource: the server responded with a status of 403 ()",
+      "Access to fetch at 'https://lb.eu-1-id5-sync.com/lb/v1' from origin 'https://smashkarts.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'https://id5-sync.com/bounce' from origin 'https://smashkarts.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Access to XMLHttpRequest at 'https://id5-sync.com/gm/v3' from origin 'https://smashkarts.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_CONNECTION_CLOSED"
+    ],
+    "failed": [
+      "fetch https://hb-vntsm-com.global.ssl.fastly.net/v4/srv/g.txt net::ERR_ABORTED",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-1W23DRFHK9&gtm=45je69g1v888614336za200zd888614336xf1&_p=1789974448950&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAACAEAC&_prs=gs&cid=370069712.1789974449&frm=2&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789974449&sct=1&seg=0&dl=https%3A%2F%2Fsmashkarts.io%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Smash%20Karts&_tu=QA&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&tfd=2796 net::ERR_ABORTED",
+      "fetch https://web-platform.bytebrew.io/api/game/logs/add net::ERR_ABORTED",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-1W23DRFHK9&gtm=45je69g1v888614336za200zd888614336xf1&_p=1789974448950&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAEQC&cid=370069712.1789974449&frm=2&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789974449&sct=1&seg=0&dl=https%3A%2F%2Fsmashkarts.io%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Smash%20Karts&_tu=QA&_s=2&tfd=7168 net::ERR_ABORTED",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-1W23DRFHK9&gtm=45je69g1v888614336za200zd888614336xf1&_p=1789974448950&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAEQC&_prs=gs&cid=370069712.1789974449&frm=2&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=3&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789974449&sct=1&seg=0&dl=https%3A%2F%2Fsmashkarts.io%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Smash%20Karts&_tu=QA&en=portal_url&_c=1&_ee=1&ep.name=undefined&tfd=7168 net::ERR_ABORTED",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-1W23DRFHK9&gtm=45je69g1v888614336za200zd888614336xf1&_p=1789974448950&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAEQC&_prs=gs&cid=370069712.1789974449&frm=2&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=4&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789974449&sct=1&seg=0&dl=https%3A%2F%2Fsmashkarts.io%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Smash%20Karts&_tu=QA&en=portal_url_undefined_absolute&_c=1&_ee=1&ep.name=smashkarts.io&tfd=7170 net::ERR_ABORTED",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-1W23DRFHK9&gtm=45je69g1v888614336za200zd888614336xf1&_p=1789974448950&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAEQC&_prs=gs&cid=370069712.1789974449&frm=2&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=5&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789974449&sct=1&seg=0&dl=https%3A%2F%2Fsmashkarts.io%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Smash%20Karts&_tu=QA&en=portal_url_undefined_refferal&_c=1&_ee=1&ep.name=azgames.io&tfd=7171 net::ERR_ABORTED",
+      "fetch https://gcsing1057.exitgames.com/photon/m/?ping&r=7017 net::ERR_ABORTED",
+      "fetch https://lb.eu-1-id5-sync.com/lb/v1 net::ERR_FAILED",
+      "fetch https://id5-sync.com/bounce net::ERR_FAILED",
+      "fetch https://pagead2.googlesyndication.com/pagead/ping?e=1 net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2 net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4 net::ERR_ABORTED",
+      "fetch https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWACaAM%3D net::ERR_ABORTED",
+      "xhr https://id5-sync.com/gm/v3 net::ERR_FAILED",
+      "image https://eus.rubiconproject.com/usync.html?p=inmobi&endpoint=us-east net::ERR_BLOCKED_BY_ORB",
+      "image https://ads.pubmatic.com/AdServer/js/user_sync.html?p=159035&gdpr=0&gdpr_consent=&userIdMacro=(PM_UID)&predirect=https%3A%2F%2Fsync.inmobi.com%2Fsetuid%3FbidderID%3DID5-SEA-76%26dspUserId%3D(PM_UID) net::ERR_BLOCKED_BY_ORB",
+      "image https://pixel.tapad.com/idsync/ex/receive?partner_id=3535&partner_device_id=ID5-1-5d87270e-f746-48c9-aaf8-45cce3541f86&partner_url=https%3A%2F%2Fsync.inmobi.com%2Fsetuid%3FbidderID%3D877%26dspUserId%3D%24%7BTA_DEVICE_ID%7D net::ERR_BLOCKED_BY_ORB",
+      "fetch https://www.google-analytics.com/g/collect?v=2&tid=G-1W23DRFHK9&gtm=45je69g1v888614336za200zd888614336xf1&_p=1789974448950&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAEQC&cid=370069712.1789974449&frm=2&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.52%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.52&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789974449&sct=1&seg=0&dl=https%3A%2F%2Fsmashkarts.io%2F&dr=https%3A%2F%2Fazgames.io%2F&dt=Smash%20Karts&_tu=QA&_s=6&tfd=12174 net::ERR_ABORTED",
+      "fetch https://e01.atmtd.com/bidanalytics-event/json?mode=fetch-bf-0 net::ERR_ABORTED",
+      "image https://tracker-shr.ortb.net/sync?id=1&uid=ID5-1-5d87270e-f746-48c9-aaf8-45cce3541f86 net::ERR_CONNECTION_CLOSED"
+    ]
+  }
+]
