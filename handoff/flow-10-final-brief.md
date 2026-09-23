@@ -5,7 +5,7 @@ The 01–10 workflow is complete with one explicit, non-blocking warning: the us
 ## Deliverable
 
 - Deploy this directory: `out/`.
-- Configured canonical origin: `https://testkrillion.com`.
+- Configured canonical origin: `https://krilliongames.com`.
 - Public inventory: 19 indexable URLs, including 9 game entries (the main game only at `/`), 3 Guide details, both index pages, and all 5 root Legal pages.
 - No site was deployed and no Git commit was created.
 

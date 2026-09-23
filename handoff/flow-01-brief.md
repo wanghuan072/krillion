@@ -10,7 +10,7 @@
 - Project: `D:/wh/202609/Krillion/Krillion/krillion`
 - Keyword: `krillion`
 - Main iframe first version: `https://www.krillion.org/play/daily/` (stored verbatim; provisional)
-- Domain: `testkrillion.com`, normalized Origin `https://testkrillion.com`
+- Domain: `krilliongames.com`, normalized Origin `https://krilliongames.com`
 
 ## Outputs
 
@@ -25,7 +25,7 @@
 - The project is an existing, undeveloped Next.js 16.3.5 App Router starter using npm.
 - The main game is represented only by `/` and `data/games/main-game.json`.
 - Additional games will be represented only by `/games/[slug]` and `data/games/games.json`.
-- Canonical absolute URLs will use `https://testkrillion.com`.
+- Canonical absolute URLs will use `https://krilliongames.com`.
 - Network research, scoped code changes, necessary dependency installation, checks, and builds are enabled. Deployment and Git commits are disabled.
 
 ## Decisions The Next Flow May Change

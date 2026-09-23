@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-09-23",
   "language": "en",
   "market": "global English-speaking browser players",
   "briefs": [
@@ -39,257 +39,273 @@
       }
     },
     {
-      "gameId": "slope",
-      "playerTask": "Distance and survival are the whole objective. The course is assembled as the run continues, speed rises steadily, and one collision or fall ends the attempt, so a modest controlled line is more valuable than a dramatic last-second correction.",
-      "input": "Use the Left and Right Arrow keys or A and D to steer. There is no jump or brake button: speed, gravity, and the angle of each platform determine whether the ball stays centered, clips an obstacle, or sails into a gap.",
-      "progression": "Distance and survival are the whole objective. The course is assembled as the run continues, speed rises steadily, and one collision or fall ends the attempt, so a modest controlled line is more valuable than a dramatic last-second correction.",
+      "gameId": "wordle-game",
+      "playerTask": "Find the hidden word in six guesses, using green, yellow, and gray tiles to narrow every following attempt.",
+      "input": "Press Play Now, wait for the board and keyboard to appear, then check the number of columns before typing. Enter a real word with the physical keyboard or the on-screen letters and submit with Enter. Invalid dictionary entries do not consume a row, but they also reveal nothing. In our test, the best first move was not simply a favorite word: it was a word containing common vowels and five different letters. After the tiles flip, we wrote the pattern as fixed positions, present-but-misplaced letters, and excluded letters before touching the second row.",
+      "progression": "The important detail is that feedback applies to both identity and quantity. If a guess contains two copies of a letter and only one receives color, the answer may contain only one copy, or the second copy may be blocked by how the game allocates matches. A gray duplicate therefore does not always prove that the letter is completely absent when another copy is green or yellow. We treat green squares as anchors, move yellow letters only into still-legal columns, and keep gray letters out unless duplicate behavior gives us a concrete reason to reconsider them. Changing the word length changes the search space, not the meaning of the colors.",
       "failureRisks": [
-        "The common mistake is oversteering after landing. Momentum remains active while the camera swings, so holding the previous direction can throw the ball off the opposite side. Red blocks are solid hazards; their glow is not decoration. Restart only after the result appears so the next run begins with clean input."
+        "The most common failure is solving from memory instead of the board. A word may look perfect because it contains the yellow letters, yet quietly place one yellow in the same forbidden column. Another trap is keeping a beloved opening word after the board has already supplied stronger constraints. We also lost rows by overlooking double letters: a candidate with two Es is not equivalent to one with a single E. Before submitting, we check five things in order—length, green positions, yellow inclusion, yellow exclusion by position, and gray or duplicate counts. That ten-second check is more reliable than entering another plausible word and hoping the colors forgive it."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-slope-screen-1",
-        "media-game-slope-screen-2",
-        "media-game-slope-screen-3"
+        "media-game-wordle-game-screen-1",
+        "media-game-wordle-game-screen-2",
+        "media-game-wordle-game-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-slope"
+          "media-video-wordle-game"
         ],
         "adoptedIds": [
-          "media-video-slope"
+          "media-video-wordle-game"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "2048",
-      "playerTask": "The named milestone is the 2048 tile, but the board can continue if the build allows it and legal moves remain. The run ends when all sixteen cells are occupied and no horizontal or vertical pair can merge. Score grows through combinations, while empty space is the practical resource that keeps future combinations possible.",
-      "input": "Press an Arrow key on desktop or swipe horizontally or vertically on touch screens. A move affects the entire grid, not one selected square. Each tile can normally merge only once during that move, which explains why a row of four equal numbers becomes two pairs rather than one instant high tile.",
-      "progression": "The named milestone is the 2048 tile, but the board can continue if the build allows it and legal moves remain. The run ends when all sixteen cells are occupied and no horizontal or vertical pair can merge. Score grows through combinations, while empty space is the practical resource that keeps future combinations possible.",
+      "gameId": "letter-boxed",
+      "playerTask": "Chain words around a four-sided letter box, alternate sides, and use every letter in as few linked words as possible.",
+      "input": "Open the player and study the four groups before selecting anything. On desktop we can click letters; on touch screens we tap them. The center line shows the current spelling, Delete removes the latest choice, and Enter submits a valid word. Entries need at least three letters and must respect the alternating-side rule from the first pair onward. In our tests, starting immediately was worse than spending half a minute identifying uncommon letters, likely suffixes, and letters that can serve as bridges. A word that covers six easy letters but ends on an awkward consonant can make the remaining board much harder.",
+      "progression": "A letter may be reused, and a side may reappear after one letter from another side; only two adjacent selections from the same side are forbidden. The link between words is equally strict: if the accepted word ends in R, the next entry begins with R. Coverage is global, so letters used in an earlier word stay credited even when they appear again later. This means a long word is not automatically superior. We judge a candidate by three values: how many unused letters it covers, whether its internal side pattern is legal, and whether its final letter opens a strong next word. The drawn path is a quick visual check for accidental same-side moves.",
       "failureRisks": [
-        "Randomly rotating through all four directions breaks the ordered edge and traps large values behind small ones. Another frequent error is chasing one attractive merge while filling the opposite side. If the board becomes crowded, stop building the next large tile and first create two or three empty cells with dependable pairs."
+        "The first repeated error is confusing a geometric diagonal with legality. The rule concerns labeled sides, not how far the path travels: two letters on the top edge are illegal even if they are far apart. The second is submitting a brilliant word that ends with a letter offering no usable continuation. Short filler words can rescue a chain, but each one adds another mandatory endpoint. We also watch for a final unused letter stranded on the same side as all realistic neighbors. Before Enter, we trace the word one pair at a time, note its last letter, and name at least one possible next word. That habit prevents most dead chains."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-2048-screen-1",
-        "media-game-2048-screen-2",
-        "media-game-2048-screen-3"
+        "media-game-letter-boxed-screen-1",
+        "media-game-letter-boxed-screen-2",
+        "media-game-letter-boxed-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-2048"
+          "media-video-letter-boxed"
         ],
         "adoptedIds": [
-          "media-video-2048"
+          "media-video-letter-boxed"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "curve-rush",
-      "playerTask": "Travel as far as possible, pass the marked horizon, and collect coins placed along useful arcs. Height can add excitement and scoring opportunities, but a clean downslope landing protects the run. A harsh nose-first contact or badly timed return can end the attempt even after a long jump.",
-      "input": "Hold the mouse button, touch, or the shown action key while descending to accelerate along the curve. Release near the rising face to leave the ground. Press again as the ball meets a downhill surface so it follows the sand instead of bouncing awkwardly. The current build teaches this hold-and-release rhythm before normal play.",
-      "progression": "Travel as far as possible, pass the marked horizon, and collect coins placed along useful arcs. Height can add excitement and scoring opportunities, but a clean downslope landing protects the run. A harsh nose-first contact or badly timed return can end the attempt even after a long jump.",
+      "gameId": "growdle",
+      "playerTask": "Solve a three-letter word, carry its letters into a five-letter answer, then finish a seven-letter deduction puzzle.",
+      "input": "Close the rules panel after checking the color examples, then focus the board and enter a valid word of the displayed length. The on-screen keyboard works with mouse or touch, while a physical keyboard is quicker on desktop. Enter submits and Backspace removes the most recent letter. We start the three-letter stage with a word containing a useful vowel and two common consonants, then apply the returned colors exactly. Once that answer is found, we pause at the five-letter board and identify how its inherited letters can be arranged before adding new coverage. The same reset happens before seven letters; rushing across the transition wastes the strongest clue the game gives us.",
+      "progression": "Each stage has its own grid and guess budget, yet the answers are linked by their letters. The previous solution is contained within the longer target, though positions can change, so an inherited letter is guaranteed material rather than a guaranteed green square. This makes duplicate counts important. If the short answer contains one A, the longer word contains at least that A but may contain another. Color feedback on a new guess still controls the exact position evidence. We separate guarantees from possibilities: carried letters go on a required list, greens go in fixed slots, yellows receive forbidden slots, and untouched keyboard letters remain candidates for the new spaces.",
       "failureRisks": [
-        "Holding through an uphill face wastes the launch and can bury the ball into the next trough. Releasing too late creates a flat jump with little landing time; releasing too early sends the ball high but slow. Coins are useful only when their line agrees with a survivable landing, so do not bend a stable arc merely to grab one."
+        "Players often treat a carried answer as a fixed substring. That works sometimes, but it can hide the real solution when the old letters move apart. Another mistake is discarding a letter because it was gray in the prior stage; the longer answer adds letters, so the new stage can introduce characters that were absent before. We also avoid guessing a five- or seven-letter word that omits an inherited letter unless the instructions visibly say otherwise. If the board appears contradictory, we recheck duplicate feedback and the transition rather than assuming the dictionary is wrong. Most failed late stages come from one false positional assumption made immediately after a successful short word."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-curve-rush-screen-1",
-        "media-game-curve-rush-screen-2",
-        "media-game-curve-rush-screen-3"
+        "media-game-growdle-screen-1",
+        "media-game-growdle-screen-2",
+        "media-game-growdle-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-curve-rush"
+          "media-video-growdle"
         ],
         "adoptedIds": [
-          "media-video-curve-rush"
+          "media-video-growdle"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "tap-road",
-      "playerTask": "Survive an increasingly quick sequence of numbered spikes and track hazards while raising the distance or score display. Pickups can be collected when their lane is safe, but there is no health buffer in the verified run: direct contact ends the attempt and presents the restart state.",
-      "input": "Click, tap, or press the indicated action key to switch lanes. One input means one crossing; holding does not create a controlled turn. Because the ball keeps moving during the animation, a late tap may begin correctly but still collide before the lane change finishes.",
-      "progression": "Survive an increasingly quick sequence of numbered spikes and track hazards while raising the distance or score display. Pickups can be collected when their lane is safe, but there is no health buffer in the verified run: direct contact ends the attempt and presents the restart state.",
+      "gameId": "quardle",
+      "playerTask": "Select one of four crossing words, interpret clues that reach across the crossword, and solve the full grid within the shared allowance.",
+      "input": "Press one of the numbered buttons below the crossword before typing. The selected number turns blue and the matching line on the grid is emphasized. Enter a valid five-letter word and press Enter; the result appears in the history column with its word number. We begin on a word whose crossing squares can feed two neighbors, usually word 2 or 3 depending on the daily shape. CRANE is a useful coverage guess, but the correct opener matters less than reading all five colors afterward. We write the selected word number next to every note because the same colored letter has a different meaning when the selector changes.",
+      "progression": "Green means the letter belongs in that exact position of the selected word. Yellow means it belongs in the selected word but in another position. Quardle then adds two cross-word clues: one color indicates that the letter is absent from the selected answer but appears in the same position of another hidden word, while another indicates that it appears elsewhere in another word. A dark or neutral tile means the letter was not found in any of the four answers under that feedback. The reviewed rules give twelve base guesses; solving the first three words awards one extra guess each, creating a possible total of fifteen. Those bonus attempts make early confirmed solves strategically valuable.",
       "failureRisks": [
-        "Players often tap twice when the visual crossing feels slow, which cancels the intended escape. Another mistake is following a collectible into a lane with no exit. As speed grows, move the focus farther up the road and use the obstacle numbers as landmarks instead of looking directly under the ball."
+        "The most damaging mistake is treating Quardle like Quordle and assuming one submitted guess is evaluated as four independent Wordle rows. It is not: we select one target, and the extra colors summarize relationships to the remaining crossword answers. Another error is forgetting which number produced a history row, then applying a yellow to the wrong pattern. We also avoid spending four opening guesses by entering the same word once for each selector. Cross-word colors already carry evidence between answers. Finally, the apparent fifteen-guess maximum is conditional; we begin with twelve and only reach fifteen by solving the first three words, so late rescue attempts cannot be assumed in advance."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-tap-road-screen-1",
-        "media-game-tap-road-screen-2",
-        "media-game-tap-road-screen-3"
+        "media-game-quardle-screen-1",
+        "media-game-quardle-screen-2",
+        "media-game-quardle-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-tap-road"
+          "media-video-quardle"
         ],
         "adoptedIds": [
-          "media-video-tap-road"
+          "media-video-quardle"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "head-basketball",
-      "playerTask": "Put the ball through the opponent's hoop more often before the match clock expires. Tournament play strings opponents together, while quick or local modes make it easier to learn movement. A missed shot stays live, so rebounds, blocks, and loose-ball recovery immediately become the next possession.",
-      "input": "Choose a one-player or two-player option, then use the control panel shown by the current build. Player one moves with the displayed letter keys and uses the assigned shoot or action keys; the second local player uses the shown alternate set. Check the in-game help screen because browser keyboard layouts can vary.",
-      "progression": "Put the ball through the opponent's hoop more often before the match clock expires. Tournament play strings opponents together, while quick or local modes make it easier to learn movement. A missed shot stays live, so rebounds, blocks, and loose-ball recovery immediately become the next possession.",
+      "gameId": "waffle",
+      "playerTask": "Swap letters across a waffle-shaped grid, interpret row and column colors, and complete six crossing words within the move limit.",
+      "input": "Read the How to Play panel, close it, and inspect the whole waffle before dragging anything. Select one tile and then its destination, or drag between them if the device supports it; the two letters exchange places. We first mark greens as locked and avoid moving them unless a verified special case demands it. Next we read the three horizontal patterns and three vertical patterns as separate word clues. Because a crossing belongs to both, a single correct swap can resolve two lines. In our test, naming likely words before moving was far safer than trying swaps to see what color appeared.",
+      "progression": "Colors are contextual. A yellow tile in a horizontal arm may need another position in that horizontal word, while the same crossing square also participates vertically. Duplicate letters require care because one copy can be green while another remains yellow or gray. The board contains the exact multiset of solution letters; no new characters are introduced. A swap has two consequences, so we evaluate both ends: where the chosen letter is going and what fills the hole it leaves. The move counter makes neutral swaps expensive. A good exchange places at least one letter, preserves greens, and ideally sends the displaced letter toward a second known home.",
       "failureRisks": [
-        "Repeated shooting from directly underneath the rim often creates vertical rebounds that favor the defender. Jumping or activating an action too early leaves the character unable to contest the real release. In two-player mode, confirm both control sets before the clock starts so browser shortcuts do not interrupt the match."
+        "Random swapping is the fastest way to burn the budget. A tile turning yellow does not necessarily mean the move improved the overall board, and moving a green to test an idea usually creates extra repair work. Another trap is deciding a word from its horizontal colors without checking whether the crossing letters make the vertical words impossible. We also verify duplicates before concluding that a gray copy is unwanted everywhere. Before each swap we say two destination claims out loud: this letter belongs there, and the displaced letter can go here or has a known route. If only the first half is true, we search for a better exchange."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-head-basketball-screen-1",
-        "media-game-head-basketball-screen-2",
-        "media-game-head-basketball-screen-3"
+        "media-game-waffle-screen-1",
+        "media-game-waffle-screen-2",
+        "media-game-waffle-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-head-basketball"
+          "media-video-waffle"
         ],
         "adoptedIds": [
-          "media-video-head-basketball"
+          "media-video-waffle"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "escape-road",
-      "playerTask": "Keep the chase alive, collect available cash or rewards, and increase the run score while the police response grows. There is no safe finish line in the endless mode. The attempt ends when the car is boxed in, disabled by repeated collisions, or unable to escape the surrounding vehicles.",
-      "input": "Use A and D or the Left and Right Arrow keys to steer according to the visible prompt. The car keeps moving, so steering changes its path rather than setting a destination. Brief inputs make smooth bends; long holds create sharp turns that can send the car into buildings or dead ends.",
-      "progression": "Keep the chase alive, collect available cash or rewards, and increase the run score while the police response grows. There is no safe finish line in the endless mode. The attempt ends when the car is boxed in, disabled by repeated collisions, or unable to escape the surrounding vehicles.",
+      "gameId": "fun-typing-io",
+      "playerTask": "Type themed prompts accurately, build words-per-minute speed, and compare live performance in training or multiplayer races.",
+      "input": "Click Play Now on this page, then press the central AZGames launch control once and allow the inner game to finish loading. Choose training when learning the interface; multiplayer is more useful after the prompt and correction behavior feel predictable. Place both hands in a comfortable home-row position, click the text field if required, and type the shown characters exactly. We confirm the first few letters visibly advance before accelerating. If a mistake appears, use the game's indicated correction behavior—normally Backspace—rather than continuing several words ahead. At the result screen, record both WPM and accuracy because a faster run with many errors is not necessarily progress.",
+      "progression": "The active character or word is visually distinguished, and correct input advances the cursor through the passage. Incorrect input is marked and may block clean progress until corrected. WPM estimates how much standardized text we produce per minute, whereas accuracy measures the proportion entered correctly. A multiplayer finish also depends on opponents and connection timing, so it is not a pure laboratory benchmark. Category difficulty matters: punctuation, capitalization, numbers, and unfamiliar vocabulary increase decision time even when raw letter speed is unchanged. We compare runs only when the mode and text type are similar, otherwise the numbers tell different stories.",
       "failureRisks": [
-        "Driving straight for too long lets faster pursuers line up behind the car, but turning at every junction can lead into a sealed courtyard. Watch the space ahead and one side route at the same time. Cash is never worth entering a narrow lane when several police cars are already close."
+        "Holding maximum speed from the first character usually causes cascading corrections. Looking down at the keyboard breaks the preview buffer, while watching the progress bar instead of the prompt produces missed letters. We also avoid hammering Backspace repeatedly after one error; first locate the highlighted mismatch, then correct only what the game requires. A poor result can come from a difficult category, browser stutter, lost frame focus, or actual technique, so we do not diagnose everything as slow fingers. If several inputs disappear at once, pause and confirm the game still has focus before resuming. Consistent accurate sessions are more useful than one lucky high-WPM result."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-escape-road-screen-1",
-        "media-game-escape-road-screen-2",
-        "media-game-escape-road-screen-3"
+        "media-game-fun-typing-io-screen-1",
+        "media-game-fun-typing-io-screen-2",
+        "media-game-fun-typing-io-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-escape-road"
+          "media-video-fun-typing-io"
         ],
         "adoptedIds": [
-          "media-video-escape-road"
+          "media-video-fun-typing-io"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "trap-the-cat",
-      "playerTask": "Win by removing every possible path from the cat to the outer edge. Lose when the cat reaches an edge cell and escapes. The puzzle is not about chasing the current position; it is about shrinking the connected region that still contains a route outward.",
-      "input": "Click or tap one green hex to turn it into a blocked cell. You cannot place several walls before the cat responds, and occupied or already blocked cells are unavailable. Diagonal-looking connections count because each hex can touch six neighbors, so inspect the full ring around the cat.",
-      "progression": "Win by removing every possible path from the cat to the outer edge. Lose when the cat reaches an edge cell and escapes. The puzzle is not about chasing the current position; it is about shrinking the connected region that still contains a route outward.",
+      "gameId": "spelling-bee",
+      "playerTask": "Build words from seven hive letters, include the center letter every time, and hunt pangrams in an archived puzzle snapshot.",
+      "input": "Open the player and read the date and center letter before entering a word. Click hive letters or type on a physical keyboard, use Delete or Backspace to edit, and submit with Enter. The Shuffle control rearranges outer letters without changing the puzzle; it is a perspective tool, not a new board. We begin by listing common four-letter words containing the center, then expand them with prefixes, suffixes, and repeated letters. An accepted entry increases the word list or score. A rejected one may be too short, omit the center, use an outside letter, or simply be absent from this build's dictionary.",
+      "progression": "The center letter is mandatory in every word, while each of the six outside letters is optional. Letters can appear more than once even though each is shown once in the hive. Standard scoring commonly gives one point to a four-letter word and more to longer words, with a pangram bonus, but the visible build's own score display is the final authority. Progress ranks rise as our points approach the puzzle's available total. Because the dictionary is curated, not every obscure technical term or proper name is accepted. The useful mental model is constrained construction: all characters come from the seven-letter set, at least one is the center, and length begins at four.",
       "failureRisks": [
-        "A single-file wall is fragile when the cat can walk around either end. Blocking the most obvious next cell can also push it toward a shorter escape on the opposite side. After every move, trace at least two routes from the new position before choosing the next hex."
+        "The central-letter rule causes most early rejections. A perfectly valid English word still fails if it uses only outer letters. The next trap is assuming each letter can be used once, which hides many everyday answers. We do not interpret rejection as proof that our spelling is wrong until we check length, center inclusion, allowed characters, capitalization, and dictionary scope. Since this is an archived snapshot, refreshing in search of a new daily board is also misguided. When progress stalls, we audit the existing word list by stem—nouns, verbs, adjectives, and common transformations—rather than entering random strings. That keeps the search systematic and reveals which productive families we have ignored."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-trap-the-cat-screen-1",
-        "media-game-trap-the-cat-screen-2",
-        "media-game-trap-the-cat-screen-3"
+        "media-game-spelling-bee-screen-1",
+        "media-game-spelling-bee-screen-2",
+        "media-game-spelling-bee-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-trap-the-cat"
+          "media-video-spelling-bee"
         ],
         "adoptedIds": [
-          "media-video-trap-the-cat"
+          "media-video-spelling-bee"
         ],
         "rejectedIds": []
       }
     },
     {
-      "gameId": "suika-game",
-      "playerTask": "Create increasingly large fruit, work toward the watermelon, and accumulate score without letting the pile remain above the danger line. The game ends when the container can no longer safely hold the active stack. A low stable floor is therefore as important as any single high-value merge.",
-      "input": "Move the drop position with the pointer or the shown horizontal controls, then click, tap, or press the action key to release. Once a fruit falls, gravity and collisions take over. Two matching fruits that touch merge into the next larger type, which may push neighboring pieces into new contacts.",
-      "progression": "Create increasingly large fruit, work toward the watermelon, and accumulate score without letting the pile remain above the danger line. The game ends when the container can no longer safely hold the active stack. A low stable floor is therefore as important as any single high-value merge.",
+      "gameId": "cheat-or-repeat",
+      "playerTask": "Answer a ten-question school exam, search for help on a phone, and hide the evidence before the teacher catches you cheating.",
+      "input": "Click the page's Play Now button, press the central AZGames launcher once, and wait for the inner Unity game to finish loading. Read the control prompt before the first exam because keyboard and mouse handle different tasks. Use the pointer to inspect the paper and select answers, and use the displayed keys to handle or hide the phone and interact with the scene. We answer obvious questions without cheating. When a question is uncertain, we first observe the teacher's position and attention, then open the phone, type the shortest useful search, read the result, and put the device away before choosing. The exam contains ten questions, so one reckless search can jeopardize more progress than one honest mistake.",
+      "progression": "The quiz supplies a prompt and several choices, but the phone turns unknown knowledge into a stealth decision. Searching costs time and divides attention between the screen, the paper, and the teacher. Detection is based on visible behavior and timing rather than the factual quality of the answer. The four-day structure gives failure narrative weight: passing moves us forward, while poor performance or being caught threatens repetition and escalating consequences. The horror tone comes from surveillance and punishment, not from random trivia. We treat each question as a three-part state—confidence in the answer, current risk of phone use, and remaining exam margin—before deciding whether cheating is rational.",
       "failureRisks": [
-        "Dropping every piece in the center creates a tall unstable tower. Large fruit can roll unexpectedly after a merge, and a chain reaction may raise another piece even while the total count falls. Avoid sealing tiny fruit beneath incompatible larger ones where they cannot reach a match."
+        "Opening the phone automatically whenever we hesitate is the central mistake. It turns a knowledge gap into a detection risk even when two options can be eliminated. Another failure is continuing to read search results while the teacher's state changes. We also avoid clicking an answer before confirming the phone is put away; divided controls can cause the wrong option or expose the device. The game can feel like a speed test, but frantic mouse movement makes situational awareness worse. If caught repeatedly, rehearse one search cycle without caring about the score: observe, raise, query, confirm, hide, answer. Separating those actions reveals exactly where the timing breaks down."
       ],
-      "verifiedScope": "AZGames title, launch path, visible gameplay, and real input verified 2026-09-21.",
+      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
       "articleFocus": [
+        "overview",
         "start",
-        "controls",
         "mechanics",
-        "failure",
-        "device help"
+        "tested strategy",
+        "common failures",
+        "device advice",
+        "FAQ"
       ],
       "screenshot_tasks": [
-        "media-game-suika-game-screen-1",
-        "media-game-suika-game-screen-2",
-        "media-game-suika-game-screen-3"
+        "media-game-cheat-or-repeat-screen-1",
+        "media-game-cheat-or-repeat-screen-2",
+        "media-game-cheat-or-repeat-screen-3"
       ],
       "youtube_research": {
         "decision": "adopted",
         "candidateIds": [
-          "media-video-suika-game"
+          "media-video-cheat-or-repeat"
         ],
         "adoptedIds": [
-          "media-video-suika-game"
+          "media-video-cheat-or-repeat"
         ],
         "rejectedIds": []
       }

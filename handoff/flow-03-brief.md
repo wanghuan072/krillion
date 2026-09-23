@@ -4,7 +4,7 @@ Status: **complete**
 
 ## Locked decisions
 
-- Site name and short name are `Krillion`; canonical origin is `https://testkrillion.com` and trailing slashes are disabled.
+- Site name and short name are `Krillion`; canonical origin is `https://krilliongames.com` and trailing slashes are disabled.
 - Shared navigation is exactly Home `/`, Guides `/guides`, More Games `/games`. Research did not support an independent topic page, so no thin navigation destination was added.
 - The homepage is the only main-game detail and canonical. No `/games/krillion` route may exist.
 - Eight additional game details and three Guide details are planned. Five Legal/site pages use their required root paths.

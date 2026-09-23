@@ -4,7 +4,7 @@
 
 - Site and short name: **Krillion**. This preserves the verified product name and does not imply an official relationship.
 - Language and market: English for a global English-speaking audience.
-- Canonical origin: `https://testkrillion.com`.
+- Canonical origin: `https://krilliongames.com`.
 - Trailing slashes: disabled. `/path/` redirects to `/path` at the hosting layer when supported.
 - Header, mobile menu, and Footer use one ordered navigation array: Home `/`, Guides `/guides`, More Games `/games`.
 - No topic page was approved. The researched topic candidates overlap the homepage or one of the three Guides and do not justify a separate navigation destination.
@@ -51,7 +51,7 @@ The Guides index reads only published Guide JSON files. Its wide and 1024px rows
 
 ## Footer and auxiliary routes
 
-The Footer repeats the shared primary navigation and provides a distinct Legal group containing Privacy Policy, Terms of Service, Copyright, About Us, and Contact Us at the five root paths. Legal links use the current tab and `rel="noopener noreferrer nofollow"`. Contact displays `wyong@testkrillion.com` as plain text. The copyright line derives the build year and site name from shared configuration.
+The Footer repeats the shared primary navigation and provides a distinct Legal group containing Privacy Policy, Terms of Service, Copyright, About Us, and Contact Us at the five root paths. Legal links use the current tab and `rel="noopener noreferrer nofollow"`. Contact displays `wyong@krilliongames.com` as plain text. The copyright line derives the build year and site name from shared configuration.
 
 ## Explicit exclusions
 

@@ -3,8 +3,9 @@
 
 .header { position: sticky; top: 0; z-index: 40; min-height: 72px; background: rgba(5, 13, 23, .91); border-bottom: 1px solid rgba(83, 232, 242, .2); backdrop-filter: blur(18px) saturate(120%); }
 .headerInner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; position: relative; }
-.logoLink { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; }
-.logo { width: 196px; height: auto; object-fit: contain; }
+.logoLink { display: inline-flex; min-height: 44px; align-items: center; gap: 11px; color: var(--text); text-decoration: none; }
+.logo { width: 44px; height: 44px; flex: 0 0 44px; object-fit: contain; }
+.brandName { font: 800 1.55rem/1 Bahnschrift, "Arial Narrow", sans-serif; letter-spacing: .045em; }
 .desktopNav { display: flex; align-items: center; gap: 34px; }
 .desktopNav a, .mobileNav a { position: relative; min-height: 48px; display: inline-flex; align-items: center; padding: 5px 0; color: #c9c7bf; text-decoration: none; font-size: .88rem; font-weight: 650; transition: color .16s ease; }
 .desktopNav a::after, .mobileNav a::after { content: ""; position: absolute; right: 0; bottom: 4px; left: 0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .16s ease; }
@@ -69,7 +70,7 @@
 .recommendedGrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
 .gameCard { min-width: 0; display: block; color: var(--text); text-decoration: none; }
 .cardMedia { position: relative; aspect-ratio: 1 / 1; overflow: hidden; background: #0b0c09; border: 1px solid #464d40; border-radius: 8px; transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
-.cardMedia img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform .24s ease, filter .24s ease; }
+.cardMedia img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .24s ease, filter .24s ease; }
 .gameCard:hover .cardMedia { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 12px 26px rgba(0,0,0,.28); }
 .gameCard:hover .cardMedia img { transform: scale(1.035); filter: saturate(1.08) contrast(1.03); }
 .previewThumb { width: 100%; height: 100%; display: grid; place-items: center; background: linear-gradient(135deg, #12364c, #050d17); color: var(--accent); font-size: 2rem; font-weight: 900; }
@@ -240,7 +241,8 @@
 @media (max-width: 1024px) {
   .container { width: calc(100% - 40px); }
   .header, .headerInner { min-height: 68px; }
-  .logo { width: 184px; }
+  .logo { width: 42px; height: 42px; flex-basis: 42px; }
+  .brandName { font-size: 1.48rem; }
   .desktopNav { display: none; }
   .menuButton { display: grid; place-items: center; }
   .mobileNav { display: none; position: absolute; top: calc(100% + 1px); right: 0; left: 0; padding: 10px 16px 14px; background: #071522; border: 1px solid #285268; box-shadow: 0 18px 34px rgba(0,0,0,.42); }
@@ -266,7 +268,9 @@
 @media (max-width: 768px) {
   .container { width: calc(100% - 32px); }
   .header, .headerInner { min-height: 64px; }
-  .logo { width: 168px; }
+  .logoLink { gap: 9px; }
+  .logo { width: 38px; height: 38px; flex-basis: 38px; }
+  .brandName { font-size: 1.36rem; }
   .gamePage, .indexPage, .readingPage { padding-top: 28px; }
   .gameLayout { display: flex; flex-direction: column; gap: 0; }
   .homeH1 { font-size: min(10vw, 2.55rem); }

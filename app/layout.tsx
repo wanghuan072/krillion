@@ -7,7 +7,11 @@ import { getGameFrameOrigins } from "@/src/lib/data/game-loader";
 import "@/src/style/globals.css";
 import { JsonLd } from "@/src/components/seo/JsonLd";
 
-export const metadata: Metadata = { metadataBase: new URL(siteConfig.origin), applicationName: siteConfig.name, icons: { icon: "/favicon.ico" } };
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.origin),
+  applicationName: siteConfig.name,
+  icons: { icon: "/icon.png", shortcut: "/favicon.ico", apple: "/apple-icon.png" },
+};
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#10110e" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

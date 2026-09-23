@@ -23,8 +23,8 @@ runtime:
 game:
   config_path: "data/games/main-game.json"
 domain:
-  value: "testkrillion.com"
-  origin: "https://testkrillion.com"
+  value: "krilliongames.com"
+  origin: "https://krilliongames.com"
   status: "configured"
 deployment:
   target: "portable static hosting"

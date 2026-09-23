@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const mode = process.argv[2] ?? "dev";
 const root = process.cwd();
@@ -15,6 +16,15 @@ const exactKeys = (value, expected, label) => add(JSON.stringify(Object.keys(val
 const slug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const requiredSandbox = ["allow-scripts", "allow-same-origin", "allow-forms", "allow-pointer-lock", "allow-orientation-lock", "allow-modals"];
 const forbiddenSandbox = ["allow-popups", "allow-popups-to-escape-sandbox", "allow-top-navigation", "allow-top-navigation-by-user-activation"];
+const validAzGamesPlayer = (value) => {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && url.hostname === "azgames.io" && !url.username && !url.password && !url.hash
+      && (url.pathname.startsWith("/game/") || /^\/[a-z0-9-]+\.embed$/.test(url.pathname));
+  } catch {
+    return false;
+  }
+};
 
 exactKeys(main,["id","slug","title","shortDescription","status","publishedAt","updatedAt","tags","categories","flags","image","player","seo","content","relatedGameIds"],"main game");
 add(Array.isArray(games) && games.length >= 8, "games.json must contain at least eight planned additions");
@@ -25,8 +35,7 @@ for (const game of allGames) {
   exactKeys(game.image,["src","alt","width","height"],`${game.id}.image`);
   exactKeys(game.player,["iframeSrc","aspectRatio","orientation","permissionsPolicy","referrerPolicy","sandbox","loadTimeoutMs"],`${game.id}.player`);
   add(typeof game.player.iframeSrc === "string", `${game.id}: iframeSrc must be a string`);
-  add(game.id === "krillion" || /^https:\/\//.test(game.player.iframeSrc), `${game.id}: additional iframe must use HTTPS`);
-  add(game.id === "krillion" || game.player.iframeSrc === `https://azgames.io/${game.slug}.embed`, `${game.id}: additional iframe must use its matching AZGames embed path`);
+  add(game.id === "krillion" || validAzGamesPlayer(game.player.iframeSrc), `${game.id}: additional iframe must be an approved HTTPS azgames.io /game/ or .embed path`);
   const sandbox = Array.isArray(game.player.sandbox) ? game.player.sandbox : [];
   add(requiredSandbox.every((token) => sandbox.includes(token)), `${game.id}: required iframe sandbox capabilities missing`);
   add(forbiddenSandbox.every((token) => !sandbox.includes(token)), `${game.id}: iframe sandbox permits popups or top navigation`);
@@ -60,9 +69,24 @@ if (["media","prepublish","release"].includes(mode)) {
 if (["prepublish","release"].includes(mode)) {
   for (const game of allGames) {
     const text = game.content.flatMap((section) => section.blocks).filter((block) => ["paragraph","list","steps","callout","table","faq"].includes(block.type)).map((block) => JSON.stringify(block)).join("").replace(/\s/g, "");
-    add(text.length >= 4000, `${game.id}: article under 4000 non-whitespace characters`);
+    const minimumArticleLength = game.id === "krillion" ? 4000 : 8000;
+    add(text.length >= minimumArticleLength, `${game.id}: article under ${minimumArticleLength} non-whitespace characters`);
     add(game.seo.title.length >= 40 && game.seo.title.length <= 60, `${game.id}: SEO title length`);
     add(game.seo.description.length >= 140 && game.seo.description.length <= 160, `${game.id}: SEO description length`);
+    if (game.id !== "krillion") {
+      const images = game.content.flatMap((section) => section.blocks).filter((block) => block.type === "image");
+      const videos = game.content.flatMap((section) => section.blocks).filter((block) => block.type === "video");
+      add(images.length >= 3, `${game.id}: at least three explanatory gameplay images required`);
+      add(videos.length >= 1 && videos.length <= 3, `${game.id}: one to three videos required`);
+      add(game.content.at(-1)?.blocks?.some((block) => block.type === "video"), `${game.id}: videos must follow the article`);
+      const hashes = images.map((image) => {
+        const file = path.join(root, "public", image.src.replace(/^\//, ""));
+        if (!fs.existsSync(file)) return `missing:${image.src}`;
+        return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+      });
+      add(hashes.every((hash) => !hash.startsWith("missing:")), `${game.id}: gameplay image file missing`);
+      add(new Set(hashes).size === images.length, `${game.id}: gameplay images must be distinct`);
+    }
   }
 }
 if (mode === "release") {

@@ -346,11 +346,11 @@
     ]
   },
   {
-    "slot_id": "game-slope-cover",
-    "page_id": "game-slope",
+    "slot_id": "game-wordle-game-cover",
+    "page_id": "game-wordle-game",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Slope game?",
-    "fact_to_show": "Matching AZGames artwork for Slope.",
+    "player_question": "Is this the correct Wordle Game game?",
+    "fact_to_show": "Matching AZGames visual for Wordle Game.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -358,79 +358,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-slope-cover"
+      "media-game-wordle-game-cover"
     ]
   },
   {
-    "slot_id": "game-slope-screen-1",
-    "page_id": "game-slope",
-    "target_section": "opening mechanics",
-    "player_question": "Read the next split before the ball reaches it.",
-    "fact_to_show": "Slope ball approaching a divided neon track",
+    "slot_id": "game-wordle-game-screen-1",
+    "page_id": "game-wordle-game",
+    "target_section": "overview",
+    "player_question": "The empty board tells us the word length and six-row limit before the first guess.",
+    "fact_to_show": "Wordle Game opening grid and on-screen keyboard",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Read the next split before the ball reaches it.",
+    "adjacent_copy_task": "The empty board tells us the word length and six-row limit before the first guess.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-slope-screen-1"
+      "media-game-wordle-game-screen-1"
     ]
   },
   {
-    "slot_id": "game-slope-screen-2",
-    "page_id": "game-slope",
+    "slot_id": "game-wordle-game-screen-2",
+    "page_id": "game-wordle-game",
     "target_section": "controls",
-    "player_question": "Short taps keep the ball centered on narrow sections.",
-    "fact_to_show": "Slope ball crossing a narrow elevated section",
+    "player_question": "Color feedback turns a submitted word into positional evidence for the next row.",
+    "fact_to_show": "Wordle Game board showing clue feedback",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Short taps keep the ball centered on narrow sections.",
+    "adjacent_copy_task": "Color feedback turns a submitted word into positional evidence for the next row.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-slope-screen-2"
+      "media-game-wordle-game-screen-2"
     ]
   },
   {
-    "slot_id": "game-slope-screen-3",
-    "page_id": "game-slope",
-    "target_section": "progression",
-    "player_question": "Red geometry is dangerous even when the wider route looks inviting.",
-    "fact_to_show": "Slope ball steering around red track hazards",
+    "slot_id": "game-wordle-game-screen-3",
+    "page_id": "game-wordle-game",
+    "target_section": "strategy",
+    "player_question": "Later guesses should satisfy every earlier clue rather than chase one promising letter.",
+    "fact_to_show": "Wordle Game later attempt with accumulated letter clues",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Red geometry is dangerous even when the wider route looks inviting.",
+    "adjacent_copy_task": "Later guesses should satisfy every earlier clue rather than chase one promising letter.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-slope-screen-3"
+      "media-game-wordle-game-screen-3"
     ]
   },
   {
-    "slot_id": "game-slope-video",
-    "page_id": "game-slope",
+    "slot_id": "game-wordle-game-video",
+    "page_id": "game-wordle-game",
     "target_section": "after complete article",
-    "player_question": "How does Slope move during real play?",
-    "fact_to_show": "Matching Slope gameplay and controls.",
+    "player_question": "How does Wordle Game work in motion?",
+    "fact_to_show": "Matching Wordle Game rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-slope"
+      "media-video-wordle-game"
     ]
   },
   {
-    "slot_id": "game-2048-cover",
-    "page_id": "game-2048",
+    "slot_id": "game-letter-boxed-cover",
+    "page_id": "game-letter-boxed",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct 2048 game?",
-    "fact_to_show": "Matching AZGames artwork for 2048.",
+    "player_question": "Is this the correct Letter Boxed game?",
+    "fact_to_show": "Matching AZGames visual for Letter Boxed.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -438,79 +438,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-2048-cover"
+      "media-game-letter-boxed-cover"
     ]
   },
   {
-    "slot_id": "game-2048-screen-1",
-    "page_id": "game-2048",
-    "target_section": "opening mechanics",
-    "player_question": "Every valid move shifts the full board and adds a tile.",
-    "fact_to_show": "2048 board after several low tiles have merged",
+    "slot_id": "game-letter-boxed-screen-1",
+    "page_id": "game-letter-boxed",
+    "target_section": "overview",
+    "player_question": "The opening box is best read as four side groups, not one twelve-letter ring.",
+    "fact_to_show": "Letter Boxed opening puzzle with twelve letters on four sides",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Every valid move shifts the full board and adds a tile.",
+    "adjacent_copy_task": "The opening box is best read as four side groups, not one twelve-letter ring.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-2048-screen-1"
+      "media-game-letter-boxed-screen-1"
     ]
   },
   {
-    "slot_id": "game-2048-screen-2",
-    "page_id": "game-2048",
+    "slot_id": "game-letter-boxed-screen-2",
+    "page_id": "game-letter-boxed",
     "target_section": "controls",
-    "player_question": "A stable corner gives high values a predictable home.",
-    "fact_to_show": "2048 board with a growing corner chain",
+    "player_question": "A legal path changes sides at every step and previews the current word in the center.",
+    "fact_to_show": "Letter Boxed path connecting letters from alternating sides",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A stable corner gives high values a predictable home.",
+    "adjacent_copy_task": "A legal path changes sides at every step and previews the current word in the center.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-2048-screen-2"
+      "media-game-letter-boxed-screen-2"
     ]
   },
   {
-    "slot_id": "game-2048-screen-3",
-    "page_id": "game-2048",
-    "target_section": "progression",
-    "player_question": "Preserve empty squares before pursuing the next large merge.",
-    "fact_to_show": "2048 board after another directional move",
+    "slot_id": "game-letter-boxed-screen-3",
+    "page_id": "game-letter-boxed",
+    "target_section": "strategy",
+    "player_question": "Accepted words form a chain while the border shows which letters still need coverage.",
+    "fact_to_show": "Letter Boxed progress with linked words and remaining letters",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Preserve empty squares before pursuing the next large merge.",
+    "adjacent_copy_task": "Accepted words form a chain while the border shows which letters still need coverage.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-2048-screen-3"
+      "media-game-letter-boxed-screen-3"
     ]
   },
   {
-    "slot_id": "game-2048-video",
-    "page_id": "game-2048",
+    "slot_id": "game-letter-boxed-video",
+    "page_id": "game-letter-boxed",
     "target_section": "after complete article",
-    "player_question": "How does 2048 move during real play?",
-    "fact_to_show": "Matching 2048 gameplay and controls.",
+    "player_question": "How does Letter Boxed work in motion?",
+    "fact_to_show": "Matching Letter Boxed rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-2048"
+      "media-video-letter-boxed"
     ]
   },
   {
-    "slot_id": "game-curve-rush-cover",
-    "page_id": "game-curve-rush",
+    "slot_id": "game-growdle-cover",
+    "page_id": "game-growdle",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Curve Rush game?",
-    "fact_to_show": "Matching AZGames artwork for Curve Rush.",
+    "player_question": "Is this the correct Growdle game?",
+    "fact_to_show": "Matching AZGames visual for Growdle.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -518,79 +518,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-curve-rush-cover"
+      "media-game-growdle-cover"
     ]
   },
   {
-    "slot_id": "game-curve-rush-screen-1",
-    "page_id": "game-curve-rush",
-    "target_section": "opening mechanics",
-    "player_question": "The tutorial identifies the pressure-and-release rhythm.",
-    "fact_to_show": "Curve Rush tutorial showing hold and release timing",
+    "slot_id": "game-growdle-screen-1",
+    "page_id": "game-growdle",
+    "target_section": "overview",
+    "player_question": "The rules panel explains how the answer expands from three to five to seven letters.",
+    "fact_to_show": "Growdle How to Play panel explaining three stages",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "The tutorial identifies the pressure-and-release rhythm.",
+    "adjacent_copy_task": "The rules panel explains how the answer expands from three to five to seven letters.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-curve-rush-screen-1"
+      "media-game-growdle-screen-1"
     ]
   },
   {
-    "slot_id": "game-curve-rush-screen-2",
-    "page_id": "game-curve-rush",
+    "slot_id": "game-growdle-screen-2",
+    "page_id": "game-growdle",
     "target_section": "controls",
-    "player_question": "Speed is built on the descending side of a hill.",
-    "fact_to_show": "Curve Rush ball moving over a sandy hill",
+    "player_question": "The active grid combines normal color feedback with letters inherited from the solved stage.",
+    "fact_to_show": "Growdle active word grid and keyboard",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Speed is built on the descending side of a hill.",
+    "adjacent_copy_task": "The active grid combines normal color feedback with letters inherited from the solved stage.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-curve-rush-screen-2"
+      "media-game-growdle-screen-2"
     ]
   },
   {
-    "slot_id": "game-curve-rush-screen-3",
-    "page_id": "game-curve-rush",
-    "target_section": "progression",
-    "player_question": "A useful jump is judged by its landing, not height alone.",
-    "fact_to_show": "Curve Rush ball launching across a curved dune",
+    "slot_id": "game-growdle-screen-3",
+    "page_id": "game-growdle",
+    "target_section": "strategy",
+    "player_question": "At seven letters, we preserve the known set but reconsider every unconfirmed position.",
+    "fact_to_show": "Growdle later seven-letter stage with accumulated clues",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A useful jump is judged by its landing, not height alone.",
+    "adjacent_copy_task": "At seven letters, we preserve the known set but reconsider every unconfirmed position.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-curve-rush-screen-3"
+      "media-game-growdle-screen-3"
     ]
   },
   {
-    "slot_id": "game-curve-rush-video",
-    "page_id": "game-curve-rush",
+    "slot_id": "game-growdle-video",
+    "page_id": "game-growdle",
     "target_section": "after complete article",
-    "player_question": "How does Curve Rush move during real play?",
-    "fact_to_show": "Matching Curve Rush gameplay and controls.",
+    "player_question": "How does Growdle work in motion?",
+    "fact_to_show": "Matching Growdle rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-curve-rush"
+      "media-video-growdle"
     ]
   },
   {
-    "slot_id": "game-tap-road-cover",
-    "page_id": "game-tap-road",
+    "slot_id": "game-quardle-cover",
+    "page_id": "game-quardle",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Tap Road game?",
-    "fact_to_show": "Matching AZGames artwork for Tap Road.",
+    "player_question": "Is this the correct Quardle game?",
+    "fact_to_show": "Matching AZGames visual for Quardle.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -598,79 +598,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-tap-road-cover"
+      "media-game-quardle-cover"
     ]
   },
   {
-    "slot_id": "game-tap-road-screen-1",
-    "page_id": "game-tap-road",
-    "target_section": "opening mechanics",
-    "player_question": "Plan around the next two hazards, not only the closest one.",
-    "fact_to_show": "Tap Road ball approaching hazards on two neon lanes",
+    "slot_id": "game-quardle-screen-1",
+    "page_id": "game-quardle",
+    "target_section": "overview",
+    "player_question": "Select word 1–4 before typing; the blue number and highlighted line identify the current target.",
+    "fact_to_show": "Quardle numbered crossword with word selector",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Plan around the next two hazards, not only the closest one.",
+    "adjacent_copy_task": "Select word 1–4 before typing; the blue number and highlighted line identify the current target.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-tap-road-screen-1"
+      "media-game-quardle-screen-1"
     ]
   },
   {
-    "slot_id": "game-tap-road-screen-2",
-    "page_id": "game-tap-road",
+    "slot_id": "game-quardle-screen-2",
+    "page_id": "game-quardle",
     "target_section": "controls",
-    "player_question": "A single deliberate tap moves the ball across the road.",
-    "fact_to_show": "Tap Road ball switching to the clear track",
+    "player_question": "A submitted guess is labeled with its target number and can reveal clues about other crossing answers.",
+    "fact_to_show": "Quardle guess history showing target number and clue colors",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A single deliberate tap moves the ball across the road.",
+    "adjacent_copy_task": "A submitted guess is labeled with its target number and can reveal clues about other crossing answers.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-tap-road-screen-2"
+      "media-game-quardle-screen-2"
     ]
   },
   {
-    "slot_id": "game-tap-road-screen-3",
-    "page_id": "game-tap-road",
-    "target_section": "progression",
-    "player_question": "Obstacle numbers help measure how far the run has progressed.",
-    "fact_to_show": "Tap Road run at a later numbered obstacle",
+    "slot_id": "game-quardle-screen-3",
+    "page_id": "game-quardle",
+    "target_section": "strategy",
+    "player_question": "Later guesses combine fixed crossings, transferred colors, and the remaining shared attempt budget.",
+    "fact_to_show": "Quardle crossword progress after guesses on several selected words",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Obstacle numbers help measure how far the run has progressed.",
+    "adjacent_copy_task": "Later guesses combine fixed crossings, transferred colors, and the remaining shared attempt budget.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-tap-road-screen-3"
+      "media-game-quardle-screen-3"
     ]
   },
   {
-    "slot_id": "game-tap-road-video",
-    "page_id": "game-tap-road",
+    "slot_id": "game-quardle-video",
+    "page_id": "game-quardle",
     "target_section": "after complete article",
-    "player_question": "How does Tap Road move during real play?",
-    "fact_to_show": "Matching Tap Road gameplay and controls.",
+    "player_question": "How does Quardle work in motion?",
+    "fact_to_show": "Matching Quardle rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-tap-road"
+      "media-video-quardle"
     ]
   },
   {
-    "slot_id": "game-head-basketball-cover",
-    "page_id": "game-head-basketball",
+    "slot_id": "game-waffle-cover",
+    "page_id": "game-waffle",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Head Basketball game?",
-    "fact_to_show": "Matching AZGames artwork for Head Basketball.",
+    "player_question": "Is this the correct Waffle game?",
+    "fact_to_show": "Matching AZGames visual for Waffle.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -678,79 +678,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-head-basketball-cover"
+      "media-game-waffle-cover"
     ]
   },
   {
-    "slot_id": "game-head-basketball-screen-1",
-    "page_id": "game-head-basketball",
-    "target_section": "opening mechanics",
-    "player_question": "Choose the match format before learning the active controls.",
-    "fact_to_show": "Head Basketball mode selection before a match",
+    "slot_id": "game-waffle-screen-1",
+    "page_id": "game-waffle",
+    "target_section": "overview",
+    "player_question": "The help screen defines swap controls, colors, and the fifteen-move budget.",
+    "fact_to_show": "Waffle How to Play panel with color rules",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Choose the match format before learning the active controls.",
+    "adjacent_copy_task": "The help screen defines swap controls, colors, and the fifteen-move budget.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-head-basketball-screen-1"
+      "media-game-waffle-screen-1"
     ]
   },
   {
-    "slot_id": "game-head-basketball-screen-2",
-    "page_id": "game-head-basketball",
+    "slot_id": "game-waffle-screen-2",
+    "page_id": "game-waffle",
     "target_section": "controls",
-    "player_question": "Center-court positioning prepares for the first rebound.",
-    "fact_to_show": "Head Basketball player positioned at center court",
+    "player_question": "The full waffle should be analyzed as six crossing words before the first exchange.",
+    "fact_to_show": "Waffle letter grid before swaps",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Center-court positioning prepares for the first rebound.",
+    "adjacent_copy_task": "The full waffle should be analyzed as six crossing words before the first exchange.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-head-basketball-screen-2"
+      "media-game-waffle-screen-2"
     ]
   },
   {
-    "slot_id": "game-head-basketball-screen-3",
-    "page_id": "game-head-basketball",
-    "target_section": "progression",
-    "player_question": "The compact court keeps every miss in play.",
-    "fact_to_show": "Head Basketball match with both hoops visible",
+    "slot_id": "game-waffle-screen-3",
+    "page_id": "game-waffle",
+    "target_section": "strategy",
+    "player_question": "A planned swap fixes a destination without sacrificing an already green anchor.",
+    "fact_to_show": "Waffle progress after planned letter exchanges",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "The compact court keeps every miss in play.",
+    "adjacent_copy_task": "A planned swap fixes a destination without sacrificing an already green anchor.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-head-basketball-screen-3"
+      "media-game-waffle-screen-3"
     ]
   },
   {
-    "slot_id": "game-head-basketball-video",
-    "page_id": "game-head-basketball",
+    "slot_id": "game-waffle-video",
+    "page_id": "game-waffle",
     "target_section": "after complete article",
-    "player_question": "How does Head Basketball move during real play?",
-    "fact_to_show": "Matching Head Basketball gameplay and controls.",
+    "player_question": "How does Waffle work in motion?",
+    "fact_to_show": "Matching Waffle rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-head-basketball"
+      "media-video-waffle"
     ]
   },
   {
-    "slot_id": "game-escape-road-cover",
-    "page_id": "game-escape-road",
+    "slot_id": "game-fun-typing-io-cover",
+    "page_id": "game-fun-typing-io",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Escape Road game?",
-    "fact_to_show": "Matching AZGames artwork for Escape Road.",
+    "player_question": "Is this the correct Fun Typing IO game?",
+    "fact_to_show": "Matching AZGames visual for Fun Typing IO.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -758,79 +758,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-escape-road-cover"
+      "media-game-fun-typing-io-cover"
     ]
   },
   {
-    "slot_id": "game-escape-road-screen-1",
-    "page_id": "game-escape-road",
-    "target_section": "opening mechanics",
-    "player_question": "Open junctions offer several escape lines.",
-    "fact_to_show": "Escape Road getaway car entering a city junction",
+    "slot_id": "game-fun-typing-io-screen-1",
+    "page_id": "game-fun-typing-io",
+    "target_section": "overview",
+    "player_question": "The official AZGames cover confirms the selected typing game before its Unity canvas loads.",
+    "fact_to_show": "Fun Typing IO official AZGames game cover",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Open junctions offer several escape lines.",
+    "adjacent_copy_task": "The official AZGames cover confirms the selected typing game before its Unity canvas loads.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-escape-road-screen-1"
+      "media-game-fun-typing-io-screen-1"
     ]
   },
   {
-    "slot_id": "game-escape-road-screen-2",
-    "page_id": "game-escape-road",
+    "slot_id": "game-fun-typing-io-screen-2",
+    "page_id": "game-fun-typing-io",
     "target_section": "controls",
-    "player_question": "Let pursuing vehicles commit before cutting behind them.",
-    "fact_to_show": "Escape Road police chase around buildings",
+    "player_question": "The main menu separates multiplayer Start from the safer Training mode practice route.",
+    "fact_to_show": "Fun Typing IO main menu with Start and Training mode",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Let pursuing vehicles commit before cutting behind them.",
+    "adjacent_copy_task": "The main menu separates multiplayer Start from the safer Training mode practice route.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-escape-road-screen-2"
+      "media-game-fun-typing-io-screen-2"
     ]
   },
   {
-    "slot_id": "game-escape-road-screen-3",
-    "page_id": "game-escape-road",
-    "target_section": "progression",
-    "player_question": "Crowded streets reward early steering rather than emergency turns.",
-    "fact_to_show": "Escape Road car steering through a crowded pursuit",
+    "slot_id": "game-fun-typing-io-screen-3",
+    "page_id": "game-fun-typing-io",
+    "target_section": "strategy",
+    "player_question": "Training setup lets us choose a category and control the time or sentence limit before typing.",
+    "fact_to_show": "Fun Typing IO training setup with category and limit controls",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Crowded streets reward early steering rather than emergency turns.",
+    "adjacent_copy_task": "Training setup lets us choose a category and control the time or sentence limit before typing.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-escape-road-screen-3"
+      "media-game-fun-typing-io-screen-3"
     ]
   },
   {
-    "slot_id": "game-escape-road-video",
-    "page_id": "game-escape-road",
+    "slot_id": "game-fun-typing-io-video",
+    "page_id": "game-fun-typing-io",
     "target_section": "after complete article",
-    "player_question": "How does Escape Road move during real play?",
-    "fact_to_show": "Matching Escape Road gameplay and controls.",
+    "player_question": "How does Fun Typing IO work in motion?",
+    "fact_to_show": "Matching Fun Typing IO rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-escape-road"
+      "media-video-fun-typing-io"
     ]
   },
   {
-    "slot_id": "game-trap-the-cat-cover",
-    "page_id": "game-trap-the-cat",
+    "slot_id": "game-spelling-bee-cover",
+    "page_id": "game-spelling-bee",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Trap the Cat game?",
-    "fact_to_show": "Matching AZGames artwork for Trap the Cat.",
+    "player_question": "Is this the correct Spelling Bee game?",
+    "fact_to_show": "Matching AZGames visual for Spelling Bee.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -838,79 +838,79 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-trap-the-cat-cover"
+      "media-game-spelling-bee-cover"
     ]
   },
   {
-    "slot_id": "game-trap-the-cat-screen-1",
-    "page_id": "game-trap-the-cat",
-    "target_section": "opening mechanics",
-    "player_question": "The first move should account for all six directions.",
-    "fact_to_show": "Trap the Cat hex board at the opening position",
+    "slot_id": "game-spelling-bee-screen-1",
+    "page_id": "game-spelling-bee",
+    "target_section": "overview",
+    "player_question": "The archived opening screen identifies the hive, mandatory center letter, and puzzle date.",
+    "fact_to_show": "Spelling Bee archived puzzle opening with dated hive",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "The first move should account for all six directions.",
+    "adjacent_copy_task": "The archived opening screen identifies the hive, mandatory center letter, and puzzle date.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-trap-the-cat-screen-1"
+      "media-game-spelling-bee-screen-1"
     ]
   },
   {
-    "slot_id": "game-trap-the-cat-screen-2",
-    "page_id": "game-trap-the-cat",
+    "slot_id": "game-spelling-bee-screen-2",
+    "page_id": "game-spelling-bee",
     "target_section": "controls",
-    "player_question": "A useful wall reduces routes rather than merely following the cat.",
-    "fact_to_show": "Trap the Cat board after several cells are blocked",
+    "player_question": "Typed letters appear above the hive while every valid word must retain the center character.",
+    "fact_to_show": "Spelling Bee word entry using the center letter",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A useful wall reduces routes rather than merely following the cat.",
+    "adjacent_copy_task": "Typed letters appear above the hive while every valid word must retain the center character.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-trap-the-cat-screen-2"
+      "media-game-spelling-bee-screen-2"
     ]
   },
   {
-    "slot_id": "game-trap-the-cat-screen-3",
-    "page_id": "game-trap-the-cat",
-    "target_section": "progression",
-    "player_question": "Recheck alternate corridors after every automatic cat move.",
-    "fact_to_show": "Trap the Cat moving through a narrowing route",
+    "slot_id": "game-spelling-bee-screen-3",
+    "page_id": "game-spelling-bee",
+    "target_section": "strategy",
+    "player_question": "The found-word list and rank feedback show progress without implying a live daily refresh.",
+    "fact_to_show": "Spelling Bee progress list and score rank",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Recheck alternate corridors after every automatic cat move.",
+    "adjacent_copy_task": "The found-word list and rank feedback show progress without implying a live daily refresh.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-trap-the-cat-screen-3"
+      "media-game-spelling-bee-screen-3"
     ]
   },
   {
-    "slot_id": "game-trap-the-cat-video",
-    "page_id": "game-trap-the-cat",
+    "slot_id": "game-spelling-bee-video",
+    "page_id": "game-spelling-bee",
     "target_section": "after complete article",
-    "player_question": "How does Trap the Cat move during real play?",
-    "fact_to_show": "Matching Trap the Cat gameplay and controls.",
+    "player_question": "How does Spelling Bee work in motion?",
+    "fact_to_show": "Matching Spelling Bee rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-trap-the-cat"
+      "media-video-spelling-bee"
     ]
   },
   {
-    "slot_id": "game-suika-game-cover",
-    "page_id": "game-suika-game",
+    "slot_id": "game-cheat-or-repeat-cover",
+    "page_id": "game-cheat-or-repeat",
     "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Suika Game game?",
-    "fact_to_show": "Matching AZGames artwork for Suika Game.",
+    "player_question": "Is this the correct Cheat or Repeat game?",
+    "fact_to_show": "Matching AZGames visual for Cheat or Repeat.",
     "preferred_format": "approved-image",
     "adjacent_copy_task": "Identify the exact game before launch.",
     "candidate_evidence_ids": [],
@@ -918,711 +918,71 @@
     "fallback_if_unavailable": "Remove the game rather than use another title's art.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-suika-game-cover"
+      "media-game-cheat-or-repeat-cover"
     ]
   },
   {
-    "slot_id": "game-suika-game-screen-1",
-    "page_id": "game-suika-game",
-    "target_section": "opening mechanics",
-    "player_question": "Early placements create the floor for every later merge.",
-    "fact_to_show": "Suika Game container with early fruit pieces",
+    "slot_id": "game-cheat-or-repeat-screen-1",
+    "page_id": "game-cheat-or-repeat",
+    "target_section": "overview",
+    "player_question": "The official AZGames cover identifies the exam-and-stealth game before the Unity scene loads.",
+    "fact_to_show": "Cheat or Repeat official AZGames game cover",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Early placements create the floor for every later merge.",
+    "adjacent_copy_task": "The official AZGames cover identifies the exam-and-stealth game before the Unity scene loads.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-suika-game-screen-1"
+      "media-game-cheat-or-repeat-screen-1"
     ]
   },
   {
-    "slot_id": "game-suika-game-screen-2",
-    "page_id": "game-suika-game",
+    "slot_id": "game-cheat-or-repeat-screen-2",
+    "page_id": "game-cheat-or-repeat",
     "target_section": "controls",
-    "player_question": "Matching fruit can trigger movement throughout the stack.",
-    "fact_to_show": "Suika Game fruit stack after several merges",
+    "player_question": "The game menu keeps Play and Instructions separate, so we can verify controls before Day 1.",
+    "fact_to_show": "Cheat or Repeat main menu with Play and Instructions",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Matching fruit can trigger movement throughout the stack.",
+    "adjacent_copy_task": "The game menu keeps Play and Instructions separate, so we can verify controls before Day 1.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-suika-game-screen-2"
+      "media-game-cheat-or-repeat-screen-2"
     ]
   },
   {
-    "slot_id": "game-suika-game-screen-3",
-    "page_id": "game-suika-game",
-    "target_section": "progression",
-    "player_question": "Use the next-piece preview before choosing a drop lane.",
-    "fact_to_show": "Suika Game aiming the next fruit above the box",
+    "slot_id": "game-cheat-or-repeat-screen-3",
+    "page_id": "game-cheat-or-repeat",
+    "target_section": "strategy",
+    "player_question": "The instructions show the ten-box exam sheet, phone-search objective, timer, and rank feedback together.",
+    "fact_to_show": "Cheat or Repeat instructions showing exam sheet phone objective and timer",
     "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Use the next-piece preview before choosing a drop lane.",
+    "adjacent_copy_task": "The instructions show the ten-box exam sheet, phone-search objective, timer, and rank feedback together.",
     "candidate_evidence_ids": [],
     "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
+    "fallback_if_unavailable": "Capture a distinct accurate state from the same game.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-game-suika-game-screen-3"
+      "media-game-cheat-or-repeat-screen-3"
     ]
   },
   {
-    "slot_id": "game-suika-game-video",
-    "page_id": "game-suika-game",
+    "slot_id": "game-cheat-or-repeat-video",
+    "page_id": "game-cheat-or-repeat",
     "target_section": "after complete article",
-    "player_question": "How does Suika Game move during real play?",
-    "fact_to_show": "Matching Suika Game gameplay and controls.",
+    "player_question": "How does Cheat or Repeat work in motion?",
+    "fact_to_show": "Matching Cheat or Repeat rules or gameplay.",
     "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
+    "adjacent_copy_task": "Show the current game's real play flow.",
     "candidate_evidence_ids": [],
     "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
+    "fallback_if_unavailable": "Replace the video.",
     "adoption_status": "adopted",
     "media_ledger_ids": [
-      "media-video-suika-game"
-    ]
-  },
-  {
-    "slot_id": "game-slope-cover",
-    "page_id": "game-slope",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Slope game?",
-    "fact_to_show": "Matching AZGames artwork for Slope.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-slope-cover"
-    ]
-  },
-  {
-    "slot_id": "game-slope-screen-1",
-    "page_id": "game-slope",
-    "target_section": "opening mechanics",
-    "player_question": "Read the next split before the ball reaches it.",
-    "fact_to_show": "Slope ball approaching a divided neon track",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Read the next split before the ball reaches it.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-slope-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-slope-screen-2",
-    "page_id": "game-slope",
-    "target_section": "controls",
-    "player_question": "Short taps keep the ball centered on narrow sections.",
-    "fact_to_show": "Slope ball crossing a narrow elevated section",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Short taps keep the ball centered on narrow sections.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-slope-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-slope-screen-3",
-    "page_id": "game-slope",
-    "target_section": "progression",
-    "player_question": "Red geometry is dangerous even when the wider route looks inviting.",
-    "fact_to_show": "Slope ball steering around red track hazards",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Red geometry is dangerous even when the wider route looks inviting.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-slope-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-slope-video",
-    "page_id": "game-slope",
-    "target_section": "after complete article",
-    "player_question": "How does Slope move during real play?",
-    "fact_to_show": "Matching Slope gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-slope"
-    ]
-  },
-  {
-    "slot_id": "game-2048-cover",
-    "page_id": "game-2048",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct 2048 game?",
-    "fact_to_show": "Matching AZGames artwork for 2048.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-2048-cover"
-    ]
-  },
-  {
-    "slot_id": "game-2048-screen-1",
-    "page_id": "game-2048",
-    "target_section": "opening mechanics",
-    "player_question": "Every valid move shifts the full board and adds a tile.",
-    "fact_to_show": "2048 board after several low tiles have merged",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Every valid move shifts the full board and adds a tile.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-2048-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-2048-screen-2",
-    "page_id": "game-2048",
-    "target_section": "controls",
-    "player_question": "A stable corner gives high values a predictable home.",
-    "fact_to_show": "2048 board with a growing corner chain",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A stable corner gives high values a predictable home.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-2048-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-2048-screen-3",
-    "page_id": "game-2048",
-    "target_section": "progression",
-    "player_question": "Preserve empty squares before pursuing the next large merge.",
-    "fact_to_show": "2048 board after another directional move",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Preserve empty squares before pursuing the next large merge.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-2048-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-2048-video",
-    "page_id": "game-2048",
-    "target_section": "after complete article",
-    "player_question": "How does 2048 move during real play?",
-    "fact_to_show": "Matching 2048 gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-2048"
-    ]
-  },
-  {
-    "slot_id": "game-curve-rush-cover",
-    "page_id": "game-curve-rush",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Curve Rush game?",
-    "fact_to_show": "Matching AZGames artwork for Curve Rush.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-curve-rush-cover"
-    ]
-  },
-  {
-    "slot_id": "game-curve-rush-screen-1",
-    "page_id": "game-curve-rush",
-    "target_section": "opening mechanics",
-    "player_question": "The tutorial identifies the pressure-and-release rhythm.",
-    "fact_to_show": "Curve Rush tutorial showing hold and release timing",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "The tutorial identifies the pressure-and-release rhythm.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-curve-rush-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-curve-rush-screen-2",
-    "page_id": "game-curve-rush",
-    "target_section": "controls",
-    "player_question": "Speed is built on the descending side of a hill.",
-    "fact_to_show": "Curve Rush ball moving over a sandy hill",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Speed is built on the descending side of a hill.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-curve-rush-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-curve-rush-screen-3",
-    "page_id": "game-curve-rush",
-    "target_section": "progression",
-    "player_question": "A useful jump is judged by its landing, not height alone.",
-    "fact_to_show": "Curve Rush ball launching across a curved dune",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A useful jump is judged by its landing, not height alone.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-curve-rush-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-curve-rush-video",
-    "page_id": "game-curve-rush",
-    "target_section": "after complete article",
-    "player_question": "How does Curve Rush move during real play?",
-    "fact_to_show": "Matching Curve Rush gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-curve-rush"
-    ]
-  },
-  {
-    "slot_id": "game-tap-road-cover",
-    "page_id": "game-tap-road",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Tap Road game?",
-    "fact_to_show": "Matching AZGames artwork for Tap Road.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-tap-road-cover"
-    ]
-  },
-  {
-    "slot_id": "game-tap-road-screen-1",
-    "page_id": "game-tap-road",
-    "target_section": "opening mechanics",
-    "player_question": "Plan around the next two hazards, not only the closest one.",
-    "fact_to_show": "Tap Road ball approaching hazards on two neon lanes",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Plan around the next two hazards, not only the closest one.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-tap-road-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-tap-road-screen-2",
-    "page_id": "game-tap-road",
-    "target_section": "controls",
-    "player_question": "A single deliberate tap moves the ball across the road.",
-    "fact_to_show": "Tap Road ball switching to the clear track",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A single deliberate tap moves the ball across the road.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-tap-road-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-tap-road-screen-3",
-    "page_id": "game-tap-road",
-    "target_section": "progression",
-    "player_question": "Obstacle numbers help measure how far the run has progressed.",
-    "fact_to_show": "Tap Road run at a later numbered obstacle",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Obstacle numbers help measure how far the run has progressed.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-tap-road-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-tap-road-video",
-    "page_id": "game-tap-road",
-    "target_section": "after complete article",
-    "player_question": "How does Tap Road move during real play?",
-    "fact_to_show": "Matching Tap Road gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-tap-road"
-    ]
-  },
-  {
-    "slot_id": "game-head-basketball-cover",
-    "page_id": "game-head-basketball",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Head Basketball game?",
-    "fact_to_show": "Matching AZGames artwork for Head Basketball.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-head-basketball-cover"
-    ]
-  },
-  {
-    "slot_id": "game-head-basketball-screen-1",
-    "page_id": "game-head-basketball",
-    "target_section": "opening mechanics",
-    "player_question": "Choose the match format before learning the active controls.",
-    "fact_to_show": "Head Basketball mode selection before a match",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Choose the match format before learning the active controls.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-head-basketball-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-head-basketball-screen-2",
-    "page_id": "game-head-basketball",
-    "target_section": "controls",
-    "player_question": "Center-court positioning prepares for the first rebound.",
-    "fact_to_show": "Head Basketball player positioned at center court",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Center-court positioning prepares for the first rebound.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-head-basketball-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-head-basketball-screen-3",
-    "page_id": "game-head-basketball",
-    "target_section": "progression",
-    "player_question": "The compact court keeps every miss in play.",
-    "fact_to_show": "Head Basketball match with both hoops visible",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "The compact court keeps every miss in play.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-head-basketball-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-head-basketball-video",
-    "page_id": "game-head-basketball",
-    "target_section": "after complete article",
-    "player_question": "How does Head Basketball move during real play?",
-    "fact_to_show": "Matching Head Basketball gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-head-basketball"
-    ]
-  },
-  {
-    "slot_id": "game-escape-road-cover",
-    "page_id": "game-escape-road",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Escape Road game?",
-    "fact_to_show": "Matching AZGames artwork for Escape Road.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-escape-road-cover"
-    ]
-  },
-  {
-    "slot_id": "game-escape-road-screen-1",
-    "page_id": "game-escape-road",
-    "target_section": "opening mechanics",
-    "player_question": "Open junctions offer several escape lines.",
-    "fact_to_show": "Escape Road getaway car entering a city junction",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Open junctions offer several escape lines.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-escape-road-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-escape-road-screen-2",
-    "page_id": "game-escape-road",
-    "target_section": "controls",
-    "player_question": "Let pursuing vehicles commit before cutting behind them.",
-    "fact_to_show": "Escape Road police chase around buildings",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Let pursuing vehicles commit before cutting behind them.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-escape-road-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-escape-road-screen-3",
-    "page_id": "game-escape-road",
-    "target_section": "progression",
-    "player_question": "Crowded streets reward early steering rather than emergency turns.",
-    "fact_to_show": "Escape Road car steering through a crowded pursuit",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Crowded streets reward early steering rather than emergency turns.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-escape-road-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-escape-road-video",
-    "page_id": "game-escape-road",
-    "target_section": "after complete article",
-    "player_question": "How does Escape Road move during real play?",
-    "fact_to_show": "Matching Escape Road gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-escape-road"
-    ]
-  },
-  {
-    "slot_id": "game-trap-the-cat-cover",
-    "page_id": "game-trap-the-cat",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Trap the Cat game?",
-    "fact_to_show": "Matching AZGames artwork for Trap the Cat.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-trap-the-cat-cover"
-    ]
-  },
-  {
-    "slot_id": "game-trap-the-cat-screen-1",
-    "page_id": "game-trap-the-cat",
-    "target_section": "opening mechanics",
-    "player_question": "The first move should account for all six directions.",
-    "fact_to_show": "Trap the Cat hex board at the opening position",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "The first move should account for all six directions.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-trap-the-cat-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-trap-the-cat-screen-2",
-    "page_id": "game-trap-the-cat",
-    "target_section": "controls",
-    "player_question": "A useful wall reduces routes rather than merely following the cat.",
-    "fact_to_show": "Trap the Cat board after several cells are blocked",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "A useful wall reduces routes rather than merely following the cat.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-trap-the-cat-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-trap-the-cat-screen-3",
-    "page_id": "game-trap-the-cat",
-    "target_section": "progression",
-    "player_question": "Recheck alternate corridors after every automatic cat move.",
-    "fact_to_show": "Trap the Cat moving through a narrowing route",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Recheck alternate corridors after every automatic cat move.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-trap-the-cat-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-trap-the-cat-video",
-    "page_id": "game-trap-the-cat",
-    "target_section": "after complete article",
-    "player_question": "How does Trap the Cat move during real play?",
-    "fact_to_show": "Matching Trap the Cat gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-trap-the-cat"
-    ]
-  },
-  {
-    "slot_id": "game-suika-game-cover",
-    "page_id": "game-suika-game",
-    "target_section": "player waiting state and cards",
-    "player_question": "Is this the correct Suika Game game?",
-    "fact_to_show": "Matching AZGames artwork for Suika Game.",
-    "preferred_format": "approved-image",
-    "adjacent_copy_task": "Identify the exact game before launch.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Remove the game rather than use another title's art.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-suika-game-cover"
-    ]
-  },
-  {
-    "slot_id": "game-suika-game-screen-1",
-    "page_id": "game-suika-game",
-    "target_section": "opening mechanics",
-    "player_question": "Early placements create the floor for every later merge.",
-    "fact_to_show": "Suika Game container with early fruit pieces",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Early placements create the floor for every later merge.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-suika-game-screen-1"
-    ]
-  },
-  {
-    "slot_id": "game-suika-game-screen-2",
-    "page_id": "game-suika-game",
-    "target_section": "controls",
-    "player_question": "Matching fruit can trigger movement throughout the stack.",
-    "fact_to_show": "Suika Game fruit stack after several merges",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Matching fruit can trigger movement throughout the stack.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-suika-game-screen-2"
-    ]
-  },
-  {
-    "slot_id": "game-suika-game-screen-3",
-    "page_id": "game-suika-game",
-    "target_section": "progression",
-    "player_question": "Use the next-piece preview before choosing a drop lane.",
-    "fact_to_show": "Suika Game aiming the next fruit above the box",
-    "preferred_format": "game-screenshot",
-    "adjacent_copy_task": "Use the next-piece preview before choosing a drop lane.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": false,
-    "fallback_if_unavailable": "Replace the candidate if three accurate gameplay states cannot be captured.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-game-suika-game-screen-3"
-    ]
-  },
-  {
-    "slot_id": "game-suika-game-video",
-    "page_id": "game-suika-game",
-    "target_section": "after complete article",
-    "player_question": "How does Suika Game move during real play?",
-    "fact_to_show": "Matching Suika Game gameplay and controls.",
-    "preferred_format": "youtube-video",
-    "adjacent_copy_task": "Show the current game's core input and progress.",
-    "candidate_evidence_ids": [],
-    "rights_check_needed": true,
-    "fallback_if_unavailable": "Replace the video or game candidate.",
-    "adoption_status": "adopted",
-    "media_ledger_ids": [
-      "media-video-suika-game"
+      "media-video-cheat-or-repeat"
     ]
   }
 ]

@@ -34,7 +34,7 @@ There is no `/games/krillion`, no `/legal/*` public path, no internal preview ro
 
 ## Canonical and structured data
 
-Canonical, Open Graph URL, breadcrumb URLs, JSON-LD URLs, internal links, and sitemap paths share the configured origin `https://testkrillion.com` and the no-trailing-slash policy for non-root routes. The root canonical serializes as the origin and the sitemap root as the equivalent origin plus `/`.
+Canonical, Open Graph URL, breadcrumb URLs, JSON-LD URLs, internal links, and sitemap paths share the configured origin `https://krilliongames.com` and the no-trailing-slash policy for non-root routes. The root canonical serializes as the origin and the sitemap root as the equivalent origin plus `/`.
 
 Every page includes WebSite identity plus page-specific data. Game pages add WebPage, VideoGame, and breadcrumb semantics; Guide details add Article and breadcrumb semantics; `/games` and `/guides` add CollectionPage/ItemList semantics; Legal pages add WebPage semantics. No rating, review, price, fake author, or VideoObject is declared.
 

@@ -2,7 +2,7 @@
 
 Status: `completed_with_warnings`  
 Acceptance date: 2026-09-21  
-Production origin configured in output: `https://testkrillion.com`  
+Production origin configured in output: `https://krilliongames.com`
 Deployment performed: no
 
 ## Release inventory

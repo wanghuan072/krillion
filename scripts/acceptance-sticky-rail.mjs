@@ -9,7 +9,7 @@ for (const viewport of [
   { width: 768, height: 900 },
 ]) {
   const page = await browser.newPage({ viewport });
-  await page.goto("http://127.0.0.1:4173/games/slope", { waitUntil: "networkidle" });
+  await page.goto("http://127.0.0.1:4173/games/wordle-game", { waitUntil: "networkidle" });
   const rail = page.locator("aside[class*='gameRail']");
   const sample = async (label) => ({
     label,

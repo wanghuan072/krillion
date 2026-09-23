@@ -35,7 +35,8 @@ export function SiteHeader() {
   return <header className={styles.header} ref={headerRef}>
     <div className={`${styles.container} ${styles.headerInner}`}>
       <Link href="/" prefetch={false} className={styles.logoLink} aria-label={`${siteConfig.name} home`}>
-        <Image src={siteConfig.logo} width={siteConfig.logoWidth} height={siteConfig.logoHeight} alt={`${siteConfig.name} logo`} loading="eager" fetchPriority="low" className={styles.logo} />
+        <Image src={siteConfig.logo} width={siteConfig.logoWidth} height={siteConfig.logoHeight} alt="" aria-hidden="true" loading="eager" fetchPriority="high" className={styles.logo} />
+        <span className={styles.brandName}>{siteConfig.name}</span>
       </Link>
       <nav aria-label="Primary navigation" className={styles.desktopNav}>
         {primaryNavigation.map((item) => <Link key={item.path} href={item.path} prefetch={false} aria-current={pathname === item.path ? "page" : undefined}><span className={styles.navLabel}>{item.label}</span></Link>)}

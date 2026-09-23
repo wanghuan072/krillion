@@ -25,7 +25,7 @@ export function GamePageShell({ game, home = false, preview = false }: { game: G
       <div className={styles.gameMain}>
         <header className={styles.gameIntro}><span className={styles.eyebrow}>{home ? "Daily open-answer challenge" : game.categories.join(" · ")}</span><h1 className={home ? styles.homeH1 : styles.innerH1}>{home ? `Play ${game.title} Online` : `Play ${game.title}`}</h1><p>{game.shortDescription} You can start it directly on this page.</p></header>
         <GamePlayer game={game} preview={preview}/>
-        <GameGroup heading="Recommended Games" games={recommended} compact preview={preview}/>
+        <GameGroup heading={home ? "Games Like Krillion" : "Recommended Games"} games={recommended} compact preview={preview}/>
         <article className={styles.gameArticle}>
           {game.content.map((section) => <section id={section.id} key={section.id}><h2>{section.heading}</h2><ContentBlocks blocks={section.blocks.filter((block) => block.type !== "video")}/></section>)}
         </article>
