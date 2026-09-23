@@ -40,8 +40,8 @@ body::before {
   z-index: -2;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4, 11, 20, .62), rgba(4, 11, 20, .88) 64%, #050d17 100%),
-    url("/images/games/krillion/gameplay-2.webp") center top / cover no-repeat;
+    linear-gradient(180deg, rgba(4, 11, 20, .3), rgba(4, 11, 20, .88) 64%, #050d17 100%),
+    radial-gradient(ellipse 80% 56% at 50% 0%, #102d43, #050d17 72%);
   pointer-events: none;
 }
 

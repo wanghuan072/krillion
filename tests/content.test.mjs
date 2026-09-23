@@ -53,7 +53,7 @@ test("the shared social image is a 1200 by 630 PNG",()=>{
   assert.equal(image.readUInt32BE(20),630);
 });
 test("the favicon contains common browser icon sizes",()=>{
-  const icon=fs.readFileSync("app/favicon.ico");
+  const icon=fs.readFileSync("public/favicon.ico");
   assert.equal(icon.readUInt16LE(0),0);
   assert.equal(icon.readUInt16LE(2),1);
   const count=icon.readUInt16LE(4);
@@ -61,7 +61,17 @@ test("the favicon contains common browser icon sizes",()=>{
     const offset=6+index*16;
     return [icon[offset]||256,icon[offset+1]||256];
   });
-  assert.deepEqual(sizes,[[16,16],[32,32],[48,48],[64,64],[128,128],[256,256]]);
+  assert.deepEqual(sizes,[[16,16],[32,32],[48,48]]);
+  assert.ok(icon.length<5000,"favicon should stay below 5 KB");
+  for(const file of ["app/favicon.ico","app/icon.png","app/apple-icon.png"]){
+    assert.equal(fs.existsSync(file),false,`${file} would add duplicate metadata icon requests`);
+  }
+});
+test("the header logo is right-sized for its rendered dimensions",()=>{
+  const logo=fs.readFileSync("public/images/logo.png");
+  assert.equal(logo.readUInt32BE(16),96);
+  assert.equal(logo.readUInt32BE(20),96);
+  assert.ok(logo.length<8000,"header logo should stay below 8 KB");
 });
 test("framework starter icons are not shipped",()=>{
   for(const file of ["file.svg","globe.svg","next.svg","vercel.svg","window.svg"]){

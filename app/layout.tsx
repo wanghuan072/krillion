@@ -11,7 +11,7 @@ import { buildWebsiteSchema } from "@/src/seo/structured-data";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.origin),
   applicationName: siteConfig.name,
-  icons: { icon: "/icon.png", shortcut: "/favicon.ico", apple: "/apple-icon.png" },
+  icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#10110e" };
 
