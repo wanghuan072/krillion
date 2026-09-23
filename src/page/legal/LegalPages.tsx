@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/src/components/layout/Breadcrumbs";
 import { JsonLd } from "@/src/components/seo/JsonLd";
 import { contactEmail, siteConfig } from "@/src/config/site";
-import { absoluteUrl } from "@/src/lib/url-policy";
 import styles from "@/src/style/site.module.css";
 import tdk from "@/seo/tdk.js";
+import { buildBreadcrumbSchema, buildWebPageSchema } from "@/src/seo/structured-data";
 
 type LegalPath = "/privacy" | "/terms" | "/copyright" | "/about" | "/contact";
 type LegalKey = "privacy" | "terms" | "copyright" | "about" | "contact";
@@ -22,8 +22,8 @@ function Shell({ title, path, pageKey, children }: { title: string; path: LegalP
   const description = tdk[pageKey].description;
   return <main id="main-content" className={`${styles.container} ${styles.readingPage} ${styles.legalPage}`}>
     <JsonLd data={[
-      { "@context": "https://schema.org", "@type": "WebPage", name: tdk[pageKey].title, description, url: absoluteUrl(path), dateModified: updatedAt, publisher: { "@type": "Person", name: siteConfig.publisherName } },
-      { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: title, item: absoluteUrl(path) }] },
+      buildWebPageSchema({ name: tdk[pageKey].title, description, path, updatedAt }),
+      buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: title, path }]),
     ]}/>
     <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: title }]}/>
     <header className={styles.legalHeader}>

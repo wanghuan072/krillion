@@ -8,6 +8,7 @@ import styles from "@/src/style/site.module.css";
 import { JsonLd } from "@/src/components/seo/JsonLd";
 import { Breadcrumbs } from "@/src/components/layout/Breadcrumbs";
 import { absoluteUrl } from "@/src/lib/url-policy";
+import { buildBreadcrumbSchema, buildWebPageSchema, publisherSchemaId, websiteSchemaId } from "@/src/seo/structured-data";
 
 function formatGuideDate(value: string | null) {
   if (!value) return "Date pending";
@@ -24,7 +25,13 @@ export function GuidesList({ guides, preview = false }: { guides: Guide[]; previ
 export function GuideDetail({ guide, preview = false }: { guide: Guide; preview?: boolean }) {
   const related = getRelatedGuides(guide, { includeDraft: preview });
   const guidesHref = preview ? "/preview-internal/guides" : "/guides";
-  return <main id="main-content" className={`${styles.container} ${styles.readingPage}`}><JsonLd data={[{"@context":"https://schema.org","@type":"Article",headline:guide.title,description:guide.seo.description,mainEntityOfPage:absoluteUrl(guidePath(guide.slug)),image:absoluteUrl(guide.cover.src),author:{"@type":"Person",name:guide.author},datePublished:guide.publishedAt,dateModified:guide.updatedAt},{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:absoluteUrl("/")},{"@type":"ListItem",position:2,name:"Guides",item:absoluteUrl("/guides")},{"@type":"ListItem",position:3,name:guide.title,item:absoluteUrl(guidePath(guide.slug))}]}]} />
+  const path = guidePath(guide.slug);
+  const url = absoluteUrl(path);
+  return <main id="main-content" className={`${styles.container} ${styles.readingPage}`}><JsonLd data={[
+    buildWebPageSchema({ name: guide.seo.title, description: guide.seo.description, path, publishedAt: guide.publishedAt, updatedAt: guide.updatedAt }),
+    { "@context": "https://schema.org", "@type": "Article", "@id": `${url}#article`, headline: guide.title, description: guide.seo.description, url, inLanguage: "en", isPartOf: { "@id": websiteSchemaId }, mainEntityOfPage: { "@id": `${url}#webpage` }, image: absoluteUrl(guide.cover.src), author: { "@type": "Person", name: guide.author }, publisher: { "@id": publisherSchemaId }, datePublished: guide.publishedAt, dateModified: guide.updatedAt },
+    buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }, { name: guide.title, path }]),
+  ]} />
     <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides", href: guidesHref }, { label: guide.title }]} />
     <header className={styles.guideHeader}><span className={styles.eyebrow}>Krillion field guide</span><h1 className={styles.innerH1}>{guide.title}</h1>{guide.summary && <p className={styles.lede}>{guide.summary}</p>}<div className={styles.guideByline}><span><small>Written by</small><strong>{guide.author}</strong></span><span><small>Updated</small><time dateTime={guide.updatedAt ?? undefined}>{formatGuideDate(guide.updatedAt)}</time></span></div><ul className={styles.guideTags} aria-label="Guide tags">{guide.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></header>
     <div className={styles.guideDetailGrid}>

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run content:release && next build && node scripts/emit-host-files.mjs",
+    "build": "npm run content:update && npm run content:release && next build && node scripts/emit-host-files.mjs",
     "preview": "node scripts/serve-static.mjs out",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",

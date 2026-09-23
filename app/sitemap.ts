@@ -7,13 +7,17 @@ import lastmod from "@/seo/page-lastmod.json";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const main = getMainGame();
+  getMainGame();
   const staticPaths = ["/games","/guides","/privacy","/terms","/copyright","/about","/contact"];
+  const dateFor = (record: { lastModified?: string } | undefined, path: string) => {
+    if (!record?.lastModified) throw new Error(`Missing sitemap last-modified state for ${path}`);
+    return record.lastModified;
+  };
   const entries = [
-    { url: absoluteUrl("/"), lastModified: main.updatedAt ?? undefined },
-    ...staticPaths.map((path) => ({ url: absoluteUrl(path), lastModified: lastmod.staticPages[path as keyof typeof lastmod.staticPages]?.lastModified })),
-    ...getAllPublishedGames().map((game) => ({ url: absoluteUrl(gamePath(game.slug)), lastModified: game.updatedAt ?? undefined })),
-    ...getAllPublishedGuides().map((guide) => ({ url: absoluteUrl(guidePath(guide.slug)), lastModified: guide.updatedAt ?? undefined })),
+    { url: absoluteUrl("/"), lastModified: dateFor(lastmod.staticPages["/"], "/") },
+    ...staticPaths.map((path) => ({ url: absoluteUrl(path), lastModified: dateFor(lastmod.staticPages[path as keyof typeof lastmod.staticPages], path) })),
+    ...getAllPublishedGames().map((game) => ({ url: absoluteUrl(gamePath(game.slug)), lastModified: dateFor(lastmod.games[game.id as keyof typeof lastmod.games], gamePath(game.slug)) })),
+    ...getAllPublishedGuides().map((guide) => ({ url: absoluteUrl(guidePath(guide.slug)), lastModified: dateFor(lastmod.guides[guide.id as keyof typeof lastmod.guides], guidePath(guide.slug)) })),
   ];
   if (new Set(entries.map((entry) => entry.url)).size !== entries.length) throw new Error("Duplicate sitemap canonical");
   return entries;

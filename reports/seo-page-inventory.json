@@ -5,6 +5,7 @@
     "titleLength": 44,
     "descriptionLength": 148,
     "canonical": "https://krilliongames.com/about",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -14,6 +15,7 @@
     "titleLength": 46,
     "descriptionLength": 155,
     "canonical": "https://krilliongames.com/contact",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -23,6 +25,7 @@
     "titleLength": 49,
     "descriptionLength": 146,
     "canonical": "https://krilliongames.com/copyright",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -32,6 +35,7 @@
     "titleLength": 49,
     "descriptionLength": 154,
     "canonical": "https://krilliongames.com/games/cheat-or-repeat",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -41,6 +45,7 @@
     "titleLength": 45,
     "descriptionLength": 150,
     "canonical": "https://krilliongames.com/games/fun-typing-io",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -50,6 +55,7 @@
     "titleLength": 46,
     "descriptionLength": 154,
     "canonical": "https://krilliongames.com/games/growdle",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -59,6 +65,7 @@
     "titleLength": 46,
     "descriptionLength": 152,
     "canonical": "https://krilliongames.com/games/letter-boxed",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -68,6 +75,7 @@
     "titleLength": 47,
     "descriptionLength": 148,
     "canonical": "https://krilliongames.com/games/quardle",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -77,6 +85,7 @@
     "titleLength": 46,
     "descriptionLength": 154,
     "canonical": "https://krilliongames.com/games/spelling-bee",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -86,6 +95,7 @@
     "titleLength": 43,
     "descriptionLength": 154,
     "canonical": "https://krilliongames.com/games/waffle",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -95,6 +105,7 @@
     "titleLength": 45,
     "descriptionLength": 155,
     "canonical": "https://krilliongames.com/games/wordle-game",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -104,6 +115,7 @@
     "titleLength": 42,
     "descriptionLength": 155,
     "canonical": "https://krilliongames.com/games",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -113,6 +125,7 @@
     "titleLength": 45,
     "descriptionLength": 153,
     "canonical": "https://krilliongames.com/guides/how-to-play-krillion",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -122,6 +135,7 @@
     "titleLength": 48,
     "descriptionLength": 153,
     "canonical": "https://krilliongames.com/guides/krillion-loading-and-input-help",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -131,6 +145,7 @@
     "titleLength": 47,
     "descriptionLength": 152,
     "canonical": "https://krilliongames.com/guides/krillion-scoring-and-rare-answers",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -140,6 +155,7 @@
     "titleLength": 47,
     "descriptionLength": 153,
     "canonical": "https://krilliongames.com/guides",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -149,6 +165,7 @@
     "titleLength": 51,
     "descriptionLength": 154,
     "canonical": "https://krilliongames.com",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -158,6 +175,7 @@
     "titleLength": 46,
     "descriptionLength": 153,
     "canonical": "https://krilliongames.com/privacy",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   },
@@ -167,6 +185,7 @@
     "titleLength": 48,
     "descriptionLength": 157,
     "canonical": "https://krilliongames.com/terms",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
     "h1": 1,
     "jsonLdScripts": 2
   }
