@@ -1,6 +1,7 @@
 import fs from "node:fs";
+import { indexNowKey, indexNowKeyFile } from "../indexnow/config.mjs";
 
-const required = ["out/index.html", "out/games.html", "out/guides.html", "out/sitemap.xml", "out/robots.txt", "out/_headers"];
+const required = ["out/index.html", "out/games.html", "out/guides.html", "out/sitemap.xml", "out/robots.txt", "out/_headers", `out/${indexNowKeyFile}`];
 const missing = required.filter((file) => !fs.existsSync(file));
 if (missing.length) {
   console.error(`Missing static outputs: ${missing.join(", ")}`);
@@ -33,6 +34,8 @@ const expectedUrls = [
 const sitemap = fs.readFileSync("out/sitemap.xml", "utf8");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 const sitemapDates = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
+const sitemapFrequencies = [...sitemap.matchAll(/<changefreq>([^<]+)<\/changefreq>/g)].map((match) => match[1]);
+const sitemapPriorities = [...sitemap.matchAll(/<priority>([^<]+)<\/priority>/g)].map((match) => Number(match[1]));
 const sitemapErrors = [];
 for (const url of expectedUrls) {
   if (sitemapUrls.filter((entry) => entry === url).length !== 1) sitemapErrors.push(`Expected one sitemap entry for ${url}`);
@@ -42,6 +45,12 @@ for (const url of sitemapUrls) {
 }
 if (sitemapDates.length !== expectedUrls.length || sitemapDates.some((date) => !/^\d{4}-\d{2}-\d{2}(?:T.*)?$/.test(date))) {
   sitemapErrors.push("Every sitemap URL must have one valid lastmod value.");
+}
+if (sitemapFrequencies.length !== expectedUrls.length || sitemapFrequencies.some((value) => !["always", "hourly", "daily", "weekly", "monthly", "yearly", "never"].includes(value))) {
+  sitemapErrors.push("Every sitemap URL must have one valid changefreq value.");
+}
+if (sitemapPriorities.length !== expectedUrls.length || sitemapPriorities.some((value) => !Number.isFinite(value) || value < 0 || value > 1)) {
+  sitemapErrors.push("Every sitemap URL must have one priority value between 0 and 1.");
 }
 if (sitemapErrors.length) {
   console.error(sitemapErrors.join("\n"));
@@ -56,6 +65,10 @@ if (!robots.includes(`Sitemap: ${origin}/sitemap.xml`)) {
 const headers = fs.readFileSync("out/_headers", "utf8");
 if (headers.includes("unsafe-eval")) {
   console.error("Production CSP contains unsafe-eval");
+  process.exit(1);
+}
+if (fs.readFileSync(`out/${indexNowKeyFile}`, "utf8").trim() !== indexNowKey) {
+  console.error("The exported IndexNow key file does not match the configured key.");
   process.exit(1);
 }
 console.log(`Static output audit passed with ${expectedUrls.length} canonical sitemap entries.`);

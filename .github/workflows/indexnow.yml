@@ -1,0 +1,75 @@
+name: IndexNow
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      submission:
+        description: URLs to inspect
+        required: true
+        default: changed
+        type: choice
+        options:
+          - changed
+          - all
+      dry_run:
+        description: Audit and print URLs without contacting IndexNow
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+  deployments: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+      (github.event.deployment.environment == 'Production' || github.event.deployment.environment == 'production'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the deployed revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Audit IndexNow configuration
+        run: npm run audit:indexnow
+
+      - name: Resolve the previous production deployment
+        id: previous
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          CURRENT_DEPLOYMENT_ID: ${{ github.event.deployment.id }}
+          DEPLOYMENT_ENVIRONMENT: ${{ github.event.deployment.environment || 'Production' }}
+        run: echo "base_ref=$(node indexnow/previous-deployment.mjs)" >> "$GITHUB_OUTPUT"
+
+      - name: Submit changed production URLs
+        shell: bash
+        env:
+          INDEXNOW_BASE_REF: ${{ steps.previous.outputs.base_ref }}
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_SUBMISSION: ${{ inputs.submission }}
+          MANUAL_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          flags=()
+          if [[ "$EVENT_NAME" == "workflow_dispatch" && "$MANUAL_SUBMISSION" == "all" ]]; then
+            flags+=(--all)
+          fi
+          if [[ "$EVENT_NAME" != "workflow_dispatch" || "$MANUAL_DRY_RUN" != "true" ]]; then
+            flags+=(--confirm)
+          fi
+          node indexnow/submit.mjs "${flags[@]}"

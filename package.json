@@ -15,8 +15,10 @@
     "content:prepublish": "node scripts/validate-content.mjs prepublish",
     "content:release": "node scripts/validate-content.mjs release",
     "content:update": "node scripts/update-content-state.mjs",
+    "audit:indexnow": "node indexnow/audit.mjs",
+    "indexnow:submit": "node indexnow/submit.mjs",
     "audit:output": "node scripts/verify-static-output.mjs",
-    "check": "npm run typecheck && npm run lint && npm test && npm run build && npm run audit:output && npm run test:e2e"
+    "check": "npm run typecheck && npm run lint && npm test && npm run audit:indexnow && npm run build && npm run audit:output && npm run test:e2e"
   },
   "dependencies": {
     "next": "16.3.5",
