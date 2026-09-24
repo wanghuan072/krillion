@@ -2,226 +2,567 @@
   "id": "krillion-scoring-rare-answers",
   "slug": "krillion-scoring-and-rare-answers",
   "status": "published",
-  "title": "Krillion Scoring: Rare Answer Strategy Explained",
+  "title": "Krillion Scoring, Rarity Tiers, and Deep Answers",
   "author": "Checkpoint Nomad",
-  "summary": "Understand every Krillion rarity tier, calculate depth, compare safe and risky answers, and build uncommon responses that still fit the prompt exactly.",
-  "tags": ["krillion", "strategy", "scoring"],
+  "summary": "Use the exact six-tier score table, depth formula, answer-risk ladder, and real Daily Dive examples to choose rarer responses without losing validity.",
+  "tags": [
+    "krillion",
+    "scoring",
+    "strategy"
+  ],
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-09-24",
   "cover": {
     "src": "/images/games/krillion/gameplay-2.webp",
-    "alt": "Krillion daily prompt with its answer field and countdown visible",
+    "alt": "Krillion live prompt with score, depth, timer, and answer field visible",
     "width": 1280,
     "height": 720
   },
   "seo": {
     "title": "Krillion Scoring and Rare Answer Strategy Guide",
-    "description": "Learn all six Krillion score tiers, calculate dive depth, compare real answer choices, and use a practical risk ladder to find rare but valid responses."
+    "description": "Master Krillion scoring with the exact six rarity tiers, score-to-depth formula, seven-answer totals, and a practical risk ladder for uncommon valid answers.",
+    "keywords": [
+      "Krillion scoring",
+      "Krillion rare answer strategy",
+      "Krillion depth formula",
+      "Krillion rarity tiers"
+    ]
   },
+  "videoHeading": "Krillion scoring video analysis: rare answers and costly mistakes",
   "sections": [
     {
-      "id": "scoring-system",
-      "title": "The six scoring tiers and depth formula",
+      "id": "krillion-scoring-tiers",
+      "title": "Krillion scoring tiers and exact point values",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Krillion rewards accepted answers according to a visible rarity tier. There are six possible point values, and the gaps are deliberately uneven. Moving from Plankton to Schooler adds 20 points, while moving from Rare to Deep Cut adds 25. The largest single-prompt award is 100 points. Once all seven prompts are finished, the total score is multiplied by ten and displayed as a dive depth in metres."
+          "text": "Every accepted Krillion answer lands in one of six visible rarity tiers. The tier awards a fixed number of points; it is not a smooth percentage scale. Moving from Schooler to Rare doubles the value from 30 to 60, while moving from Deep Cut to One in a Krillion adds only 15. That uneven ladder explains why a secure Rare answer is often a better decision than gambling an entire prompt for the top label."
+        },
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-1.webp",
+          "alt": "Krillion Daily Dive start screen stating that rarer answers score more",
+          "width": 1280,
+          "height": 720,
+          "caption": "The opening screen states the scoring principle but not the point table. The exact values below are what turn that slogan into a usable strategy."
         },
         {
           "type": "table",
-          "columns": ["Rarity tier", "Points", "Depth contribution", "Strategic meaning"],
+          "columns": [
+            "Rarity tier",
+            "Points",
+            "Depth added",
+            "Practical reading"
+          ],
           "rows": [
-            ["Plankton", "10", "100 m", "Accepted, but among the most automatic responses"],
-            ["Too Clever", "15", "150 m", "A slight move away from the crowd"],
-            ["Schooler", "30", "300 m", "A useful middle result with limited risk"],
-            ["Rare", "60", "600 m", "A clearly uncommon valid answer"],
-            ["Deep Cut", "85", "850 m", "Specialist or second-ring knowledge that still matches cleanly"],
-            ["One in a Krillion", "100", "1,000 m", "The maximum contribution from one prompt"]
+            [
+              "Plankton",
+              "10",
+              "100 m",
+              "Valid and among the crowd's most automatic answers"
+            ],
+            [
+              "Too Clever",
+              "15",
+              "150 m",
+              "A small move beyond the default"
+            ],
+            [
+              "Schooler",
+              "30",
+              "300 m",
+              "A solid middle answer"
+            ],
+            [
+              "Rare",
+              "60",
+              "600 m",
+              "Clearly uncommon while still recognisable"
+            ],
+            [
+              "Deep Cut",
+              "85",
+              "850 m",
+              "Specialist recall with clean category fit"
+            ],
+            [
+              "One in a Krillion",
+              "100",
+              "1,000 m",
+              "Maximum value for one prompt"
+            ]
           ]
         },
         {
+          "type": "subheading",
+          "id": "tier-jumps",
+          "text": "Read the jumps, not only the labels"
+        },
+        {
           "type": "paragraph",
-          "text": "The full-run ceiling is therefore 700 points or 7,000 metres. That ceiling is useful for understanding the scale, not for setting a realistic daily target. A 295-point score becomes 2,950 metres; a 445-point score becomes 4,450 metres. We can verify any result by adding the seven visible tier values and multiplying by ten."
+          "text": "Plankton to Too Clever gains five points. Too Clever to Schooler gains fifteen. Schooler to Rare gains thirty—the largest single jump. Rare to Deep Cut adds twenty-five, and Deep Cut to the maximum adds fifteen. Aiming for the Rare band is therefore a sensible centre of gravity: it captures the biggest step without demanding that every answer be uniquely obscure."
         },
         {
           "type": "callout",
           "tone": "info",
-          "label": "Score and depth are not separate systems",
-          "body": "Depth is simply the point total expressed at ten metres per point. The strategic decision happens at each answer tier, not during the final descent animation."
+          "label": "Accepted does not mean strategically strong",
+          "body": "A ten-point Plankton answer is correct and valuable when the alternative is a blank. Use the tier as crowd feedback, not as a verdict on factual quality."
         }
       ]
     },
     {
-      "id": "what-rarity-means",
-      "title": "What rarity does and does not tell us",
+      "id": "depth-formula",
+      "title": "Convert Krillion score into dive depth",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Rarity is relative to the answer environment, not a permanent label attached to a fact. An answer may feel obscure to us and still be the first thought shared by many players. Another answer may be ordinary within a profession or region but uncommon across the full field. We use the displayed tier as feedback about that run, while avoiding claims that the same word must receive the same result under every future prompt."
+          "text": "The depth formula is exact: depth in metres equals total score multiplied by ten. There is no hidden bonus for a streak, no multiplier for answering quickly, and no extra conversion step. A 295-point result is 2,950 metres. A 445-point result is 4,450 metres. Seven maximum answers total 700 points, so the theoretical ceiling for a standard seven-prompt Daily Dive is 7,000 metres."
         },
         {
-          "type": "image",
-          "src": "/images/games/krillion/gameplay-2.webp",
-          "alt": "Krillion prompt asking for a US state beginning with A with the answer field and countdown visible",
-          "width": 1280,
-          "height": 720,
-          "caption": "A closed category changes rarity strategy. When only three answers qualify, our job is to choose among them rather than invent a fourth."
-        },
-        {
-          "type": "list",
-          "style": "unordered",
-          "items": [
-            "Rare does not mean long, technical, or difficult to spell.",
-            "A unique phrase is worthless when it is not a recognized answer.",
-            "Personal recall difficulty does not predict what the whole field chose.",
-            "A familiar answer can be uncommon when the prompt leads most people elsewhere.",
-            "The category boundary is fixed before rarity becomes relevant."
+          "type": "table",
+          "columns": [
+            "Seven-answer profile",
+            "Calculation",
+            "Score",
+            "Depth"
+          ],
+          "rows": [
+            [
+              "All Plankton",
+              "7 × 10",
+              "70",
+              "700 m"
+            ],
+            [
+              "All Schooler",
+              "7 × 30",
+              "210",
+              "2,100 m"
+            ],
+            [
+              "All Rare",
+              "7 × 60",
+              "420",
+              "4,200 m"
+            ],
+            [
+              "All Deep Cut",
+              "7 × 85",
+              "595",
+              "5,950 m"
+            ],
+            [
+              "All One in a Krillion",
+              "7 × 100",
+              "700",
+              "7,000 m"
+            ],
+            [
+              "Mixed example",
+              "10 + 15 + 30 + 60 + 85 + 100 + 30",
+              "330",
+              "3,300 m"
+            ]
           ]
         },
         {
+          "type": "subheading",
+          "id": "mental-depth-check",
+          "text": "Use a ten-second result check"
+        },
+        {
           "type": "paragraph",
-          "text": "This is why we never add unnecessary wording to make a response look more original. Krillion scores the accepted answer, not our prose style. The better route is to search a less crowded region of the legal answer pool: a former team, a supporting character, a secondary product, a regional dish, or a species beyond the headline example."
+          "text": "Drop one zero from the displayed metres to recover the score, or add one zero to the score to predict depth. This catches transcription mistakes when comparing runs. If the result card shows 3,300 metres, the seven tiers must sum to 330 points. The formula lets us audit examples without guessing from the visual position of the dive marker."
+        }
+      ]
+    },
+    {
+      "id": "rarity-meaning",
+      "title": "What Krillion answer rarity does and does not measure",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Rarity describes how the accepted answer sits within the game's response data for that prompt. It does not measure how difficult the fact is in every culture, how many search results it has, or whether the player is clever. A regional food may be common to one group and a Deep Cut to another. A famous supporting character may beat a franchise lead because fewer players reach for it first."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prompt wording matters just as much as the noun. Ghana can be a perfectly valid country containing G and A, yet it may be a crowded response because the name is short and easy to retrieve. Guinea-Bissau and Papua New Guinea travel farther from the first instinct, but introduce more typing risk. The tier records the outcome of that tradeoff in one run; it does not promise the same value whenever the word reappears."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Rarity tells us",
+            "Rarity does not tell us"
+          ],
+          "rows": [
+            [
+              "How the accepted response was grouped for that prompt",
+              "That the answer is universally obscure"
+            ],
+            [
+              "Whether our retrieval path overlapped heavily with the crowd",
+              "That a common answer was a factual mistake"
+            ],
+            [
+              "How many fixed points the answer adds",
+              "Why an unlisted answer was rejected"
+            ],
+            [
+              "Which categories may reward a one-ring alternative",
+              "That revealed alternatives will keep the same tier tomorrow"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "label": "Treat post-run alternatives as routes",
+          "body": "If Legoland beats Six Flags, learn the route from dominant chain to secondary chain. Do not assume Legoland is a permanent thirty-point coupon."
         }
       ]
     },
     {
       "id": "risk-ladder",
-      "title": "Use a four-level risk ladder",
+      "title": "Krillion rare-answer strategy: a four-level risk ladder",
       "blocks": [
         {
+          "type": "paragraph",
+          "text": "Choose a risk level after reading the prompt, not before the Daily Dive. A category we know deeply can support a specialist answer. A category we barely know should stay near the safe end. The four levels below make that choice explicit and stop one disappointing tier from pushing the next prompt into a reckless guess."
+        },
+        {
           "type": "table",
-          "columns": ["Level", "Candidate type", "When we use it", "Main danger"],
+          "columns": [
+            "Level",
+            "Candidate type",
+            "Use when",
+            "Main danger"
+          ],
           "rows": [
-            ["1. Safety", "The first unquestionably valid answer", "When knowledge is thin or time is nearly gone", "Usually scores near the common end"],
-            ["2. Balanced", "A recognizable second or third choice", "Our default target for most prompts", "May still be popular with informed players"],
-            ["3. Deep", "A specialist answer with a standard name", "When we know the category well and can verify every qualifier", "Spelling or boundary errors"],
-            ["4. Fragile", "A technical exception or disputed edge case", "Almost never in a timed Daily Dive", "Rejection can turn a possible 30 into zero useful points"]
+            [
+              "1 — Anchor",
+              "First obvious valid answer",
+              "Knowledge is thin or the clock is below five seconds",
+              "Crowded Plankton result"
+            ],
+            [
+              "2 — One ring out",
+              "Familiar secondary example",
+              "Category fit and spelling are certain",
+              "Still more common than expected"
+            ],
+            [
+              "3 — Specialist",
+              "Supporting character, former team, regional item, technical term",
+              "We can explain its fit immediately",
+              "Proper-name spelling or a hidden qualifier"
+            ],
+            [
+              "4 — Edge case",
+              "Unusual interpretation or barely recalled item",
+              "Almost never; only with clear evidence",
+              "Rejection, category drift, or timeout"
+            ]
           ]
+        },
+        {
+          "type": "subheading",
+          "id": "confidence-budget",
+          "text": "Spend confidence where knowledge is real"
         },
         {
           "type": "paragraph",
-          "text": "The balanced level is where we spend most of the run. It has a realistic chance to improve a Plankton answer without making validity uncertain. We move to Deep only in categories where our knowledge is strong enough to check the answer instantly. We keep the Safety candidate in memory until submission, because it is our response if the answer checker rejects the first attempt while the timer continues."
+          "text": "Our preferred profile is Level 2 for most prompts, Level 3 in genuine strengths, and Level 1 when recall is weak. Level 4 is not a normal scoring strategy. If the answer needs a paragraph of defence, the 25-second game is the wrong place to litigate it. The maximum upside over Deep Cut is only fifteen points, while rejection can cost the entire prompt."
         },
         {
-          "type": "steps",
-          "items": [
-            {"title": "Name the safety answer", "body": "This anchors the category and prevents a blank response."},
-            {"title": "Move one ring outward", "body": "Think of another accepted member that is still conventionally named."},
-            {"title": "Check every qualifier", "body": "Confirm date, place, letters, franchise, status, measurement, and requested type."},
-            {"title": "Compare gain with failure risk", "body": "Choose the deeper candidate only when its validity and spelling are nearly as secure as the fallback."},
-            {"title": "Commit before five seconds", "body": "Late searching destroys the value of a good candidate if it never gets submitted."}
-          ]
+          "type": "paragraph",
+          "text": "Use five seconds remaining as an automatic downgrade. A Level 3 candidate that is not already typed becomes Level 2 or Level 1. This rule converts time pressure into a decision instead of a panic. A ten-point anchor adds 100 metres; an answer left in the field adds nothing."
         }
       ]
     },
     {
-      "id": "real-answer-comparisons",
-      "title": "Real answer comparisons and the lesson behind each one",
+      "id": "observed-answer-comparisons",
+      "title": "Real Krillion answers and video decision points",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Recorded Daily Dives provide useful examples because we can compare the answer with the exact wording and the visible outcome. We treat those outcomes as evidence from those runs, not guaranteed future scores. The durable value is the retrieval method that produced the answer."
+          "text": "The best scoring examples include both wins and failures. In one recorded run, dango answers “food served on a stick” and earns 85 points, or 850 metres. It is a regional food with an ordinary canonical name and an exact category match: a model Level 3 answer. Rosie from The Jetsons works for a fictional robot because the player searches supporting characters rather than mascots."
+        },
+        {
+          "type": "image",
+          "src": "/images/games/krillion/gameplay-3.webp",
+          "alt": "Krillion rejection feedback beneath a live prompt while the countdown continues",
+          "width": 1280,
+          "height": 720,
+          "caption": "A rare-sounding entry that misses the requested category has no tier at all. The validator message keeps rarity and validity separate."
         },
         {
           "type": "table",
-          "columns": ["Category", "Answer used", "Observed lesson"],
+          "columns": [
+            "Prompt",
+            "Candidate",
+            "Outcome or issue",
+            "Scoring lesson"
+          ],
           "rows": [
-            ["Food served on a stick", "Dango", "A recognizable regional food reached Deep Cut territory without stretching the category"],
-            ["Fictional robot", "Rosie from The Jetsons", "A supporting character can be less crowded than a franchise mascot"],
-            ["Ancient Greek philosopher", "Seneca", "A famous name fails strategically when the nationality is wrong; Seneca was Roman"],
-            ["Mobile game over a download threshold", "Pokémon Unite", "A known title outside the first mobile-game defaults earned a Deep Cut in the recorded run"],
-            ["War in the twentieth century", "Emu War", "An unusual, conventionally named event can outperform a major-war default"],
-            ["Current or former MLB team", "Montreal Expos", "Reading former expands the legal pool and opens stronger answers"],
-            ["Country containing G and A", "Ghana", "Fast and safe, while Papua New Guinea or Guinea-Bissau may be deeper if spelling time allows"],
-            ["A grain", "Buckwheat", "Everyday specialist knowledge can beat the first cereal-grain answer while remaining recognizable"]
+            [
+              "Food served on a stick",
+              "Dango",
+              "Deep Cut, 85 points / 850 m",
+              "Specific regional recall can be rare without being fragile"
+            ],
+            [
+              "Fictional robot",
+              "Rosie from The Jetsons",
+              "Strong supporting-character choice",
+              "Search one level below the lead mascot"
+            ],
+            [
+              "Ancient Greek philosopher",
+              "Seneca",
+              "Rejected category fit; Seneca was Roman",
+              "Fame and philosophy are not enough when nationality is explicit"
+            ],
+            [
+              "Sport played over a net",
+              "Volleyball",
+              "Most common end of the pool",
+              "Automatic answers preserve points but rarely create depth"
+            ],
+            [
+              "Country with an official state religion",
+              "Qatar",
+              "Valid guess in the recorded run",
+              "A clean country name beats an invented edge case"
+            ],
+            [
+              "Grain or cereal crop",
+              "Buckwheat",
+              "Rare, 60 points / 600 m in another run",
+              "Everyday specialist knowledge can hit the high-value jump"
+            ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "These examples share a pattern. The high-value answers use normal names. Their strength comes from searching a quieter part of the category, not from phrasing the response strangely. The Seneca example is equally important: knowledge of a famous person did not compensate for missing the word Greek. One category check protects more points than one extra minute of obscure memorization."
+          "text": "The Greek-versus-Roman mistake is the most useful negative example. The player knows Seneca and correctly identifies him as a philosopher, but the qualifier ancient Greek makes the answer invalid. Diogenes would fit the requested tradition. This is why the risk ladder begins only after category parsing: a Level 3 name in the wrong civilisation is not a daring answer; it is a zero-value mismatch."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dango demonstrates the opposite. The answer is neither misspelled nor dressed in explanation. It simply occupies a quieter part of a broad legal category. That is the pattern worth repeating: uncommon retrieval, conventional wording, immediate category proof."
         }
       ]
     },
     {
-      "id": "category-retrieval",
-      "title": "Build rare answers with category-specific retrieval routes",
+      "id": "seven-answer-profiles",
+      "title": "Calculate seven-answer Krillion score profiles",
       "blocks": [
         {
+          "type": "paragraph",
+          "text": "A final score is a portfolio of seven decisions. One spectacular answer cannot compensate for several blanks as efficiently as a steady set of middle-tier results. Compare three profiles. The safe profile—seven Schooler answers—makes 210 points. A volatile profile with one maximum, one Deep Cut, and five Plankton answers makes 235. The enormous difference in drama produces only 25 extra points. A balanced profile with four Rare, two Schooler, and one Plankton makes 310."
+        },
+        {
           "type": "table",
-          "columns": ["Prompt family", "First-answer trap", "Our deeper retrieval route"],
+          "columns": [
+            "Profile",
+            "Tier mix",
+            "Arithmetic",
+            "Total / depth"
+          ],
           "rows": [
-            ["Countries and cities", "Largest or most famous location", "Smaller states, islands, compound names, former names, and second cities"],
-            ["Film, television, and games", "Main hero or title character", "Supporting cast, older instalments, rivals, and side characters"],
-            ["Sport", "Current champion or largest franchise", "Former teams, retired players, positions, international leagues, and defunct clubs"],
-            ["Brands and products", "The parent company or flagship product", "Secondary services, discontinued tools, and specialist product lines"],
-            ["Food", "The globally famous dish", "Regional dishes, preparation methods, ingredients, and foods tied to the requested form"],
-            ["Science and nature", "The headline species or broad group", "Specific species and well-established common names after checking taxonomy"],
-            ["Words and literature", "The classroom headline term", "Other standard rhetorical, grammatical, or literary terms we can define confidently"]
+            [
+              "Safe middle",
+              "7 Schooler",
+              "7 × 30",
+              "210 / 2,100 m"
+            ],
+            [
+              "One hero, five crowded",
+              "1 One in a Krillion + 1 Deep Cut + 5 Plankton",
+              "100 + 85 + (5 × 10)",
+              "235 / 2,350 m"
+            ],
+            [
+              "Balanced",
+              "4 Rare + 2 Schooler + 1 Plankton",
+              "(4 × 60) + (2 × 30) + 10",
+              "310 / 3,100 m"
+            ],
+            [
+              "Strong complete",
+              "2 Deep Cut + 3 Rare + 2 Schooler",
+              "(2 × 85) + (3 × 60) + (2 × 30)",
+              "410 / 4,100 m"
+            ],
+            [
+              "Maximum",
+              "7 One in a Krillion",
+              "7 × 100",
+              "700 / 7,000 m"
+            ]
           ]
         },
         {
-          "type": "paragraph",
-          "text": "A retrieval route is more useful than memorizing disconnected rare words. If a prompt asks for a Google product, we can move from Search and Maps toward tools such as Ngram Viewer or Santa Tracker. If it asks for a theme park chain, we can move beyond the largest global brands toward a regional operator such as Diggerland. The route gives us options even when tomorrow's exact topic changes."
+          "type": "subheading",
+          "id": "expected-value",
+          "text": "Why completion raises the floor"
         },
         {
-          "type": "callout",
-          "tone": "tip",
-          "label": "Spend risk where we have knowledge",
-          "body": "If we know twelve animals and one literary device, we accept the safe literature answer quickly and search deeper on the animal prompt. Equal risk on every category is not good strategy."
+          "type": "paragraph",
+          "text": "Suppose a risky candidate has an uncertain chance of acceptance while a Schooler-quality answer is already available. The safe answer locks 30 points. The risky answer must be both accepted and placed high enough to justify losing that floor. Krillion does not publish enough probability data for a precise expected-value calculation, so practical confidence replaces fake mathematics: choose the higher tier only when category fit and spelling are already solid."
+        },
+        {
+          "type": "paragraph",
+          "text": "The balanced profile is our realistic target because it comes from repeatable choices. Four clean one-ring upgrades matter more than one miraculous maximum surrounded by rushed defaults. This also produces a calmer run; no prompt feels responsible for rescuing the entire score."
         }
       ]
     },
     {
-      "id": "full-run-score-planning",
-      "title": "Plan for a strong seven-answer total",
+      "id": "full-result-review",
+      "title": "Review a complete Krillion score without chasing losses",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Krillion is scored across seven prompts, so consistency changes the optimal decision. Seven Schooler answers produce 210 points and 2,100 metres. One One in a Krillion plus six Plankton answers produces only 160 points and 1,600 metres. The spectacular single answer looks better on a highlight screen, but the balanced run travels farther."
+          "text": "Review the result in category order, not emotional order. First mark rejections and timeouts, because converting a zero into any accepted tier has the largest dependable effect. Next mark Plankton answers in categories we actually knew; those are candidates for a one-ring upgrade. Finally, keep the Rare, Deep Cut, and maximum answers whose category fit was clean, but record the retrieval route rather than worshipping the word."
+        },
+        {
+          "type": "image",
+          "src": "/images/games/krillion/cover.webp",
+          "alt": "Krillion Daily Dive screen with the Begin Descent control ready for a fresh run",
+          "width": 1280,
+          "height": 720,
+          "caption": "A useful review ends with one habit for the next Daily Dive, not an attempt to replay yesterday's exact answers."
         },
         {
           "type": "table",
-          "columns": ["Example seven-answer profile", "Total points", "Depth", "What it demonstrates"],
+          "columns": [
+            "Review mark",
+            "Example",
+            "Next-run adjustment"
+          ],
           "rows": [
-            ["7 × Schooler", "210", "2,100 m", "Moderate consistency builds a real floor"],
-            ["1 × One in a Krillion + 6 × Plankton", "160", "1,600 m", "One maximum answer cannot carry six common ones"],
-            ["2 × Deep Cut + 5 × Schooler", "320", "3,200 m", "A few informed upgrades transform a stable run"],
-            ["1 × One in a Krillion + 2 × Rare + 4 × Schooler", "340", "3,400 m", "A peak answer works best on top of consistent validity"],
-            ["3 × Rare + 4 × Plankton", "220", "2,200 m", "Even common fallbacks preserve the value of strong prompts"]
+            [
+              "Category failure",
+              "Seneca for ancient Greek philosopher",
+              "Read the civilisation qualifier before recalling names"
+            ],
+            [
+              "Crowded but necessary",
+              "Volleyball for sport over a net",
+              "Accept the anchor when deeper recall is absent"
+            ],
+            [
+              "Crowded with room",
+              "Six Flags for theme-park chain",
+              "Try a familiar secondary chain such as Legoland sooner"
+            ],
+            [
+              "Clean rare route",
+              "Dango for food on a stick",
+              "Reuse the regional-food retrieval path"
+            ],
+            [
+              "Timing failure",
+              "Safe answer still unsubmitted",
+              "Move the commitment line to five seconds"
+            ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "This comparison is why we do not chase losses. A Plankton answer has already happened; taking a fragile gamble on the next prompt cannot change it. We return to the balanced level, protect the remaining prompts, and let our strongest knowledge areas create the Deep Cuts."
+          "text": "Do not chase yesterday's lost points on today's first prompt. Rarity changes with the question and response pool, and knowledge strengths move from category to category. Carry one mechanical improvement—read qualifiers first, build three candidates, submit by five seconds, or check autocorrect. That creates more depth over a week than trying to force a Deep Cut after a disappointing result."
         }
       ]
     },
     {
-      "id": "score-review",
-      "title": "Review scores without memorizing yesterday",
+      "id": "krillion-scoring-faq",
+      "title": "Krillion Scoring FAQ",
       "blocks": [
-        {
-          "type": "steps",
-          "items": [
-            {"title": "Separate validity from rarity", "body": "A rejection points to category, naming, or answer-list risk. A low accepted tier points to popularity."},
-            {"title": "Write down the first instinct", "body": "This reveals the categories where we anchor on the same obvious answer as everyone else."},
-            {"title": "Find one legal second-ring option", "body": "We practice the retrieval route, not a giant list of trivia."},
-            {"title": "Mark avoidable execution losses", "body": "Typos and timeouts should be fixed before we increase answer risk."},
-            {"title": "Choose one route for tomorrow", "body": "Former teams, supporting characters, regional foods, or secondary products are manageable themes to retain."}
-          ]
-        },
         {
           "type": "faq",
           "items": [
-            {"question": "Does a rarer answer always score more?", "answer": "Only after it is accepted. An invalid or unsubmitted answer cannot outperform a clear Schooler response."},
-            {"question": "Is a longer answer more likely to be rare?", "answer": "No. Length adds typing and matching risk. Standard names such as Dango or buckwheat can be both short and uncommon."},
-            {"question": "Can the same answer feel different on another day?", "answer": "Yes. Prompt wording and the surrounding response field matter, so we treat a recorded tier as evidence rather than a permanent property."},
-            {"question": "What score should we target?", "answer": "There is no single required target. We first remove blanks and invalid entries, then upgrade the categories where our knowledge makes a deeper answer safe."},
-            {"question": "What is the fastest way to improve depth?", "answer": "Reduce execution losses, keep a valid fallback, and move one ring beyond the obvious answer in categories we know well."}
+            {
+              "question": "What are the exact Krillion point values?",
+              "answer": "Plankton is 10, Too Clever 15, Schooler 30, Rare 60, Deep Cut 85, and One in a Krillion 100 points."
+            },
+            {
+              "question": "How is Krillion depth calculated?",
+              "answer": "Add the seven prompt scores and multiply the total by ten. A 330-point run reaches 3,300 metres."
+            },
+            {
+              "question": "What is the maximum Krillion Daily Dive score?",
+              "answer": "Seven 100-point answers make 700 points, which converts to the theoretical 7,000-metre maximum."
+            },
+            {
+              "question": "Does answering faster earn more points?",
+              "answer": "The visible scoring system awards the fixed tier value. Speed matters because it prevents timeouts and leaves recovery time, not because a fast accepted answer receives a separate bonus."
+            },
+            {
+              "question": "Will the same answer always have the same rarity tier?",
+              "answer": "Do not assume that. The prompt wording and response environment matter. Treat recorded tiers as examples of a retrieval route, not permanent prices attached to words."
+            },
+            {
+              "question": "Is a rejected rare answer better than a common valid one?",
+              "answer": "No. A rejected answer receives no rarity tier. A Plankton response still contributes ten points and 100 metres."
+            },
+            {
+              "question": "Which tier should we aim for most often?",
+              "answer": "Rare is a strong practical target because the jump from Schooler to Rare is 30 points. Use Deep Cut candidates when category fit and spelling are already certain."
+            }
           ]
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "videoId": "SsZZbOVMm1M",
+          "title": "Northernlion Tries the New Dles",
+          "summary": "The video covers several daily games, but Krillion occupies the opening 00:00–02:59 only. That short run is unusually valuable for scoring analysis because it includes a ten-point opener, an 85-point dango result, a strong supporting-character answer, a Greek-versus-Roman category error, and a common volleyball choice.",
+          "segments": [
+            {
+              "timecode": "00:00–00:45",
+              "heading": "Rules, rarity goal, and a ten-point capital",
+              "text": "The player reads the seven-prompts-a-day rule and chooses Canberra for a national capital that is not its country's largest city. It earns ten points, showing that an answer can feel less obvious and still overlap with the crowd."
+            },
+            {
+              "timecode": "00:46–01:18",
+              "heading": "Vegetable prompt and dango Deep Cut",
+              "text": "The vegetable answer moves the dive deeper, then dango earns 85 points and 850 metres for food served on a stick. Dango is the cleanest example of specialist recall with an exact category match."
+            },
+            {
+              "timecode": "01:21–01:39",
+              "heading": "Rosie as a supporting fictional robot",
+              "text": "Instead of a headline robot, the player retrieves Rosie from The Jetsons. The move illustrates a repeatable route: search supporting characters inside a familiar franchise."
+            },
+            {
+              "timecode": "01:39–02:10",
+              "heading": "Seneca fails the Greek qualifier",
+              "text": "Seneca is a philosopher but Roman, not Greek. The discussion reaches Diogenes only after the mistake. This is the clearest proof that uncommon knowledge cannot rescue a category mismatch."
+            },
+            {
+              "timecode": "02:10–02:59",
+              "heading": "Common volleyball and the completed result",
+              "text": "Volleyball lands at the common end, Qatar is used for a state-religion country, and the run finishes better than 85 percent of that day's players. At 02:59 the video moves to a separate movie pack; later footage is not evidence for the standard Daily Dive."
+            }
+          ],
+          "takeaways": [
+            "Do not infer rarity from how clever an answer feels; Canberra still earned ten points in this run.",
+            "Copy dango's structure: specific, conventionally named, and unquestionably inside the category.",
+            "Search supporting characters when entertainment prompts offer a broad legal pool.",
+            "Check nationality, era, and other qualifiers before committing specialist knowledge.",
+            "Stop using the video as Krillion evidence after 02:59, when it changes to another mode and then other games."
+          ],
+          "versionNote": "This recording shows a particular Daily Dive and its contemporary response distribution. The fixed point tiers and score-to-depth behaviour are relevant; the exact prompts, percentile, and rarity of Canberra, dango, Rosie, volleyball, or Qatar are not guaranteed in another run. Krillion footage ends at 02:59 even though the full video continues to 15:29.",
+          "poster": {
+            "src": "/images/games/krillion/cover.webp",
+            "alt": "Krillion Daily Dive screen used to open the rarity strategy video",
+            "width": 1280,
+            "height": 720
+          }
         }
       ]
     }
   ],
-  "relatedGuideIds": ["krillion-how-to-play", "krillion-loading-input-help"]
+  "relatedGuideIds": [
+    "krillion-how-to-play",
+    "krillion-loading-input-help"
+  ]
 }

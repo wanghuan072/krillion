@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23",
+  "generatedAt": "2026-09-24",
   "language": "en",
   "market": "global English-speaking browser players",
   "briefs": [
@@ -46,15 +46,16 @@
       "failureRisks": [
         "The most common failure is solving from memory instead of the board. A word may look perfect because it contains the yellow letters, yet quietly place one yellow in the same forbidden column. Another trap is keeping a beloved opening word after the board has already supplied stronger constraints. We also lost rows by overlooking double letters: a candidate with two Es is not equivalent to one with a single E. Before submitting, we check five things in order—length, green positions, yellow inclusion, yellow exclusion by position, and gray or duplicate counts. That ten-second check is more reliable than entering another plausible word and hoping the colors forgive it."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Wordle Game rules: six rows, one hidden word",
+        "Opening words that reveal useful letters",
+        "Green, yellow, gray, and duplicate-letter accounting",
+        "Wordle Game strategy from row three onward",
+        "A complete six-row decision review",
+        "Endgame traps and recovery checks",
+        "Keyboard, touch, and longer-word modes",
+        "Wordle Game FAQ"
       ],
       "screenshot_tasks": [
         "media-game-wordle-game-screen-1",
@@ -69,7 +70,14 @@
         "adoptedIds": [
           "media-video-wordle-game"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-00:45",
+        "observations": [
+          "0:00–0:08: Objective and valid guesses",
+          "0:14–0:24: Green, yellow, and gray",
+          "0:24–0:31: Repeated letters and clue reuse"
+        ],
+        "versionNote": "The video describes the familiar once-a-day Wordle format. The AZGames version embedded here can be replayed and may offer different word lengths, so the color logic matches while the schedule and board width can differ."
       }
     },
     {
@@ -80,15 +88,15 @@
       "failureRisks": [
         "The first repeated error is confusing a geometric diagonal with legality. The rule concerns labeled sides, not how far the path travels: two letters on the top edge are illegal even if they are far apart. The second is submitting a brilliant word that ends with a letter offering no usable continuation. Short filler words can rescue a chain, but each one adds another mandatory endpoint. We also watch for a final unused letter stranded on the same side as all realistic neighbors. Before Enter, we trace the word one pair at a time, note its last letter, and name at least one possible next word. That habit prevents most dead chains."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Letter Boxed rules for four sides and 12 letters",
+        "Build legal words without repeating a side",
+        "Bridge letters and word-to-word handoffs",
+        "Letter Boxed two-word solution planning",
+        "Dead chains, unused corners, and recovery",
+        "Touch tracing, keyboard entry, and board reading",
+        "Letter Boxed FAQ"
       ],
       "screenshot_tasks": [
         "media-game-letter-boxed-screen-1",
@@ -103,7 +111,14 @@
         "adoptedIds": [
           "media-video-letter-boxed"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-01:01",
+        "observations": [
+          "0:00–0:18: Reading the four-sided board",
+          "0:18–0:40: Alternating-side movement",
+          "0:40–1:01: Connecting words and finishing coverage"
+        ],
+        "versionNote": "The demonstration uses the New York Times presentation. The AZGames unlimited page keeps the core four-side, alternating-letter, chained-word rules, while puzzle rotation and interface details may not match the dated example."
       }
     },
     {
@@ -114,15 +129,17 @@
       "failureRisks": [
         "Players often treat a carried answer as a fixed substring. That works sometimes, but it can hide the real solution when the old letters move apart. Another mistake is discarding a letter because it was gray in the prior stage; the longer answer adds letters, so the new stage can introduce characters that were absent before. We also avoid guessing a five- or seven-letter word that omits an inherited letter unless the instructions visibly say otherwise. If the board appears contradictory, we recheck duplicate feedback and the transition rather than assuming the dictionary is wrong. Most failed late stages come from one false positional assumption made immediately after a successful short word."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Growdle rules across the 3–5–7 letter stages",
+        "The three-letter launch pad",
+        "What changes when the grid grows to five",
+        "Building the seven-letter finish",
+        "Inherited letters, shifted positions, and duplicates",
+        "Growdle strategy for preserving the guess budget",
+        "A complete three-stage solve review",
+        "Input focus and stage changes on mobile",
+        "Growdle FAQ"
       ],
       "screenshot_tasks": [
         "media-game-growdle-screen-1",
@@ -137,7 +154,15 @@
         "adoptedIds": [
           "media-video-growdle"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "28:01-32:57 (Growdle chapter only)",
+        "observations": [
+          "28:01–28:45: Opening the three-letter stage",
+          "28:45–30:20: Expansion to five letters",
+          "30:20–32:20: Seven-letter reasoning",
+          "32:20–32:57: Result and handoff"
+        ],
+        "versionNote": "This is a dated daily puzzle inside a multi-game recording, not a tutorial for the exact AZGames wrapper. The 3–5–7 progression is the relevant match; puzzle words, counters, and surrounding page controls vary."
       }
     },
     {
@@ -148,15 +173,16 @@
       "failureRisks": [
         "The most damaging mistake is treating Quardle like Quordle and assuming one submitted guess is evaluated as four independent Wordle rows. It is not: we select one target, and the extra colors summarize relationships to the remaining crossword answers. Another error is forgetting which number produced a history row, then applying a yellow to the wrong pattern. We also avoid spending four opening guesses by entering the same word once for each selector. Cross-word colors already carry evidence between answers. Finally, the apparent fifteen-guess maximum is conditional; we begin with twelve and only reach fifteen by solving the first three words, so late rescue attempts cannot be assumed in advance."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Quardle rules: four targets in one crossing grid",
+        "Target selector 1–4 and the five-color language",
+        "How solved positions transfer between words",
+        "Quardle strategy for choosing the next target",
+        "A 12-guess run from opener to fourth word",
+        "Bonus guesses, failure pressure, and recovery",
+        "Desktop selector keys and touch accuracy",
+        "Quardle FAQ"
       ],
       "screenshot_tasks": [
         "media-game-quardle-screen-1",
@@ -171,7 +197,15 @@
         "adoptedIds": [
           "media-video-quardle"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-07:03",
+        "observations": [
+          "0:00–1:10: Four targets and the selector",
+          "1:10–3:05: Reading the expanded color set",
+          "3:05–5:25: A solve feeds neighboring words",
+          "5:25–7:03: Closing the remaining words"
+        ],
+        "versionNote": "The video and embedded build share the four-crossing-word concept. Exact colors, counters, and bonus-award presentation may differ by revision, so use the active legend and visible selector in the current frame."
       }
     },
     {
@@ -182,15 +216,15 @@
       "failureRisks": [
         "Random swapping is the fastest way to burn the budget. A tile turning yellow does not necessarily mean the move improved the overall board, and moving a green to test an idea usually creates extra repair work. Another trap is deciding a word from its horizontal colors without checking whether the crossing letters make the vertical words impossible. We also verify duplicates before concluding that a gray copy is unwanted everywhere. Before each swap we say two destination claims out loud: this letter belongs there, and the displaced letter can go here or has a known route. If only the first half is true, we search for a better exchange."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Waffle rules: six words and a 15-swap budget",
+        "Read colors horizontally and vertically",
+        "Freeze green anchors before moving yellow tiles",
+        "Waffle strategy for two-way swaps and cycles",
+        "A full 15-swap board review",
+        "Duplicate letters, false homes, and wasted swaps",
+        "Waffle FAQ"
       ],
       "screenshot_tasks": [
         "media-game-waffle-screen-1",
@@ -205,7 +239,14 @@
         "adoptedIds": [
           "media-video-waffle"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-01:29",
+        "observations": [
+          "0:00–0:25: The waffle-shaped grid",
+          "0:25–0:58: Selecting and swapping letters",
+          "0:58–1:29: Using color to finish the arrangement"
+        ],
+        "versionNote": "The recorded Waffle presentation may use different art or a dated puzzle, but the six-word grid, color logic, and swap economy match the embedded version’s core play."
       }
     },
     {
@@ -216,15 +257,16 @@
       "failureRisks": [
         "Holding maximum speed from the first character usually causes cascading corrections. Looking down at the keyboard breaks the preview buffer, while watching the progress bar instead of the prompt produces missed letters. We also avoid hammering Backspace repeatedly after one error; first locate the highlighted mismatch, then correct only what the game requires. A poor result can come from a difficult category, browser stutter, lost frame focus, or actual technique, so we do not diagnose everything as slow fingers. If several inputs disappear at once, pause and confirm the game still has focus before resuming. Consistent accurate sessions are more useful than one lucky high-WPM result."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Fun Typing IO rules, modes, and result metrics",
+        "Build a clean Training-mode baseline",
+        "Fun Typing IO strategy: balance WPM and accuracy",
+        "Correct mistakes without losing the whole rhythm",
+        "Move from solo practice to multiplayer races",
+        "A comparable three-run typing session",
+        "Keyboard, posture, focus, and mobile limits",
+        "Fun Typing IO FAQ"
       ],
       "screenshot_tasks": [
         "media-game-fun-typing-io-screen-1",
@@ -239,7 +281,15 @@
         "adoptedIds": [
           "media-video-fun-typing-io"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-02:45",
+        "observations": [
+          "0:00–0:35: Menu and mode context",
+          "0:35–1:25: Cadence and on-screen progress",
+          "1:25–2:10: Errors interrupt speed",
+          "2:10–2:45: Race finish and metrics"
+        ],
+        "versionNote": "The video uses Yoplay branding and may not match every menu label or visual in the current AZGames embed. We use it for the typing loop and metric behavior, not as proof that every listed mode or screen is identical today."
       }
     },
     {
@@ -250,15 +300,17 @@
       "failureRisks": [
         "The central-letter rule causes most early rejections. A perfectly valid English word still fails if it uses only outer letters. The next trap is assuming each letter can be used once, which hides many everyday answers. We do not interpret rejection as proof that our spelling is wrong until we check length, center inclusion, allowed characters, capitalization, and dictionary scope. Since this is an archived snapshot, refreshing in search of a new daily board is also misguided. When progress stalls, we audit the existing word list by stem—nouns, verbs, adjectives, and common transformations—rather than entering random strings. That keeps the search systematic and reveals which productive families we have ignored."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Spelling Bee archive rules and the required center letter",
+        "What the archived date means on this version",
+        "Search for the pangram before the word list dries up",
+        "Spelling Bee strategy with roots, affixes, and repeats",
+        "Scoring, ranks, and a practical progress target",
+        "Why plausible words can be rejected",
+        "A complete hive sweep from easy words to cleanup",
+        "Shuffle, keyboard input, and mobile entry",
+        "Spelling Bee FAQ"
       ],
       "screenshot_tasks": [
         "media-game-spelling-bee-screen-1",
@@ -273,7 +325,15 @@
         "adoptedIds": [
           "media-video-spelling-bee"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-08:20",
+        "observations": [
+          "0:00–1:35: Center-letter and length rules",
+          "1:35–3:20: Scoring and the pangram",
+          "3:20–6:10: Roots and word families",
+          "6:10–8:20: Late-list cleanup"
+        ],
+        "versionNote": "The video demonstrates the live New York Times game. The embedded page here exposes an archived puzzle state, so its date, exact scoring thresholds, accepted dictionary, and update schedule may differ even though the center-letter and pangram logic is comparable."
       }
     },
     {
@@ -284,15 +344,16 @@
       "failureRisks": [
         "Opening the phone automatically whenever we hesitate is the central mistake. It turns a knowledge gap into a detection risk even when two options can be eliminated. Another failure is continuing to read search results while the teacher's state changes. We also avoid clicking an answer before confirming the phone is put away; divided controls can cause the wrong option or expose the device. The game can feel like a speed test, but frantic mouse movement makes situational awareness worse. If caught repeatedly, rehearse one search cycle without caring about the score: observe, raise, query, confirm, hide, answer. Separating those actions reveals exactly where the timing breaks down."
       ],
-      "verifiedScope": "AZGames page, configured iframe path, visible rules, and playable flow reviewed 2026-09-23.",
+      "verifiedScope": "Configured AZGames player, visible rules, controls, feedback states, three local captures, and the adopted video were reviewed through 2026-09-24.",
       "articleFocus": [
-        "overview",
-        "start",
-        "mechanics",
-        "tested strategy",
-        "common failures",
-        "device advice",
-        "FAQ"
+        "Cheat or Repeat rules: ten questions under surveillance",
+        "Answer known questions before taking stealth risks",
+        "The phone search sequence and its exposure time",
+        "Read the teacher’s patrol and warning states",
+        "Cheat or Repeat strategy across four days",
+        "What happens when the teacher catches us",
+        "Spoiler replay: one complete exam route",
+        "Cheat or Repeat FAQ"
       ],
       "screenshot_tasks": [
         "media-game-cheat-or-repeat-screen-1",
@@ -307,7 +368,16 @@
         "adoptedIds": [
           "media-video-cheat-or-repeat"
         ],
-        "rejectedIds": []
+        "rejectedIds": [],
+        "reviewedTimeRange": "00:00-13:18",
+        "observations": [
+          "0:00–2:15: Exam setup and ordinary answers",
+          "2:15–5:10: First phone searches",
+          "5:10–8:35: Warnings and detection pressure",
+          "8:35–11:20: Later questions and repeated patrols",
+          "11:20–13:18: Caught-state lesson and progression"
+        ],
+        "versionNote": "The recording may show a particular build, day sequence, or presentation of the four-day loop. The current AZGames embed should be trusted for live controls and patrol timing; the video is used to study the combined quiz-and-stealth decisions, not to promise identical questions."
       }
     }
   ]

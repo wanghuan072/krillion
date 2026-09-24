@@ -6,6 +6,7 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
   return <>{blocks.map((block, index) => {
     const key = `${block.type}-${index}`;
     if (block.type === "paragraph") return <p key={key}>{block.text}</p>;
+    if (block.type === "subheading") return <h3 id={block.id} key={key}>{block.text}</h3>;
     if (block.type === "image") return <figure key={key} className={styles.figure}><Image src={block.src} alt={block.alt} width={block.width ?? 1280} height={block.height ?? 720} loading="lazy"/>{block.caption && <figcaption>{block.caption}</figcaption>}</figure>;
     if (block.type === "list") { const Tag = block.style === "ordered" ? "ol" : "ul"; return <Tag key={key}>{block.items.map((item) => <li key={item}>{item}</li>)}</Tag>; }
     if (block.type === "steps") return <ol key={key} className={styles.steps}>{block.items.map((item) => <li key={item.title}><strong>{item.title}</strong><p>{item.body}</p></li>)}</ol>;

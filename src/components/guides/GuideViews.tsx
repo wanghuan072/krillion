@@ -9,6 +9,8 @@ import { JsonLd } from "@/src/components/seo/JsonLd";
 import { Breadcrumbs } from "@/src/components/layout/Breadcrumbs";
 import { absoluteUrl } from "@/src/lib/url-policy";
 import { buildBreadcrumbSchema, buildWebPageSchema, publisherSchemaId, websiteSchemaId } from "@/src/seo/structured-data";
+import { VideoAnalysisSection } from "@/src/components/content/VideoAnalysisSection";
+import type { VideoBlock } from "@/src/types/game";
 
 function formatGuideDate(value: string | null) {
   if (!value) return "Date pending";
@@ -27,15 +29,17 @@ export function GuideDetail({ guide, preview = false }: { guide: Guide; preview?
   const guidesHref = preview ? "/preview-internal/guides" : "/guides";
   const path = guidePath(guide.slug);
   const url = absoluteUrl(path);
+  const videos = guide.sections.flatMap((section) => section.blocks).filter((block): block is VideoBlock => block.type === "video");
   return <main id="main-content" className={`${styles.container} ${styles.readingPage}`}><JsonLd data={[
     buildWebPageSchema({ name: guide.seo.title, description: guide.seo.description, path, publishedAt: guide.publishedAt, updatedAt: guide.updatedAt }),
-    { "@context": "https://schema.org", "@type": "Article", "@id": `${url}#article`, headline: guide.title, description: guide.seo.description, url, inLanguage: "en", isPartOf: { "@id": websiteSchemaId }, mainEntityOfPage: { "@id": `${url}#webpage` }, image: absoluteUrl(guide.cover.src), author: { "@type": "Person", name: guide.author }, publisher: { "@id": publisherSchemaId }, datePublished: guide.publishedAt, dateModified: guide.updatedAt },
+    { "@context": "https://schema.org", "@type": "Article", "@id": `${url}#article`, headline: guide.title, description: guide.seo.description, keywords: guide.seo.keywords.join(", "), url, inLanguage: "en", isPartOf: { "@id": websiteSchemaId }, mainEntityOfPage: { "@id": `${url}#webpage` }, image: absoluteUrl(guide.cover.src), author: { "@type": "Person", name: guide.author }, publisher: { "@id": publisherSchemaId }, datePublished: guide.publishedAt, dateModified: guide.updatedAt },
     buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }, { name: guide.title, path }]),
   ]} />
     <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides", href: guidesHref }, { label: guide.title }]} />
     <header className={styles.guideHeader}><span className={styles.eyebrow}>Krillion field guide</span><h1 className={styles.innerH1}>{guide.title}</h1>{guide.summary && <p className={styles.lede}>{guide.summary}</p>}<div className={styles.guideByline}><span><small>Written by</small><strong>{guide.author}</strong></span><span><small>Updated</small><time dateTime={guide.updatedAt ?? undefined}>{formatGuideDate(guide.updatedAt)}</time></span></div><ul className={styles.guideTags} aria-label="Guide tags">{guide.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></header>
     <div className={styles.guideDetailGrid}>
       <div className={styles.guideArticleColumn}>{guide.cover.src && <Image src={guide.cover.src} alt={guide.cover.alt} width={guide.cover.width ?? 1280} height={guide.cover.height ?? 720} className={styles.guideCover} sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1024px) calc(100vw - 360px), 980px" loading="eager" fetchPriority="high"/>}<article className={styles.guideArticle}>{guide.sections.map((section) => <section key={section.id} id={section.id}><h2>{section.title}</h2><ContentBlocks blocks={section.blocks}/></section>)}</article>
+        {guide.videoHeading && <VideoAnalysisSection videos={videos} heading={guide.videoHeading} headingId="guide-video-analysis"/>}
         {related.length > 0 && <section className={styles.relatedGuides}><span className={styles.eyebrow}>Keep exploring</span><h2>Continue with another guide</h2><GuidesList guides={related} preview={preview}/></section>}
       </div>
       <aside className={styles.guideSidebar}><nav className={styles.guideToc} aria-label="On this page"><span>In this guide</span><ol>{guide.sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`}><small>{String(index + 1).padStart(2, "0")}</small>{section.title}</a></li>)}</ol></nav></aside>

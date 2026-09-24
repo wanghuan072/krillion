@@ -48,13 +48,13 @@ const staticPages=Object.fromEntries(Object.entries(staticInputs).map(([path,inp
 
 const gameState=Object.fromEntries(games.map((game)=>{
   const legacy=hash({player:game.player,seo:game.seo,image:game.image,content:game.content,relatedGameIds:game.relatedGameIds,flags:game.flags,reviewSource});
-  const fingerprint=hash({title:game.title,shortDescription:game.shortDescription,categories:game.categories,tags:game.tags,player:game.player,seo:game.seo,image:game.image,content:game.content,relatedGameIds:game.relatedGameIds,flags:game.flags,reviewSource,sharedSeoSource,gamePageSource});
+  const fingerprint=hash({title:game.title,shortDescription:game.shortDescription,categories:game.categories,tags:game.tags,player:game.player,seo:game.seo,page:game.page, image:game.image,content:game.content,relatedGameIds:game.relatedGameIds,flags:game.flags,reviewSource,sharedSeoSource,gamePageSource});
   return [game.id,{slug:game.slug,...retain(previous.games?.[game.id],fingerprint,{legacy:[legacy]})}];
 }));
 
 const guideState=Object.fromEntries(guides.map((guide)=>{
   const legacy=hash({title:guide.title,summary:guide.summary,seo:guide.seo,cover:guide.cover,sections:guide.sections,relatedGuideIds:guide.relatedGuideIds});
-  const fingerprint=hash({title:guide.title,author:guide.author,summary:guide.summary,tags:guide.tags,seo:guide.seo,cover:guide.cover,sections:guide.sections,relatedGuideIds:guide.relatedGuideIds,sharedSeoSource,guidePageSource});
+  const fingerprint=hash({title:guide.title,author:guide.author,summary:guide.summary,tags:guide.tags,seo:guide.seo,videoHeading:guide.videoHeading,cover:guide.cover,sections:guide.sections,relatedGuideIds:guide.relatedGuideIds,sharedSeoSource,guidePageSource});
   return [guide.id,{slug:guide.slug,...retain(previous.guides?.[guide.id],fingerprint,{legacy:[legacy]})}];
 }));
 

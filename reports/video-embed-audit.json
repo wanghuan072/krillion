@@ -1,50 +1,90 @@
 [
   {
     "id": "wordle-game",
-    "src": "https://www.youtube-nocookie.com/embed/lv4Zg-209MY",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/lv4Zg-209MY",
-    "title": "How to play Wordle - YouTube"
+    "posterSrc": "/images/games/wordle-game/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/lv4Zg-209MY?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/lv4Zg-209MY?autoplay=1",
+    "title": "How to play Wordle - YouTube",
+    "status": "verified"
   },
   {
     "id": "letter-boxed",
-    "src": "https://www.youtube-nocookie.com/embed/OQpqjxc9Zz0",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/OQpqjxc9Zz0",
-    "title": "HOW TO PLAY New York Times LETTER BOXED game - YouTube"
+    "posterSrc": "/images/games/letter-boxed/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/OQpqjxc9Zz0?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/OQpqjxc9Zz0?autoplay=1",
+    "title": "HOW TO PLAY New York Times LETTER BOXED game - YouTube",
+    "status": "verified"
   },
   {
     "id": "growdle",
-    "src": "https://www.youtube-nocookie.com/embed/wixuQbYuNpk",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/wixuQbYuNpk",
-    "title": "Growdle and other daily games! - Feb 27, 2024 - YouTube"
+    "posterSrc": "/images/games/growdle/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/wixuQbYuNpk?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/wixuQbYuNpk?autoplay=1",
+    "title": "Growdle and other daily games! - Feb 27, 2024 - YouTube",
+    "status": "verified"
   },
   {
     "id": "quardle",
-    "src": "https://www.youtube-nocookie.com/embed/-RJYGa81xmE",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/-RJYGa81xmE",
-    "title": "Quardle: 4 Wordles in a crossword! - YouTube"
+    "posterSrc": "/images/games/quardle/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/-RJYGa81xmE?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/-RJYGa81xmE?autoplay=1",
+    "title": "Quardle: 4 Wordles in a crossword! - YouTube",
+    "status": "verified"
   },
   {
     "id": "waffle",
-    "src": "https://www.youtube-nocookie.com/embed/I5eWIc0z6B8",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/I5eWIc0z6B8",
-    "title": "How to Play the Waffle Game | by @JamesJessian | a Wordle style game - YouTube"
+    "posterSrc": "/images/games/waffle/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/I5eWIc0z6B8?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/I5eWIc0z6B8?autoplay=1",
+    "title": "How to Play the Waffle Game | by @JamesJessian | a Wordle style game - YouTube",
+    "status": "verified"
   },
   {
     "id": "fun-typing-io",
-    "src": "https://www.youtube-nocookie.com/embed/5SEVVwlJDQg",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/5SEVVwlJDQg",
-    "title": "Yoplay.io Fun Typing IO - YouTube"
+    "posterSrc": "/images/games/fun-typing-io/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/5SEVVwlJDQg?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/5SEVVwlJDQg?autoplay=1",
+    "title": "Yoplay.io Fun Typing IO - YouTube",
+    "status": "verified"
   },
   {
     "id": "spelling-bee",
-    "src": "https://www.youtube-nocookie.com/embed/XLwrKVJm_Ec",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/XLwrKVJm_Ec",
-    "title": "How To Solve NYT Spelling Bee [Best Word Puzzle of All Time] - YouTube"
+    "posterSrc": "/images/games/spelling-bee/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/XLwrKVJm_Ec?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/XLwrKVJm_Ec?autoplay=1",
+    "title": "How To Solve NYT Spelling Bee [Best Word Puzzle of All Time] - YouTube",
+    "status": "verified"
   },
   {
     "id": "cheat-or-repeat",
-    "src": "https://www.youtube-nocookie.com/embed/6nxz5VCV4nk",
-    "loadedUrl": "https://www.youtube-nocookie.com/embed/6nxz5VCV4nk",
-    "title": "I CHEATED in Exam but the STRICT Teacher Caught Me! 😱 | Cheat or Repeat Gameplay #1 - YouTube"
+    "posterSrc": "/images/games/cheat-or-repeat/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/6nxz5VCV4nk?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/6nxz5VCV4nk?autoplay=1",
+    "title": "I CHEATED in Exam but the STRICT Teacher Caught Me! 😱 | Cheat or Repeat Gameplay #1 - YouTube",
+    "status": "verified"
+  },
+  {
+    "id": "krillion-how-to-play",
+    "posterSrc": "/images/games/krillion/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/a899LxaHSsA?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/a899LxaHSsA?autoplay=1",
+    "title": "Krillion | Sunday Wildcard September 13, 2026 - YouTube",
+    "status": "verified"
+  },
+  {
+    "id": "krillion-loading-input-help",
+    "posterSrc": null,
+    "src": null,
+    "loadedUrl": null,
+    "title": "",
+    "status": "no-video-by-design"
+  },
+  {
+    "id": "krillion-scoring-rare-answers",
+    "posterSrc": "/images/games/krillion/cover.webp",
+    "src": "https://www.youtube-nocookie.com/embed/SsZZbOVMm1M?autoplay=1",
+    "loadedUrl": "https://www.youtube-nocookie.com/embed/SsZZbOVMm1M?autoplay=1",
+    "title": "Northernlion Tries the New Dles - YouTube",
+    "status": "verified"
   }
 ]

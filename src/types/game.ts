@@ -5,12 +5,17 @@ export type VideoBlock = {
   provider: "youtube";
   videoId: string;
   title: string;
-  description: string;
+  description?: string;
+  summary?: string;
+  segments?: { timecode: string; heading: string; text: string }[];
+  takeaways?: string[];
+  versionNote?: string;
   poster: ImageAsset;
 };
 
 export type ContentBlock =
   | { type: "paragraph"; text: string }
+  | { type: "subheading"; id: string; text: string }
   | ({ type: "image"; caption?: string } & ImageAsset)
   | { type: "list"; style: "ordered" | "unordered"; items: string[] }
   | { type: "steps"; items: { title: string; body: string }[] }
@@ -43,6 +48,7 @@ export type Game = {
     loadTimeoutMs: number;
   };
   seo: { title: string; description: string; keywords: string[] };
+  page?: { eyebrow: string; h1: string; intro: string; videoHeading: string };
   content: ContentSection[];
   relatedGameIds: string[];
 };

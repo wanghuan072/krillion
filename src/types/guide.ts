@@ -11,7 +11,8 @@ export type Guide = {
   publishedAt: string | null;
   updatedAt: string | null;
   cover: ImageAsset;
-  seo: { title: string; description: string };
+  seo: { title: string; description: string; keywords: string[] };
+  videoHeading: string | null;
   sections: { id: string; title: string; blocks: ContentBlock[] }[];
   relatedGuideIds: string[];
 };

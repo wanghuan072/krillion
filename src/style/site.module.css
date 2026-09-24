@@ -35,6 +35,7 @@
 .eyebrow::before { content: ""; width: 30px; height: 2px; background: var(--accent); }
 .homeH1 { margin: 9px 0 6px; max-width: 19ch; color: var(--text); font-size: clamp(2.55rem, 4vw, 3.6rem); font-weight: 850; }
 .innerH1 { margin: 9px 0 8px; color: var(--text); font-size: clamp(2.1rem, 3vw, 3rem); font-weight: 850; text-transform: uppercase; }
+.gameIntro .innerH1 { text-transform: none; }
 .gameIntro p, .lede { margin: 0; max-width: 78ch; color: var(--muted); font-size: 1.02rem; }
 
 .player { width: 100%; overflow: hidden; background: var(--well); border: 1px solid #2c6075; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.32); }
@@ -152,7 +153,11 @@
 .videoCard > p { color: var(--muted); }
 .videoFrame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid #4a5141; border-radius: 8px; background: var(--well); }
 .videoFrame iframe { display: block; width: 100%; height: 100%; border: 0; }
-.videoSection { content-visibility: auto; contain-intrinsic-size: auto 720px; }
+.videoFrame button { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; overflow: hidden; color: #031016; background: #08131c; border: 0; cursor: pointer; }
+.videoFrame button img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .2s ease, filter .2s ease; }
+.videoFrame button span { position: absolute; top: 50%; left: 50%; width: 68px; height: 50px; display: grid; place-items: center; padding-left: 4px; color: #041018; background: var(--accent); border: 2px solid #fff; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.45); transform: translate(-50%, -50%); font-size: 1.35rem; }
+.videoFrame button:hover img, .videoFrame button:focus-visible img { filter: brightness(.72) saturate(1.08); transform: scale(1.02); }
+.videoSection { content-visibility: auto; contain-intrinsic-inline-size: auto 1px; contain-intrinsic-block-size: auto 720px; }
 
 .indexPage { min-height: 60vh; }
 .indexPage > h1, .readingPage > h1 { margin-bottom: 12px; color: var(--text); font-size: clamp(2.2rem, 4vw, 3.3rem); font-weight: 850; text-transform: uppercase; }
@@ -183,7 +188,7 @@
 .guideCardCopy > strong { margin-top: auto; color: var(--accent); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
 .readingPage { min-height: 60vh; }
 .guideHeader { max-width: 980px; margin-bottom: 34px; }
-.guideHeader .innerH1 { max-width: 24ch; margin-top: 11px; font-size: clamp(2.35rem, 4.2vw, 4.3rem); line-height: 1.02; letter-spacing: -.025em; }
+.guideHeader .innerH1 { max-width: 24ch; margin-top: 11px; font-size: clamp(2.35rem, 4.2vw, 4.3rem); line-height: 1.02; letter-spacing: -.025em; text-transform: none; }
 .guideHeader .lede { max-width: 82ch; font-size: 1.08rem; line-height: 1.7; }
 .guideByline { display: flex; flex-wrap: wrap; gap: 16px 44px; margin-top: 24px; padding: 17px 0; border-top: 1px solid #284554; border-bottom: 1px solid #284554; }
 .guideByline > span { display: grid; gap: 3px; }
@@ -198,6 +203,7 @@
 .guideArticle section { scroll-margin-top: 104px; margin-top: 38px; padding: 0 0 36px; border-bottom: 1px solid #3a3e35; }
 .guideArticle section:first-child { margin-top: 36px; }
 .guideArticle h2 { margin: 0 0 18px; color: var(--text); font-size: clamp(1.4rem, 2.2vw, 1.85rem); line-height: 1.2; }
+.guideArticle h3 { scroll-margin-top: 104px; margin: 26px 0 12px; color: #dce6e8; font-size: 1.08rem; line-height: 1.3; }
 .guideArticle p, .guideArticle li { color: #d3d0c7; }
 .guideArticle p { margin: 0 0 1.25em; }
 .guideArticle li + li { margin-top: 8px; }

@@ -1,0 +1,60 @@
+{
+  "reviewedAt": "2026-09-24",
+  "sourceBuild": "https://www.krillion.org/play/daily/",
+  "guides": [
+    {
+      "guideId": "krillion-how-to-play",
+      "playerProblem": "Complete a seven-prompt Daily Dive without losing valid answers to category drift, late submission, or rejection recovery.",
+      "verifiedMechanics": [
+        "Seven open-answer prompts per Daily Dive",
+        "A 25-second decision window on each live prompt",
+        "A running timer can permit a replacement after a not-on-this-answer-list response",
+        "Six fixed score tiers and a final score-to-depth conversion"
+      ],
+      "video": {
+        "videoId": "a899LxaHSsA",
+        "reviewedRange": "00:00-04:35",
+        "observedSequence": [
+          "Google Ads and falcon as early valid but ordinary choices",
+          "Buckwheat earning Rare and 600 m",
+          "Aang and Ghana as safe fallbacks",
+          "Six Flags and irony preserving the run for ten points each",
+          "Post-run alternatives reviewed after all seven prompts"
+        ]
+      }
+    },
+    {
+      "guideId": "krillion-loading-input-help",
+      "playerProblem": "Distinguish launcher, host, focus, mobile layout, validation, and network failures without refreshing a recoverable run.",
+      "verifiedMechanics": [
+        "The site does not create a game iframe before Play Now",
+        "The loaded title screen and Begin Descent control belong to the external game",
+        "Visible text in the answer field proves keyboard and focus input reached the game",
+        "A validator rejection is different from a frozen or unavailable player"
+      ],
+      "video": null
+    },
+    {
+      "guideId": "krillion-scoring-rare-answers",
+      "playerProblem": "Use fixed tier values and category confidence to improve total depth without turning uncommon recall into invalid guesses.",
+      "verifiedMechanics": [
+        "Tier values are 10, 15, 30, 60, 85, and 100 points",
+        "Depth in metres equals total score multiplied by ten",
+        "Seven maximum answers total 700 points and 7,000 m",
+        "Rarity feedback describes the response result, while validity remains a separate gate"
+      ],
+      "video": {
+        "videoId": "SsZZbOVMm1M",
+        "reviewedRange": "00:00-02:59",
+        "observedSequence": [
+          "Canberra receiving ten points",
+          "Dango receiving 85 points and 850 m",
+          "Rosie retrieved as a supporting fictional robot",
+          "Seneca failing the ancient Greek qualifier because he was Roman",
+          "Volleyball landing at the common end before the completed result"
+        ],
+        "boundaryNote": "At 02:59 the recording changes to a movie pack and later to other daily games; that footage is excluded from Krillion scoring evidence."
+      }
+    }
+  ]
+}

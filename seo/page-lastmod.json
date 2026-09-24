@@ -3,17 +3,17 @@
   "staticPages": {
     "/": {
       "pageId": "home",
-      "fingerprint": "d64680e581cc59d1f9eda8558fbbd18e895ac8eb680387a357b39eccde45b1d7",
+      "fingerprint": "b47c00f392710384d868bf9334193f374aa0e133a18e58f0ecd2ee8c627c8fdc",
       "lastModified": "2026-09-23"
     },
     "/games": {
       "pageId": "games-index",
-      "fingerprint": "2a8610ca601d63e022ea56e76ec9da8603d07cc0f976daac23c147f839c1bc4e",
+      "fingerprint": "150446ae894a829345c9e1742d61a439833aa5f9687f011dbd536ad5e3bbb735",
       "lastModified": "2026-09-24"
     },
     "/guides": {
       "pageId": "guides-index",
-      "fingerprint": "33cd3d7b48ad2fd67a728ea4656c17d0ca4266a5cb162acd470a28529d505b9a",
+      "fingerprint": "0bf09b90addf2274314e1be713f8edcf614bf1799b6a57dfc955bf41cdce7af2",
       "lastModified": "2026-09-23"
     },
     "/privacy": {
@@ -45,60 +45,60 @@
   "games": {
     "wordle-game": {
       "slug": "wordle-game",
-      "fingerprint": "ad1038582ca3a7c921b91f53cce79f19f1815f12eb2231e39ac240d7070502b8",
-      "lastModified": "2026-09-23"
+      "fingerprint": "b7a5d1bf8ae16d27f39d325893f9e5d96b3234c6d27f13ea324653f2937478cd",
+      "lastModified": "2026-09-24"
     },
     "letter-boxed": {
       "slug": "letter-boxed",
-      "fingerprint": "8bc7c8990aea887a936e028b3396516c1853f9aed2264a27dd303fe0271ee750",
-      "lastModified": "2026-09-23"
+      "fingerprint": "4243b9252a4c1317c065a2ac11f39e05f7bf1980b81687404c78eb860419d8c5",
+      "lastModified": "2026-09-24"
     },
     "growdle": {
       "slug": "growdle",
-      "fingerprint": "c28edc7a970de8f367000a1f696ff639e5737af9083f65fa171a4667dc33c98b",
-      "lastModified": "2026-09-23"
+      "fingerprint": "9f68caff12512535527cc1dfaa62b9195cf440f67209cc542f05eef9d1b4c41b",
+      "lastModified": "2026-09-24"
     },
     "quardle": {
       "slug": "quardle",
-      "fingerprint": "05df924e7909bcf7f1b6184d0276d01e786cf86de090a7dc9b250a10bd339424",
-      "lastModified": "2026-09-23"
+      "fingerprint": "dcbb193c766eef7f95332adda22873ff9888ef6ab0720bceedd9e49623e33263",
+      "lastModified": "2026-09-24"
     },
     "waffle": {
       "slug": "waffle",
-      "fingerprint": "a2488b8e934d8b89c83eb501c5015eb5411917bbfaf931e1720e4012a6bb8e8e",
-      "lastModified": "2026-09-23"
+      "fingerprint": "efaeaab46d931afe0b3f38b97d25419b33666a53b24c459bcfbc865615596e9c",
+      "lastModified": "2026-09-24"
     },
     "fun-typing-io": {
       "slug": "fun-typing-io",
-      "fingerprint": "56b6c125baf282e2bcbf2656664af23523bc4584cbd6f969772c09345678971d",
-      "lastModified": "2026-09-23"
+      "fingerprint": "26ef285758fbda4181a5cc1613902a6ad528b57d03dbce0de658ec2589398a1d",
+      "lastModified": "2026-09-24"
     },
     "spelling-bee": {
       "slug": "spelling-bee",
-      "fingerprint": "6c5a37d7bd326f0b58ddcb277f5a769d211aaac2ff2af887146c986853c02002",
-      "lastModified": "2026-09-23"
+      "fingerprint": "3f93be60395b3b3731fb13e365f13c1e6f4b0eb58041ca0d082b01964b37e4b4",
+      "lastModified": "2026-09-24"
     },
     "cheat-or-repeat": {
       "slug": "cheat-or-repeat",
-      "fingerprint": "b3247691a9bfb82e2608d73dd303683c943cb54a164a8b95ee0226fd32d161b3",
-      "lastModified": "2026-09-23"
+      "fingerprint": "d025d440c6f436475c926bd3579efe06c4b057facbe9ce6d17065109e347ea86",
+      "lastModified": "2026-09-24"
     }
   },
   "guides": {
     "krillion-how-to-play": {
       "slug": "how-to-play-krillion",
-      "fingerprint": "8e5f38075ba249d726c1746238bd070573660b7698cc70d7cb3c1ee56148ca41",
-      "lastModified": "2026-09-23"
+      "fingerprint": "be3dac9e097f0e81ee6899ac6a92157c17ba971522ddb3689a1f1ddd704815ba",
+      "lastModified": "2026-09-24"
     },
     "krillion-loading-input-help": {
       "slug": "krillion-loading-and-input-help",
-      "fingerprint": "713e5121346df080ab48cdff5eb075a2d58b130e662978303a58f21aab0f0388",
-      "lastModified": "2026-09-23"
+      "fingerprint": "b81ec8441f715bd95afdb6585de538454743e7d1e5119b90e936940288ea299e",
+      "lastModified": "2026-09-24"
     },
     "krillion-scoring-rare-answers": {
       "slug": "krillion-scoring-and-rare-answers",
-      "fingerprint": "15f0693edf5a249eeb05ac2f70388e2fad2e97e2000f6cd03ce4422dcfc6ec45",
-      "lastModified": "2026-09-23"
+      "fingerprint": "712a5d79d648bd3baa1afdb0b5a356ed43a993b686fe64dcfa87dc41cfc92112",
+      "lastModified": "2026-09-24"
     }
   }
 }

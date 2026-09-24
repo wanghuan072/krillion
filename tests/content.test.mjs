@@ -6,6 +6,16 @@ const games = JSON.parse(fs.readFileSync("data/games/games.json","utf8"));
 const guides = fs.readdirSync("data/guides").filter((file)=>file.endsWith(".json")).map((file)=>JSON.parse(fs.readFileSync(`data/guides/${file}`,"utf8"))).filter((guide)=>guide.status==="published");
 const lastmod = JSON.parse(fs.readFileSync("seo/page-lastmod.json","utf8"));
 const tdk = (await import("../seo/tdk.js")).default;
+const visibleBlockText=(block)=>{
+  if(block.type==="paragraph"||block.type==="subheading")return block.text;
+  if(block.type==="image")return `${block.alt??""} ${block.caption??""}`;
+  if(block.type==="list")return block.items.join(" ");
+  if(block.type==="steps")return block.items.flatMap((item)=>[item.title,item.body]).join(" ");
+  if(block.type==="callout")return `${block.label??""} ${block.body}`;
+  if(block.type==="table")return [...block.columns,...block.rows.flat()].join(" ");
+  if(block.type==="faq")return block.items.flatMap((item)=>[item.question,item.answer]).join(" ");
+  return "";
+};
 test("responsive CSS uses only the 1024 and 768 width breakpoints",()=>{
   const css=["src/style/globals.css","src/style/site.module.css","app/globals.css"].map((file)=>fs.readFileSync(file,"utf8")).join("\n");
   const breakpoints=[...css.matchAll(/@media\s*\(\s*(?:min|max)-width\s*:\s*(\d+)px\s*\)/g)].map((match)=>Number(match[1]));
@@ -30,14 +40,62 @@ test("the fixed catalog and its sole player URLs are preserved",()=>{
   assert.deepEqual(games.map((game)=>game.id),[...expectedPlayers.keys()]);
   games.forEach((game)=>assert.equal(game.player.iframeSrc,expectedPlayers.get(game.id)));
 });
-test("every addition has three gameplay images and one final video",()=>games.forEach((game)=>{
+test("every addition has a distinct long-form article and one analyzed video",()=>{
+  const signatures=[];
+  const proseOwners=new Map();
+  games.forEach((game)=>{
   const blocks=game.content.flatMap((section)=>section.blocks);
-  const visibleText=blocks.filter((block)=>["paragraph","list","steps","callout","table","faq"].includes(block.type)).map((block)=>JSON.stringify(block)).join("").replace(/\s/g,"");
+  const visibleText=[game.page.intro,...game.content.flatMap((section)=>[section.heading,...section.blocks.filter((block)=>block.type!=="video").map(visibleBlockText)])].join(" ").replace(/\s/g,"");
   assert.ok(visibleText.length>=8000,`${game.id} should contain a substantial guide`);
-  assert.equal(blocks.filter((block)=>block.type==="image").length,3);
+  assert.ok(blocks.filter((block)=>block.type==="image").length>=3);
   assert.equal(blocks.filter((block)=>block.type==="video").length,1);
   assert.ok(game.content.at(-1).blocks.some((block)=>block.type==="video"));
-}));
+  assert.ok(game.content.length>=6&&game.content.length<=9);
+  assert.ok(blocks.some((block)=>block.type==="subheading"));
+  const video=blocks.find((block)=>block.type==="video");
+  assert.ok(video.summary&&video.segments.length>=3&&video.takeaways.length>=3&&video.versionNote);
+  assert.ok(game.page.h1.toLowerCase().includes(game.title.toLowerCase()));
+  assert.ok(game.content[0].heading.toLowerCase().includes(game.title.toLowerCase()));
+  assert.ok(game.content.some((section)=>/strategy/i.test(section.heading)&&section.heading.toLowerCase().includes(game.title.toLowerCase())));
+  assert.ok(game.content.some((section)=>/faq/i.test(section.heading)&&section.heading.toLowerCase().includes(game.title.toLowerCase())));
+  assert.ok(game.page.videoHeading.toLowerCase().includes(game.title.toLowerCase()));
+  signatures.push(game.content.map((section)=>section.blocks.map((block)=>block.type).join("-")).join("|"));
+  for(const block of blocks){const value=visibleBlockText(block).replace(/\s+/g," ").trim();if(value.length<120)continue;assert.ok(!proseOwners.has(value),`${game.id} repeats long prose from ${proseOwners.get(value)}`);proseOwners.set(value,game.id);}
+  });
+  assert.equal(new Set(signatures).size,games.length);
+});
+test("Guides have distinct long-form structures, exact media plans, and valid scoring data",()=>{
+  const signatures=[];
+  const videoIds=new Map([
+    ["krillion-how-to-play","a899LxaHSsA"],
+    ["krillion-scoring-rare-answers","SsZZbOVMm1M"],
+    ["krillion-loading-input-help",null],
+  ]);
+  for(const guide of guides){
+    const blocks=guide.sections.flatMap((section)=>section.blocks);
+    const text=guide.sections.flatMap((section)=>[section.title,...section.blocks.filter((block)=>block.type!=="video").map(visibleBlockText)]).join(" ").replace(/\s/g,"");
+    const images=blocks.filter((block)=>block.type==="image");
+    const videos=blocks.filter((block)=>block.type==="video");
+    assert.ok(text.length>=6000,`${guide.id} should contain at least 6000 visible non-whitespace characters`);
+    assert.equal(images.length,3);
+    assert.ok(blocks.filter((block)=>block.type==="subheading").length>=2);
+    assert.ok(blocks.filter((block)=>block.type==="faq").flatMap((block)=>block.items).length>=5);
+    assert.equal(videos.length,videoIds.get(guide.id)?1:0);
+    assert.equal(videos[0]?.videoId??null,videoIds.get(guide.id));
+    assert.equal(guide.author,"Checkpoint Nomad");
+    assert.ok(guide.seo.title.length>=40&&guide.seo.title.length<=60);
+    assert.ok(guide.seo.description.length>=140&&guide.seo.description.length<=160);
+    assert.ok(guide.seo.keywords.length>=3);
+    signatures.push(guide.sections.map((section)=>section.blocks.map((block)=>block.type).join("-")).join("|"));
+  }
+  assert.equal(new Set(signatures).size,guides.length);
+  const scoring=guides.find((guide)=>guide.id==="krillion-scoring-rare-answers");
+  const scoringText=JSON.stringify(scoring);
+  for(const value of [10,15,30,60,85,100])assert.match(scoringText,new RegExp(`"${value}"`));
+  assert.match(scoringText,/700/);
+  assert.match(scoringText,/7,000 m/);
+  assert.match(scoringText,/multiplied by ten/i);
+});
 test("sitemap state covers every published route with stable fingerprints",()=>{
   assert.deepEqual(Object.keys(lastmod.staticPages),["/","/games","/guides","/privacy","/terms","/copyright","/about","/contact"]);
   assert.deepEqual(Object.keys(lastmod.games),games.filter((game)=>game.status==="published").map((game)=>game.id));

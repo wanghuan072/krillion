@@ -22,6 +22,12 @@ export function GamePageShell({ game, home = false, preview = false }: { game: G
   const videos = game.content.flatMap((section) => section.blocks.filter((block): block is VideoBlock => block.type === "video"));
   const path = home ? "/" : gamePath(game.slug);
   const url = absoluteUrl(path);
+  const page = game.page ?? {
+    eyebrow: game.categories.join(" · "),
+    h1: `Play ${game.title}`,
+    intro: `${game.shortDescription} You can start it directly on this page.`,
+    videoHeading: `Watch ${game.title} gameplay`,
+  };
   return <main id="main-content" className={`${styles.container} ${styles.gamePage}`}>
     <JsonLd data={[
       buildWebPageSchema({ name: game.seo.title, description: game.seo.description, path, publishedAt: game.publishedAt, updatedAt: game.updatedAt }),
@@ -30,13 +36,13 @@ export function GamePageShell({ game, home = false, preview = false }: { game: G
     ]} />
     <div className={styles.gameLayout}>
       <div className={styles.gameMain}>
-        <header className={styles.gameIntro}><span className={styles.eyebrow}>{home ? "Daily open-answer challenge" : game.categories.join(" · ")}</span><h1 className={home ? styles.homeH1 : styles.innerH1}>{home ? `Play ${game.title} Online` : `Play ${game.title}`}</h1><p>{game.shortDescription} You can start it directly on this page.</p></header>
+        <header className={styles.gameIntro}><span className={styles.eyebrow}>{home ? "Daily open-answer challenge" : page.eyebrow}</span><h1 className={home ? styles.homeH1 : styles.innerH1}>{home ? `Play ${game.title} Online` : page.h1}</h1><p>{home ? `${game.shortDescription} You can start it directly on this page.` : page.intro}</p></header>
         <GamePlayer game={game} preview={preview}/>
         <GameGroup heading={home ? "Games Like Krillion" : "Recommended Games"} games={recommended} compact preview={preview}/>
         <article className={styles.gameArticle}>
           {game.content.map((section) => <section id={section.id} key={section.id}><h2>{section.heading}</h2><ContentBlocks blocks={section.blocks.filter((block) => block.type !== "video")}/></section>)}
         </article>
-        <GameVideoSection videos={videos} gameTitle={game.title}/>
+        <GameVideoSection videos={videos} gameTitle={game.title} heading={page.videoHeading}/>
       </div>
       <HeightAwareRail><GameGroup heading="Featured Games" games={side.featured} rail preview={preview}/><GameGroup heading="New Games" games={side.newlyAdded} rail preview={preview}/><GameReviews gameSlug={game.slug} gameTitle={game.title}/></HeightAwareRail>
     </div>
