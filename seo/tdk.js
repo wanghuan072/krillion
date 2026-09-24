@@ -4,8 +4,9 @@ const mainGame = require("../data/games/main-game.json");
 const staticTdk = {
   home: mainGame.seo,
   "games-index": {
-    title: "More Games for Krillion Players to Explore",
-    description: "Browse eight playable word, trivia, spelling, and deduction games selected for Krillion players, with clear controls and dedicated help on every game page."
+    title: "Games Like Krillion: Word, Trivia & Puzzle Games",
+    description: "Play eight games like Krillion, including word, trivia, spelling, typing, and deduction challenges, with instant browser play and detailed game guides.",
+    keywords: ["games like Krillion", "Krillion alternatives", "word trivia games", "online puzzle games"]
   },
   "guides-index": {
     title: "Krillion Guides for Playing, Scoring, and Fixes",

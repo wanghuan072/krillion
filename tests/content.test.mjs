@@ -5,6 +5,7 @@ const main = JSON.parse(fs.readFileSync("data/games/main-game.json","utf8"));
 const games = JSON.parse(fs.readFileSync("data/games/games.json","utf8"));
 const guides = fs.readdirSync("data/guides").filter((file)=>file.endsWith(".json")).map((file)=>JSON.parse(fs.readFileSync(`data/guides/${file}`,"utf8"))).filter((guide)=>guide.status==="published");
 const lastmod = JSON.parse(fs.readFileSync("seo/page-lastmod.json","utf8"));
+const tdk = (await import("../seo/tdk.js")).default;
 test("responsive CSS uses only the 1024 and 768 width breakpoints",()=>{
   const css=["src/style/globals.css","src/style/site.module.css","app/globals.css"].map((file)=>fs.readFileSync(file,"utf8")).join("\n");
   const breakpoints=[...css.matchAll(/@media\s*\(\s*(?:min|max)-width\s*:\s*(\d+)px\s*\)/g)].map((match)=>Number(match[1]));
@@ -45,6 +46,14 @@ test("sitemap state covers every published route with stable fingerprints",()=>{
     assert.match(record.fingerprint,/^[a-f0-9]{64}$/);
     assert.match(record.lastModified,/^\d{4}-\d{2}-\d{2}$/);
   }
+});
+test("Games index TDK targets the Games Like Krillion long-tail keyword",()=>{
+  const metadata=tdk["games-index"];
+  assert.match(metadata.title,/Games Like Krillion/i);
+  assert.match(metadata.description,/games like Krillion/i);
+  assert.ok(metadata.title.length>=40&&metadata.title.length<=60);
+  assert.ok(metadata.description.length>=140&&metadata.description.length<=160);
+  assert.ok(metadata.keywords.includes("games like Krillion"));
 });
 test("the shared social image is a 1200 by 630 PNG",()=>{
   const image=fs.readFileSync("public/images/og-image.png");
