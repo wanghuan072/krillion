@@ -18,5 +18,8 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, them
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const preview = process.env.NODE_ENV === "development";
   const csp = composeCsp(getGameFrameOrigins({ includeDraft: preview }), ["https://www.youtube-nocookie.com"]);
-  return <html lang="en"><head><meta httpEquiv="Content-Security-Policy" content={csp}/><JsonLd data={buildWebsiteSchema()} /></head><body><a className="skip-link" href="#main-content">Skip to main content</a><SiteHeader />{children}<SiteFooter /></body></html>;
+  return <html lang="en"><head><meta httpEquiv="Content-Security-Policy" content={csp}/><JsonLd data={buildWebsiteSchema()} /><script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG"></script><script>{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HNJBCKJ6LG');`}</script></head><body><a className="skip-link" href="#main-content">Skip to main content</a><SiteHeader />{children}<SiteFooter /></body></html>;
 }

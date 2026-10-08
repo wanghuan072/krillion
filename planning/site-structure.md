@@ -51,7 +51,7 @@ The Guides index reads only published Guide JSON files. Its wide and 1024px rows
 
 ## Footer and auxiliary routes
 
-The Footer repeats the shared primary navigation and provides a distinct Legal group containing Privacy Policy, Terms of Service, Copyright, About Us, and Contact Us at the five root paths. Legal links use the current tab and `rel="noopener noreferrer nofollow"`. Contact displays `wyong@krilliongames.com` as plain text. The copyright line derives the build year and site name from shared configuration.
+The Footer repeats the shared primary navigation and provides a distinct Legal group containing Privacy Policy, Terms of Service, Copyright, About Us, and Contact Us at the five root paths. Legal links use the current tab and `rel="noopener noreferrer nofollow"`. Contact displays `support@krilliongames.com` as plain text. The copyright line derives the build year and site name from shared configuration.
 
 ## Explicit exclusions
 

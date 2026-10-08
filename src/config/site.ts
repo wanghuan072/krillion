@@ -14,4 +14,4 @@ export const siteConfig = {
   trailingSlash: false,
 } as const;
 
-export const contactEmail = `wyong@${new URL(siteConfig.origin).hostname.replace(/^www\./, "")}`;
+export const contactEmail = `support@${new URL(siteConfig.origin).hostname.replace(/^www\./, "")}`;

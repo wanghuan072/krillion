@@ -12,7 +12,10 @@ const guides=fs.readdirSync("data/guides").filter((file)=>file.endsWith(".json")
 const legalSource=fs.readFileSync("src/page/legal/LegalPages.tsx","utf8");
 const reviewSource=fs.readFileSync("src/components/game/GameReviews.tsx","utf8");
 const socialImageFingerprint=hash(fs.readFileSync("public/images/og-image.png").toString("base64"));
-const sharedSeoSource=["src/seo/metadata.ts","src/seo/structured-data.ts","src/config/site.ts","app/layout.tsx"].map((file)=>fs.readFileSync(file,"utf8")).join("\n")+socialImageFingerprint;
+const siteConfigSource=fs.readFileSync("src/config/site.ts","utf8");
+const contactEmailSource=siteConfigSource.match(/^export const contactEmail.*$/m)?.[0]??"";
+const sharedSiteConfigSource=siteConfigSource.replace(/^export const contactEmail.*$/m,"");
+const sharedSeoSource=["src/seo/metadata.ts","src/seo/structured-data.ts","app/layout.tsx"].map((file)=>fs.readFileSync(file,"utf8")).join("\n")+sharedSiteConfigSource+socialImageFingerprint;
 const gamePageSource=fs.readFileSync("src/components/game/GamePageShell.tsx","utf8");
 const guidePageSource=fs.readFileSync("src/components/guides/GuideViews.tsx","utf8");
 const gamesIndexSource=fs.readFileSync("app/games/page.tsx","utf8");
@@ -38,7 +41,7 @@ const staticInputs={
   "/terms":{value:{tdk:tdk.terms,shared:legalShared,page:legalSection("TermsPage"),sharedSeoSource},pageId:"terms",legacy:hash({tdk:tdk.terms,legalSource})},
   "/copyright":{value:{tdk:tdk.copyright,shared:legalShared,page:legalSection("CopyrightPage"),sharedSeoSource},pageId:"copyright",legacy:hash({tdk:tdk.copyright,legalSource})},
   "/about":{value:{tdk:tdk.about,shared:legalShared,page:legalSection("AboutPage"),sharedSeoSource},pageId:"about",legacy:hash({tdk:tdk.about,legalSource})},
-  "/contact":{value:{tdk:tdk.contact,shared:legalShared,page:legalSection("ContactPage"),sharedSeoSource},pageId:"contact",legacy:hash({tdk:tdk.contact,legalSource})},
+  "/contact":{value:{tdk:tdk.contact,shared:legalShared,page:legalSection("ContactPage"),contactEmailSource,sharedSeoSource},pageId:"contact",legacy:hash({tdk:tdk.contact,legalSource})},
 };
 
 const staticPages=Object.fromEntries(Object.entries(staticInputs).map(([path,input])=>{

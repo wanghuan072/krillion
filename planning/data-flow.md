@@ -2,7 +2,7 @@
 
 ## Site and navigation
 
-`project.yaml.domain.origin` is parsed during build and exported by `src/config/site.ts` together with the locked identity from `planning/content-map.json`. Contact email is computed as `wyong@${hostnameWithoutWww}`. Logo and social paths are constants `/images/logo.png` and `/images/og-image.png`. `navigation.ts` reads the three approved primary items from the content map and asserts labels/order; Header, mobile menu, and Footer receive that same array. Legal navigation is a separate five-item constant with root paths.
+`project.yaml.domain.origin` is parsed during build and exported by `src/config/site.ts` together with the locked identity from `planning/content-map.json`. Contact email is computed as `support@${hostnameWithoutWww}`. Logo and social paths are constants `/images/logo.png` and `/images/og-image.png`. `navigation.ts` reads the three approved primary items from the content map and asserts labels/order; Header, mobile menu, and Footer receive that same array. Legal navigation is a separate five-item constant with root paths.
 
 `url-policy.ts` normalizes internal paths without trailing slash, rejects third-party values for site links, and combines paths with the one canonical HTTPS origin. Canonical, Open Graph URL, JSON-LD, breadcrumbs, sitemap, cards, and internal links call this module.
 
