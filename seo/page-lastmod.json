@@ -3,101 +3,101 @@
   "staticPages": {
     "/": {
       "pageId": "home",
-      "fingerprint": "19d2ea45f1772230da5ba6cc4c52b700a608700672a911ca2c6c2ab9367c73bb",
+      "fingerprint": "7ac07a8ebb64bd22b00ecbc2886d0ae37347da37d1d5ad8e07ec1ed9ddeceb2b",
       "lastModified": "2026-10-13"
     },
     "/games": {
       "pageId": "games-index",
-      "fingerprint": "aa59982990767073d57b0f3c0b91ae7ad39c42ad2409f5837e83229e480007db",
+      "fingerprint": "f99496c6df1611d750dacb7bfb8a3add38d6d7a3799bac77fb55e99dc9b22343",
       "lastModified": "2026-10-13"
     },
     "/guides": {
       "pageId": "guides-index",
-      "fingerprint": "5a7f27e58b3324673c33749b53957488ef48cadbc27b633b46fdf24b9a03bc06",
+      "fingerprint": "d7977afbd64f5b1ba2ba4aab5e6981c78567e9929a66cd5bf7a199cc03d25982",
       "lastModified": "2026-10-13"
     },
     "/privacy": {
       "pageId": "privacy",
-      "fingerprint": "f362621b05d27f15e2accd7132ef2c8bc620abc84d36b6ab621abbc00bcfe161",
+      "fingerprint": "ec51c2f11a4882c1cfd697666042c85855abd4debf610953fc2cf364923a5bab",
       "lastModified": "2026-10-13"
     },
     "/terms": {
       "pageId": "terms",
-      "fingerprint": "e2b42e9a1c7cba4269096b705dcfa8fd9613227cd504ea6a987cee41457490e7",
+      "fingerprint": "30ce0aff2d7a1f14dd31e9c023267770e8b62612437608fb133687712e26e88c",
       "lastModified": "2026-10-13"
     },
     "/copyright": {
       "pageId": "copyright",
-      "fingerprint": "3eb748d3c6f6e21c397d0f37dbbdbcfc126890f4fd81034241b9b8e8a3de996d",
+      "fingerprint": "07fd24317f30c14bc460b601667403b66176eb0009f8ff7b15aa6de066f83856",
       "lastModified": "2026-10-13"
     },
     "/about": {
       "pageId": "about",
-      "fingerprint": "12f7c6aed2b77844ad31d62c1dc0edc57a874d17344ec706c383daf7cb4bfddd",
+      "fingerprint": "5e47af01dfe40ccde25fd02dc8dd2b55017c373c602426fff39e6921062cf21b",
       "lastModified": "2026-10-13"
     },
     "/contact": {
       "pageId": "contact",
-      "fingerprint": "514295329eb8fb359c2ab42b33481abd09a3147799e38d6fde57745a8cfde964",
+      "fingerprint": "bb0a177b6388d7eac7aa5a6ea2db5a58c4742c081c1af2774b790008a5db58a1",
       "lastModified": "2026-10-13"
     }
   },
   "games": {
     "wordle-game": {
       "slug": "wordle-game",
-      "fingerprint": "101ec7f98266771ffbd27cf8da9bc330d1e8a22cae6f70535382a6e157dec175",
+      "fingerprint": "b017b6e0127193f8dd138d0221ddefad2878577ad7fa65f991b90b9edb406ab6",
       "lastModified": "2026-10-13"
     },
     "letter-boxed": {
       "slug": "letter-boxed",
-      "fingerprint": "63ae4895673312d41aa97d657a43f8e5012fd82c2b7d617bfa20e0a4305b5ba3",
+      "fingerprint": "e4683c8953fb76d86b282d5ff070d8d3be598c7bfe18f81c6f63b5081b628877",
       "lastModified": "2026-10-13"
     },
     "growdle": {
       "slug": "growdle",
-      "fingerprint": "44feeec2047a89116aef585881eaaf6bb86b02f873392c5f7cb44a83ac658545",
+      "fingerprint": "25fa6de41b7cd89b81893876fad98d82c5d08cfd4ac97d1c021d8b4b70c37c29",
       "lastModified": "2026-10-13"
     },
     "quardle": {
       "slug": "quardle",
-      "fingerprint": "742cce47b6e45e00ce7b012144066959f382f6d302a928f3f06cd885968e0428",
+      "fingerprint": "e652714451742100bffe4043ee7b8af356afafbb695b560782596b11656cff7f",
       "lastModified": "2026-10-13"
     },
     "waffle": {
       "slug": "waffle",
-      "fingerprint": "d7eb24fb15493063c9e5299a7ef7b6b05f33d3b1eb6ac67888c29f954f88f499",
+      "fingerprint": "31efc35e948e3687f2c91448b489c88952ba018ffe0f66a983ef9afc5b60c45d",
       "lastModified": "2026-10-13"
     },
     "fun-typing-io": {
       "slug": "fun-typing-io",
-      "fingerprint": "fcf5f995e146732c93193ae10d5e1d0c3f77ffa0b0ae32bdaf3a6c98bcfad44e",
+      "fingerprint": "09ca08085d1cd4ba045124e7e26ebd5c3e261ca0676b495770ce602ebeebc624",
       "lastModified": "2026-10-13"
     },
     "spelling-bee": {
       "slug": "spelling-bee",
-      "fingerprint": "19a428f9eda0c6fe994b5fbc4766b2c1defd31e6cc92f4efd766eb6ea98809f6",
+      "fingerprint": "4d6f9a5db08525385b23d59674e4ab6da21a3c2e241de22bf4e290aa64fe5f00",
       "lastModified": "2026-10-13"
     },
     "cheat-or-repeat": {
       "slug": "cheat-or-repeat",
-      "fingerprint": "59f3538bbfa381d7cfd8b7fa0ab544d2f6873348920d76c2e2f508e6ef020b1d",
+      "fingerprint": "0436bc7b5ed3ecd405d4311fd103733039c62bc2e74b36502fd5abf9dd8e8984",
       "lastModified": "2026-10-13"
     }
   },
   "guides": {
     "krillion-how-to-play": {
       "slug": "how-to-play-krillion",
-      "fingerprint": "5bc70e64423cd8fc10adf8570045f7413c4f2103004e2782d477c06b8a3987dd",
+      "fingerprint": "1f26f448bea4e58f9c332820cc8c0f6461c2e13ca4de252e2fe16dc39ed65886",
       "lastModified": "2026-10-13"
     },
     "krillion-loading-input-help": {
       "slug": "krillion-loading-and-input-help",
-      "fingerprint": "99c35ca24af7864d5702f6caa7e92ac007fc81ad3af4432e019c2e4133d10141",
+      "fingerprint": "b19bb7954d13137f73eab773753f51a150ada4b20b21f87a181dfa208263d387",
       "lastModified": "2026-10-13"
     },
     "krillion-scoring-rare-answers": {
       "slug": "krillion-scoring-and-rare-answers",
-      "fingerprint": "1ca2fd15c5eba4982a8928aae9f5e351a710c2e7511d442146014945e859fff7",
+      "fingerprint": "f8be0c0c3bf86e9f117e292ad5585592f979df534100aed1c2758415e16d2a5d",
       "lastModified": "2026-10-13"
     }
   }

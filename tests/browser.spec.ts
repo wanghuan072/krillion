@@ -4,7 +4,10 @@ const slugs=games.map(game=>game.slug);
 
 test.beforeEach(async({page})=>{
   // 浏览器回归测试屏蔽真实广告响应，避免弹窗和轮播素材影响页面断言。
-  await page.route(/profitableratecpmnetwork\.com|highrevenueformat\.com|googletagmanager\.com/,route=>route.fulfill({status:200,contentType:"application/javascript",body:""}));
+  await page.route(/profitableratecpmnetwork\.com|highrevenueformat\.com|googletagmanager\.com/,route=>{
+    const body=route.request().url().includes("highrevenueformat.com")?`(()=>{const options=window.atOptions;const frame=document.createElement("iframe");frame.dataset.adCreative="test";frame.width=String(options.width);frame.height=String(options.height);document.currentScript.after(frame)})()`:"";
+    return route.fulfill({status:200,contentType:"application/javascript",body});
+  });
   await page.route("https://comment-api-pi.vercel.app/**",route=>route.fulfill({status:200,contentType:"application/json",body:JSON.stringify({data:[],page:1,pageSize:6,total:0})}));
 });
 
@@ -74,17 +77,20 @@ test("Guide videos are selective, analyzed, and loaded only after a click",async
 test("ad placements stay separated and within the requested page counts",async({page})=>{const expected:Record<string,number>={"/":5,"/games/wordle-game":3,"/games":2,"/guides":2,"/guides/how-to-play-krillion":3,"/privacy":2};for(const [route,count] of Object.entries(expected)){await page.goto(route);const slots=page.locator("[data-ad-slot]");await expect(slots,`${route} ad count`).toHaveCount(count);expect(await page.locator("[data-ad-slot] + [data-ad-slot]").count(),`${route} stacked ads`).toBe(0);expect(await slots.first().evaluate(node=>getComputedStyle(node).marginTop)).toBe("10px");await expect(page.getByText("Advertisement",{exact:true})).toHaveCount(0)}await page.goto("/");await expect(page.locator("script[src*='pl31789048.profitableratecpmnetwork.com']")).toHaveCount(1);await expect(page.locator("script[src*='googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG']")).toHaveCount(1)});
 
 test("responsive ads use desktop and mobile creative sizes",async({page})=>{
+  const adRequests:{referer:string,frameUrl:string}[]=[];
+  page.on("request",request=>{if(request.url().includes("highrevenueformat.com"))adRequests.push({referer:request.headers().referer??"",frameUrl:request.frame().url()})});
   await page.setViewportSize({width:1440,height:900});
   await page.goto("/games");
   const desktop=page.locator("[data-ad-slot='responsive-banner'] [data-format]").first();
   await desktop.scrollIntoViewIfNeeded();
   await expect(desktop).toHaveAttribute("data-format","728x90");
-  const desktopFrame=desktop.locator("iframe");
+  const desktopFrame=desktop.locator("iframe[data-ad-creative='test']");
   await expect(desktopFrame).toHaveCount(1);
   await expect(desktopFrame).toHaveAttribute("width","728");
   await expect(desktopFrame).toHaveAttribute("height","90");
-  await expect(desktopFrame).toHaveAttribute("sandbox","allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox");
-  expect(await desktopFrame.contentFrame().locator("body").evaluate(()=>Reflect.get(globalThis,"atOptions"))).toEqual({key:"5f06c8b6623bb3bcafe07a095f8ae003",format:"iframe",height:90,width:728,params:{}});
+  await expect(desktop.locator("script[src*='highrevenueformat.com/5f06c8b6623bb3bcafe07a095f8ae003/invoke.js']")).toHaveCount(1);
+  expect(adRequests[0].frameUrl).toMatch(/\/games\/?$/);
+  expect(adRequests[0].referer).toMatch(/^http:\/\/127\.0\.0\.1:\d+\/$/);
 
   for(const width of [768,390]){
     await page.setViewportSize({width,height:900});
@@ -94,9 +100,10 @@ test("responsive ads use desktop and mobile creative sizes",async({page})=>{
     const mobileFormats=page.locator("[data-ad-slot='responsive-banner'] [data-format]");
     await expect(mobileFormats).toHaveCount(await slots.count());
     expect(await mobileFormats.evaluateAll(nodes=>nodes.map(node=>node.getAttribute("data-format")))).toEqual(Array(await slots.count()).fill("300x250"));
-    const mobileFrames=mobileFormats.locator("iframe");
+    const mobileFrames=mobileFormats.locator("iframe[data-ad-creative='test']");
+    await expect(mobileFrames).toHaveCount(await slots.count());
     expect(await mobileFrames.evaluateAll(nodes=>nodes.map(node=>[node.getAttribute("width"),node.getAttribute("height")]))).toEqual(Array(await slots.count()).fill(null).map(()=>["300","250"]));
-    expect(await mobileFrames.first().contentFrame().locator("body").evaluate(()=>Reflect.get(globalThis,"atOptions"))).toEqual({key:"20d405695c52532554e514dabbd553c4",format:"iframe",height:250,width:300,params:{}});
+    await expect(mobileFormats.locator("script[src*='highrevenueformat.com/20d405695c52532554e514dabbd553c4/invoke.js']")).toHaveCount(await slots.count());
   }
 });
 

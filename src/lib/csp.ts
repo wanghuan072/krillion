@@ -1,5 +1,5 @@
 export function composeCsp(gameOrigins: string[], videoOrigins: string[] = []) {
-  const frameSources = ["'self'", ...gameOrigins, ...videoOrigins].join(" ");
+  const frameSources = ["'self'", ...gameOrigins, ...videoOrigins, "https://www.highrevenueformat.com"].join(" ");
   const isDevelopment = process.env.NODE_ENV === "development";
   return [
     "default-src 'self'",

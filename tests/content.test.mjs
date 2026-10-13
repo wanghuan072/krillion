@@ -29,6 +29,8 @@ test("affiliate ad sources and GA are present exactly once in their shared entry
   assert.equal((layout.match(/pl31789048\.profitableratecpmnetwork\.com/g)??[]).length,1);
   for(const value of ["5f06c8b6623bb3bcafe07a095f8ae003","20d405695c52532554e514dabbd553c4"])assert.ok(ads.includes(value));
   assert.doesNotMatch(ads,/pl31789049|container-460225b0b59c6615a97ae115d6b4e2c5|nativeDocument/);
+  assert.doesNotMatch(ads,/srcdoc|setAttribute\("sandbox"/i);
+  assert.match(ads,/mount\.append\(configScript, invokeScript\)/);
 });
 test("all cross-page links use native document navigation",()=>{
   const navigationFiles=[

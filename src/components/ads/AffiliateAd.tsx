@@ -3,24 +3,67 @@
 import { useEffect, useRef } from "react";
 import styles from "@/src/style/site.module.css";
 
-function bannerDocument(compact: boolean) {
-  const config = compact
-    ? { key: "20d405695c52532554e514dabbd553c4", width: 300, height: 250 }
-    : { key: "5f06c8b6623bb3bcafe07a095f8ae003", width: 728, height: 90 };
+type BannerConfig = {
+  key: string;
+  format: "iframe";
+  height: number;
+  width: number;
+  params: Record<string, never>;
+};
 
-  return `<!doctype html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;overflow:hidden;background:transparent}*{box-sizing:border-box}</style></head><body>
-<script>
-  atOptions = {
-    'key' : '${config.key}',
-    'format' : 'iframe',
-    'height' : ${config.height},
-    'width' : ${config.width},
-    'params' : {}
-  };
-<\/script>
-<script src="https://www.highrevenueformat.com/${config.key}/invoke.js"><\/script>
-</body></html>`;
+const DESKTOP_BANNER: BannerConfig = {
+  key: "5f06c8b6623bb3bcafe07a095f8ae003",
+  format: "iframe",
+  height: 90,
+  width: 728,
+  params: {},
+};
+
+const MOBILE_BANNER: BannerConfig = {
+  key: "20d405695c52532554e514dabbd553c4",
+  format: "iframe",
+  height: 250,
+  width: 300,
+  params: {},
+};
+
+let bannerLoadQueue = Promise.resolve();
+
+function insertBannerCode(mount: HTMLDivElement, config: BannerConfig) {
+  return new Promise<void>((resolve) => {
+    if (!mount.isConnected) {
+      resolve();
+      return;
+    }
+
+    // 按联盟后台提供的标准顺序写入配置和脚本，让请求保留本站来源。
+    const configScript = document.createElement("script");
+    configScript.text = `window.atOptions = ${JSON.stringify(config)};`;
+
+    const invokeScript = document.createElement("script");
+    invokeScript.src = `https://www.highrevenueformat.com/${config.key}/invoke.js`;
+    invokeScript.async = false;
+
+    let finished = false;
+    const finish = (state: "loaded" | "failed") => {
+      if (finished) return;
+      finished = true;
+      window.clearTimeout(timeout);
+      mount.dataset.state = state;
+      resolve();
+    };
+    const timeout = window.setTimeout(() => finish("failed"), 15000);
+    invokeScript.addEventListener("load", () => finish("loaded"), { once: true });
+    invokeScript.addEventListener("error", () => finish("failed"), { once: true });
+
+    mount.append(configScript, invokeScript);
+  });
+}
+
+function enqueueBanner(mount: HTMLDivElement, config: BannerConfig) {
+  bannerLoadQueue = bannerLoadQueue
+    .catch(() => undefined)
+    .then(() => insertBannerCode(mount, config));
 }
 
 export function AffiliateAd() {
@@ -37,17 +80,9 @@ export function AffiliateAd() {
 
       // 移动端固定使用 300×250；PC 端优先使用 728×90，窄内容栏自动降级。
       const mobile = window.matchMedia("(max-width: 768px)").matches;
-      const compact = mobile || mount.clientWidth < 728;
-      mount.dataset.format = compact ? "300x250" : "728x90";
-      const frame = document.createElement("iframe");
-      frame.title = "Advertisement";
-      frame.loading = "lazy";
-      frame.referrerPolicy = "strict-origin-when-cross-origin";
-      frame.setAttribute("sandbox", "allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox");
-      frame.width = compact ? "300" : "728";
-      frame.height = compact ? "250" : "90";
-      frame.srcdoc = bannerDocument(compact);
-      mount.append(frame);
+      const config = mobile || mount.clientWidth < 728 ? MOBILE_BANNER : DESKTOP_BANNER;
+      mount.dataset.format = `${config.width}x${config.height}`;
+      enqueueBanner(mount, config);
     };
 
     if (!("IntersectionObserver" in window)) {
