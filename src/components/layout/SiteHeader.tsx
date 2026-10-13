@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { primaryNavigation } from "@/src/config/navigation";
@@ -34,18 +33,18 @@ export function SiteHeader() {
 
   return <header className={styles.header} ref={headerRef}>
     <div className={`${styles.container} ${styles.headerInner}`}>
-      <Link href="/" prefetch={false} className={styles.logoLink} aria-label={`${siteConfig.name} home`}>
+      <a href="/" className={styles.logoLink} aria-label={`${siteConfig.name} home`}>
         <Image src={siteConfig.logo} width={siteConfig.logoWidth} height={siteConfig.logoHeight} alt="" aria-hidden="true" loading="eager" fetchPriority="high" className={styles.logo} />
         <span className={styles.brandName}>{siteConfig.name}</span>
-      </Link>
+      </a>
       <nav aria-label="Primary navigation" className={styles.desktopNav}>
-        {primaryNavigation.map((item) => <Link key={item.path} href={item.path} prefetch={false} aria-current={pathname === item.path ? "page" : undefined}><span className={styles.navLabel}>{item.label}</span></Link>)}
+        {primaryNavigation.map((item) => <a key={item.path} href={item.path} aria-current={pathname === item.path ? "page" : undefined}><span className={styles.navLabel}>{item.label}</span></a>)}
       </nav>
       <button ref={buttonRef} className={styles.menuButton} type="button" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen((value) => !value)}>
         <span aria-hidden="true" className={styles.menuIcon}><i /><i /><i /></span><span className={styles.srOnly}>Menu</span>
       </button>
       <nav id="mobile-navigation" aria-label="Mobile navigation" className={`${styles.mobileNav} ${open ? styles.mobileNavOpen : ""}`}>
-        {primaryNavigation.map((item) => <Link key={item.path} href={item.path} prefetch={false} aria-current={pathname === item.path ? "page" : undefined} onClick={() => setOpen(false)}><span className={styles.navLabel}>{item.label}</span></Link>)}
+        {primaryNavigation.map((item) => <a key={item.path} href={item.path} aria-current={pathname === item.path ? "page" : undefined} onClick={() => setOpen(false)}><span className={styles.navLabel}>{item.label}</span></a>)}
       </nav>
     </div>
   </header>;

@@ -15,7 +15,8 @@ const socialImageFingerprint=hash(fs.readFileSync("public/images/og-image.png").
 const siteConfigSource=fs.readFileSync("src/config/site.ts","utf8");
 const contactEmailSource=siteConfigSource.match(/^export const contactEmail.*$/m)?.[0]??"";
 const sharedSiteConfigSource=siteConfigSource.replace(/^export const contactEmail.*$/m,"");
-const sharedSeoSource=["src/seo/metadata.ts","src/seo/structured-data.ts","app/layout.tsx"].map((file)=>fs.readFileSync(file,"utf8")).join("\n")+sharedSiteConfigSource+socialImageFingerprint;
+const affiliateAdSource=fs.readFileSync("src/components/ads/AffiliateAd.tsx","utf8");
+const sharedSeoSource=["src/seo/metadata.ts","src/seo/structured-data.ts","app/layout.tsx"].map((file)=>fs.readFileSync(file,"utf8")).join("\n")+sharedSiteConfigSource+socialImageFingerprint+affiliateAdSource;
 const gamePageSource=fs.readFileSync("src/components/game/GamePageShell.tsx","utf8");
 const guidePageSource=fs.readFileSync("src/components/guides/GuideViews.tsx","utf8");
 const gamesIndexSource=fs.readFileSync("app/games/page.tsx","utf8");

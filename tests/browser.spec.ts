@@ -2,6 +2,12 @@ import { expect, test } from "@playwright/test";
 import games from "../data/games/games.json";
 const slugs=games.map(game=>game.slug);
 
+test.beforeEach(async({page})=>{
+  // 浏览器回归测试屏蔽真实广告响应，避免弹窗和轮播素材影响页面断言。
+  await page.route(/profitableratecpmnetwork\.com|highrevenueformat\.com|googletagmanager\.com/,route=>route.fulfill({status:200,contentType:"application/javascript",body:""}));
+  await page.route("https://comment-api-pi.vercel.app/**",route=>route.fulfill({status:200,contentType:"application/json",body:JSON.stringify({data:[],page:1,pageSize:6,total:0})}));
+});
+
 test("production home geometry, groups, and lazy main frame",async({page})=>{const errors:string[]=[];page.on("pageerror",e=>errors.push(e.message));page.on("console",m=>{if(m.type()==="error")errors.push(m.text())});await page.setViewportSize({width:1464,height:900});await page.goto("/");await expect(page.getByRole("heading",{level:1,name:"Play Krillion Online"})).toBeVisible();await expect(page.getByRole("button",{name:"Play Now"})).toBeVisible();await expect(page.locator("iframe[data-game-frame]")).toHaveCount(0);expect(await page.locator("main").evaluate(n=>Math.round(n.getBoundingClientRect().width))).toBe(1400);await expect(page.getByRole("heading",{name:"Featured Games"}).locator("xpath=following-sibling::div/a")).toHaveCount(6);await expect(page.getByRole("heading",{name:"New Games"}).locator("xpath=following-sibling::div/a")).toHaveCount(6);await expect(page.getByRole("heading",{name:"Games Like Krillion"}).locator("xpath=following-sibling::div/a")).toHaveCount(6);expect(errors).toEqual([]);await page.getByRole("button",{name:"Play Now"}).click();const frame=page.locator("iframe[data-game-frame]");await expect(frame).toHaveCount(1);await expect(frame).toHaveAttribute("src","https://www.krillion.org/play/daily/");await expect(frame).toHaveAttribute("sandbox",/allow-scripts/);expect((await frame.getAttribute("sandbox"))?.match(/allow-popups|allow-top-navigation/)).toBeNull()});
 
 test("all additions keep identity and create one configured frame",async({page})=>{for(const game of games){await page.goto(`/games/${game.slug}`);await expect(page.getByRole("button",{name:"Play Now"})).toHaveCount(1);await expect(page.locator("iframe[data-game-frame]")).toHaveCount(0);await page.getByRole("button",{name:"Play Now"}).click();await expect(page.locator("iframe[data-game-frame]")).toHaveCount(1);await expect(page.locator("iframe[data-game-frame]")).toHaveAttribute("src",game.player.iframeSrc)}});
@@ -19,6 +25,38 @@ test("representative pages never overflow across supported device widths",async(
 
 test("game cards use full-document navigation and old routes are gone",async({page})=>{await page.goto("/games");const card=page.getByRole("link",{name:/Wordle Game/}).first();await expect(card).toHaveAttribute("href","/games/wordle-game");const navigation=page.waitForRequest(request=>request.isNavigationRequest()&&new URL(request.url()).pathname==="/games/wordle-game");await card.click();await navigation;await expect(page).toHaveURL(/\/games\/wordle-game$/);for(const slug of ["slope","2048","curve-rush","tap-road","head-basketball","escape-road","trap-the-cat","suika-game"]){const response=await page.goto(`/games/${slug}`);expect(response?.status()).toBe(404)}});
 
+test("site navigation, cards, and breadcrumbs reload the document",async({page})=>{
+  const normalizePath=(path:string)=>path==="/"?path:path.replace(/\/$/,"");
+  const followDocumentLink=async(from:string,to:string,selector:string)=>{
+    await page.goto(from);
+    await page.evaluate(()=>{document.documentElement.dataset.navigationProbe="old-document"});
+    const navigation=page.waitForURL(url=>normalizePath(url.pathname)===normalizePath(to),{waitUntil:"commit"});
+    await page.locator(selector).first().click();
+    await navigation;
+    await expect(page).toHaveURL(url=>normalizePath(url.pathname)===normalizePath(to));
+    expect(await page.evaluate(()=>document.documentElement.dataset.navigationProbe)).toBeUndefined();
+    await expect(page.locator("script[src*='pl31789048.profitableratecpmnetwork.com']")).toHaveCount(1);
+    await expect(page.locator("script[src*='googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG']")).toHaveCount(1);
+  };
+
+  await page.setViewportSize({width:1440,height:900});
+  await followDocumentLink("/","/games","nav[aria-label='Primary navigation'] a[href='/games']");
+  await followDocumentLink("/games","/privacy","footer a[href='/privacy']");
+  await followDocumentLink("/guides/how-to-play-krillion","/","nav[aria-label='Breadcrumb'] a[href='/']");
+  await followDocumentLink("/guides","/guides/how-to-play-krillion","main a[href='/guides/how-to-play-krillion']");
+
+  await page.setViewportSize({width:390,height:844});
+  await page.goto("/");
+  await page.getByRole("button",{name:"Menu"}).click();
+  await page.evaluate(()=>{document.documentElement.dataset.navigationProbe="old-document"});
+  const mobileNavigation=page.waitForURL(url=>normalizePath(url.pathname)==="/guides",{waitUntil:"commit"});
+  await page.getByRole("navigation",{name:"Mobile navigation"}).getByRole("link",{name:"Guides"}).click();
+  await mobileNavigation;
+  expect(await page.evaluate(()=>document.documentElement.dataset.navigationProbe)).toBeUndefined();
+  await expect(page.locator("script[src*='pl31789048.profitableratecpmnetwork.com']")).toHaveCount(1);
+  await expect(page.locator("script[src*='googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG']")).toHaveCount(1);
+});
+
 test("mobile layout disables sticky, preserves section order, and defers the video player",async({page})=>{await page.setViewportSize({width:768,height:900});await page.goto("/games/wordle-game");const h=await page.locator("main h2").evaluateAll(ns=>ns.map(n=>n.textContent?.trim()));expect(h.indexOf("Recommended Games")).toBeLessThan(h.indexOf("Wordle Game rules: six rows, one hidden word"));expect(h.indexOf("Wordle Game video breakdown: clues, guesses, and the endgame")).toBeLessThan(h.indexOf("Featured Games"));expect(h.indexOf("Featured Games")).toBeLessThan(h.indexOf("New Games"));await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/']")).toHaveCount(0);const play=page.getByRole("button",{name:"Play video: How to play Wordle"});await expect(play).toBeVisible();await play.click();await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/lv4Zg-209MY']")).toHaveCount(1)});
 
 test("each game exposes its own ratings panel after New Games",async({page})=>{for(const route of ["/",...slugs.map(slug=>`/games/${slug}`)]){await page.goto(route);const headings=await page.locator("aside h2").evaluateAll(nodes=>nodes.map(node=>node.textContent?.trim()));expect(headings.indexOf("Player Ratings")).toBe(headings.indexOf("New Games")+1);await expect(page.getByRole("heading",{name:"Player Ratings"})).toHaveCount(1)}});
@@ -33,4 +71,33 @@ test("Guide detail exposes article metadata and responsive anchor rail",async({p
 
 test("Guide videos are selective, analyzed, and loaded only after a click",async({page})=>{for(const [route,id,title] of [["/guides/how-to-play-krillion","a899LxaHSsA","Krillion | Sunday Wildcard September 13, 2026"],["/guides/krillion-scoring-and-rare-answers","SsZZbOVMm1M","Northernlion Tries the New Dles"]] as const){await page.goto(route);await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/']")).toHaveCount(0);const play=page.getByRole("button",{name:`Play video: ${title}`});await expect(play).toBeVisible();await play.click();await expect(page.locator(`iframe[src*='youtube-nocookie.com/embed/${id}']`)).toHaveCount(1)}await page.goto("/guides/krillion-loading-and-input-help");await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/']")).toHaveCount(0);await expect(page.getByRole("button",{name:/^Play video:/})).toHaveCount(0)});
 
-test("Legal pages are detailed, dated, and connected by breadcrumbs",async({page})=>{const minimumSections:Record<string,number>={"/privacy":11,"/terms":11,"/copyright":7,"/about":5,"/contact":5};for(const [route,count] of Object.entries(minimumSections)){await page.goto(route);await expect(page.getByRole("navigation",{name:"Breadcrumb"})).toContainText("Home");await expect(page.locator("time[datetime='2026-09-22']").first()).toContainText("September 22, 2026");await expect(page.locator("article > section")).toHaveCount(count);await expect(page.getByRole("navigation",{name:"Site policies"}).getByRole("link")).toHaveCount(4)}await page.goto("/about");await expect(page.getByRole("heading",{level:1,name:"About Checkpoint Nomad"})).toBeVisible();await expect(page.getByText(/started publishing these guides in early 2026/i)).toBeVisible();await page.goto("/contact");await expect(page.getByText("support@krilliongames.com",{exact:true})).toBeVisible();await expect(page.locator("a[href^='mailto:']")).toHaveCount(0)});
+test("ad placements stay separated and within the requested page counts",async({page})=>{const expected:Record<string,number>={"/":5,"/games/wordle-game":3,"/games":2,"/guides":2,"/guides/how-to-play-krillion":3,"/privacy":2};for(const [route,count] of Object.entries(expected)){await page.goto(route);const slots=page.locator("[data-ad-slot]");await expect(slots,`${route} ad count`).toHaveCount(count);expect(await page.locator("[data-ad-slot] + [data-ad-slot]").count(),`${route} stacked ads`).toBe(0);expect(await slots.first().evaluate(node=>getComputedStyle(node).marginTop)).toBe("10px");await expect(page.getByText("Advertisement",{exact:true})).toHaveCount(0)}await page.goto("/");await expect(page.locator("script[src*='pl31789048.profitableratecpmnetwork.com']")).toHaveCount(1);await expect(page.locator("script[src*='googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG']")).toHaveCount(1)});
+
+test("responsive ads use desktop and mobile creative sizes",async({page})=>{
+  await page.setViewportSize({width:1440,height:900});
+  await page.goto("/games");
+  const desktop=page.locator("[data-ad-slot='responsive-banner'] [data-format]").first();
+  await desktop.scrollIntoViewIfNeeded();
+  await expect(desktop).toHaveAttribute("data-format","728x90");
+  const desktopFrame=desktop.locator("iframe");
+  await expect(desktopFrame).toHaveCount(1);
+  await expect(desktopFrame).toHaveAttribute("width","728");
+  await expect(desktopFrame).toHaveAttribute("height","90");
+  await expect(desktopFrame).toHaveAttribute("sandbox","allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox");
+  expect(await desktopFrame.contentFrame().locator("body").evaluate(()=>Reflect.get(globalThis,"atOptions"))).toEqual({key:"5f06c8b6623bb3bcafe07a095f8ae003",format:"iframe",height:90,width:728,params:{}});
+
+  for(const width of [768,390]){
+    await page.setViewportSize({width,height:900});
+    await page.goto("/");
+    const slots=page.locator("[data-ad-slot='responsive-banner']");
+    for(let index=0;index<await slots.count();index++) await slots.nth(index).scrollIntoViewIfNeeded();
+    const mobileFormats=page.locator("[data-ad-slot='responsive-banner'] [data-format]");
+    await expect(mobileFormats).toHaveCount(await slots.count());
+    expect(await mobileFormats.evaluateAll(nodes=>nodes.map(node=>node.getAttribute("data-format")))).toEqual(Array(await slots.count()).fill("300x250"));
+    const mobileFrames=mobileFormats.locator("iframe");
+    expect(await mobileFrames.evaluateAll(nodes=>nodes.map(node=>[node.getAttribute("width"),node.getAttribute("height")]))).toEqual(Array(await slots.count()).fill(null).map(()=>["300","250"]));
+    expect(await mobileFrames.first().contentFrame().locator("body").evaluate(()=>Reflect.get(globalThis,"atOptions"))).toEqual({key:"20d405695c52532554e514dabbd553c4",format:"iframe",height:250,width:300,params:{}});
+  }
+});
+
+test("Legal pages are detailed, dated, and connected by breadcrumbs",async({page})=>{const minimumSections:Record<string,number>={"/privacy":11,"/terms":11,"/copyright":7,"/about":5,"/contact":5};for(const [route,count] of Object.entries(minimumSections)){await page.goto(route);await expect(page.getByRole("navigation",{name:"Breadcrumb"})).toContainText("Home");await expect(page.locator("time[datetime='2026-10-12']").first()).toContainText("October 12, 2026");await expect(page.locator("article > section")).toHaveCount(count);await expect(page.getByRole("navigation",{name:"Site policies"}).getByRole("link")).toHaveCount(4)}await page.goto("/about");await expect(page.getByRole("heading",{level:1,name:"About Checkpoint Nomad"})).toBeVisible();await expect(page.getByText(/started publishing these guides in early 2026/i)).toBeVisible();await page.goto("/contact");await expect(page.getByText("support@krilliongames.com",{exact:true})).toBeVisible();await expect(page.locator("a[href^='mailto:']")).toHaveCount(0)});

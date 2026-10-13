@@ -22,6 +22,26 @@ test("responsive CSS uses only the 1024 and 768 width breakpoints",()=>{
   assert.deepEqual([...new Set(breakpoints)].sort((a,b)=>a-b),[768,1024]);
 });
 test("the supplied main iframe is preserved",()=>assert.equal(main.player.iframeSrc,"https://www.krillion.org/play/daily/"));
+test("affiliate ad sources and GA are present exactly once in their shared entry points",()=>{
+  const layout=fs.readFileSync("app/layout.tsx","utf8");
+  const ads=fs.readFileSync("src/components/ads/AffiliateAd.tsx","utf8");
+  assert.equal((layout.match(/G-HNJBCKJ6LG/g)??[]).length,2);
+  assert.equal((layout.match(/pl31789048\.profitableratecpmnetwork\.com/g)??[]).length,1);
+  for(const value of ["5f06c8b6623bb3bcafe07a095f8ae003","20d405695c52532554e514dabbd553c4"])assert.ok(ads.includes(value));
+  assert.doesNotMatch(ads,/pl31789049|container-460225b0b59c6615a97ae115d6b4e2c5|nativeDocument/);
+});
+test("all cross-page links use native document navigation",()=>{
+  const navigationFiles=[
+    "app/not-found.tsx",
+    "src/components/game/GameCard.tsx",
+    "src/components/guides/GuideViews.tsx",
+    "src/components/layout/Breadcrumbs.tsx",
+    "src/components/layout/SiteFooter.tsx",
+    "src/components/layout/SiteHeader.tsx",
+    "src/page/legal/LegalPages.tsx",
+  ].map((file)=>fs.readFileSync(file,"utf8")).join("\n");
+  assert.doesNotMatch(navigationFiles,/next\/link|<Link\b|useRouter\(|router\.(?:push|replace)\(/);
+});
 test("eight stable additional games exist",()=>assert.equal(games.length,8));
 test("home flags are 8 featured, 8 new, 6 recommended",()=>{assert.equal(games.filter((game)=>game.flags.isFeaturedHome).length,8);assert.equal(games.filter((game)=>game.flags.isNewHome).length,8);assert.equal(games.filter((game)=>game.flags.isRecommendedHome).length,6);});
 test("every additional game has six non-self relations",()=>games.forEach((game)=>{assert.equal(game.relatedGameIds.length,6);assert.ok(!game.relatedGameIds.includes(game.id));}));

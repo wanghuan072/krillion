@@ -21,5 +21,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return <html lang="en"><head><meta httpEquiv="Content-Security-Policy" content={csp}/><JsonLd data={buildWebsiteSchema()} /><script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG"></script><script>{`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-HNJBCKJ6LG');`}</script></head><body><a className="skip-link" href="#main-content">Skip to main content</a><SiteHeader />{children}<SiteFooter /></body></html>;
+gtag('config', 'G-HNJBCKJ6LG');`}</script></head><body><a className="skip-link" href="#main-content">Skip to main content</a><SiteHeader />{children}<SiteFooter />{/* 全站弹窗广告：放在正文之后，每次完整页面加载只初始化一次。 */}<script defer src="https://pl31789048.profitableratecpmnetwork.com/20/8c/a7/208ca7d6a396bf3004d04b45c655230b.js"></script></body></html>;
 }

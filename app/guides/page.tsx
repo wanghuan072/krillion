@@ -8,6 +8,7 @@ import { JsonLd } from "@/src/components/seo/JsonLd";
 import { guidePath } from "@/src/lib/url-policy";
 import { Breadcrumbs } from "@/src/components/layout/Breadcrumbs";
 import { buildBreadcrumbSchema, buildItemList, buildWebPageSchema } from "@/src/seo/structured-data";
+import { AffiliateAd } from "@/src/components/ads/AffiliateAd";
 
 export const metadata: Metadata = buildMetadata({ ...tdk["guides-index"], path: "/guides" });
 export default function GuidesPage() {
@@ -16,5 +17,5 @@ export default function GuidesPage() {
     { ...buildWebPageSchema({ name: tdk["guides-index"].title, description: tdk["guides-index"].description, path: "/guides", type: "CollectionPage" }), mainEntity: buildItemList(guides.map((guide) => ({ name: guide.title, path: guidePath(guide.slug) }))) },
     buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }]),
   ];
-  return <main id="main-content" className={`${styles.container} ${styles.indexPage}`}><JsonLd data={schema}/><Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides" }]}/><header className={styles.guidesIndexHeader}><span className={styles.eyebrow}>Play with confidence</span><h1 className={styles.innerH1}>Krillion Guides</h1><p>Choose the focused guide that matches your current Daily Dive goal: learn the complete run, improve answer depth, or solve a technical problem.</p></header><GuidesList guides={guides}/></main>;
+  return <main id="main-content" className={`${styles.container} ${styles.indexPage}`}><JsonLd data={schema}/><Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides" }]}/><header className={styles.guidesIndexHeader}><span className={styles.eyebrow}>Play with confidence</span><h1 className={styles.innerH1}>Krillion Guides</h1><p>Choose the focused guide that matches your current Daily Dive goal: learn the complete run, improve answer depth, or solve a technical problem.</p></header>{/* Guide 列表前后的广告保持独立，不与标题直接堆叠。 */}<AffiliateAd/><GuidesList guides={guides}/><AffiliateAd/></main>;
 }

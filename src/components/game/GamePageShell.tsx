@@ -10,6 +10,8 @@ import { getHomepageSections, getRecommendedGames, getSidebarSections } from "@/
 import type { Game, VideoBlock } from "@/src/types/game";
 import styles from "@/src/style/site.module.css";
 import { buildBreadcrumbSchema, buildWebPageSchema } from "@/src/seo/structured-data";
+import { AffiliateAd } from "@/src/components/ads/AffiliateAd";
+import { Fragment } from "react";
 
 function GameGroup({ heading, games, rail = false, compact = false, preview = false }: { heading: string; games: Game[]; rail?: boolean; compact?: boolean; preview?: boolean }) {
   return <section className={rail ? styles.railSection : styles.recommended} aria-labelledby={heading.toLowerCase().replaceAll(" ", "-")}><h2 id={heading.toLowerCase().replaceAll(" ", "-")}>{heading}</h2><div className={rail ? styles.railGrid : styles.recommendedGrid}>{games.map((game) => <GameCard key={game.id} game={game} compact={rail || compact} preview={preview}/>)}</div></section>;
@@ -38,11 +40,16 @@ export function GamePageShell({ game, home = false, preview = false }: { game: G
       <div className={styles.gameMain}>
         <header className={styles.gameIntro}><span className={styles.eyebrow}>{home ? "Daily open-answer challenge" : page.eyebrow}</span><h1 className={home ? styles.homeH1 : styles.innerH1}>{home ? `Play ${game.title} Online` : page.h1}</h1><p>{home ? `${game.shortDescription} You can start it directly on this page.` : page.intro}</p></header>
         <GamePlayer game={game} preview={preview}/>
+        {/* 播放器与推荐区之间的横幅广告。 */}
+        <AffiliateAd/>
         <GameGroup heading={home ? "Games Like Krillion" : "Recommended Games"} games={recommended} compact preview={preview}/>
+        {/* 推荐游戏结束后展示横幅广告，避免与上一个广告连续。 */}
+        <AffiliateAd/>
         <article className={styles.gameArticle}>
-          {game.content.map((section) => <section id={section.id} key={section.id}><h2>{section.heading}</h2><ContentBlocks blocks={section.blocks.filter((block) => block.type !== "video")}/></section>)}
+          {game.content.map((section, index) => <Fragment key={section.id}><section id={section.id}><h2>{section.heading}</h2><ContentBlocks blocks={section.blocks.filter((block) => block.type !== "video")}/></section>{index === 2 && <AffiliateAd/>}{home && index === 5 && <AffiliateAd/>}</Fragment>)}
         </article>
         <GameVideoSection videos={videos} gameTitle={game.title} heading={page.videoHeading}/>
+        {home && <AffiliateAd/>}
       </div>
       <HeightAwareRail><GameGroup heading="Featured Games" games={side.featured} rail preview={preview}/><GameGroup heading="New Games" games={side.newlyAdded} rail preview={preview}/><GameReviews gameSlug={game.slug} gameTitle={game.title}/></HeightAwareRail>
     </div>

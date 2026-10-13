@@ -1,15 +1,15 @@
-import Link from "next/link";
 import { Breadcrumbs } from "@/src/components/layout/Breadcrumbs";
 import { JsonLd } from "@/src/components/seo/JsonLd";
 import { contactEmail, siteConfig } from "@/src/config/site";
 import styles from "@/src/style/site.module.css";
 import tdk from "@/seo/tdk.js";
 import { buildBreadcrumbSchema, buildWebPageSchema } from "@/src/seo/structured-data";
+import { AffiliateAd } from "@/src/components/ads/AffiliateAd";
 
 type LegalPath = "/privacy" | "/terms" | "/copyright" | "/about" | "/contact";
 type LegalKey = "privacy" | "terms" | "copyright" | "about" | "contact";
 
-const updatedAt = "2026-09-22";
+const updatedAt = "2026-10-12";
 const legalLinks: { href: LegalPath; label: string }[] = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Service" },
@@ -30,12 +30,15 @@ function Shell({ title, path, pageKey, children }: { title: string; path: LegalP
       <span className={styles.eyebrow}>Site information</span>
       <h1 className={styles.innerH1}>{title}</h1>
       <p className={styles.lede}>{description}</p>
-      <p className={styles.legalUpdated}>Last updated <time dateTime={updatedAt}>September 22, 2026</time></p>
+      <p className={styles.legalUpdated}>Last updated <time dateTime={updatedAt}>October 12, 2026</time></p>
     </header>
+    {/* Legal 正文前后各一个广告位，中间不插入标题附近。 */}
+    <AffiliateAd/>
     <article className={styles.legalContent}>{children}</article>
+    <AffiliateAd/>
     <nav className={styles.legalPolicyNav} aria-label="Site policies">
       <h2>Site policies and information</h2>
-      <ul>{legalLinks.map((item) => <li key={item.href}>{item.href === path ? <span aria-current="page">{item.label}</span> : <Link href={item.href}>{item.label}</Link>}</li>)}</ul>
+      <ul>{legalLinks.map((item) => <li key={item.href}>{item.href === path ? <span aria-current="page">{item.label}</span> : <a href={item.href}>{item.label}</a>}</li>)}</ul>
     </nav>
   </main>;
 }
@@ -53,27 +56,30 @@ export function PrivacyPage() {
       <p>If you post a review, the site sends the following information to its comment service: your star rating, comment text, optional display name, the game identifier and title, and the time associated with the resulting review. The rating, comment, display name or the fallback name “Player,” and review date are then displayed publicly on the relevant game page.</p>
       <p>Do not place an email address, real-world address, account credential, private token, precise location, financial information, medical information, or another person’s private information in a public review. A display name is optional.</p>
       <h3>Email messages</h3>
-      <p>If you copy the address from <Link href="/contact">Contact Us</Link> and send an email, your email provider and ours process the address, message, headers, attachments, and ordinary delivery data. We use that message to answer the request, investigate a correction or rights concern, maintain an appropriate record, and protect the site from abuse.</p>
+      <p>If you copy the address from <a href="/contact">Contact Us</a> and send an email, your email provider and ours process the address, message, headers, attachments, and ordinary delivery data. We use that message to answer the request, investigate a correction or rights concern, maintain an appropriate record, and protect the site from abuse.</p>
     </section>
     <section>
       <h2>3. Information handled automatically</h2>
       <p>The static hosting service and supporting network providers may receive ordinary request and security information when a page or asset is delivered. This can include an IP address, approximate network location derived from it, browser and device information, requested path, referring page, response status, and timestamps. Those records are commonly used to deliver content, diagnose failures, prevent abuse, and protect service availability.</p>
-      <p>The site code does not currently create a first-party advertising profile or operate a separate behavioral advertising tracker. We do not sell player information. If site functionality materially changes, this policy will be revised before or when the new processing begins, as appropriate.</p>
+      <p>We use Google Analytics to understand aggregate page use and third-party affiliate advertising scripts to fund the site. When those scripts load, Google and the advertising providers may receive an IP address, browser and device signals, page address, referrer, timestamps, interaction data, and identifiers stored in cookies or similar browser storage. Advertising providers may use those signals to select, deliver, measure, limit, and protect advertisements under their own privacy notices.</p>
+      <p>We do not receive a player’s full browsing profile or sell player information ourselves. We may receive aggregated analytics and advertising reports, and we may earn revenue when an advertisement is displayed, clicked, or leads to another qualifying action. Browser privacy controls, consent tools required in your region, and content blockers can limit this processing, although blocking third-party scripts can leave an empty advertisement space.</p>
     </section>
     <section>
-      <h2>4. Embedded games and YouTube videos</h2>
+      <h2>4. Embedded games, YouTube videos, and advertisements</h2>
       <p>An embedded game is not created until you select Play Now. At that point your browser contacts the game provider configured for that page. The provider can receive normal connection information and may use its own cookies, local storage, session storage, device signals, or gameplay records. We do not control a provider’s progress storage, availability, age rating, or independent data practices.</p>
       <p>Gameplay videos use YouTube’s privacy-enhanced <code>youtube-nocookie.com</code> player and do not autoplay. Loading or using that player still connects your browser to Google or YouTube infrastructure, which may process connection, device, playback, and interaction information under its own terms. You may avoid that connection by not loading or interacting with the video page content.</p>
+      <p>Visible banner placements load from HighRevenueFormat infrastructure when they approach the visible page area. A ProfitablerateCPMNetwork popunder script can initialize during a full page load and may open an advertiser destination after an eligible interaction. We do not choose each rotating creative or control the destination’s independent content, cookies, security, or data practices.</p>
     </section>
     <section>
       <h2>5. Browser storage and cookies</h2>
-      <p>The written pages do not require a first-party account cookie. Embedded games may store preferences, progress, consent state, or session information in your browser. Your browser may let you inspect, block, or clear that storage. Blocking third-party content or storage can prevent a game or video from working while leaving the written guide available.</p>
+      <p>The written pages do not require a first-party account cookie. Analytics, advertising providers, embedded games, and videos may store identifiers, preferences, progress, consent state, frequency controls, or session information in your browser. Your browser may let you inspect, block, or clear that storage. Blocking third-party content or storage can prevent analytics, advertisements, a game, or a video from working while leaving the written guide available.</p>
       <p>Private browsing, storage clearing, device changes, and provider updates can remove game progress. We cannot restore data held only by a third-party game or in your local browser.</p>
     </section>
     <section>
       <h2>6. Why information is used</h2>
       <ul>
         <li>To deliver requested pages, games, videos, and player-rating features.</li>
+        <li>To measure site use, display and limit advertisements, prevent advertising fraud, and fund publication of the guides.</li>
         <li>To publish the review you intentionally submit on the matching game page.</li>
         <li>To answer corrections, accessibility reports, privacy requests, and rights concerns.</li>
         <li>To secure the site, investigate errors, enforce reasonable use, and limit spam or abusive submissions.</li>
@@ -94,7 +100,7 @@ export function PrivacyPage() {
     <section>
       <h2>9. Your choices and privacy rights</h2>
       <p>You may browse without submitting a review, leave the game player unopened, avoid interacting with videos, use browser privacy controls, clear local storage, or contact us about information under our control. Depending on your location and applicable law, you may have rights to request access, correction, deletion, restriction, portability, or an objection to certain processing.</p>
-      <p>Send a request through the plain-text address on <Link href="/contact">Contact Us</Link>. Identify the relevant page, review display name, approximate submission date, and the action requested. We may ask for limited additional information to verify that the request concerns you. We will not ask for a password or payment to make a privacy request. You may also have the right to complain to the privacy or data-protection authority responsible for your location.</p>
+      <p>Send a request through the plain-text address on <a href="/contact">Contact Us</a>. Identify the relevant page, review display name, approximate submission date, and the action requested. We may ask for limited additional information to verify that the request concerns you. We will not ask for a password or payment to make a privacy request. You may also have the right to complain to the privacy or data-protection authority responsible for your location.</p>
     </section>
     <section>
       <h2>10. Children’s privacy</h2>
@@ -104,7 +110,7 @@ export function PrivacyPage() {
     <section>
       <h2>11. Security, policy changes, and contact</h2>
       <p>We use reasonable technical and organizational measures appropriate to the site, including restricted framing rules and limited form destinations. No internet transmission or storage system is guaranteed to be completely secure. Do not send secrets or sensitive personal information through a public review or ordinary email.</p>
-      <p>We may update this policy when features, providers, or legal obligations materially change. The revised date appears at the top. Material changes will be described clearly on the policy or relevant feature where appropriate. Privacy questions and requests can be sent using the information on <Link href="/contact">Contact Us</Link>.</p>
+      <p>We may update this policy when features, providers, or legal obligations materially change. The revised date appears at the top. Material changes will be described clearly on the policy or relevant feature where appropriate. Privacy questions and requests can be sent using the information on <a href="/contact">Contact Us</a>.</p>
     </section>
   </Shell>;
 }
@@ -113,7 +119,7 @@ export function TermsPage() {
   return <Shell title="Terms of Service" path="/terms" pageKey="terms">
     <section>
       <h2>1. Acceptance and scope</h2>
-      <p>These Terms govern access to {siteConfig.name}, its guides, game launchers, embedded videos, and player-rating features. By using the site, you agree to these Terms and the <Link href="/privacy">Privacy Policy</Link>. If you do not agree, do not use the affected feature.</p>
+      <p>These Terms govern access to {siteConfig.name}, its guides, game launchers, embedded videos, and player-rating features. By using the site, you agree to these Terms and the <a href="/privacy">Privacy Policy</a>. If you do not agree, do not use the affected feature.</p>
       <p>The site is an independent player resource operated by {siteConfig.publisherName}. It is not the official publisher, developer, or support service for Krillion, YouTube, or the additional games shown here.</p>
     </section>
     <section>
@@ -151,12 +157,13 @@ export function TermsPage() {
     </section>
     <section>
       <h2>6. Third-party services</h2>
-      <p>Games, YouTube videos, the comment service, and external infrastructure are operated by third parties. Their terms, privacy practices, content rules, availability, and technical decisions apply independently. An embed does not make us responsible for the provider’s service, advertising, data practices, purchases, user accounts, or content outside this site.</p>
+      <p>Games, YouTube videos, the comment service, analytics, affiliate advertisements, and external infrastructure are operated by third parties. Their terms, privacy practices, content rules, availability, and technical decisions apply independently. An embed or advertisement does not make us responsible for the provider’s service, advertising creative, destination, data practices, purchases, user accounts, or content outside this site.</p>
+      <p>Advertisements are visually labeled and may open a third-party destination, including a separate tab or window. An advertisement is not a recommendation, guarantee, or endorsement by {siteConfig.publisherName}. Check the destination address, product terms, age requirements, price, refund policy, and privacy notice before providing information, downloading software, creating an account, or making a purchase. We may receive affiliate revenue from qualifying impressions or actions without increasing the price shown by the advertiser.</p>
       <p>We may change, replace, or remove an embed when it becomes unsafe, unavailable, inaccurate, or inconsistent with the site’s player-first purpose.</p>
     </section>
     <section>
       <h2>7. Intellectual property</h2>
-      <p>Original guides, site copy, layout, branding, and original editorial assets are protected by applicable intellectual-property law. Game names, game code, characters, screenshots, videos, trademarks, and third-party assets remain owned by their respective rights holders. Limited quotation, linking, and other lawful uses remain subject to the <Link href="/copyright">Copyright page</Link> and applicable law.</p>
+      <p>Original guides, site copy, layout, branding, and original editorial assets are protected by applicable intellectual-property law. Game names, game code, characters, screenshots, videos, trademarks, and third-party assets remain owned by their respective rights holders. Limited quotation, linking, and other lawful uses remain subject to the <a href="/copyright">Copyright page</a> and applicable law.</p>
     </section>
     <section>
       <h2>8. Disclaimers</h2>
@@ -174,7 +181,7 @@ export function TermsPage() {
     </section>
     <section>
       <h2>11. Contact</h2>
-      <p>Questions, moderation requests, and legal notices should identify the affected page and be sent through the information on <Link href="/contact">Contact Us</Link>.</p>
+      <p>Questions, moderation requests, and legal notices should identify the affected page and be sent through the information on <a href="/contact">Contact Us</a>.</p>
     </section>
   </Shell>;
 }
@@ -207,7 +214,7 @@ export function CopyrightPage() {
         <li>A statement that the notice is accurate and that you are the owner or authorized to act for the owner.</li>
         <li>Your physical or electronic signature.</li>
       </ol>
-      <p>Send the notice to the plain-text address on <Link href="/contact">Contact Us</Link>. A complete notice lets us identify the exact material and respond efficiently. We may forward the notice to the affected contributor, service provider, or host when necessary to evaluate or process it.</p>
+      <p>Send the notice to the plain-text address on <a href="/contact">Contact Us</a>. A complete notice lets us identify the exact material and respond efficiently. We may forward the notice to the affected contributor, service provider, or host when necessary to evaluate or process it.</p>
     </section>
     <section>
       <h2>5. Review and response process</h2>
@@ -216,7 +223,7 @@ export function CopyrightPage() {
     </section>
     <section>
       <h2>6. Player comments</h2>
-      <p>Players retain ownership of original review text they submit, subject to the display and moderation license in the <Link href="/terms">Terms of Service</Link>. Do not post copied walkthroughs, leaked material, or media you do not have the right to share. Rights holders may report a public review through the same contact process.</p>
+      <p>Players retain ownership of original review text they submit, subject to the display and moderation license in the <a href="/terms">Terms of Service</a>. Do not post copied walkthroughs, leaked material, or media you do not have the right to share. Rights holders may report a public review through the same contact process.</p>
     </section>
     <section>
       <h2>7. Corrections and attribution</h2>
@@ -234,7 +241,7 @@ export function AboutPage() {
     </section>
     <section>
       <h2>Why this Krillion site exists</h2>
-      <p>{siteConfig.name} is my focused home for the seven-prompt Daily Dive and a deliberately limited group of related word, trivia, spelling, deduction, and browser games. The homepage contains the sole Krillion player. <Link href="/guides">Guides</Link> separate first-run help, scoring strategy, and technical recovery into clear tasks. <Link href="/games">More Games</Link> gives each additional title its own matching player, imagery, controls, and tested notes.</p>
+      <p>{siteConfig.name} is my focused home for the seven-prompt Daily Dive and a deliberately limited group of related word, trivia, spelling, deduction, and browser games. The homepage contains the sole Krillion player. <a href="/guides">Guides</a> separate first-run help, scoring strategy, and technical recovery into clear tasks. <a href="/games">More Games</a> gives each additional title its own matching player, imagery, controls, and tested notes.</p>
       <p>I keep the collection small enough to revisit and maintain. A game page should identify the correct build, use real play imagery, explain effective input, and remain useful after the novelty of the first launch.</p>
     </section>
     <section>
@@ -259,8 +266,8 @@ export function AboutPage() {
     </section>
     <section>
       <h2>Independence and corrections</h2>
-      <p>I work independently and am not affiliated with, sponsored by, or endorsed by the developers, publishers, video creators, or platforms referenced on this site unless a page explicitly says otherwise. The recommendations and conclusions here are not purchased rankings.</p>
-      <p>Accuracy improves when players report a reproducible difference. If a prompt, score, control, screenshot, or browser instruction no longer matches the live experience, send the page address, observed behavior, device context, and any non-sensitive evidence through <Link href="/contact">Contact Us</Link>.</p>
+      <p>I work independently and am not affiliated with, sponsored by, or endorsed by the developers, publishers, video creators, or platforms referenced on this site unless a page explicitly says otherwise. The recommendations and conclusions here are not purchased rankings. Labeled third-party advertisements help fund the site, but advertisers do not choose the games, rankings, strategies, or editorial conclusions.</p>
+      <p>Accuracy improves when players report a reproducible difference. If a prompt, score, control, screenshot, or browser instruction no longer matches the live experience, send the page address, observed behavior, device context, and any non-sensitive evidence through <a href="/contact">Contact Us</a>.</p>
     </section>
   </Shell>;
 }
@@ -281,7 +288,7 @@ export function ContactPage() {
     <section>
       <h2>What to include</h2>
       <p>A useful report includes the exact page address, the heading or feature involved, what you expected, what happened, and the date you observed it. For a technical issue, include the device type, operating system, browser, viewport or orientation, and the steps that reproduce the problem. Screenshots are useful when they do not expose private information.</p>
-      <p>For a guide correction, identify the exact statement and explain the verified behavior. For a rights notice, follow the information list on the <Link href="/copyright">Copyright page</Link>. For a privacy request, identify the review display name, relevant game page, approximate date, and requested action.</p>
+      <p>For a guide correction, identify the exact statement and explain the verified behavior. For a rights notice, follow the information list on the <a href="/copyright">Copyright page</a>. For a privacy request, identify the review display name, relevant game page, approximate date, and requested action.</p>
     </section>
     <section>
       <h2>Do not send sensitive information</h2>
