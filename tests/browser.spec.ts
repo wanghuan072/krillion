@@ -24,7 +24,17 @@ test("navigation and content layouts switch exactly at 1024 and 768",async({page
   await page.setViewportSize({width:768,height:900});await page.goto("/games/wordle-game");expect(await page.locator("main > div").first().evaluate(node=>getComputedStyle(node).display)).toBe("flex");expect(await page.locator("main > div > aside").evaluate(node=>getComputedStyle(node).position)).toBe("static");await page.goto("/guides/how-to-play-krillion");const toc=page.getByRole("navigation",{name:"On this page"});expect(await toc.locator("xpath=../..").evaluate(node=>getComputedStyle(node).display)).toBe("flex");expect(await toc.locator("xpath=..").evaluate(node=>getComputedStyle(node).position)).toBe("static")
 });
 
-test("representative pages never overflow across supported device widths",async({page})=>{const routes=["/","/games/wordle-game","/games","/guides","/guides/how-to-play-krillion","/privacy","/contact"];for(const width of [1440,1025,1024,820,769,768,430,390,360,320]){await page.setViewportSize({width,height:900});for(const route of routes){await page.goto(route);expect(await page.locator("html").evaluate(node=>node.scrollWidth-node.clientWidth),`${route} overflowed at ${width}px`).toBe(0)}}});
+test("home rail stays in document flow while game detail rails remain sticky",async({page})=>{
+  for(const width of [1440,1024,769]){
+    await page.setViewportSize({width,height:900});
+    await page.goto("/");
+    expect(await page.locator("main > div > aside").evaluate(node=>getComputedStyle(node).position)).toBe("static");
+    await page.goto("/games/wordle-game");
+    expect(await page.locator("main > div > aside").evaluate(node=>getComputedStyle(node).position)).toBe("sticky");
+  }
+});
+
+test("representative pages never overflow across supported device widths",async({page})=>{const routes=["/","/krillion-unlimited","/krillion-answers-today","/games/wordle-game","/games","/guides","/guides/how-to-play-krillion","/privacy","/contact"];for(const width of [1440,1025,1024,820,769,768,430,390,360,320]){await page.setViewportSize({width,height:900});for(const route of routes){await page.goto(route);expect(await page.locator("html").evaluate(node=>node.scrollWidth-node.clientWidth),`${route} overflowed at ${width}px`).toBe(0)}}});
 
 test("game cards use full-document navigation and old routes are gone",async({page})=>{await page.goto("/games");const card=page.getByRole("link",{name:/Wordle Game/}).first();await expect(card).toHaveAttribute("href","/games/wordle-game");const navigation=page.waitForRequest(request=>request.isNavigationRequest()&&new URL(request.url()).pathname==="/games/wordle-game");await card.click();await navigation;await expect(page).toHaveURL(/\/games\/wordle-game$/);for(const slug of ["slope","2048","curve-rush","tap-road","head-basketball","escape-road","trap-the-cat","suika-game"]){const response=await page.goto(`/games/${slug}`);expect(response?.status()).toBe(404)}});
 
@@ -43,6 +53,8 @@ test("site navigation, cards, and breadcrumbs reload the document",async({page})
   };
 
   await page.setViewportSize({width:1440,height:900});
+  await followDocumentLink("/","/krillion-unlimited","nav[aria-label='Primary navigation'] a[href='/krillion-unlimited']");
+  await followDocumentLink("/krillion-unlimited","/krillion-answers-today","nav[aria-label='Primary navigation'] a[href='/krillion-answers-today']");
   await followDocumentLink("/","/games","nav[aria-label='Primary navigation'] a[href='/games']");
   await followDocumentLink("/games","/privacy","footer a[href='/privacy']");
   await followDocumentLink("/guides/how-to-play-krillion","/","nav[aria-label='Breadcrumb'] a[href='/']");
@@ -60,13 +72,45 @@ test("site navigation, cards, and breadcrumbs reload the document",async({page})
   await expect(page.locator("script[src*='googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG']")).toHaveCount(1);
 });
 
+test("Krillion topic pages render verified mode and daily-answer content",async({page})=>{
+  await page.setViewportSize({width:1440,height:900});
+  await page.goto("/krillion-unlimited");
+  await expect(page.getByRole("heading",{level:1,name:"Krillion Unlimited"})).toBeVisible();
+  await expect(page.getByText("1,365",{exact:true})).toBeVisible();
+  await expect(page.getByRole("table")).toContainText("Endless Dive");
+  await expect(page.locator("main figure img[src^='/images/topics/krillion-unlimited-']")).toHaveCount(3);
+  await expect(page.getByRole("heading",{name:"Read the Endless Dive interface before typing"})).toBeVisible();
+  await expect(page.getByRole("navigation",{name:"Primary navigation"}).getByRole("link",{name:"Krillion Unlimited"})).toHaveAttribute("aria-current","page");
+
+  await page.goto("/krillion-answers-today");
+  await expect(page.getByRole("heading",{level:1,name:"Krillion Answers Today"})).toBeVisible();
+  await expect(page.getByText("October 20, 2026",{exact:true})).toHaveCount(1);
+  await expect(page.getByText("Daily Dive #97 · October 20, 2026",{exact:true})).toBeVisible();
+  await expect(page.getByRole("timer",{name:"Time until the next Krillion Daily Dive"})).toBeVisible();
+  await expect(page.getByRole("timer",{name:"Time until the next Krillion Daily Dive"})).toHaveText(/^(?:\d+d )?\d{2}:\d{2}:\d{2}$|^New dive available$/);
+  await expect(page.getByText("Midnight New York",{exact:true})).toBeVisible();
+  await expect(page.locator("main article[id^='question-']")).toHaveCount(7);
+  await expect(page.getByText("Top revealed answer",{exact:true})).toHaveCount(7);
+  await expect(page.getByText("Why it fits",{exact:true})).toHaveCount(7);
+  await expect(page.getByText("Watch for",{exact:true})).toHaveCount(7);
+  await expect(page.getByRole("navigation",{name:"Today’s Krillion questions"}).getByRole("link")).toHaveCount(7);
+  await expect(page.getByText("Miswak",{exact:true})).toBeVisible();
+  await expect(page.getByText("Dandy horse",{exact:true})).toBeVisible();
+  await expect(page.getByRole("heading",{name:"Use today’s answer board effectively"})).toBeVisible();
+  await expect(page.getByRole("heading",{name:"Krillion Answers Today FAQ"})).toBeVisible();
+  await expect(page.getByRole("navigation",{name:"Primary navigation"}).getByRole("link",{name:"Krillion Answers Today"})).toHaveAttribute("aria-current","page");
+
+  await page.setViewportSize({width:768,height:900});
+  expect(await page.locator("main section[aria-label^='Krillion answers']").evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(" ").length)).toBe(1);
+});
+
 test("mobile layout disables sticky, preserves section order, and defers the video player",async({page})=>{await page.setViewportSize({width:768,height:900});await page.goto("/games/wordle-game");const h=await page.locator("main h2").evaluateAll(ns=>ns.map(n=>n.textContent?.trim()));expect(h.indexOf("Recommended Games")).toBeLessThan(h.indexOf("Wordle Game rules: six rows, one hidden word"));expect(h.indexOf("Wordle Game video breakdown: clues, guesses, and the endgame")).toBeLessThan(h.indexOf("Featured Games"));expect(h.indexOf("Featured Games")).toBeLessThan(h.indexOf("New Games"));await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/']")).toHaveCount(0);const play=page.getByRole("button",{name:"Play video: How to play Wordle"});await expect(play).toBeVisible();await play.click();await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/lv4Zg-209MY']")).toHaveCount(1)});
 
 test("each game exposes its own ratings panel after New Games",async({page})=>{for(const route of ["/",...slugs.map(slug=>`/games/${slug}`)]){await page.goto(route);const headings=await page.locator("aside h2").evaluateAll(nodes=>nodes.map(node=>node.textContent?.trim()));expect(headings.indexOf("Player Ratings")).toBe(headings.indexOf("New Games")+1);await expect(page.getByRole("heading",{name:"Player Ratings"})).toHaveCount(1)}});
 
 test("fullscreen icons differ and menu closes with Escape",async({page})=>{await page.setViewportSize({width:1024,height:768});await page.goto("/");const paths=await page.locator("[title$='Fullscreen'] svg").evaluateAll(s=>s.map(x=>x.innerHTML.replace(/\s+/g," ")));expect(paths).toHaveLength(2);expect(paths[0]).not.toBe(paths[1]);const menu=page.getByRole("button",{name:"Menu"});await menu.click();await expect(menu).toHaveAttribute("aria-expanded","true");await page.keyboard.press("Escape");await expect(menu).toHaveAttribute("aria-expanded","false")});
 
-test("Guide and Legal routes render without forms",async({page})=>{for(const route of ["/guides","/guides/how-to-play-krillion","/guides/krillion-scoring-and-rare-answers","/guides/krillion-loading-and-input-help","/privacy","/terms","/copyright","/about","/contact"]){const response=await page.goto(route);expect(response?.status()).toBe(200);await expect(page.locator("h1")).toHaveCount(1);await expect(page.locator("form,input,textarea")).toHaveCount(0)}});
+test("Topic, Guide, and Legal routes render without forms",async({page})=>{for(const route of ["/krillion-unlimited","/krillion-answers-today","/guides","/guides/how-to-play-krillion","/guides/krillion-scoring-and-rare-answers","/guides/krillion-loading-and-input-help","/privacy","/terms","/copyright","/about","/contact"]){const response=await page.goto(route);expect(response?.status()).toBe(200);await expect(page.locator("h1")).toHaveCount(1);await expect(page.locator("form,input,textarea")).toHaveCount(0)}});
 
 test("Guide index uses gameplay cards and visible breadcrumbs",async({page})=>{await page.setViewportSize({width:1464,height:900});await page.goto("/guides");await expect(page.getByRole("navigation",{name:"Breadcrumb"})).toContainText("Home");const cards=page.locator("main a[href^='/guides/']");await expect(cards).toHaveCount(3);expect(await cards.locator("img").evaluateAll(images=>images.map(image=>image.getAttribute("src")))).toEqual(["/images/games/krillion/gameplay-1.webp","/images/games/krillion/gameplay-2.webp","/images/games/krillion/gameplay-3.webp"]);expect(await cards.first().locator("xpath=..").evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(" ").length)).toBe(3);await page.setViewportSize({width:1024,height:900});expect(await cards.first().locator("xpath=..").evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(" ").length)).toBe(2);await page.setViewportSize({width:768,height:900});expect(await cards.first().locator("xpath=..").evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(" ").length)).toBe(1);expect(await page.locator("html").evaluate(node=>node.scrollWidth-node.clientWidth)).toBe(0)});
 

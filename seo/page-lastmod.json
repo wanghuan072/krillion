@@ -3,8 +3,18 @@
   "staticPages": {
     "/": {
       "pageId": "home",
-      "fingerprint": "7ac07a8ebb64bd22b00ecbc2886d0ae37347da37d1d5ad8e07ec1ed9ddeceb2b",
-      "lastModified": "2026-10-13"
+      "fingerprint": "8cfc71d3f6448861619f77061dcf4da111debad639e27fd138e28cfa86874024",
+      "lastModified": "2026-10-20"
+    },
+    "/krillion-unlimited": {
+      "pageId": "krillion-unlimited",
+      "fingerprint": "44816272f42f4fe32259d6eba252f0b63decd5209541d5363e3eab6045347792",
+      "lastModified": "2026-10-20"
+    },
+    "/krillion-answers-today": {
+      "pageId": "krillion-answers-today",
+      "fingerprint": "0330b8dc1dda757b1111e3fde7a30a22e14807d5cc325075d62a0d10f13dc9d8",
+      "lastModified": "2026-10-20"
     },
     "/games": {
       "pageId": "games-index",
@@ -45,43 +55,43 @@
   "games": {
     "wordle-game": {
       "slug": "wordle-game",
-      "fingerprint": "b017b6e0127193f8dd138d0221ddefad2878577ad7fa65f991b90b9edb406ab6",
-      "lastModified": "2026-10-13"
+      "fingerprint": "e0d317179760ca2157b53727e10488bea039141dadd5d4f6927f08e15f0dfd67",
+      "lastModified": "2026-10-20"
     },
     "letter-boxed": {
       "slug": "letter-boxed",
-      "fingerprint": "e4683c8953fb76d86b282d5ff070d8d3be598c7bfe18f81c6f63b5081b628877",
-      "lastModified": "2026-10-13"
+      "fingerprint": "23135a8b22c61a40436014c6fd8dbd2c82576d13e65b4b0ac61d0f8d264a3570",
+      "lastModified": "2026-10-20"
     },
     "growdle": {
       "slug": "growdle",
-      "fingerprint": "25fa6de41b7cd89b81893876fad98d82c5d08cfd4ac97d1c021d8b4b70c37c29",
-      "lastModified": "2026-10-13"
+      "fingerprint": "0eb55ccf568b05888721d831011304b085015f0616c15e46816b0b95877a9b57",
+      "lastModified": "2026-10-20"
     },
     "quardle": {
       "slug": "quardle",
-      "fingerprint": "e652714451742100bffe4043ee7b8af356afafbb695b560782596b11656cff7f",
-      "lastModified": "2026-10-13"
+      "fingerprint": "b088216d99176accb8eef03579cd78fad0f0af4b78e1478b1b9199ab66e97132",
+      "lastModified": "2026-10-20"
     },
     "waffle": {
       "slug": "waffle",
-      "fingerprint": "31efc35e948e3687f2c91448b489c88952ba018ffe0f66a983ef9afc5b60c45d",
-      "lastModified": "2026-10-13"
+      "fingerprint": "6a521fb7c3b0f66ca79829fd21162196003b67490a5eabc6636edecb79c5c0f0",
+      "lastModified": "2026-10-20"
     },
     "fun-typing-io": {
       "slug": "fun-typing-io",
-      "fingerprint": "09ca08085d1cd4ba045124e7e26ebd5c3e261ca0676b495770ce602ebeebc624",
-      "lastModified": "2026-10-13"
+      "fingerprint": "b1c696fd82aa358453950cf489c8822ce963f5e49e0ed357f4522a24523d5d63",
+      "lastModified": "2026-10-20"
     },
     "spelling-bee": {
       "slug": "spelling-bee",
-      "fingerprint": "4d6f9a5db08525385b23d59674e4ab6da21a3c2e241de22bf4e290aa64fe5f00",
-      "lastModified": "2026-10-13"
+      "fingerprint": "0a2a3bbbf57673f785c5a8bee669561957266380b798dcc03320dabf210f119d",
+      "lastModified": "2026-10-20"
     },
     "cheat-or-repeat": {
       "slug": "cheat-or-repeat",
-      "fingerprint": "0436bc7b5ed3ecd405d4311fd103733039c62bc2e74b36502fd5abf9dd8e8984",
-      "lastModified": "2026-10-13"
+      "fingerprint": "1810bd8c561a9a95605c5a6d0c4ab31f9de5fb219c5eceec19149945a62b9681",
+      "lastModified": "2026-10-20"
     }
   },
   "guides": {

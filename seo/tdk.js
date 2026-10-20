@@ -1,8 +1,26 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const mainGame = require("../data/games/main-game.json");
+const dailyAnswers = require("../data/topics/krillion-answers-today.json");
+
+const dailyAnswersDate = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: dailyAnswers.timezone,
+}).format(new Date(`${dailyAnswers.date}T12:00:00Z`));
 
 const staticTdk = {
   home: mainGame.seo,
+  "krillion-unlimited": {
+    title: "Krillion Unlimited: Endless Dive Mode Explained",
+    description: "Learn how Krillion Unlimited works in Endless Dive mode, including seven-question runs, the current question pool, replay flow, and focused practice strategy.",
+    keywords: ["Krillion Unlimited", "Krillion Endless Dive", "unlimited Krillion", "Krillion endless mode"]
+  },
+  "krillion-answers-today": {
+    title: `Krillion Answers Today: ${dailyAnswersDate}`,
+    description: "See all seven Krillion Daily Dive questions for October 20, 2026, with revealed answer scores, rarity tiers, reset timing, and practical picks for every round.",
+    keywords: ["Krillion answers today", "today's Krillion answers", "Krillion Daily Dive answers", "Krillion daily questions"]
+  },
   "games-index": {
     title: "Games Like Krillion: Word, Trivia & Puzzle Games",
     description: "Play eight games like Krillion, including word, trivia, spelling, typing, and deduction challenges, with instant browser play and detailed game guides.",

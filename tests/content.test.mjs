@@ -119,7 +119,7 @@ test("Guides have distinct long-form structures, exact media plans, and valid sc
   assert.match(scoringText,/multiplied by ten/i);
 });
 test("sitemap state covers every published route with stable fingerprints",()=>{
-  assert.deepEqual(Object.keys(lastmod.staticPages),["/","/games","/guides","/privacy","/terms","/copyright","/about","/contact"]);
+  assert.deepEqual(Object.keys(lastmod.staticPages),["/","/krillion-unlimited","/krillion-answers-today","/games","/guides","/privacy","/terms","/copyright","/about","/contact"]);
   assert.deepEqual(Object.keys(lastmod.games),games.filter((game)=>game.status==="published").map((game)=>game.id));
   assert.deepEqual(Object.keys(lastmod.guides),guides.map((guide)=>guide.id));
   for(const record of [...Object.values(lastmod.staticPages),...Object.values(lastmod.games),...Object.values(lastmod.guides)]){
@@ -134,6 +134,27 @@ test("Games index TDK targets the Games Like Krillion long-tail keyword",()=>{
   assert.ok(metadata.title.length>=40&&metadata.title.length<=60);
   assert.ok(metadata.description.length>=140&&metadata.description.length<=160);
   assert.ok(metadata.keywords.includes("games like Krillion"));
+});
+test("topic pages have valid TDK and the current seven-question answer set",()=>{
+  for(const key of ["krillion-unlimited","krillion-answers-today"]){
+    assert.ok(tdk[key].title.length>=40&&tdk[key].title.length<=60,`${key} title length`);
+    assert.ok(tdk[key].description.length>=140&&tdk[key].description.length<=160,`${key} description length`);
+  }
+  const answers=JSON.parse(fs.readFileSync("data/topics/krillion-answers-today.json","utf8"));
+  assert.match(answers.date,/^\d{4}-\d{2}-\d{2}$/);
+  assert.equal(answers.timezone,"America/New_York");
+  assert.equal(answers.diveNumber,97);
+  assert.equal(answers.answerSeconds,25);
+  assert.equal(answers.questions.reduce((total,question)=>total+question.answerCount,0),answers.totalAcceptedAnswers);
+  assert.equal(answers.questions.length,7);
+  assert.equal(new Set(answers.questions.map((question)=>question.id)).size,7);
+  for(const question of answers.questions){
+    assert.ok(question.category&&question.prompt&&question.hint&&question.answerCount&&question.topAnswer?.text&&question.topAnswer?.score&&question.topAnswer?.tier&&question.topAnswer?.note&&question.watchFor&&question.answers.length>=5&&question.note);
+    assert.ok(question.answers.every((answer)=>answer.text&&answer.tier&&[10,15,30,60,85,100].includes(answer.score)));
+  }
+  for(const image of ["krillion-unlimited-start.webp","krillion-unlimited-prompt.webp","krillion-unlimited-themes.webp"]){
+    assert.ok(fs.existsSync(`public/images/topics/${image}`),`${image} should exist`);
+  }
 });
 test("the shared social image is a 1200 by 630 PNG",()=>{
   const image=fs.readFileSync("public/images/og-image.png");
@@ -169,7 +190,7 @@ test("framework starter icons are not shipped",()=>{
 });
 test("the player-facing README links every navigation page",()=>{
   const readme=fs.readFileSync("README.md","utf8");
-  for(const path of ["/","/guides","/games","/privacy","/terms","/copyright","/about","/contact"]){
+  for(const path of ["/","/krillion-unlimited","/krillion-answers-today","/guides","/games","/privacy","/terms","/copyright","/about","/contact"]){
     const url=`https://krilliongames.com${path}`;
     assert.ok(readme.includes(`](${url})`),`README should link ${url}`);
   }

@@ -21,6 +21,8 @@ const gamePageSource=fs.readFileSync("src/components/game/GamePageShell.tsx","ut
 const guidePageSource=fs.readFileSync("src/components/guides/GuideViews.tsx","utf8");
 const gamesIndexSource=fs.readFileSync("app/games/page.tsx","utf8");
 const guidesIndexSource=fs.readFileSync("app/guides/page.tsx","utf8");
+const topicPageSource=fs.readFileSync("src/components/topics/KrillionTopicPages.tsx","utf8");
+const dailyAnswers=JSON.parse(fs.readFileSync("data/topics/krillion-answers-today.json","utf8"));
 
 const retain=(record,fingerprint,{legacy=[]}={})=>({
   fingerprint,
@@ -36,6 +38,8 @@ const legalSection=(name)=>{
 
 const staticInputs={
   "/":{value:{main,homeCards:games.map((game)=>({id:game.id,title:game.title,shortDescription:game.shortDescription,image:game.image,publishedAt:game.publishedAt,flags:game.flags})),reviewSource,sharedSeoSource,gamePageSource},pageId:"home"},
+  "/krillion-unlimited":{value:{tdk:tdk["krillion-unlimited"],topicPageSource,sharedSeoSource},pageId:"krillion-unlimited"},
+  "/krillion-answers-today":{value:{tdk:tdk["krillion-answers-today"],dailyAnswers,topicPageSource,sharedSeoSource},pageId:"krillion-answers-today"},
   "/games":{value:{tdk:tdk["games-index"],cards:games.map((game)=>({id:game.id,title:game.title,shortDescription:game.shortDescription,image:game.image,publishedAt:game.publishedAt})),sharedSeoSource,gamesIndexSource},pageId:"games-index"},
   "/guides":{value:{tdk:tdk["guides-index"],cards:guides.map((guide)=>({id:guide.id,title:guide.title,summary:guide.summary,cover:guide.cover})),sharedSeoSource,guidesIndexSource},pageId:"guides-index"},
   "/privacy":{value:{tdk:tdk.privacy,shared:legalShared,page:legalSection("PrivacyPage"),sharedSeoSource},pageId:"privacy",legacy:hash({tdk:tdk.privacy,legalSource})},

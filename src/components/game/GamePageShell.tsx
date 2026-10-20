@@ -51,7 +51,7 @@ export function GamePageShell({ game, home = false, preview = false }: { game: G
         <GameVideoSection videos={videos} gameTitle={game.title} heading={page.videoHeading}/>
         {home && <AffiliateAd/>}
       </div>
-      <HeightAwareRail><GameGroup heading="Featured Games" games={side.featured} rail preview={preview}/><GameGroup heading="New Games" games={side.newlyAdded} rail preview={preview}/><GameReviews gameSlug={game.slug} gameTitle={game.title}/></HeightAwareRail>
+      <HeightAwareRail sticky={!home}><GameGroup heading="Featured Games" games={side.featured} rail preview={preview}/><GameGroup heading="New Games" games={side.newlyAdded} rail preview={preview}/><GameReviews gameSlug={game.slug} gameTitle={game.title}/></HeightAwareRail>
     </div>
   </main>;
 }

@@ -9,8 +9,10 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   getMainGame();
   const staticPages = [
-    { path: "/games", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/krillion-unlimited", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/krillion-answers-today", changeFrequency: "daily", priority: 0.9 },
     { path: "/guides", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/games", changeFrequency: "weekly", priority: 0.9 },
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
     { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
     { path: "/copyright", changeFrequency: "yearly", priority: 0.3 },

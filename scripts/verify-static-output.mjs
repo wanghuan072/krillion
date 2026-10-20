@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { indexNowKey, indexNowKeyFile } from "../indexnow/config.mjs";
 
-const required = ["out/index.html", "out/games.html", "out/guides.html", "out/sitemap.xml", "out/robots.txt", "out/_headers", `out/${indexNowKeyFile}`];
+const required = ["out/index.html", "out/krillion-unlimited.html", "out/krillion-answers-today.html", "out/games.html", "out/guides.html", "out/sitemap.xml", "out/robots.txt", "out/_headers", `out/${indexNowKeyFile}`];
 const missing = required.filter((file) => !fs.existsSync(file));
 if (missing.length) {
   console.error(`Missing static outputs: ${missing.join(", ")}`);
@@ -25,7 +25,7 @@ if (!origin) {
   process.exit(1);
 }
 
-const staticPaths = ["/", "/games", "/guides", "/privacy", "/terms", "/copyright", "/about", "/contact"];
+const staticPaths = ["/", "/krillion-unlimited", "/krillion-answers-today", "/guides", "/games", "/privacy", "/terms", "/copyright", "/about", "/contact"];
 const expectedUrls = [
   ...staticPaths.map((route) => `${origin}${route}`),
   ...games.map((game) => `${origin}/games/${game.slug}`),

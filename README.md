@@ -48,6 +48,14 @@ The [Guides hub](https://krilliongames.com/guides) collects focused help for dif
 - [Krillion Scoring and Rare Answers](https://krilliongames.com/guides/krillion-scoring-and-rare-answers) explains the rarity tiers, depth conversion, category boundaries, answer selection, and ways to move beyond the crowd without gambling on invalid responses.
 - [Krillion Loading and Input Help](https://krilliongames.com/guides/krillion-loading-and-input-help) covers player loading, keyboard focus, mobile input, sound, page sizing, fullscreen controls, privacy filters, retries, and other common browser problems.
 
+## Krillion Unlimited
+
+[Krillion Unlimited](https://krilliongames.com/krillion-unlimited) explains the official Endless Dive mode: seven mixed-topic prompts per run, a current pool of 1,365 questions, immediate replay, and no daily limit. The page compares Endless Dive with the shared Daily Dive and gives players a structured practice routine for category reading, safe-answer selection, spelling, and timed recall.
+
+## Krillion Answers Today
+
+[Krillion Answers Today](https://krilliongames.com/krillion-answers-today) lists the current original Daily Dive prompts, revealed answer scores and rarity tiers, practical fallbacks, and prompt-specific cautions. The displayed New York game date makes it clear which daily set is being covered.
+
 ## Games like Krillion
 
 The [More Games page](https://krilliongames.com/games) features word, spelling, typing, deduction, and trivia games that appeal to similar skills. Every entry has its own playable page and a detailed guide covering controls, rules, mistakes, strategies, mobile behavior, screenshots, and a representative video.
@@ -111,9 +119,11 @@ No. Krillion Games is an independent, player-focused resource. Game names, game 
 
 ## Explore every site page
 
-The main navigation provides three destinations:
+The main navigation provides five destinations:
 
 - [Home](https://krilliongames.com/) — play Krillion and read the complete Daily Dive walkthrough, scoring reference, strategy notes, examples, FAQ, and videos.
+- [Krillion Unlimited](https://krilliongames.com/krillion-unlimited) — understand Endless Dive, compare it with the daily set, and build a focused unlimited-mode practice routine.
+- [Krillion Answers Today](https://krilliongames.com/krillion-answers-today) — check the current seven Daily Dive prompts, revealed scores, rarity tiers, practical fallbacks, and prompt-specific cautions.
 - [Guides](https://krilliongames.com/guides) — find focused walkthroughs for learning the rules, improving rare-answer decisions, and solving technical problems.
 - [More Games](https://krilliongames.com/games) — browse related playable word, trivia, spelling, typing, and deduction games.
 
