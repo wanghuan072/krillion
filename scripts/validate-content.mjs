@@ -1,9 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { readAnswerArchive } from "./lib/daily-answers.mjs";
 
 const mode = process.argv[2] ?? "dev";
 const root = process.cwd();
+const answerArchive = readAnswerArchive(root);
+if (!answerArchive.length) throw new Error("At least one dated Daily Dive is required");
 const read = (file) => JSON.parse(fs.readFileSync(path.join(root, file), "utf8"));
 const main = read("data/games/main-game.json");
 const games = read("data/games/games.json");

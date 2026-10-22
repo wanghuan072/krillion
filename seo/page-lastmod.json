@@ -1,114 +1,149 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
+  "fingerprintVersion": "rendered-content-v1",
   "staticPages": {
     "/": {
       "pageId": "home",
-      "fingerprint": "8cfc71d3f6448861619f77061dcf4da111debad639e27fd138e28cfa86874024",
-      "lastModified": "2026-10-20"
+      "fingerprint": "edb9df980a39ed4210e10eda57a62b380d3e75aa374cd3758275f71be6745bb9",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "/krillion-unlimited": {
       "pageId": "krillion-unlimited",
-      "fingerprint": "44816272f42f4fe32259d6eba252f0b63decd5209541d5363e3eab6045347792",
-      "lastModified": "2026-10-20"
+      "fingerprint": "37440cd7281c07bb541a66b35896351f5cdb6b1963d6a4ed09546b1e89edb475",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "/krillion-answers-today": {
       "pageId": "krillion-answers-today",
-      "fingerprint": "0330b8dc1dda757b1111e3fde7a30a22e14807d5cc325075d62a0d10f13dc9d8",
-      "lastModified": "2026-10-20"
+      "fingerprint": "42a2b5521d1d7a4d3b5709743f810724bc35f231b636070e7acf453ef34591ec",
+      "lastModified": "2026-10-22T00:59:14.185Z",
+      "indexable": true
     },
     "/games": {
       "pageId": "games-index",
-      "fingerprint": "f99496c6df1611d750dacb7bfb8a3add38d6d7a3799bac77fb55e99dc9b22343",
-      "lastModified": "2026-10-13"
+      "fingerprint": "c665213bd0309692263f7fc1c02250f37ac66eb0ca06d66add49e8f9ba5e6288",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "/guides": {
       "pageId": "guides-index",
-      "fingerprint": "d7977afbd64f5b1ba2ba4aab5e6981c78567e9929a66cd5bf7a199cc03d25982",
-      "lastModified": "2026-10-13"
+      "fingerprint": "b050ea305dbd0eaab934de80d3edc7264fcef85dca38d1242836cc7560fde00f",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "/privacy": {
       "pageId": "privacy",
-      "fingerprint": "ec51c2f11a4882c1cfd697666042c85855abd4debf610953fc2cf364923a5bab",
-      "lastModified": "2026-10-13"
+      "fingerprint": "eebe01554838220ff76b376c1c7d6f177d50e52ba8a73407027fa562bcc957f9",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "/terms": {
       "pageId": "terms",
-      "fingerprint": "30ce0aff2d7a1f14dd31e9c023267770e8b62612437608fb133687712e26e88c",
-      "lastModified": "2026-10-13"
+      "fingerprint": "87f447e04da30eadcd879102cfc9500197dea18ef8f84988077a7c321c9947a1",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "/copyright": {
       "pageId": "copyright",
-      "fingerprint": "07fd24317f30c14bc460b601667403b66176eb0009f8ff7b15aa6de066f83856",
-      "lastModified": "2026-10-13"
+      "fingerprint": "b534c6ca5fc01d3a6f9f2c858a0905be4f389029ea2bfae3adbe4d770db3817b",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "/about": {
       "pageId": "about",
-      "fingerprint": "5e47af01dfe40ccde25fd02dc8dd2b55017c373c602426fff39e6921062cf21b",
-      "lastModified": "2026-10-13"
+      "fingerprint": "d6f857122ddc7573d106855276f99fb10b38f4a362798bfa455f18c366aa9c9f",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "/contact": {
       "pageId": "contact",
-      "fingerprint": "bb0a177b6388d7eac7aa5a6ea2db5a58c4742c081c1af2774b790008a5db58a1",
-      "lastModified": "2026-10-13"
+      "fingerprint": "cde0540d00a79e9543eaa702b165d342ac111c659d51374dd6c67e9250f83558",
+      "lastModified": "2026-10-13",
+      "indexable": true
     }
   },
   "games": {
     "wordle-game": {
       "slug": "wordle-game",
-      "fingerprint": "e0d317179760ca2157b53727e10488bea039141dadd5d4f6927f08e15f0dfd67",
-      "lastModified": "2026-10-20"
+      "fingerprint": "ca8b64773238a313663f48bafe8c17bd7dd34a2d0f1684581590beccd9fea5c4",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "letter-boxed": {
       "slug": "letter-boxed",
-      "fingerprint": "23135a8b22c61a40436014c6fd8dbd2c82576d13e65b4b0ac61d0f8d264a3570",
-      "lastModified": "2026-10-20"
+      "fingerprint": "5d73f920c444178ed8db19182d1bf15c3b6788d4d6d977e2efdcd12bef3d8a0c",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "growdle": {
       "slug": "growdle",
-      "fingerprint": "0eb55ccf568b05888721d831011304b085015f0616c15e46816b0b95877a9b57",
-      "lastModified": "2026-10-20"
+      "fingerprint": "89b8baedc09f750ca4ac9b3e1a0123b755b17fead7704d5a7fe794c340f26ec9",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "quardle": {
       "slug": "quardle",
-      "fingerprint": "b088216d99176accb8eef03579cd78fad0f0af4b78e1478b1b9199ab66e97132",
-      "lastModified": "2026-10-20"
+      "fingerprint": "edeb3a8b68ec1c29a8ffe3de484412190761d66056ab420acbbd4bdf8f7ca67a",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "waffle": {
       "slug": "waffle",
-      "fingerprint": "6a521fb7c3b0f66ca79829fd21162196003b67490a5eabc6636edecb79c5c0f0",
-      "lastModified": "2026-10-20"
+      "fingerprint": "dab90acf92ff56cea01db256f2b27d7f9f5888985a5eb1b6650e535ddc0baa56",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "fun-typing-io": {
       "slug": "fun-typing-io",
-      "fingerprint": "b1c696fd82aa358453950cf489c8822ce963f5e49e0ed357f4522a24523d5d63",
-      "lastModified": "2026-10-20"
+      "fingerprint": "182371f02763182919871bf66046ba9d93ab6613f81c05202d55de8d11fa6fe1",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "spelling-bee": {
       "slug": "spelling-bee",
-      "fingerprint": "0a2a3bbbf57673f785c5a8bee669561957266380b798dcc03320dabf210f119d",
-      "lastModified": "2026-10-20"
+      "fingerprint": "5633e00546e8d9d89c8c3c7f40e367fd68f613f060f45a83988a00fab9fe8719",
+      "lastModified": "2026-10-20",
+      "indexable": true
     },
     "cheat-or-repeat": {
       "slug": "cheat-or-repeat",
-      "fingerprint": "1810bd8c561a9a95605c5a6d0c4ab31f9de5fb219c5eceec19149945a62b9681",
-      "lastModified": "2026-10-20"
+      "fingerprint": "e88d6982f43bdeab08c1bd955bae14b0a74f2454e0a156dcae14c4093dc4226a",
+      "lastModified": "2026-10-20",
+      "indexable": true
     }
   },
   "guides": {
     "krillion-how-to-play": {
       "slug": "how-to-play-krillion",
-      "fingerprint": "1f26f448bea4e58f9c332820cc8c0f6461c2e13ca4de252e2fe16dc39ed65886",
-      "lastModified": "2026-10-13"
+      "fingerprint": "e7a083316fe1ce6a207cfad00dceb6e5dc861ade19d7a99ff1d5a1a053e5e4d6",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "krillion-loading-input-help": {
       "slug": "krillion-loading-and-input-help",
-      "fingerprint": "b19bb7954d13137f73eab773753f51a150ada4b20b21f87a181dfa208263d387",
-      "lastModified": "2026-10-13"
+      "fingerprint": "a3e60c492ed3bf444d549bf75d615e24b64ebf2a96e5c454a93cd99a95ed393b",
+      "lastModified": "2026-10-13",
+      "indexable": true
     },
     "krillion-scoring-rare-answers": {
       "slug": "krillion-scoring-and-rare-answers",
-      "fingerprint": "f8be0c0c3bf86e9f117e292ad5585592f979df534100aed1c2758415e16d2a5d",
-      "lastModified": "2026-10-13"
+      "fingerprint": "210384df6b5e052d659f6599249987dc527bc001022a37af8de104cc146cfea8",
+      "lastModified": "2026-10-13",
+      "indexable": true
     }
-  }
+  },
+  "answers": {
+    "2026-10-21": {
+      "fingerprint": "1f9c7292bf8e747ae58de22eddf93b9784e1b60a84c9be18f4b1aa77f7d78f70",
+      "lastModified": "2026-10-22T00:59:14.185Z",
+      "indexable": true
+    },
+    "2026-10-20": {
+      "fingerprint": "afe1bf4931629688af2f1bf36682a964e25af3798ef4dc5693d8ded421237b32",
+      "lastModified": "2026-10-21",
+      "indexable": true
+    }
+  },
+  "deletedAt": {}
 }

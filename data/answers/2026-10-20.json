@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-20",
+  "timezone": "America/New_York",
+  "diveNumber": 97,
+  "coverage": "selected",
+  "publishedAt": "2026-10-21T07:19:32.774Z",
+  "updatedAt": "2026-10-21T07:19:32.774Z",
+  "source": {
+    "kind": "preserved"
+  },
+  "totalAcceptedAnswers": 16717,
+  "seo": {
+    "title": "Krillion Answers for October 20, 2026 | Dive #97",
+    "description": "Explore Krillion answers for October 20, 2026, Dive #97, with seven daily questions, recorded scores, rarity tiers, and answer lists for every round.",
+    "keywords": [
+      "Krillion answers",
+      "Krillion answers October 20, 2026",
+      "Krillion Dive 97",
+      "Krillion daily answers"
+    ]
+  },
+  "questions": [
+    {
+      "id": "daily-2026-10-20-01",
+      "prompt": "Name something sold in stick form (like deodorant)",
+      "answerCount": 382,
+      "answers": [
+        {
+          "text": "Miswak",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "A miswak is a natural tooth-cleaning twig, so the object itself is sold and used in stick form."
+        },
+        {
+          "text": "Spurtle",
+          "score": 100,
+          "tier": "One in a Krillion"
+        },
+        {
+          "text": "Achiras",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Anti-chafe stick",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "Breadsticks",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "Butter",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "Think beyond toiletries: foods, craft materials, cosmetics, and traditional tools can all be sold as sticks.",
+      "explanation": "Miswak and spurtle reached the 100-point tier in this revealed set. Deodorant fits, but the example in the prompt makes it an obvious low-scoring choice.",
+      "watchFor": "The answer must commonly be sold as a stick, not merely be long or stick-shaped after it is prepared."
+    },
+    {
+      "id": "daily-2026-10-20-02",
+      "prompt": "Name a food made by mashing or puréeing (like guacamole)",
+      "answerCount": 1132,
+      "answers": [
+        {
+          "text": "Moretum",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "Moretum is an ancient Roman herb-and-cheese spread prepared by grinding its ingredients together."
+        },
+        {
+          "text": "'Nduja",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Aam panna",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Açaí bowl",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "Baba ganoush",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "Applesauce",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "Look across dips, fruit preparations, vegetable dishes, and regional foods produced by pounding, mashing, or blending.",
+      "explanation": "The accepted pool is very large. A familiar answer is safer to spell, while regional preparations create more high-scoring possibilities.",
+      "watchFor": "Choose a finished food whose preparation genuinely involves mashing or puréeing; a dish merely served with a mashed ingredient may not qualify."
+    },
+    {
+      "id": "daily-2026-10-20-03",
+      "prompt": "Name a country with the letter D in its name (like Canada)",
+      "answerCount": 50,
+      "answers": [
+        {
+          "text": "Saint Kitts and Nevis",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "The conjunction “and” supplies the required letter while the full sovereign-state name remains a clean match."
+        },
+        {
+          "text": "Marshall Islands",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Saint Vincent and the Grenadines",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Andorra",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "Bangladesh",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "Canada",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "Check the complete English country name. Multi-word Caribbean and Pacific states offer less obvious choices.",
+      "explanation": "There are only 50 recorded answers for this prompt, so the category boundary is much tighter than the food or mammal rounds.",
+      "watchFor": "Use a country rather than a city, territory, dependency, continent, or historical state, and enter the standard English name."
+    },
+    {
+      "id": "daily-2026-10-20-04",
+      "prompt": "Name a device that blows air",
+      "answerCount": 337,
+      "answers": [
+        {
+          "text": "Winnowing machine",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "A winnowing machine uses a directed airflow to separate lighter chaff from grain."
+        },
+        {
+          "text": "4D theater air jet",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Active chilled beam",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Accordion",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "Air compressor",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "Fan",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "Consider household appliances, industrial machinery, entertainment equipment, and devices used to move or direct air.",
+      "explanation": "Fan and hair dryer are easy fallbacks, but the revealed list rewards specialized equipment much more heavily.",
+      "watchFor": "The named object should function as a device and actively expel or direct air, rather than merely contain air or move because of wind."
+    },
+    {
+      "id": "daily-2026-10-20-05",
+      "prompt": "Name a mammal smaller than a house cat",
+      "answerCount": 6514,
+      "answers": [
+        {
+          "text": "Hero shrew",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "The hero shrew is a small Central African mammal known for its unusually reinforced spine."
+        },
+        {
+          "text": "Kha-nyou",
+          "score": 100,
+          "tier": "One in a Krillion"
+        },
+        {
+          "text": "Aba Horseshoe Bat",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "African pygmy hedgehog",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "Chinchilla",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "Bat",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "Small bats, rodents, shrews, mustelids, and compact marsupials offer many possible answers. Check the typical adult size.",
+      "explanation": "With 6,514 recorded answers, this round offers the most room to trade familiarity for rarity without leaving the category.",
+      "watchFor": "Use a mammal whose typical adult size is below that of a domestic cat; baby forms of normally larger species are weak choices."
+    },
+    {
+      "id": "daily-2026-10-20-06",
+      "prompt": "Name an internet service provider",
+      "answerCount": 8156,
+      "answers": [
+        {
+          "text": "The World (ISP)",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "The World began offering dial-up internet access to the public from Brookline, Massachusetts, in 1989."
+        },
+        {
+          "text": "012 Smile",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "019 Mobile",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "Adelphia",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "AOL",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "AT&T",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "Recall regional broadband companies, former dial-up brands, mobile carriers, and providers outside your home country.",
+      "explanation": "This is the day’s largest pool. Regional and discontinued providers dominate the higher tiers, while major national brands remain reliable low-tier answers.",
+      "watchFor": "Name a company that actually provides internet access, not a search engine, browser, website, router brand, or streaming service."
+    },
+    {
+      "id": "daily-2026-10-20-07",
+      "prompt": "Name something that has a saddle",
+      "answerCount": 146,
+      "answers": [
+        {
+          "text": "Dandy horse",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "The dandy horse was an early two-wheeled running machine with a saddle but no pedals."
+        },
+        {
+          "text": "Earthworm",
+          "score": 100,
+          "tier": "One in a Krillion"
+        },
+        {
+          "text": "Aerial tramway",
+          "score": 85,
+          "tier": "Deep Cut"
+        },
+        {
+          "text": "ATV",
+          "score": 60,
+          "tier": "Rare"
+        },
+        {
+          "text": "Camel",
+          "score": 30,
+          "tier": "Schooler"
+        },
+        {
+          "text": "Bicycle",
+          "score": 10,
+          "tier": "Plankton"
+        }
+      ],
+      "hint": "A saddle may be a seat, a structural shape, a named body feature, or a component on an instrument or machine.",
+      "explanation": "Earthworm is accepted because its clitellum is commonly called a saddle. That broader meaning is what makes the final round less obvious than it first appears.",
+      "watchFor": "The connection must use the word saddle in a recognized sense. A vague resemblance to a seat or curve is not enough."
+    }
+  ]
+}

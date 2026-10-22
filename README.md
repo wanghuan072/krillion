@@ -54,7 +54,9 @@ The [Guides hub](https://krilliongames.com/guides) collects focused help for dif
 
 ## Krillion Answers Today
 
-[Krillion Answers Today](https://krilliongames.com/krillion-answers-today) lists the current original Daily Dive prompts, revealed answer scores and rarity tiers, practical fallbacks, and prompt-specific cautions. The displayed New York game date makes it clear which daily set is being covered.
+[Krillion Answers Today](https://krilliongames.com/krillion-answers-today) is the date-first answer archive. Open the latest available Daily Dive or choose an earlier date to see its seven questions, answer lists, rarity tiers, and scores. The latest entry keeps its original game date when a new day's answers are not available yet.
+
+Each daily page has a permanent address. The [October 21, 2026 answers](https://krilliongames.com/krillion-answers-today/2026-10-21) contain the complete answer lists for Dive #98, grouped into expandable score tiers. The [October 20, 2026 answers](https://krilliongames.com/krillion-answers-today/2026-10-20) preserve selected answers for Dive #97. These pages cover the original Daily Dive at Krillion.io; independent practice games may use different questions and answers.
 
 ## Games like Krillion
 
@@ -123,7 +125,7 @@ The main navigation provides five destinations:
 
 - [Home](https://krilliongames.com/) — play Krillion and read the complete Daily Dive walkthrough, scoring reference, strategy notes, examples, FAQ, and videos.
 - [Krillion Unlimited](https://krilliongames.com/krillion-unlimited) — understand Endless Dive, compare it with the daily set, and build a focused unlimited-mode practice routine.
-- [Krillion Answers Today](https://krilliongames.com/krillion-answers-today) — check the current seven Daily Dive prompts, revealed scores, rarity tiers, practical fallbacks, and prompt-specific cautions.
+- [Krillion Answers Today](https://krilliongames.com/krillion-answers-today) — choose the latest Daily Dive or an earlier date, then open its permanent questions-and-answers page.
 - [Guides](https://krilliongames.com/guides) — find focused walkthroughs for learning the rules, improving rare-answer decisions, and solving technical problems.
 - [More Games](https://krilliongames.com/games) — browse related playable word, trivia, spelling, typing, and deduction games.
 

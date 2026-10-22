@@ -3,73 +3,75 @@ name: IndexNow
 on:
   deployment_status:
   workflow_dispatch:
-    inputs:
-      submission:
-        description: URLs to inspect
-        required: true
-        default: changed
-        type: choice
-        options:
-          - changed
-          - all
-      dry_run:
-        description: Audit and print URLs without contacting IndexNow
-        required: true
-        default: true
-        type: boolean
 
 permissions:
   contents: read
   deployments: read
-
-concurrency:
-  group: indexnow-production
-  cancel-in-progress: false
+  actions: read
 
 jobs:
-  submit:
+  capture:
     if: >-
-      github.event_name == 'workflow_dispatch' ||
-      (github.event.deployment_status.state == 'success' &&
-      (github.event.deployment.environment == 'Production' || github.event.deployment.environment == 'production'))
+      github.repository == 'wanghuan072/krillion' &&
+      (github.event_name == 'workflow_dispatch' ||
+      (github.event.sender.login == 'vercel[bot]' &&
+      github.event.deployment.creator.login == 'vercel[bot]' &&
+      github.event.deployment_status.state == 'success' &&
+      (github.event.deployment.environment == 'Production' || github.event.deployment.environment == 'production')))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: Check out the deployed revision
-        uses: actions/checkout@v4
+      - name: Check out trusted production branch tooling
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: ${{ github.event.deployment.sha || github.sha }}
-          fetch-depth: 0
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 20
-
+          node-version: 24
       - name: Audit IndexNow configuration
         run: npm run audit:indexnow
-
-      - name: Resolve the previous production deployment
-        id: previous
-        shell: bash
+      - name: Capture every successful production before notification serialization
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          CURRENT_DEPLOYMENT_ID: ${{ github.event.deployment.id }}
-          DEPLOYMENT_ENVIRONMENT: ${{ github.event.deployment.environment || 'Production' }}
-        run: echo "base_ref=$(node indexnow/previous-deployment.mjs)" >> "$GITHUB_OUTPUT"
+        run: node indexnow/capture.mjs
+      - name: Preserve production observation even when its snapshot is unavailable
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: indexnow-krillion-production-observed-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .indexnow/observed/record.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
 
-      - name: Submit changed production URLs
-        shell: bash
+  submit:
+    needs: capture
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    concurrency:
+      group: indexnow-krillion-production-notification
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 24
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: indexnow-krillion-production-observed-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .indexnow/current
+      - name: Notify changes since the last fully accepted submission
         env:
-          INDEXNOW_BASE_REF: ${{ steps.previous.outputs.base_ref }}
-          EVENT_NAME: ${{ github.event_name }}
-          MANUAL_SUBMISSION: ${{ inputs.submission }}
-          MANUAL_DRY_RUN: ${{ inputs.dry_run }}
-        run: |
-          flags=()
-          if [[ "$EVENT_NAME" == "workflow_dispatch" && "$MANUAL_SUBMISSION" == "all" ]]; then
-            flags+=(--all)
-          fi
-          if [[ "$EVENT_NAME" != "workflow_dispatch" || "$MANUAL_DRY_RUN" != "true" ]]; then
-            flags+=(--confirm)
-          fi
-          node indexnow/submit.mjs "${flags[@]}"
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node indexnow/submit.mjs --confirm
+      - name: Save checkpoint only after every batch succeeds
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: indexnow-krillion-production-notified-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .indexnow/notified/record.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90

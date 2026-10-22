@@ -31,7 +31,7 @@ if (!fs.existsSync(workflowPath)) {
   errors.push("Missing the IndexNow deployment workflow.");
 } else {
   const workflow = fs.readFileSync(workflowPath, "utf8");
-  for (const requiredText of ["deployment_status:", "workflow_dispatch:", "deployments: read", "previous-deployment.mjs", "npm run audit:indexnow", "--confirm"]) {
+  for (const requiredText of ["deployment_status:", "workflow_dispatch:", "deployments: read", "actions: read", "indexnow/capture.mjs", "retention-days: 90", "npm run audit:indexnow", "--confirm", "vercel[bot]", "persist-credentials: false"]) {
     if (!workflow.includes(requiredText)) errors.push(`IndexNow workflow is missing: ${requiredText}`);
   }
 }

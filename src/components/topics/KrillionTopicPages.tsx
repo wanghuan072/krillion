@@ -1,12 +1,8 @@
 import Image from "next/image";
 import { JsonLd } from "@/src/components/seo/JsonLd";
 import { Breadcrumbs } from "@/src/components/layout/Breadcrumbs";
-import { DailyResetCountdown } from "@/src/components/topics/DailyResetCountdown";
 import { buildBreadcrumbSchema, buildWebPageSchema } from "@/src/seo/structured-data";
 import styles from "@/src/style/site.module.css";
-import answers from "@/data/topics/krillion-answers-today.json";
-
-type DailyAnswer = (typeof answers.questions)[number];
 
 function TopicHeader({ eyebrow, title, lede }: { eyebrow: string; title: string; lede: string }) {
   return <header className={styles.topicHeader}>
@@ -55,36 +51,5 @@ export function KrillionUnlimitedPage({ title, description }: { title: string; d
       </article>
       <aside className={styles.topicAside}><span className={styles.topicAsideKicker}>Quick route</span><h2>Prepare on the main game page</h2><p>Review the controls, rarity system, and safe-answer routine before beginning a long practice session.</p><a href="/">Open Krillion home <span aria-hidden="true">→</span></a></aside>
     </div>
-  </main>;
-}
-
-function AnswerCard({ question, index }: { question: DailyAnswer; index: number }) {
-  return <article className={styles.answerCard} id={`question-${index + 1}`}>
-    <header><div><span>Question {index + 1}</span><b>{question.category} · {question.answerCount.toLocaleString("en-US")} answers</b></div><h2>{question.prompt}</h2><p className={styles.answerHint}><strong>Hint:</strong> {question.hint}</p></header>
-    <div className={styles.safeAnswer}><div><span>Top revealed answer</span><strong>{question.topAnswer.text}</strong><em>{question.topAnswer.tier}</em></div><div><b>{question.topAnswer.score}</b><small>points</small></div></div>
-    <div className={styles.answerReason}><h3>Why it fits</h3><p>{question.topAnswer.note}</p></div>
-    <div className={styles.answerAlternatives}><h3>More revealed answers</h3><ul>{question.answers.map((answer) => <li key={answer.text}><strong>{answer.text}</strong><span>{answer.tier}</span><b>{answer.score} pt</b></li>)}</ul></div>
-    <div className={styles.answerWatch}><strong>Watch for</strong><p>{question.watchFor}</p></div>
-    <p className={styles.answerNote}>{question.note}</p>
-  </article>;
-}
-
-export function KrillionAnswersTodayPage({ title, description }: { title: string; description: string }) {
-  const path = "/krillion-answers-today";
-  const displayDate = new Intl.DateTimeFormat("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: answers.timezone }).format(new Date(`${answers.date}T12:00:00Z`));
-  return <main id="main-content" className={`${styles.container} ${styles.readingPage} ${styles.topicPage}`}>
-    <TopicSchema title={title} description={description} path={path} updatedAt={answers.date} />
-    <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Krillion Answers Today" }]} />
-    <TopicHeader eyebrow={`Daily Dive #${answers.diveNumber} · ${displayDate}`} title="Krillion Answers Today" lede={`See all seven Daily Dive prompts for ${displayDate}, with revealed answer scores from 10 to 100 points. Use a familiar fallback when time is short, or study the rarer picks before your next dive.`} />
-
-    <div className={styles.answerStatus} role="note"><div><span>Daily set</span><strong>{displayDate}</strong></div><div><span>Next reset</span><DailyResetCountdown resetAt={answers.resetAt} /><small>Midnight New York</small></div><div><span>Answer time</span><strong>{answers.answerSeconds} seconds</strong></div><div><span>Accepted answers</span><strong>{answers.totalAcceptedAnswers.toLocaleString("en-US")}</strong></div></div>
-    <div className={styles.answerGuidance}><strong>Spoilers below</strong><p>Each card shows recorded answers from the completed reveal for this Daily Dive. Scores belong to this dated prompt set: a name that earns 100 points here may receive a different result in another round.</p></div>
-    <nav className={styles.answerJump} aria-label="Today’s Krillion questions"><span>Jump to a question</span><ol>{answers.questions.map((question, index) => <li key={question.id}><a href={`#question-${index + 1}`}><small>{String(index + 1).padStart(2, "0")}</small><strong>{question.category}</strong><span>{question.prompt}</span></a></li>)}</ol></nav>
-    <section className={styles.answerOverview}><div><span className={styles.eyebrow}>Today’s mix</span><h2>Everyday objects, food, countries, devices, mammals, internet services, and saddles</h2><p>The pool widens dramatically as the dive progresses. The country round contains only 50 recorded answers, while the internet-provider round contains 8,156. A precise category read matters in both, but the best rarity strategy is not the same.</p></div><dl><div><dt>Daily Dive</dt><dd>#{answers.diveNumber}</dd></div><div><dt>Prompts</dt><dd>{answers.questions.length}</dd></div><div><dt>Smallest pool</dt><dd>50</dd></div><div><dt>Largest pool</dt><dd>8,156</dd></div></dl></section>
-    <section className={styles.answersGrid} aria-label={`Krillion answers for ${displayDate}`}>{answers.questions.map((question, index) => <AnswerCard key={question.id} question={question} index={index} />)}</section>
-
-    <section className={styles.answersFooter}><h2>How to choose between revealed answers</h2><p>A 100-point answer is valuable only when you can recall and spell it before the timer expires. Keep one familiar lower-tier answer ready, then move to a rarer option only when the category fit is clear.</p><ol><li>Read every qualifier before choosing an answer.</li><li>Use the displayed 10-point or 30-point option as a dependable fallback.</li><li>Attempt a Deep Cut or One in a Krillion pick only when you know its standard spelling.</li><li>Check the displayed date because the Daily Dive changes at midnight in New York.</li></ol><a href="/guides/krillion-scoring-and-rare-answers">Learn how Krillion rarity scoring works <span aria-hidden="true">→</span></a></section>
-    <section className={styles.answersMethod}><h2>Use today’s answer board effectively</h2><div className={styles.methodGrid}><article><span>01</span><h3>Confirm the date</h3><p>The Daily Dive follows the New York calendar. Around your local midnight, the game date may differ from the date on your device.</p></article><article><span>02</span><h3>Read the pool size</h3><p>A small answer pool leaves fewer safe alternatives. A large pool gives you more room to search for a specific uncommon choice.</p></article><article><span>03</span><h3>Keep a fallback</h3><p>Memorize one conventional answer for each prompt before attempting a difficult name from the 85- or 100-point tier.</p></article><article><span>04</span><h3>Treat scores as dated</h3><p>Every score belongs to this question and this revealed Daily Dive. Do not carry it into an unrelated prompt or future set.</p></article></div></section>
-    <section className={styles.answersFaq}><h2>Krillion Answers Today FAQ</h2><div className={styles.topicFaq}><details><summary>Are these the questions for my local date?</summary><p>The Daily Dive changes at midnight in New York. Compare the date shown here with the date inside the game if you are checking near the reset.</p></details><details><summary>Does every accepted answer score 100 points?</summary><p>No. The revealed answers span six rarity tiers. Familiar responses can score 10 or 30 points, while the least common recorded choices can reach 85 or 100.</p></details><details><summary>Why are there several correct answers?</summary><p>Krillion uses open-answer prompts. Each question accepts a pool of names that satisfy the wording, so there is rarely one unique solution.</p></details><details><summary>Will these scores stay the same forever?</summary><p>The scores shown here belong to the dated reveal for Daily Dive #{answers.diveNumber}. Treat them as a record of this set rather than a universal value for the answer.</p></details><details><summary>What if a factually correct entry is rejected?</summary><p>The game checks its recorded answer pool and spelling rules. Use another displayed option while the timer remains instead of spending the round arguing with the category.</p></details></div></section>
   </main>;
 }

@@ -1,34 +1,20 @@
 import type { MetadataRoute } from "next";
-import { getAllPublishedGames, getMainGame } from "@/src/lib/data/game-loader";
-import { getAllPublishedGuides } from "@/src/lib/data/guide-loader";
-import { absoluteUrl, gamePath, guidePath } from "@/src/lib/url-policy";
 import lastmod from "@/seo/page-lastmod.json";
-
+import { stateRoutes } from "@/seo/site-registry.mjs";
+import { absoluteUrl } from "@/src/lib/url-policy";
 export const dynamic = "force-static";
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  getMainGame();
-  const staticPages = [
-    { path: "/krillion-unlimited", changeFrequency: "monthly", priority: 0.9 },
-    { path: "/krillion-answers-today", changeFrequency: "daily", priority: 0.9 },
-    { path: "/guides", changeFrequency: "weekly", priority: 0.9 },
-    { path: "/games", changeFrequency: "weekly", priority: 0.9 },
-    { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
-    { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
-    { path: "/copyright", changeFrequency: "yearly", priority: 0.3 },
-    { path: "/about", changeFrequency: "monthly", priority: 0.5 },
-    { path: "/contact", changeFrequency: "yearly", priority: 0.4 },
-  ] as const;
-  const dateFor = (record: { lastModified?: string } | undefined, path: string) => {
-    if (!record?.lastModified) throw new Error(`Missing sitemap last-modified state for ${path}`);
-    return record.lastModified;
+  const hints = (path: string): { changeFrequency: "daily" | "weekly" | "monthly" | "yearly"; priority: number } => {
+    if (path === "/") return { changeFrequency: "daily", priority: 1 };
+    if (path === "/krillion-answers-today") return { changeFrequency: "daily", priority: 0.9 };
+    if (path === "/krillion-unlimited") return { changeFrequency: "monthly", priority: 0.9 };
+    if (path === "/games" || path === "/guides") return { changeFrequency: "weekly", priority: 0.9 };
+    if (path.startsWith("/games/")) return { changeFrequency: "weekly", priority: 0.8 };
+    if (path.startsWith("/guides/")) return { changeFrequency: "monthly", priority: 0.8 };
+    if (path.startsWith("/krillion-answers-today/")) return { changeFrequency: "monthly", priority: 0.7 };
+    if (path === "/about") return { changeFrequency: "monthly", priority: 0.5 };
+    if (path === "/contact") return { changeFrequency: "yearly", priority: 0.4 };
+    return { changeFrequency: "yearly", priority: 0.3 };
   };
-  const entries = [
-    { url: absoluteUrl("/"), lastModified: dateFor(lastmod.staticPages["/"], "/"), changeFrequency: "daily" as const, priority: 1 },
-    ...staticPages.map(({ path, changeFrequency, priority }) => ({ url: absoluteUrl(path), lastModified: dateFor(lastmod.staticPages[path], path), changeFrequency, priority })),
-    ...getAllPublishedGames().map((game) => ({ url: absoluteUrl(gamePath(game.slug)), lastModified: dateFor(lastmod.games[game.id as keyof typeof lastmod.games], gamePath(game.slug)), changeFrequency: "weekly" as const, priority: 0.8 })),
-    ...getAllPublishedGuides().map((guide) => ({ url: absoluteUrl(guidePath(guide.slug)), lastModified: dateFor(lastmod.guides[guide.id as keyof typeof lastmod.guides], guidePath(guide.slug)), changeFrequency: "monthly" as const, priority: 0.8 })),
-  ];
-  if (new Set(entries.map((entry) => entry.url)).size !== entries.length) throw new Error("Duplicate sitemap canonical");
-  return entries;
+  return stateRoutes(lastmod).map((record) => ({ url: absoluteUrl(record.path), lastModified: record.lastModified, ...hints(record.path) }));
 }

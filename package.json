@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run content:update && npm run content:release && next build && node scripts/emit-host-files.mjs",
+    "build": "npm run content:update && npm run content:release && next build && node scripts/emit-host-files.mjs && node scripts/finalize-seo.mjs",
     "preview": "node scripts/serve-static.mjs out",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "node --test tests/content.test.mjs",
+    "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "content:dev": "node scripts/validate-content.mjs dev",
     "content:media": "node scripts/validate-content.mjs media",
@@ -18,7 +18,9 @@
     "audit:indexnow": "node indexnow/audit.mjs",
     "indexnow:submit": "node indexnow/submit.mjs",
     "audit:output": "node scripts/verify-static-output.mjs",
-    "check": "npm run typecheck && npm run lint && npm test && npm run audit:indexnow && npm run build && npm run audit:output && npm run test:e2e"
+    "check": "npm run typecheck && npm run lint && npm test && npm run audit:indexnow && npm run build && npm run audit:output && npm run test:e2e",
+    "answers:sync": "node scripts/sync-daily-answers.mjs",
+    "test:answers:browser": "node scripts/test-answer-browser.mjs"
   },
   "dependencies": {
     "next": "16.3.5",

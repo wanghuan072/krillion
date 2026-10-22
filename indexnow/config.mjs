@@ -13,4 +13,9 @@ export const indexNowKey = "edfebcf39a9d3db64a9d65180fca9190";
 export const indexNowKeyFile = `${indexNowKey}.txt`;
 export const indexNowKeyLocation = `${siteOrigin}/${indexNowKeyFile}`;
 export const indexNowEndpoint = "https://api.indexnow.org/indexnow";
+export const deploymentConfig = {
+  repository: "wanghuan072/krillion", branch: "main", projectId: "prj_mNyamEyqiLk2yIUfEoo1q3OTghyx", projectName: "krillion",
+  deploymentSuffix: "-whs-projects-f97a952d.vercel.app", workflow: ".github/workflows/indexnow.yml",
+  observationPrefix: "indexnow-krillion-production-observed-", checkpointPrefix: "indexnow-krillion-production-notified-", retentionDays: 90,
+};
 

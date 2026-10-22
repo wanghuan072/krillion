@@ -1,8 +1,28 @@
 import { expect, test } from "@playwright/test";
 import games from "../data/games/games.json";
+import fs from "node:fs";
+import path from "node:path";
+import type { DailyDive } from "../src/types/answers";
 const slugs=games.map(game=>game.slug);
+const latestAnswerFile = fs.readdirSync("data/answers").filter(file=>file.endsWith(".json")).sort().at(-1)!;
+const latestAnswers = JSON.parse(fs.readFileSync(`data/answers/${latestAnswerFile}`,"utf8")) as DailyDive;
+const answerPath = (date:string) => `/krillion-answers-today/${date}`;
+const formatAnswerDate = (date:string) => new Intl.DateTimeFormat("en-US",{timeZone:"UTC",year:"numeric",month:"long",day:"numeric"}).format(new Date(`${date}T12:00:00Z`));
 
 test.beforeEach(async({page})=>{
+  if(process.env.TEST_STATIC_EXPORT === "1"){
+    const root=path.resolve("out");
+    const mime:Record<string,string>={".html":"text/html; charset=utf-8",".js":"application/javascript",".css":"text/css",".json":"application/json",".txt":"text/plain",".png":"image/png",".webp":"image/webp",".ico":"image/x-icon",".svg":"image/svg+xml",".woff2":"font/woff2"};
+    const csp=fs.readFileSync(path.join(root,"_headers"),"utf8").match(/Content-Security-Policy: (.+)/)?.[1];
+    await page.route("http://127.0.0.1:4173/**",async(route)=>{
+      const pathname=decodeURIComponent(new URL(route.request().url()).pathname);
+      const resolved=path.resolve(root,`.${pathname}`);
+      if(resolved!==root&&!resolved.startsWith(`${root}${path.sep}`))return route.fulfill({status:403,body:"Forbidden"});
+      const file=[resolved,`${resolved}.html`,path.join(resolved,"index.html")].find(candidate=>fs.existsSync(candidate)&&fs.statSync(candidate).isFile());
+      const target=file??path.join(root,"404.html");
+      await route.fulfill({status:file?200:404,contentType:mime[path.extname(target)]??"application/octet-stream",headers:csp?{"Content-Security-Policy":csp}:{},body:fs.readFileSync(target)});
+    });
+  }
   // 浏览器回归测试屏蔽真实广告响应，避免弹窗和轮播素材影响页面断言。
   await page.route(/profitableratecpmnetwork\.com|highrevenueformat\.com|googletagmanager\.com/,route=>{
     const body=route.request().url().includes("highrevenueformat.com")?`(()=>{const options=window.atOptions;const frame=document.createElement("iframe");frame.dataset.adCreative="test";frame.width=String(options.width);frame.height=String(options.height);document.currentScript.after(frame)})()`:"";
@@ -84,24 +104,53 @@ test("Krillion topic pages render verified mode and daily-answer content",async(
 
   await page.goto("/krillion-answers-today");
   await expect(page.getByRole("heading",{level:1,name:"Krillion Answers Today"})).toBeVisible();
-  await expect(page.getByText("October 20, 2026",{exact:true})).toHaveCount(1);
-  await expect(page.getByText("Daily Dive #97 · October 20, 2026",{exact:true})).toBeVisible();
-  await expect(page.getByRole("timer",{name:"Time until the next Krillion Daily Dive"})).toBeVisible();
-  await expect(page.getByRole("timer",{name:"Time until the next Krillion Daily Dive"})).toHaveText(/^(?:\d+d )?\d{2}:\d{2}:\d{2}$|^New dive available$/);
-  await expect(page.getByText("Midnight New York",{exact:true})).toBeVisible();
-  await expect(page.locator("main article[id^='question-']")).toHaveCount(7);
-  await expect(page.getByText("Top revealed answer",{exact:true})).toHaveCount(7);
-  await expect(page.getByText("Why it fits",{exact:true})).toHaveCount(7);
-  await expect(page.getByText("Watch for",{exact:true})).toHaveCount(7);
-  await expect(page.getByRole("navigation",{name:"Today’s Krillion questions"}).getByRole("link")).toHaveCount(7);
-  await expect(page.getByText("Miswak",{exact:true})).toBeVisible();
-  await expect(page.getByText("Dandy horse",{exact:true})).toBeVisible();
-  await expect(page.getByRole("heading",{name:"Use today’s answer board effectively"})).toBeVisible();
-  await expect(page.getByRole("heading",{name:"Krillion Answers Today FAQ"})).toBeVisible();
-  await expect(page.getByRole("navigation",{name:"Primary navigation"}).getByRole("link",{name:"Krillion Answers Today"})).toHaveAttribute("aria-current","page");
+  await expect(page.locator(`main a[href='${answerPath(latestAnswers.date)}']`)).toHaveCount(2);
+  await page.locator(`main a[href='${answerPath(latestAnswers.date)}']`).first().click();
+  await expect(page.getByRole("heading",{level:1,name:`Krillion Answers for ${formatAnswerDate(latestAnswers.date)} — Dive #${latestAnswers.diveNumber}`})).toBeVisible();
+  await expect(page.getByRole("heading",{level:2,name:latestAnswers.questions[0].prompt})).toBeVisible();
+  await expect(page.locator("main article > section")).toHaveCount(7);
+  await page.setViewportSize({width:390,height:844});
+  expect(await page.locator("html").evaluate(node=>node.scrollWidth-node.clientWidth)).toBe(0);
+});
 
-  await page.setViewportSize({width:768,height:900});
-  expect(await page.locator("main section[aria-label^='Krillion answers']").evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(" ").length)).toBe(1);
+test("dated answers keep document navigation, independent metadata, and expandable score groups",async({page})=>{
+  const path=answerPath(latestAnswers.date);
+  for(const width of [1440,390]){
+    await page.setViewportSize({width,height:900});
+    await page.goto("/krillion-answers-today");
+    await page.screenshot({path:test.info().outputPath(`answers-index-${width}.png`),fullPage:true});
+    await page.evaluate(()=>{document.documentElement.dataset.navigationProbe="old-document"});
+    const navigation=page.waitForRequest(request=>request.isNavigationRequest()&&new URL(request.url()).pathname===path);
+    await page.locator(`main a[href='${path}']`).first().click();
+    await navigation;
+    await expect(page).toHaveURL(url=>url.pathname===path);
+    expect(await page.evaluate(()=>document.documentElement.dataset.navigationProbe)).toBeUndefined();
+    await expect(page).toHaveTitle(latestAnswers.seo.title);
+    await expect(page.locator("link[rel='canonical']")).toHaveAttribute("href",`https://krilliongames.com${path}`);
+    await expect(page.locator("meta[name='description']")).toHaveAttribute("content",latestAnswers.seo.description);
+    await expect(page.locator("h1")).toHaveCount(1);
+    await expect(page.locator("script[src*='pl31789048.profitableratecpmnetwork.com']")).toHaveCount(1);
+    await expect(page.locator("script[src*='googletagmanager.com/gtag/js?id=G-HNJBCKJ6LG']")).toHaveCount(1);
+    const group=page.locator("#question-1 details").filter({has:page.locator("ul")}).first();
+    await group.locator("summary").click();
+    await expect(group.locator("li").first()).toBeVisible();
+    expect(await page.locator("html").evaluate(node=>node.scrollWidth-node.clientWidth)).toBe(0);
+    await page.screenshot({path:test.info().outputPath(`answers-detail-${width}.png`)});
+    await page.goBack();
+    await expect(page).toHaveURL(/\/krillion-answers-today$/);
+    await expect(page.getByRole("heading",{level:1,name:"Krillion Answers Today"})).toBeVisible();
+  }
+  for(const invalid of ["2026-02-30","1900-01-01"]){expect((await page.goto(`/krillion-answers-today/${invalid}`))?.status()).toBe(404)}
+});
+
+test("answer availability does not relabel old answers after the next game midnight",async({page})=>{
+  await page.clock.install({time:new Date(`${latestAnswers.date}T16:00:00Z`)});
+  await page.goto("/krillion-answers-today");
+  await expect(page.locator("[data-answer-availability]")).toHaveAttribute("data-answer-availability","today");
+  const followingDay=new Date(`${latestAnswers.date}T16:00:00Z`);followingDay.setUTCDate(followingDay.getUTCDate()+1);
+  await page.clock.fastForward(followingDay.getTime()-new Date(`${latestAnswers.date}T16:00:00Z`).getTime());
+  await expect(page.locator("[data-answer-availability]")).toHaveAttribute("data-answer-availability","pending");
+  await expect(page.locator(`main a[href='${answerPath(latestAnswers.date)}']`)).toHaveCount(2);
 });
 
 test("mobile layout disables sticky, preserves section order, and defers the video player",async({page})=>{await page.setViewportSize({width:768,height:900});await page.goto("/games/wordle-game");const h=await page.locator("main h2").evaluateAll(ns=>ns.map(n=>n.textContent?.trim()));expect(h.indexOf("Recommended Games")).toBeLessThan(h.indexOf("Wordle Game rules: six rows, one hidden word"));expect(h.indexOf("Wordle Game video breakdown: clues, guesses, and the endgame")).toBeLessThan(h.indexOf("Featured Games"));expect(h.indexOf("Featured Games")).toBeLessThan(h.indexOf("New Games"));await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/']")).toHaveCount(0);const play=page.getByRole("button",{name:"Play video: How to play Wordle"});await expect(play).toBeVisible();await play.click();await expect(page.locator("iframe[src*='youtube-nocookie.com/embed/lv4Zg-209MY']")).toHaveCount(1)});

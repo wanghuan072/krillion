@@ -170,6 +170,46 @@
     "jsonLdScripts": 2
   },
   {
+    "path": "/krillion-answers-today/2026-10-20",
+    "title": "Krillion Answers for October 20, 2026 | Dive #97",
+    "titleLength": 48,
+    "descriptionLength": 149,
+    "canonical": "https://krilliongames.com/krillion-answers-today/2026-10-20",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
+    "h1": 1,
+    "jsonLdScripts": 2
+  },
+  {
+    "path": "/krillion-answers-today/2026-10-21",
+    "title": "Krillion Answers for October 21, 2026 | Dive #98",
+    "titleLength": 48,
+    "descriptionLength": 149,
+    "canonical": "https://krilliongames.com/krillion-answers-today/2026-10-21",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
+    "h1": 1,
+    "jsonLdScripts": 2
+  },
+  {
+    "path": "/krillion-answers-today",
+    "title": "Krillion Answers Today & Daily Dive Answer Archive",
+    "titleLength": 50,
+    "descriptionLength": 157,
+    "canonical": "https://krilliongames.com/krillion-answers-today",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
+    "h1": 1,
+    "jsonLdScripts": 2
+  },
+  {
+    "path": "/krillion-unlimited",
+    "title": "Krillion Unlimited: Endless Dive Mode Explained",
+    "titleLength": 47,
+    "descriptionLength": 158,
+    "canonical": "https://krilliongames.com/krillion-unlimited",
+    "ogImage": "https://krilliongames.com/images/og-image.png",
+    "h1": 1,
+    "jsonLdScripts": 2
+  },
+  {
     "path": "/privacy",
     "title": "Privacy Policy for the Krillion Player Website",
     "titleLength": 46,

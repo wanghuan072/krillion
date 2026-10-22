@@ -5,6 +5,7 @@ const main = JSON.parse(fs.readFileSync("data/games/main-game.json","utf8"));
 const games = JSON.parse(fs.readFileSync("data/games/games.json","utf8"));
 const guides = fs.readdirSync("data/guides").filter((file)=>file.endsWith(".json")).map((file)=>JSON.parse(fs.readFileSync(`data/guides/${file}`,"utf8"))).filter((guide)=>guide.status==="published");
 const lastmod = JSON.parse(fs.readFileSync("seo/page-lastmod.json","utf8"));
+const { readAnswerArchive } = await import("../scripts/lib/daily-answers.mjs");
 const tdk = (await import("../seo/tdk.js")).default;
 const visibleBlockText=(block)=>{
   if(block.type==="paragraph"||block.type==="subheading")return block.text;
@@ -124,7 +125,7 @@ test("sitemap state covers every published route with stable fingerprints",()=>{
   assert.deepEqual(Object.keys(lastmod.guides),guides.map((guide)=>guide.id));
   for(const record of [...Object.values(lastmod.staticPages),...Object.values(lastmod.games),...Object.values(lastmod.guides)]){
     assert.match(record.fingerprint,/^[a-f0-9]{64}$/);
-    assert.match(record.lastModified,/^\d{4}-\d{2}-\d{2}$/);
+    assert.match(record.lastModified,/^\d{4}-\d{2}-\d{2}(?:T.*)?$/);
   }
 });
 test("Games index TDK targets the Games Like Krillion long-tail keyword",()=>{
@@ -135,23 +136,14 @@ test("Games index TDK targets the Games Like Krillion long-tail keyword",()=>{
   assert.ok(metadata.description.length>=140&&metadata.description.length<=160);
   assert.ok(metadata.keywords.includes("games like Krillion"));
 });
-test("topic pages have valid TDK and the current seven-question answer set",()=>{
+test("topic pages have valid TDK and dated answer records",()=>{
   for(const key of ["krillion-unlimited","krillion-answers-today"]){
     assert.ok(tdk[key].title.length>=40&&tdk[key].title.length<=60,`${key} title length`);
     assert.ok(tdk[key].description.length>=140&&tdk[key].description.length<=160,`${key} description length`);
   }
-  const answers=JSON.parse(fs.readFileSync("data/topics/krillion-answers-today.json","utf8"));
-  assert.match(answers.date,/^\d{4}-\d{2}-\d{2}$/);
-  assert.equal(answers.timezone,"America/New_York");
-  assert.equal(answers.diveNumber,97);
-  assert.equal(answers.answerSeconds,25);
-  assert.equal(answers.questions.reduce((total,question)=>total+question.answerCount,0),answers.totalAcceptedAnswers);
-  assert.equal(answers.questions.length,7);
-  assert.equal(new Set(answers.questions.map((question)=>question.id)).size,7);
-  for(const question of answers.questions){
-    assert.ok(question.category&&question.prompt&&question.hint&&question.answerCount&&question.topAnswer?.text&&question.topAnswer?.score&&question.topAnswer?.tier&&question.topAnswer?.note&&question.watchFor&&question.answers.length>=5&&question.note);
-    assert.ok(question.answers.every((answer)=>answer.text&&answer.tier&&[10,15,30,60,85,100].includes(answer.score)));
-  }
+  const archive=readAnswerArchive();
+  assert.ok(archive.length>=2);
+  assert.deepEqual(Object.keys(lastmod.answers),archive.map((dive)=>dive.date));
   for(const image of ["krillion-unlimited-start.webp","krillion-unlimited-prompt.webp","krillion-unlimited-themes.webp"]){
     assert.ok(fs.existsSync(`public/images/topics/${image}`),`${image} should exist`);
   }

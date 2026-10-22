@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-10-22T00:59:00.521Z",
+  "gameDate": "2026-10-21",
+  "diveNumber": 98,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-21",
+  "officialStatus": 200,
+  "checked": 3796,
+  "mismatches": [],
+  "publishedAt": "2026-10-21T07:22:56.060Z",
+  "updatedAt": "2026-10-22T00:57:40.671Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a TV show that's rated 8.5+ on IMDb (1,000+ votes)",
+      "count": 979,
+      "scoresAndTiersVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a current NBA player (must be on an NBA team)",
+      "count": 519,
+      "scoresAndTiersVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a food you have to shell or crack open before eating",
+      "count": 367,
+      "scoresAndTiersVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a vehicle that doesn't travel on wheels",
+      "count": 1194,
+      "scoresAndTiersVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a body part people have exactly one of (like the nose)",
+      "count": 614,
+      "scoresAndTiersVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a country that borders Greece or Austria",
+      "count": 12,
+      "scoresAndTiersVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name an extra that airlines charge for",
+      "count": 111,
+      "scoresAndTiersVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswerstoday.com/",
+    "dateAndDiveMatch": true,
+    "totalMatches": true,
+    "questionMatches": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Dekalog",
+            "present": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Pat Spencer",
+            "present": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Beggar's chicken",
+            "present": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Ground-effect vehicle",
+            "present": true
+          },
+          {
+            "text": "Iceboat",
+            "present": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Round ligament of the liver",
+            "present": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Liechtenstein",
+            "present": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "krillionMatches": [
+          {
+            "text": "Falcon in cabin",
+            "present": true
+          }
+        ]
+      }
+    ]
+  },
+  "olderThirdPartySnapshots": [
+    {
+      "url": "https://krilliontoday.com/answers/2026-10-21",
+      "observedCount": 3758,
+      "note": "Earlier 06:30 EDT snapshot; not used to overwrite the later official revision."
+    }
+  ],
+  "publishing": {
+    "status": "authorized-for-push",
+    "reason": "The user explicitly authorized submitting the completed daily-answer and IndexNow changes together to origin/main after reviewing the scope question.",
+    "repository": "https://github.com/wanghuan072/krillion.git",
+    "branch": "main",
+    "remoteMatchesLocalHead": true,
+    "commitCreated": false,
+    "pushed": false
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "changedPages": [
+      "/krillion-answers-today",
+      "/krillion-answers-today/2026-10-21"
+    ],
+    "unchangedPages": 21
+  }
+}

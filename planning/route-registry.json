@@ -4,6 +4,9 @@
   "trailingSlash": false,
   "rendering": "static-export",
   "routes": [
+    {"page_id":"krillion-unlimited","path":"/krillion-unlimited","kind":"static","source":"seo/tdk.js and KrillionUnlimitedPage","publicWhen":"always","sitemapSource":"static-state"},
+    {"page_id":"krillion-answers-today","path":"/krillion-answers-today","kind":"static-list","source":"getAnswerArchive","publicWhen":"validated dated records","sitemapSource":"static-state"},
+    {"page_id":"daily-answer-detail","path":"/krillion-answers-today/[date]","kind":"dynamic-static","source":"getAnswerRouteParams","publicWhen":"validated dated record","sitemapSource":"answers"},
     {"page_id":"home","path":"/","kind":"main-game","source":"data/games/main-game.json","publicWhen":"main game published","sitemapSource":"main-game"},
     {"page_id":"games-index","path":"/games","kind":"static-list","source":"published additional games","publicWhen":"always after release validation","sitemapSource":"static-state"},
     {"page_id":"game-detail","path":"/games/[slug]","kind":"dynamic-static","source":"getGameRouteParams","publicWhen":"game published","sitemapSource":"game"},

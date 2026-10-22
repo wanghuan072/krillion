@@ -1,0 +1,444 @@
+{
+  "checkedAt": "2026-10-21T07:46:05.409Z",
+  "results": [
+    {
+      "date": "2026-10-21",
+      "status": 200,
+      "officialDate": "2026-10-21",
+      "checked": 3758,
+      "totalOfficial": 3758,
+      "mismatches": [],
+      "questions": [
+        {
+          "question": 1,
+          "localCount": 979,
+          "officialCount": 979,
+          "officialPrompt": "Name a TV show that's rated 8.5+ on IMDb (1,000+ votes)"
+        },
+        {
+          "question": 2,
+          "localCount": 519,
+          "officialCount": 519,
+          "officialPrompt": "Name a current NBA player"
+        },
+        {
+          "question": 3,
+          "localCount": 362,
+          "officialCount": 362,
+          "officialPrompt": "Name a food you have to shell or crack open before eating"
+        },
+        {
+          "question": 4,
+          "localCount": 1186,
+          "officialCount": 1186,
+          "officialPrompt": "Name a vehicle that doesn't travel on wheels"
+        },
+        {
+          "question": 5,
+          "localCount": 589,
+          "officialCount": 589,
+          "officialPrompt": "Name a body part people have exactly one of (like the nose)"
+        },
+        {
+          "question": 6,
+          "localCount": 12,
+          "officialCount": 12,
+          "officialPrompt": "Name a country that borders Greece or Austria"
+        },
+        {
+          "question": 7,
+          "localCount": 111,
+          "officialCount": 111,
+          "officialPrompt": "Name an extra that airlines charge for"
+        }
+      ],
+      "rawTierScores": [
+        "krillion:100",
+        "deepcut:85",
+        "rare:60",
+        "schooler:30",
+        "plankton:10"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "status": 403,
+      "body": "{\"error\":\"That answer sheet is not publicly available.\"}"
+    }
+  ],
+  "historicalThirdParty": {
+    "source": "https://www.linkedinpinpointanswer.today/krillion-answers/2026-10-20",
+    "checkedAt": "2026-10-21T07:50:47.417Z",
+    "checked": 42,
+    "matched": 42,
+    "details": [
+      {
+        "question": 1,
+        "localPrompt": "Name something sold in stick form (like deodorant)",
+        "sourcePrompt": "Name something sold as a stick or in sticks (food on a stick doesn’t count).",
+        "localPool": 382,
+        "sourcePool": 422,
+        "answers": [
+          {
+            "text": "Miswak",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Spurtle",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Achiras",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Anti-chafe stick",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "Breadsticks",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "Butter",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "localPrompt": "Name a food made by mashing or puréeing (like guacamole)",
+        "sourcePrompt": "Name a food made by mashing or puréeing (like guacamole)",
+        "localPool": 1132,
+        "sourcePool": 1454,
+        "answers": [
+          {
+            "text": "Moretum",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "'Nduja",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Aam panna",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Açaí bowl",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "Baba ganoush",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "Applesauce",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "localPrompt": "Name a country with the letter D in its name (like Canada)",
+        "sourcePrompt": "Name a country with the letter D in its name",
+        "localPool": 50,
+        "sourcePool": 53,
+        "answers": [
+          {
+            "text": "Saint Kitts and Nevis",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Marshall Islands",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Saint Vincent and the Grenadines",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Andorra",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "Bangladesh",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "Canada",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "localPrompt": "Name a device that blows air",
+        "sourcePrompt": "Name a device made to blow air",
+        "localPool": 337,
+        "sourcePool": 340,
+        "answers": [
+          {
+            "text": "Winnowing machine",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "4D theater air jet",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Active chilled beam",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Accordion",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "Air compressor",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "Fan",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "localPrompt": "Name a mammal smaller than a house cat",
+        "sourcePrompt": "Name a mammal smaller than a house cat",
+        "localPool": 6514,
+        "sourcePool": 6515,
+        "answers": [
+          {
+            "text": "Hero shrew",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Kha-nyou",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Aba Horseshoe Bat",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "African pygmy hedgehog",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "Chinchilla",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "Bat",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "localPrompt": "Name an internet service provider",
+        "sourcePrompt": "Name an internet service provider",
+        "localPool": 8156,
+        "sourcePool": 8187,
+        "answers": [
+          {
+            "text": "The World (ISP)",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "012 Smile",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "019 Mobile",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "Adelphia",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "AOL",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "AT&T",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "localPrompt": "Name something that has a saddle",
+        "sourcePrompt": "Name something that has a saddle (like a bicycle)",
+        "localPool": 146,
+        "sourcePool": 157,
+        "answers": [
+          {
+            "text": "Dandy horse",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Earthworm",
+            "localScore": 100,
+            "sourceScore": 100,
+            "match": true
+          },
+          {
+            "text": "Aerial tramway",
+            "localScore": 85,
+            "sourceScore": 85,
+            "match": true
+          },
+          {
+            "text": "ATV",
+            "localScore": 60,
+            "sourceScore": 60,
+            "match": true
+          },
+          {
+            "text": "Camel",
+            "localScore": 30,
+            "sourceScore": 30,
+            "match": true
+          },
+          {
+            "text": "Bicycle",
+            "localScore": 10,
+            "sourceScore": 10,
+            "match": true
+          }
+        ]
+      }
+    ]
+  },
+  "officialTierAndNoteRecheck": {
+    "checkedAt": "2026-10-21T07:51:35.282Z",
+    "answerTiersChecked": 3758,
+    "notesChecked": 11,
+    "mismatches": []
+  },
+  "scope": {
+    "officialChecks": "Full date, prompt, answer text, score, tier and recorded-note comparison for 2026-10-21.",
+    "historicalChecks": "All 42 selected answers compared with one publicly readable third-party archive; highest-scoring answers and prompt versions cross-checked against other search results. Original historical endpoint returns 403.",
+    "factualChecks": "Representative external factual checks, not an independent real-world fact-check of all 3,800 answer occurrences."
+  },
+  "historicalVersionDifferences": {
+    "localTotal": 16717,
+    "archives": [
+      {
+        "url": "https://krillionanswers.org/answers/2026-10-20/",
+        "observedTotal": 17087
+      },
+      {
+        "url": "https://www.linkedinpinpointanswer.today/krillion-answers/2026-10-20",
+        "observedTotal": 17128
+      }
+    ],
+    "finding": "Third-party archived snapshots differ in prompt wording and answer-pool counts. Without an accessible dated original reveal, none should be described as the authoritative final historical revision."
+  },
+  "factualSpotChecks": [
+    {
+      "answer": "Dekalog",
+      "finding": "IMDb lists the television miniseries at 8.9/10 with roughly 35,000 votes, exceeding both prompt thresholds.",
+      "url": "https://www.imdb.com/title/tt0092337/ratings/"
+    },
+    {
+      "answer": "Falcon in cabin",
+      "finding": "Qatar Airways publishes fees for falcons travelling in the Economy Class cabin.",
+      "url": "https://www.qatarairways.com/en-gb/baggage/animals.onboardpopup.html"
+    },
+    {
+      "answer": "Liechtenstein",
+      "finding": "The national website places Liechtenstein between Switzerland and Austria.",
+      "url": "https://www.liechtenstein.li/en"
+    },
+    {
+      "answer": "Earthworm",
+      "finding": "Royal Horticultural Society educational material identifies the adult worm saddle or belt as the clitellum.",
+      "url": "https://schoolgardening.rhs.org.uk/getmedia/22b05cbf-70b7-484a-9cff-c6484c12b539/res-i-bsw-invisible-garden-teacher-notes"
+    }
+  ],
+  "conclusion": {
+    "current": "Verified as an exact copy of the current original-game published answer data; this does not certify all underlying world facts independently.",
+    "historical": "All 42 displayed answers and scores have third-party corroboration. Prompt wording and pool-size statistics are from an older snapshot and cannot be confirmed as the final official revision.",
+    "contentModified": false
+  }
+}
