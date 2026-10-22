@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-10-22T06:05:39.463Z",
+  "gameDate": "2026-10-22",
+  "diveNumber": 99,
+  "source": "https://krillion.io/api/reveal?date=2026-10-22",
+  "status": 200,
+  "checked": 14820,
+  "mismatches": [],
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a character from Attack on Titan, One Piece or Naruto",
+      "count": 3418,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a job with median annual pay over $100,000 in the US",
+      "count": 1420,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a game with a number in its name (sequels and 3D variants don't count)",
+      "count": 5834,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a field, art or skill ending in -graphy",
+      "count": 1722,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a country with a five-letter English name",
+      "count": 27,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name an environmental problem (like pollution)",
+      "count": 245,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a South Asian dish (India, Pakistan, Bangladesh, Sri Lanka, Nepal, Bhutan, Maldives, Afghanistan)",
+      "count": 2154,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillion-game.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 14706,
+    "officialCurrentTotal": 14820,
+    "note": "The reference page contains 3,328 answers for question 1 and 1,396 for question 2; the current official reveal contains 3,418 and 1,420 respectively. Other question counts agree. The primary official reveal is authoritative; no reference-site answers replace it.",
+    "questions": [
+      {
+        "id": "p1",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Pandaman",
+            "score": 100,
+            "presentWithScore": true
+          },
+          {
+            "text": "Tonton",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Elevator mechanic",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Pachisi",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Steganography",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Nauru",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Nurdle pollution",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "fullPromptMatch": true,
+        "promptTopicMatch": true,
+        "krillionAnswers": [
+          {
+            "text": "Bombay duck",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 24,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-22",
+    "previousCommitConfirmedOnRemote": "adf1a7387fdd44122a8c9edda6622890ce066668"
+  }
+}
