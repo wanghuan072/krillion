@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-10-23T06:01:22.121Z",
+  "gameDate": "2026-10-23",
+  "diveNumber": 100,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-23",
+  "officialStatus": 200,
+  "checked": 11137,
+  "mismatches": [],
+  "publishedAt": "2026-10-23T06:00:31.830Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a branded fast-food menu item (like the Big Mac).",
+      "count": 2351,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name an animal that sprays, spits or squirts something to defend itself.",
+      "count": 105,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a part of a 2D or 3D shape (like a radius).",
+      "count": 251,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name an upper-body gym exercise (strength exercises only; no full-body moves).",
+      "count": 613,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a Nintendo Wii game.",
+      "count": 2077,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a rap song with over 100 million Spotify streams.",
+      "count": 5544,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a machine traditionally operated by inserting coins.",
+      "count": 196,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillion-game.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 11113,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 2351,
+        "referenceCount": 2334,
+        "krillionAnswers": [
+          {
+            "text": "Hula Burger",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 105,
+        "referenceCount": 105,
+        "krillionAnswers": [
+          {
+            "text": "Pygmy sperm whale",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 251,
+        "referenceCount": 249,
+        "krillionAnswers": [
+          {
+            "text": "Sagitta",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 613,
+        "referenceCount": 610,
+        "krillionAnswers": [
+          {
+            "text": "Bradford press",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 2077,
+        "referenceCount": 2077,
+        "krillionAnswers": [
+          {
+            "text": "Captain Rainbow",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 5544,
+        "referenceCount": 5542,
+        "krillionAnswers": [
+          {
+            "text": "Above The Clouds",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 196,
+        "referenceCount": 196,
+        "krillionAnswers": [
+          {
+            "text": "Mold-A-Rama",
+            "score": 100,
+            "presentWithScore": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference snapshot shows 11,136 answers (5,543 rap songs); the fresh official reveal has 11,137 (5,544 rap songs). Full prompts and sampled 100-point answers agree; the later official reveal remains authoritative. No third-party answers or player-choice statistics were imported.",
+    "additionalReference": {
+      "url": "https://krillionanswerstoday.com/",
+      "checkedAtOnPage": "2026-10-23T05:15:00Z",
+      "snapshotTotal": 11136
+    }
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 25,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-23"
+  }
+}
