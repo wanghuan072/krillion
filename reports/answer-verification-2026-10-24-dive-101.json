@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-10-24T06:04:52.354Z",
+  "gameDate": "2026-10-24",
+  "diveNumber": 101,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-24",
+  "officialStatus": 200,
+  "checked": 32301,
+  "mismatches": [],
+  "publishedAt": "2026-10-24T06:04:00.659Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a movie first released in theaters in 2026",
+      "count": 1301,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name something with a spinning blade",
+      "count": 1146,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a book that has sold at least 500,000 copies worldwide.",
+      "count": 10663,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a word that could be in Wordle (5 letters)",
+      "count": 14855,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name an app or program that comes built into Windows or macOS (older versions count).",
+      "count": 1931,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a language that originated in South Asia or Southeast Asia",
+      "count": 1965,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name something with a legal minimum age",
+      "count": 440,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswerstoday.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 32301,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 1301,
+        "referenceCount": 1301,
+        "krillionAnswers": [
+          {
+            "text": "Chronovisor",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 1146,
+        "referenceCount": 1146,
+        "krillionAnswers": [
+          {
+            "text": "Aerosani",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 10663,
+        "referenceCount": 10663,
+        "krillionAnswers": [
+          {
+            "text": "In His Steps",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 14855,
+        "referenceCount": 14855,
+        "krillionAnswers": [
+          {
+            "text": "qajaq",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 1931,
+        "referenceCount": 1931,
+        "krillionAnswers": [
+          {
+            "text": "Key Caps",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 1965,
+        "referenceCount": 1965,
+        "krillionAnswers": [
+          {
+            "text": "Kusunda",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 440,
+        "referenceCount": 440,
+        "krillionAnswers": [
+          {
+            "text": "Falconry license",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompt counts and sampled highest-tier answers agree with the fresh official reveal. No player-choice statistics or third-party answers were imported. The independent krilliongame.org and krillion-wiki.online results use different dive numbering and prompts and were excluded."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 26,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-24"
+  }
+}
