@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-10-25T06:02:38.669Z",
+  "gameDate": "2026-10-25",
+  "diveNumber": 102,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-25",
+  "officialStatus": 200,
+  "checked": 13606,
+  "mismatches": [],
+  "publishedAt": "2026-10-25T06:02:17.465Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a type of bed (for sleeping)",
+      "count": 294,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a food or ingredient that costs over US$100/kg ($45/lb), like caviar",
+      "count": 419,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a song that has reached number one on the Billboard Hot 100",
+      "count": 1175,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a national park anywhere in the world",
+      "count": 3653,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a TV comedy (tagged Comedy on IMDb, 1,000+ votes)",
+      "count": 4844,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a country with a desert climate (in any part of it)",
+      "count": 70,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a player currently on an English Premier League or NFL team",
+      "count": 3151,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswerstoday.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 13606,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 294,
+        "referenceCount": 294,
+        "krillionAnswers": [
+          {
+            "text": "Babuchuang",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 419,
+        "referenceCount": 419,
+        "krillionAnswers": [
+          {
+            "text": "Hasma",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 1175,
+        "referenceCount": 1175,
+        "krillionAnswers": [
+          {
+            "text": "Sukiyaki",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 3653,
+        "referenceCount": 3653,
+        "krillionAnswers": [
+          {
+            "text": "Keibul Lamjao",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 4844,
+        "referenceCount": 4844,
+        "krillionAnswers": [
+          {
+            "text": "Little Mole",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 70,
+        "referenceCount": 70,
+        "krillionAnswers": [
+          {
+            "text": "United Kingdom",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 3151,
+        "referenceCount": 3151,
+        "krillionAnswers": [
+          {
+            "text": "Tom King",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompt counts and sampled highest-tier answers agree with the fresh official reveal. No player-choice statistics or third-party answers were imported."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 27,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-25"
+  }
+}
