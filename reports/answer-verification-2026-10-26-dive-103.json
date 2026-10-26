@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-10-26T06:01:50.055Z",
+  "gameDate": "2026-10-26",
+  "diveNumber": 103,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-26",
+  "officialStatus": 200,
+  "checked": 12546,
+  "mismatches": [],
+  "publishedAt": "2026-10-26T06:01:08.563Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a currency worth less than the US dollar",
+      "count": 145,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a city whose name ends in -ton",
+      "count": 3490,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name something traditionally expressed as a percentage (like body fat)",
+      "count": 2212,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name something used to hit a ball in a sport (the same tool counts once across sports)",
+      "count": 26,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a Latin American dish",
+      "count": 4584,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a fruit or vegetable with a one-syllable name",
+      "count": 54,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a phone setting you can switch on and off",
+      "count": 2035,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswerstoday.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 12546,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 145,
+        "referenceCount": 145,
+        "krillionAnswers": [
+          {
+            "text": "Zimbabwe Gold (ZiG)",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 3490,
+        "referenceCount": 3490,
+        "krillionAnswers": [
+          {
+            "text": "Thaton",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 2212,
+        "referenceCount": 2212,
+        "krillionAnswers": [
+          {
+            "text": "Albedo",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 26,
+        "referenceCount": 26,
+        "krillionAnswers": [
+          {
+            "text": "Tamburello",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 4584,
+        "referenceCount": 4584,
+        "krillionAnswers": [
+          {
+            "text": "Hormigas culonas",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 54,
+        "referenceCount": 54,
+        "krillionAnswers": [
+          {
+            "text": "Sloe",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 2035,
+        "referenceCount": 2035,
+        "krillionAnswers": [
+          {
+            "text": "Chop for Flashlight",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompt counts and sampled highest-tier answers agree with the fresh official reveal. A second independently opened companion at krillionanswers.net also shows this date, dive and top picks. No player-choice statistics or third-party answers were imported."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 28,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-26"
+  }
+}
