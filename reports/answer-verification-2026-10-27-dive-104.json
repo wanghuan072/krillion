@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-10-27T06:07:22.680Z",
+  "gameDate": "2026-10-27",
+  "diveNumber": 104,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-27",
+  "officialStatus": 200,
+  "checked": 4134,
+  "mismatches": [],
+  "publishedAt": "2026-10-27T06:06:53.751Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a bird that lives in or by water",
+      "count": 1466,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name something with physical pages (named works don't count)",
+      "count": 416,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a type of ball outside of sports",
+      "count": 348,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a boy band or girl group with over 500,000 monthly listeners on Spotify",
+      "count": 535,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a part of the school year (events like prom count too)",
+      "count": 569,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a country whose flag has a white stripe through the centre (horizontal or vertical).",
+      "count": 42,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a one-word food or drink that starts with Ch",
+      "count": 758,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswerstoday.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 4134,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 1466,
+        "referenceCount": 1466,
+        "krillionAnswers": [
+          {
+            "text": "Sungrebe",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 416,
+        "referenceCount": 416,
+        "krillionAnswers": [
+          {
+            "text": "Summit register",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 348,
+        "referenceCount": 348,
+        "krillionAnswers": [
+          {
+            "text": "Time ball",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 535,
+        "referenceCount": 535,
+        "krillionAnswers": [
+          {
+            "text": "MoKenStef",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 569,
+        "referenceCount": 569,
+        "krillionAnswers": [
+          {
+            "text": "Raisin weekend",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 42,
+        "referenceCount": 42,
+        "krillionAnswers": [
+          {
+            "text": "Lesotho",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 758,
+        "referenceCount": 758,
+        "krillionAnswers": [
+          {
+            "text": "Chhurpi",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompts, answer counts and highest-tier answers agree with the fresh official reveal. No player-choice statistics or third-party answers were imported."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 29,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-27"
+  }
+}
