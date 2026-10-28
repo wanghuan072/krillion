@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-10-28T05:55:58.495Z",
+  "gameDate": "2026-10-28",
+  "diveNumber": 105,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-28",
+  "officialStatus": 200,
+  "checked": 4251,
+  "mismatches": [],
+  "publishedAt": "2026-10-28T05:55:43.397Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a pasta dish",
+      "count": 764,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a part of the human head",
+      "count": 2016,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a region of the world that spans multiple countries (like the Middle East)",
+      "count": 858,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a food or drink that has an emoji (don't open your emoji keyboard please)",
+      "count": 153,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a superpower any superhero has in the MCU",
+      "count": 132,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a 3+ letter word you can spell with the letters in \"krillion\" (using each letter only as many times as it appears)",
+      "count": 50,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name something you ride while standing up",
+      "count": 278,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswerstoday.com/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 4251,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 764,
+        "referenceCount": 764,
+        "krillionAnswers": [
+          {
+            "text": "Pastasciutta antifascista",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 2016,
+        "referenceCount": 2016,
+        "krillionAnswers": [
+          {
+            "text": "Habenula",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 858,
+        "referenceCount": 858,
+        "krillionAnswers": [
+          {
+            "text": "Polesia",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 153,
+        "referenceCount": 153,
+        "krillionAnswers": [
+          {
+            "text": "Oden",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 132,
+        "referenceCount": 132,
+        "krillionAnswers": [
+          {
+            "text": "Communication with Celestials",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 50,
+        "referenceCount": 50,
+        "krillionAnswers": [
+          {
+            "text": "inro",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 278,
+        "referenceCount": 278,
+        "krillionAnswers": [
+          {
+            "text": "Paternoster",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompts, answer counts and highest-tier answers agree with the fresh official reveal. No player-choice statistics or third-party answers were imported."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 30,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-28"
+  }
+}
