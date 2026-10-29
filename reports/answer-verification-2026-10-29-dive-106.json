@@ -1,0 +1,301 @@
+{
+  "checkedAt": "2026-10-29T06:04:34.340Z",
+  "gameDate": "2026-10-29",
+  "diveNumber": 106,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-29",
+  "officialStatus": 200,
+  "checked": 16414,
+  "mismatches": [],
+  "publishedAt": "2026-10-29T06:03:51.304Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a French or British food",
+      "count": 3514,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name something you can measure about the human body",
+      "count": 1678,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a strategy board game",
+      "count": 7827,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name an animal with a one-word name containing \"ck\"",
+      "count": 395,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a country where another religion has more followers than Christianity",
+      "count": 69,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name someone who has been a teammate of Lionel Messi, Cristiano Ronaldo, LeBron James or Tom Brady",
+      "count": 2707,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a hair type, texture, or natural color",
+      "count": 224,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-10-29/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 16414,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 3514,
+        "referenceCount": 3514,
+        "krillionAnswers": [
+          {
+            "text": "Bedfordshire clanger",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Bedfordshire clanger",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "5 Star",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "99 Flake",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 1678,
+        "referenceCount": 1678,
+        "krillionAnswers": [
+          {
+            "text": "Two-point discrimination",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Two-point discrimination",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "1,25-Dihydroxyvitamin D",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "1,5-Anhydroglucitol",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 7827,
+        "referenceCount": 7827,
+        "krillionAnswers": [
+          {
+            "text": "Rithmomachia",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Rithmomachia",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "¡Adiós Calavera!",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "...and then, we held hands.",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 395,
+        "referenceCount": 395,
+        "krillionAnswers": [
+          {
+            "text": "Dickcissel",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Dickcissel",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "Ackie",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "Amberjack",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 69,
+        "referenceCount": 69,
+        "krillionAnswers": [
+          {
+            "text": "Mauritius",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Mauritius",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "Albania",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "Azerbaijan",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 2707,
+        "referenceCount": 2707,
+        "krillionAnswers": [
+          {
+            "text": "Nate Ebner",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Nate Ebner",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "A. J. Derby",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "A. J. Howard",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 224,
+        "referenceCount": 224,
+        "krillionAnswers": [
+          {
+            "text": "Titian",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Titian",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "Afro kinky",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "Afro-textured",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompts, answer counts and sampled top-tier answers agree with the fresh official reveal. The separately opened krillionanswerstoday.com showed an earlier 16,251-answer snapshot; no content from that snapshot was imported. No player-choice statistics or third-party answers were imported."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 31,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-29"
+  }
+}
