@@ -1,0 +1,301 @@
+{
+  "checkedAt": "2026-10-30T05:59:09.628Z",
+  "gameDate": "2026-10-30",
+  "diveNumber": 107,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-10-30",
+  "officialStatus": 200,
+  "checked": 31361,
+  "mismatches": [],
+  "publishedAt": "2026-10-30T05:58:25.347Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a sport where athletes do flips or somersaults",
+      "count": 204,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a city whose name starts with the word Los, Las, La, Le, El or The",
+      "count": 11506,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p3",
+      "prompt": "Name something used to grip or pick things up",
+      "count": 1378,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a non-human character from Star Wars, the MCU, or Lord of the Rings",
+      "count": 16877,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a nail care product or tool (types, not brands)",
+      "count": 378,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a way to contact someone (methods, not brands/apps)",
+      "count": 179,
+      "answerTextScoreAndTierVerified": true
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a fast food chain that operates in more than one country",
+      "count": 839,
+      "answerTextScoreAndTierVerified": true
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-10-30/",
+    "dateAndDiveMatch": true,
+    "snapshotTotal": 31361,
+    "questions": [
+      {
+        "id": "p1",
+        "promptMatches": true,
+        "officialCount": 204,
+        "referenceCount": 204,
+        "krillionAnswers": [
+          {
+            "text": "Course landaise",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Course landaise",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "1 m springboard",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "10 m platform",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "promptMatches": true,
+        "officialCount": 11506,
+        "referenceCount": 11506,
+        "krillionAnswers": [
+          {
+            "text": "La Ciotat",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "La Ciotat",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "El 60",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "El 77",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "promptMatches": true,
+        "officialCount": 1378,
+        "referenceCount": 1378,
+        "krillionAnswers": [
+          {
+            "text": "Claw of Archimedes",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Claw of Archimedes",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "Acland clamp",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "Acoustic tweezers",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "promptMatches": true,
+        "officialCount": 16877,
+        "referenceCount": 16877,
+        "krillionAnswers": [
+          {
+            "text": "Jaxxon",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Jaxxon",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "0-0-0",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "0-MR1",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "promptMatches": true,
+        "officialCount": 378,
+        "referenceCount": 378,
+        "krillionAnswers": [
+          {
+            "text": "Tea bag",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Tea bag",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "3D acrylic flowers",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "3D gel",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "promptMatches": true,
+        "officialCount": 179,
+        "referenceCount": 179,
+        "krillionAnswers": [
+          {
+            "text": "Rocket mail",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Rocket mail",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "Aerial banner",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "Aerogram",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "promptMatches": true,
+        "officialCount": 839,
+        "referenceCount": 839,
+        "krillionAnswers": [
+          {
+            "text": "Coffee-Bike",
+            "score": 100,
+            "presentWithTier": true
+          }
+        ],
+        "samples": [
+          {
+            "text": "Coffee-Bike",
+            "score": 100,
+            "tier": "One in a Krillion",
+            "presentWithTier": true
+          },
+          {
+            "text": "% Arabica",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          },
+          {
+            "text": "100 Montaditos",
+            "score": 85,
+            "tier": "Deep Cut",
+            "presentWithTier": true
+          }
+        ]
+      }
+    ],
+    "note": "Reference date, dive, all seven prompts, answer counts and sampled top-tier answers agree with the fresh official reveal. No player-choice statistics or third-party answers were imported."
+  },
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 32,
+    "latestAnswerPage": "/krillion-answers-today/2026-10-30"
+  }
+}
