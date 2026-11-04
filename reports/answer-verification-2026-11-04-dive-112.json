@@ -1,0 +1,202 @@
+{
+  "checkedAt": "2026-11-04T06:01:41.278Z",
+  "gameDate": "2026-11-04",
+  "diveNumber": 112,
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-04",
+  "officialStatus": 200,
+  "checked": 29911,
+  "mismatches": [],
+  "publishedAt": "2026-11-04T06:01:10.251Z",
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name something that's mined from the ground",
+      "count": 1948,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Coprolite",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "Victorian Cambridgeshire had a coprolite mining rush for fertilizer."
+        },
+        {
+          "text": "Abbey rose",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "Aberdeen granite",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a sea animal that isn't a fish or a bird",
+      "count": 11814,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Hoff crab",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "Nicknamed for David Hasselhoff's hairy chest."
+        },
+        {
+          "text": "'coon oyster",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "Abalone barleysnail",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name something that's naturally blue",
+      "count": 3839,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Marble berry",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "Its blue is the most intense color of any known biological material."
+        },
+        {
+          "text": "Aberrant oakblue",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "Abyss Pool",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name an item used for eating or serving food (like a plate or spoon)",
+      "count": 2278,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Penny lick",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "London banned these reusable ice cream glasses around 1899 over disease."
+        },
+        {
+          "text": "Abalone shell",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "Absinthe fountain",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a sci-fi movie (tagged Sci-Fi on IMDb, 1,000+ votes)",
+      "count": 4140,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Woman in the Moon",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "Fritz Lang's 1929 film staged the first known rocket countdown to zero."
+        },
+        {
+          "text": ".com for Murder",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "*Batteries Not Included",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a city with 1–10 million people (within city limits)",
+      "count": 699,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Hulunbuir",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "City limits here cover more ground than the whole United Kingdom."
+        },
+        {
+          "text": "Adana",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "Aguascalientes",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a dessert that's made out of dough",
+      "count": 5193,
+      "officialAnswerTextScoreAndTierVerified": true,
+      "referenceCountMatches": true,
+      "samples": [
+        {
+          "text": "Mock apple pie",
+          "tier": "One in a Krillion",
+          "score": 100,
+          "note": "Crackers soaked in lemon syrup fake the apples in Ritz's box recipe."
+        },
+        {
+          "text": "'Nfocacatti",
+          "tier": "Deep Cut",
+          "score": 85
+        },
+        {
+          "text": "'Nzuddi",
+          "tier": "Deep Cut",
+          "score": 85
+        }
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-04/",
+    "dateAndDiveMatch": true,
+    "allSevenPromptsAndCountsMatch": true,
+    "topThreePerPromptMatch": true
+  },
+  "note": "All stored answers were rechecked against a second fresh official reveal. No third-party content or player statistics imported.",
+  "validation": {
+    "unitTestsPassed": 38,
+    "build": "passed",
+    "staticOutputAudit": "passed",
+    "browserTestsPassed": 3,
+    "sitemapUrls": 33,
+    "latestAnswerPage": "/krillion-answers-today/2026-11-04"
+  }
+}
