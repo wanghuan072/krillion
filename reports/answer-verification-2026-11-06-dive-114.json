@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-06",
+  "dive": 114,
+  "checkedAt": "2026-11-06T05:58:29.224Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-06",
+  "total": 8555,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a fruit or vegetable that is red on the inside.",
+      "count": 148,
+      "verified": true,
+      "picks": [
+        "Beefsteak fungus"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a setting you can change in a video game’s settings.",
+      "count": 1498,
+      "verified": true,
+      "picks": [
+        "Arachnophobia mode"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a country with \"and\" in its name",
+      "count": 22,
+      "verified": true,
+      "picks": [
+        "Solomon Islands"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name something players aim at to score in a sport (like a hoop).",
+      "count": 201,
+      "verified": true,
+      "picks": [
+        "Dedans"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a high-protein food ingredient—at least 8g of protein per 100g.",
+      "count": 3470,
+      "verified": true,
+      "picks": [
+        "Tungrymbai"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a way a person can feel, emotionally or physically (one word only)",
+      "count": 1870,
+      "verified": true,
+      "picks": [
+        "Verklempt"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name something people wear that is designed for protection (everyday clothing doesn’t count)",
+      "count": 1346,
+      "verified": true,
+      "picks": [
+        "Chainmail shark suit"
+      ]
+    }
+  ],
+  "crossCheck": "https://krillionanswers.net/archive/2026-11-06/"
+}
