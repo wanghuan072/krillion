@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-07",
+  "diveNumber": 115,
+  "checkedAt": "2026-11-07T05:59:16.205Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-07",
+  "checked": 24662,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a food with a filling inside.",
+      "count": 4534,
+      "picks": [
+        "Fool's Gold Loaf"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name an animated TV show that isn't meant for kids (no anime).",
+      "count": 1732,
+      "picks": [
+        "Stoner Cats"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a country bigger than the UK but smaller than Egypt, by area.",
+      "count": 48,
+      "picks": [
+        "Cameroon"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a cardio exercise.",
+      "count": 627,
+      "picks": [
+        "Prancercise"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a song released in 2025 or 2026 with over 10 million Spotify streams.",
+      "count": 8792,
+      "picks": [
+        "Laika Party"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a red sauce, dip or condiment.",
+      "count": 681,
+      "picks": [
+        "Manchamanteles"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name an app or website where you book things (like Expedia for travel).",
+      "count": 8248,
+      "picks": [
+        "Sniffspot"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-07/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
