@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-08",
+  "diveNumber": 116,
+  "checkedAt": "2026-11-08T05:56:27.063Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-08",
+  "checked": 33495,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a recurring household bill",
+      "count": 353,
+      "picks": [
+        "Nanny tax"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name an animal that stings",
+      "count": 6677,
+      "picks": [
+        "Wallace's Giant Bee"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a living bird bigger than a chicken",
+      "count": 434,
+      "picks": [
+        "Rüppell's vulture"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a place or landmark with Great or Grand in its name (like the Grand Canyon)",
+      "count": 22530,
+      "picks": [
+        "Great Pyramid of Cholula"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name any item in Minecraft (older versions count too)",
+      "count": 2404,
+      "picks": [
+        "Petrified Oak Slab"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name something you empty regularly at home",
+      "count": 287,
+      "picks": [
+        "Spittoon"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a method of advertising",
+      "count": 810,
+      "picks": [
+        "Forehead advertising"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-08/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
