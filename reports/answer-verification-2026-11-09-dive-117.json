@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-09",
+  "diveNumber": 117,
+  "checkedAt": "2026-11-09T06:01:32.683Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-09",
+  "checked": 87117,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a podcast (1K+ ratings on Spotify)",
+      "count": 9021,
+      "picks": [
+        "Til Death Do Us Blart"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a villain from Star Wars, DC, or LOTR",
+      "count": 26164,
+      "picks": [
+        "Tevildo"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a part of the human body below the waist",
+      "count": 2661,
+      "picks": [
+        "Fabella"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a language with more than 10 million total speakers",
+      "count": 123,
+      "picks": [
+        "Zhuang"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name an animal that eats bugs (documented regular part of diet)",
+      "count": 41246,
+      "picks": [
+        "Bolas spider"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a toy brand",
+      "count": 7872,
+      "picks": [
+        "Bild Lilli"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a country with \"in\" in its name",
+      "count": 30,
+      "picks": [
+        "Eswatini"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-09/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
