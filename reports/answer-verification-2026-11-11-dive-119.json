@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-11",
+  "diveNumber": 119,
+  "checkedAt": "2026-11-11T05:56:08.081Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-11",
+  "checked": 57858,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a country where at least 50% of people speak English",
+      "count": 96,
+      "picks": [
+        "Papua New Guinea"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a bodily function or biological process (like breathing)",
+      "count": 2024,
+      "picks": [
+        "Nasal cycle"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a one-word animal that starts with T",
+      "count": 4950,
+      "picks": [
+        "Takahe"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name something that has a needle",
+      "count": 1919,
+      "picks": [
+        "Coravin"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name an original movie or show from Netflix, Prime Video, Apple TV, or Disney+",
+      "count": 8694,
+      "picks": [
+        "Comrade Detective"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a named object in space that's bigger than Earth's Moon (like Jupiter)",
+      "count": 30266,
+      "picks": [
+        "Hanny's Voorwerp"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a character from Mario, Zelda, Donkey Kong, Sonic, or Kirby",
+      "count": 9909,
+      "picks": [
+        "Stanley"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-11/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
