@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-12",
+  "diveNumber": 120,
+  "checkedAt": "2026-11-12T06:01:07.384Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-12",
+  "checked": 12477,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name something you can see in the sky (kinds of things, not types)",
+      "count": 116,
+      "picks": [
+        "STEVE"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a material or product that comes from animals (excluding meat and dairy)",
+      "count": 764,
+      "picks": [
+        "Sea silk"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a vegetable smaller than an onion",
+      "count": 698,
+      "picks": [
+        "Tomberry"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a TV game show",
+      "count": 6118,
+      "picks": [
+        "Dotto"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a dance move (named moves)",
+      "count": 3979,
+      "picks": [
+        "Big Apple"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a type of injury (like a sprain, not a sprained ankle)",
+      "count": 162,
+      "picks": [
+        "Contrecoup injury"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a chocolate that has caramel in it",
+      "count": 640,
+      "picks": [
+        "Sky Bar"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-12/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
