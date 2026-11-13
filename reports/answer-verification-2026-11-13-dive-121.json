@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-13",
+  "diveNumber": 121,
+  "checkedAt": "2026-11-13T06:03:43.325Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-13",
+  "checked": 60793,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a video game you can play on PS5, Xbox Series X, Nintendo Switch 1 or 2.",
+      "count": 29167,
+      "picks": [
+        "Zero Wing"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a country that has been colonized by Spain or Portugal.",
+      "count": 60,
+      "picks": [
+        "Iran"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a chemical element that makes up the human body.",
+      "count": 66,
+      "picks": [
+        "Gold"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name an invention that existed before 1500 (no food or drinks).",
+      "count": 6319,
+      "picks": [
+        "Pythagorean cup"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name anyone who has acted in an MCU film.",
+      "count": 2363,
+      "picks": [
+        "Miley Cyrus"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a book that has been adapted into a movie.",
+      "count": 20741,
+      "picks": [
+        "The Hound of Florence"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a feature in TikTok.",
+      "count": 2077,
+      "picks": [
+        "TikTok Resumes"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-13/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
