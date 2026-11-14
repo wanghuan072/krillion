@@ -16,8 +16,8 @@
     },
     "/krillion-answers-today": {
       "pageId": "krillion-answers-today",
-      "fingerprint": "e1da72214c04b3b8f140e8ad6592a0e334e35065f5b86a63bb11bbde5dabbe7f",
-      "lastModified": "2026-11-13T06:03:59.367Z",
+      "fingerprint": "17747ccc026a422ff864193bced6006b3131cb16930065ced59e75a3572f7bc6",
+      "lastModified": "2026-11-14T05:56:34.905Z",
       "indexable": true
     },
     "/games": {
@@ -134,9 +134,14 @@
     }
   },
   "answers": {
+    "2026-11-14": {
+      "fingerprint": "f1228990b6f2affa8eb7257ff4b70b6857ed1680085f8ec150e4cdf528a968d4",
+      "lastModified": "2026-11-14T05:56:34.905Z",
+      "indexable": true
+    },
     "2026-11-13": {
-      "fingerprint": "30d90bec45b6a99a5e6926ab85fe1e7ff7d0fa086125513d00a12f61ccd2c95e",
-      "lastModified": "2026-11-13T06:03:59.367Z",
+      "fingerprint": "1afe35e89e61d4d6cc5f0bd6c4d4a193856b88804000346cf4c2696328775845",
+      "lastModified": "2026-11-14T05:56:34.905Z",
       "indexable": true
     },
     "2026-11-12": {

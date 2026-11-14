@@ -1,0 +1,70 @@
+{
+  "gameDate": "2026-11-14",
+  "diveNumber": 122,
+  "checkedAt": "2026-11-14T05:56:15.387Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-14",
+  "checked": 110840,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a billionaire.",
+      "count": 5247,
+      "picks": [
+        "Ty Warner"
+      ]
+    },
+    {
+      "id": "p2",
+      "prompt": "Name an extinct animal that isn't an insect or invertebrate.",
+      "count": 20212,
+      "picks": [
+        "Delcourt's giant gecko"
+      ]
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a living animal that moves on 2 feet and can't fly.",
+      "count": 332,
+      "picks": [
+        "Skywalker hoolock gibbon"
+      ]
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a ball sport where you don't score by getting the ball into or through an object.",
+      "count": 617,
+      "picks": [
+        "Trobriand cricket"
+      ]
+    },
+    {
+      "id": "p5",
+      "prompt": "Name any island (must be inhabited).",
+      "count": 9289,
+      "picks": [
+        "Rhun Island"
+      ]
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a fictional way to travel.",
+      "count": 48641,
+      "picks": [
+        "Naglfar"
+      ]
+    },
+    {
+      "id": "p7",
+      "prompt": "Name any national government agency.",
+      "count": 26502,
+      "picks": [
+        "Board of Tea Experts"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "url": "https://krillionanswers.net/archive/2026-11-14/",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
