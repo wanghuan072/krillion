@@ -1,0 +1,97 @@
+{
+  "gameDate": "2026-11-17",
+  "diveNumber": 125,
+  "checkedAt": "2026-11-17T06:16:00.032Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-17",
+  "checked": 109959,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a movie where the main character is a talking animal",
+      "count": 4438,
+      "picks": [
+        "The Karnival Kid"
+      ],
+      "snapshotRowsCompared": 101,
+      "earlierRowsCompared": 16,
+      "earlierScoreOrTierDifferences": 5
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a one-word food or drink that ends in O",
+      "count": 3129,
+      "picks": [
+        "Pruno"
+      ],
+      "snapshotRowsCompared": 101,
+      "earlierRowsCompared": 16,
+      "earlierScoreOrTierDifferences": 2
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a one-word animal whose name is 7 or more letters",
+      "count": 73291,
+      "picks": [
+        "Irritator",
+        "Obamadon"
+      ],
+      "snapshotRowsCompared": 102,
+      "earlierRowsCompared": 17,
+      "earlierScoreOrTierDifferences": 4
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a retired player from the NBA, Premier League, La Liga, AFL or IPL (women’s equivalents count too)",
+      "count": 25045,
+      "picks": [
+        "Ali Dia",
+        "Chuck Connors"
+      ],
+      "snapshotRowsCompared": 102,
+      "earlierRowsCompared": 17,
+      "earlierScoreOrTierDifferences": 0
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a city ending in -ville, -burg, -burgh or -bourg",
+      "count": 3322,
+      "picks": [
+        "Spillville"
+      ],
+      "snapshotRowsCompared": 101,
+      "earlierRowsCompared": 16,
+      "earlierScoreOrTierDifferences": 1
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a fruit or vegetable that’s white on the inside",
+      "count": 448,
+      "picks": [
+        "Monstera fruit"
+      ],
+      "snapshotRowsCompared": 101,
+      "earlierRowsCompared": 16,
+      "earlierScoreOrTierDifferences": 6
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a playable character from Valorant, Overwatch, League of Legends or Apex Legends",
+      "count": 286,
+      "picks": [
+        "Rhapsody"
+      ],
+      "snapshotRowsCompared": 101,
+      "earlierRowsCompared": 15,
+      "earlierScoreOrTierDifferences": 0
+    }
+  ],
+  "crossCheck": {
+    "archive": "https://krillionanswers.net/archive/2026-11-17/",
+    "snapshot": "https://krillionclues.com/answers/2026-11-17/",
+    "captureTime": "2026-11-17T06:01:00.255Z",
+    "earlierSnapshot": "https://krilliontoday.com/answers/2026-11-17",
+    "earlierCaptureTime": "2026-11-17T05:00:15.787Z",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
