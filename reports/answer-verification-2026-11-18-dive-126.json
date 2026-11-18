@@ -1,0 +1,82 @@
+{
+  "gameDate": "2026-11-18",
+  "diveNumber": 126,
+  "checkedAt": "2026-11-18T06:01:46.540Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-18",
+  "checked": 69625,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a fictional food or drink",
+      "count": 21472,
+      "picks": [
+        "Shmoo",
+        "Vitameatavegamin"
+      ],
+      "snapshotRowsCompared": 102
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a website or app designed for learning or studying (not apps/sites only for taking notes)",
+      "count": 8214,
+      "picks": [
+        "h2g2"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a sport where competitors wear helmets",
+      "count": 666,
+      "picks": [
+        "Buzkashi"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a city whose name starts with D",
+      "count": 19055,
+      "picks": [
+        "Dinosaur",
+        "DISH"
+      ],
+      "snapshotRowsCompared": 102
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a fruit or vegetable that starts with a vowel",
+      "count": 5818,
+      "picks": [
+        "UglyRipe tomato"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p6",
+      "prompt": "Name any athlete who competed at the 2024 Summer Olympics or 2026 Winter Olympics",
+      "count": 13680,
+      "picks": [
+        "Andy MacDonald",
+        "Zeng Zhiying"
+      ],
+      "snapshotRowsCompared": 102
+    },
+    {
+      "id": "p7",
+      "prompt": "Name a real-life language that ends in -an",
+      "count": 720,
+      "picks": [
+        "Dalmatian"
+      ],
+      "snapshotRowsCompared": 101
+    }
+  ],
+  "crossCheck": {
+    "archive": "https://krillionanswers.net/archive/2026-11-18/",
+    "snapshot": "https://krillionclues.com/answers/2026-11-18/",
+    "captureTime": "2026-11-18T06:01:00.048Z",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
