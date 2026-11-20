@@ -1,0 +1,79 @@
+{
+  "gameDate": "2026-11-20",
+  "diveNumber": 128,
+  "checkedAt": "2026-11-20T06:02:19.283Z",
+  "officialSource": "https://krillion.io/api/reveal?date=2026-11-20",
+  "checked": 54245,
+  "officialAnswerTextScoreAndTierVerified": true,
+  "questions": [
+    {
+      "id": "p1",
+      "prompt": "Name a country with the letter P in its name",
+      "count": 24,
+      "picks": [
+        "Central African Republic"
+      ],
+      "snapshotRowsCompared": 24
+    },
+    {
+      "id": "p2",
+      "prompt": "Name a movie that released before 2010 (1,000+ IMDb votes)",
+      "count": 28808,
+      "picks": [
+        "Roundhay Garden Scene"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p3",
+      "prompt": "Name a one-word color",
+      "count": 560,
+      "picks": [
+        "Bluetiful"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p4",
+      "prompt": "Name a song by Drake, Kendrick Lamar, Kanye West, Nicki Minaj, SZA, or Playboi Carti.",
+      "count": 3582,
+      "picks": [
+        "Doing It Wrong"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p5",
+      "prompt": "Name a dog breed that on average weighs 25+ pounds (11 kg)",
+      "count": 663,
+      "picks": [
+        "Sakhalin Husky"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p6",
+      "prompt": "Name a protagonist from an anime or animated TV show (1,000+ votes on IMDb or listed on MAL)",
+      "count": 16765,
+      "picks": [
+        "Anpanman"
+      ],
+      "snapshotRowsCompared": 101
+    },
+    {
+      "id": "p7",
+      "prompt": "Name an awards show",
+      "count": 3843,
+      "picks": [
+        "Golden Kela Awards"
+      ],
+      "snapshotRowsCompared": 101
+    }
+  ],
+  "crossCheck": {
+    "archive": "https://krillionanswers.net/archive/2026-11-20/",
+    "snapshot": "https://krillionclues.com/answers/2026-11-20/",
+    "captureTime": "2026-11-20T06:00:59.989Z",
+    "dateDivePromptsCountsAndTopPicksMatch": true
+  }
+}
